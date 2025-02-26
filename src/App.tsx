@@ -14,8 +14,10 @@ function App() {
       <Header />
       <AboutUs />
       <Projects />
-      <JoinUs />
-      <ContactUs />
+      <div className='combined-container'>
+        <JoinUs />
+        <ContactUs />
+      </div>
       <Footer />
     </div>
   );

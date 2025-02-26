@@ -15,3 +15,8 @@
     color: #e2e8f0; /* Light text for dark mode */
   }
   
+.combined-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}  
