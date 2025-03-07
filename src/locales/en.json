@@ -1,0 +1,39 @@
+{
+    "about_us": "About Us",
+    "donate": "Donate",
+    "club_name": "Rotaract Club of Abugida",
+    "tagline": "Join the Global Movement of Young Leaders",
+    "mission": "Taking action to build a better world through community service, leadership, and innovation.",
+    "join_movement": "Join the movement",
+    "about_us_title": "About Us",
+    "about_us_paragraph_1": "Rotaract Club of Abugida was established in June 2002 and chartered on June 23, 2003. Since its establishment, the club has been participating in various community, professional, and fellowship projects to contribute to society. The club believes its projects have had a significant impact on both the community and its members.",
+    "about_us_paragraph_2": "Rotaract Club of Abugida has 150 registered and 50 to 80 active members. These members are highly dedicated and responsible for each project the club undertakes.",
+    "about_us_paragraph_3": "The general assemblies are held every two weeks at the National Blood Bank (Red Cross) around Addis Ababa Stadium at 10:00 LT on Sundays. The meetings start with a toast to Ethiopia and end with a toast to Rotary International. Our Club manages more than 8 community service projects, along with professional service activities and fellowships. Below are brief descriptions of the projects and events the club has accomplished.",
+    "news_title": "News and Upcoming Events",
+    "news_description": "Here are some past and upcoming events",
+    "projects_title": "Our Projects",
+    "projects_description": "We are committed to making a difference through various impactful initiatives.",
+    "projects": [
+        {
+        "title": "Community Service",
+        "description": "We undertake impactful projects to improve society and support those in need."
+        },
+        {
+        "title": "Professional Development",
+        "description": "Workshops and training sessions to help members grow in their careers."
+        },
+        {
+        "title": "Fellowship Activities",
+        "description": "Networking events and gatherings to build strong friendships and connections."
+        }
+    ],
+    "contact_title": "Get in Touch",
+    "contact_description": "Have questions or want to collaborate? Reach out to us!",
+    "contact_email": "Email",
+    "contact_phone": "Phone",
+    "contact_form_name": "Your Name",
+    "contact_form_email": "Your Email",
+    "contact_form_message": "Your Message",
+    "contact_form_submit": "Send Message"
+}
+  

@@ -5,14 +5,14 @@
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
-    background-color: #f7fafc; /* Light primary background color */
+    background-color: #e4d4b3; /* Light primary background color */
     color: #2d3748; /* Dark Gray text */
   }
   
   /* Dark mode background */
   .dark .app-container {
     background-color: #1a202c; /* Dark background for dark mode */
-    color: #e2e8f0; /* Light text for dark mode */
+    color: #e4d4b3; /* Light text for dark mode */
   }
   
 .combined-container {

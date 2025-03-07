@@ -1,56 +1,70 @@
+/* General Styling for the Navbar */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
 
- /* General Styling for the Navbar */
- .navbar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .navbar-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5rem;
-    width: 100%;
-    gap: 2.5rem;
-    background-color: white;
-    padding: 0 1.25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-logo img {
-    width: 250px;
-  }
-  
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  gap: 2.5rem;
+  background-color: #e4d4b3;
+  padding: 0 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+  width: 250px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-right: 3rem;
+}
+
+.navbar-links li a {
+  color: #000428;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar-links li a:hover {
+  color: #004e92;
+}
+
+/* Styling for the Language Selector */
+.language-selector {
+  padding: 0.5rem;
+  border: 2px solid #D91A5F;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.language-selector:focus {
+  outline: none;
+  border-color: #D91A5F;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
   .navbar-links {
-    display: flex;
-    gap: 1.25rem;
-  }
-  
-  .navbar-links li a {
-    color: #000428;
-    padding-left: 10px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  .navbar-links li a:hover {
-    color: #004e92;
-  }
-  
-  /* Media Query for responsive layout */
-  @media (min-width: 768px) {
-    .navbar-top p {
-      font-size: 0.875rem;
-    }
-    .navbar-links {
       display: flex;
-    }
+      flex-direction: column;
+      gap: 0.75rem;
   }
-  
-  @media (max-width: 768px) {
-    .navbar-links {
-      display: none;
-    }
+  .navbar-main {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
   }
+}

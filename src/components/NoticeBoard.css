@@ -1,33 +1,33 @@
 /* Section Styling */
-.projects-section {
+.notice-section {
     padding-top: 64px; /* Adjusted for spacing */
     padding-bottom: 64px;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: #e4d4b3;
+    background-color: #e1d4b3;
   }
   
-  .projects-header {
+  .notice-header {
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
   }
   
-  .projects-title {
-    font-size: 4.5rem; /* Adjust based on screen size */
-    font-weight: bold;
+  .notice-title {
+    font-size: 4.5rem;
+    font-weight: 600;
     color: #2d3748; /* Dark Gray */
   }
   
-  .projects-description {
+  .notice-description {
     margin-top: 16px;
     color: #718096; /* Lighter Gray */
     font-size: 1.125rem; /* Slightly larger text */
   }
   
   /* Grid for Project Cards */
-  .projects-list {
-    max-width: 1080px;
+  .notice-list {
+    max-width: 1280px;
     margin: 40px auto 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -35,21 +35,21 @@
   }
   
   @media (min-width: 640px) {
-    .projects-list {
+    .notice-list {
       grid-template-columns: repeat(2, 1fr);
       gap: 32px;
     }
   }
   
   @media (min-width: 768px) {
-    .projects-list {
-      grid-template-columns: repeat(3, 1fr);
+    .notice-list {
+      grid-template-columns: repeat(2, 1fr);
       gap: 40px;
     }
   }
   
   /* Project Card Styling */
-  .project-card {
+  .notice-card {
     background-color: #f5f4f3; /* Light Gray */
     padding: 24px;
     border-radius: 8px;
@@ -59,7 +59,7 @@
     align-items: center;
   }
   
-  .project-image {
+  .notice-image {
     border-radius: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -67,13 +67,13 @@
     object-fit: cover;
   }
   
-  .project-title {
-    font-size: 2rem; /* Adjust based on screen size */
-    font-weight: bold;
+  .notice-sub-title {
+    font-size: 2rem;
+    font-weight: 600;
     color: #2d3748; /* Dark Gray */
   }
   
-  .project-text {
+  .notice-text {
     margin-top: 12px;
     color: #718096; /* Lighter Gray */
     font-size: 1rem;

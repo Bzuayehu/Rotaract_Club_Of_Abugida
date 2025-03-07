@@ -1,24 +1,29 @@
 import Logo from '../assets/logo.png';
-import './NavBar.css'
+import './NavBar.css';
+import { useTranslation } from 'react-i18next';
 
 export default function NavBar() {
-    return (
-      <div className="navbar-container">
+  const { t, i18n } = useTranslation();
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(e.target.value);
+  };
+  
+
+  return (
+    <div className="navbar-container">
       <div className="navbar-main">
         <div className="navbar-logo">
           <a href="/"><img src={Logo} alt="logo" width={210} /></a>
         </div>
 
-        <ul className="navbar-links">
-          <li><a href="#" className="font-semibold">Home</a></li>
-          <li><a href="#aboutus" className="font-semibold">About Us</a></li>
-          <li><a href="#services" className="font-semibold">Our Services</a></li>
-          <li><a href="#joinus" className="font-semibold">Join Us</a></li>
-          <li><a href="#contactus" className="font-semibold">Contact Us</a></li>
-        </ul>
-
-        <div>
-          {/* <p>Become Tutor</p> */}
+        <div className="navbar-links">
+          <div className="font-bold">{t('about_us')}</div>
+          <select className='language-selector' value={i18n.language} onChange={handleLanguageChange}>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+          </select>
+          <button type="submit" className="submit-button">{t('donate')}</button>
         </div>
       </div>
     </div>

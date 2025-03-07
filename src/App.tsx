@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Projects from './components/Projects';
 import './App.css'; // Import the CSS file
 import AboutUs from './components/AboutUs';
-import JoinUs from './components/JoinUs';
+import NoticeBoard from './components/NoticeBoard';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
@@ -13,11 +13,9 @@ function App() {
       <NavBar />
       <Header />
       <AboutUs />
+      <NoticeBoard />
       <Projects />
-      <div className='combined-container'>
-        <JoinUs />
-        <ContactUs />
-      </div>
+      <ContactUs />
       <Footer />
     </div>
   );

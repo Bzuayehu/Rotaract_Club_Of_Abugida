@@ -1,32 +1,36 @@
-import communityService from "../assets/community.jpg";
-import professionalDevelopment from "../assets/professional.jpg";
+import communityService from "../assets/communityservice.jpg";
+import professionalDevelopment from "../assets/professional.webp";
 import fellowship from "../assets/fellowship.jpg";
 import "./Projects.css"; // Import the CSS file
+import { useTranslation } from 'react-i18next';
 
-const projects = [
-  {
-    title: "Community Service",
-    description: "We undertake impactful projects to improve society and support those in need.",
-    image: communityService,
-  },
-  {
-    title: "Professional Development",
-    description: "Workshops and training sessions to help members grow in their careers.",
-    image: professionalDevelopment,
-  },
-  {
-    title: "Fellowship Activities",
-    description: "Networking events and gatherings to build strong friendships and connections.",
-    image: fellowship,
-  },
-];
 
 export default function Projects() {
+  const { t } = useTranslation();
+
+  const projects = [
+    {
+      title: t("projects.0.title"),
+      description: t("projects.0.description"),
+      image: communityService,
+    },
+    {
+      title: t("projects.1.title"),
+      description: t("projects.1.description"),
+      image: professionalDevelopment,
+    },
+    {
+      title: t("projects.2.title"),
+      description: t("projects.2.description"),
+      image: fellowship,
+    }
+  ];
+
   return (
     <section id="services" className="projects-section">
       <div className="projects-header">
-        <h2 className="projects-title">Our Projects</h2>
-        <p className="projects-description">We are committed to making a difference through various impactful initiatives.</p>
+        <h2 className="projects-title">{t("projects_title")}</h2>
+        <p className="projects-description">{t("projects_description")}</p>
       </div>
 
       <div className="projects-list">

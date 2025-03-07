@@ -1,0 +1,39 @@
+{
+    "about_us": "À propos de nous",
+    "donate": "Faire un don",
+    "club_name": "Rotaract Club d'Abugida",
+    "tagline": "Rejoignez le mouvement mondial des jeunes leaders",
+    "mission": "Agir pour construire un monde meilleur grâce au service communautaire, au leadership et à l'innovation.",
+    "join_movement": "Rejoignez le mouvement",
+    "about_us_title": "À propos de nous",
+    "about_us_paragraph_1": "Le Rotaract Club d'Abugida a été fondé en juin 2002 et officiellement reconnu le 23 juin 2003. Depuis sa création, le club participe à divers projets communautaires, professionnels et de fraternité afin de contribuer à la société. Le club est convaincu que ses projets ont eu un impact significatif sur la communauté et ses membres.",
+    "about_us_paragraph_2": "Le Rotaract Club d'Abugida compte 150 membres inscrits, dont 50 à 80 membres actifs. Ces membres sont très dévoués et responsables dans chaque projet entrepris par le club.",
+    "about_us_paragraph_3": "Les assemblées générales ont lieu toutes les deux semaines à la Banque nationale du sang (Croix-Rouge) près du stade d'Addis-Abeba à 10h00 LT le dimanche. Les réunions commencent par un toast à l'Éthiopie et se terminent par un toast à Rotary International. Notre club gère plus de 8 projets de service communautaire, ainsi que des activités professionnelles et des rencontres de fraternité. Voici un aperçu des projets et événements accomplis par le club.",
+    "news_title": "Actualités et événements à venir",
+    "news_description": "Voici quelques événements passés et à venir",
+    "projects_title": "Nos Projets",
+    "projects_description": "Nous nous engageons à faire une différence à travers diverses initiatives impactantes.",
+    "projects": [
+          {
+            "title": "Service Communautaire",
+            "description": "Nous réalisons des projets impactants pour améliorer la société et aider ceux qui en ont besoin."
+          },
+          {
+            "title": "Développement Professionnel",
+            "description": "Ateliers et sessions de formation pour aider les membres à progresser dans leur carrière."
+          },
+          {
+            "title": "Activités de Fraternité",
+            "description": "Événements et rencontres pour créer des amitiés solides et des connexions durables."
+          }
+    ],
+    "contact_title": "Prenez Contact",
+    "contact_description": "Vous avez des questions ou souhaitez collaborer ? Contactez-nous !",
+    "contact_email": "E-mail",
+    "contact_phone": "Téléphone",
+    "contact_form_name": "Votre Nom",
+    "contact_form_email": "Votre E-mail",
+    "contact_form_message": "Votre Message",
+    "contact_form_submit": "Envoyer le Message"        
+}
+  
