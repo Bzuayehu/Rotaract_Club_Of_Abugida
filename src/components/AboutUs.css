@@ -1,57 +1,165 @@
-/* About Us Section Styles */
-.about-section {
-    padding: 4rem 1rem;
-    background-color: #e4d4b3;
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  gap: 30px;
+  position:sticky;
+  bottom: 5%;
+  margin-top: 10rem;
+
+}
+
+.about-text {
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a5c3f; /*Green shade */
+  /* color: #D91A5F; */
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.highlight {
+  color: #e66036; /* Orange text for "Hummfly Tech" */
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-top: 15px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background-color: #2a5c3f;
+  /* background-color: #D91A5F; */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #237a57;
+}
+
+.about-images {
+  position: relative;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-box {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.top-image {
+  width: 50%;
+  border-radius: 12px;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  z-index: 2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-image {
+  width: 70%;
+  border-radius: 12px;
+  position: relative;
+  top: 50px;
+  left: -10px;
+  z-index: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
   }
-  
-  .about_container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+  .about-text {
+    max-width: 100%;
   }
-  
-  @media (min-width: 768px) {
-    .container {
-      flex-direction: row;
-      text-align: left;
-    }
+
+  .about-images {
+    width: 80%;
+    margin-top: 30px;
   }
-  
-  .image-container {
-    flex: 1;
-    margin-bottom: 1.5rem;
+
+  .top-image {
+    width: 55%;
+    right: 0;
+    top: -10px;
   }
-  
-  .about-image {
+
+  .bottom-image {
+    width: 80%;
+    top: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 30px 5%;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .about-images {
     width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .text-container {
-    flex: 1;
-    padding-left: 0;
+
+  .top-image {
+    width: 60%;
+    right: 0;
+    top: 0;
   }
-  
-  @media (min-width: 768px) {
-    .text-container {
-      padding-left: 2rem;
-    }
+
+  .bottom-image {
+    width: 90%;
+    top: 30px;
   }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1f2937;
-  }
-  
-  .description {
-    margin-top: 1rem;
-    font-size: 1.125rem;
-    color: #4b5563;
-    line-height: 1.6;
-  }
-  
+}

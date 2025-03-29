@@ -1,0 +1,69 @@
+/* PastPresidents.css */
+
+.past-presidents {
+    margin-top: 5rem;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .past-presidents h2 {
+    font-size: 2.5rem;
+    color: #9e1317; /* Deep cranberry */
+    margin-bottom: 20px;
+  }
+  
+  .past-presidents-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .past-president-card {
+    background-color: #e4d4b3;
+    border: 2px solid #9e1317; /* Cranberry border */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .past-president-card:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .past-president-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .past-president-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .past-president-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .cta-button {
+    background-color: #9e1317; /* Cranberry button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #7a0f12; /* Darker cranberry on hover */
+  }

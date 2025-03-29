@@ -1,0 +1,115 @@
+/* General container styling */
+.about-container {
+    max-width: 100%;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding: 2rem 120px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e4d4b3;
+  }
+  
+  /* Section styling */
+  .about-container section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background: #e4d4b3;
+    box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hero Section */
+  .header {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #D91A5F;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section Headings */
+  .about-container h2 {
+    font-size: 2rem;
+    color: #D91A5F;
+    margin-bottom: 1rem;
+  }
+  
+  /* List Styles */
+  .about-container ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+  }
+  
+  .about-container ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Mission, Values, and Impact Sections */
+  .mission, .history, .values, .impact {
+    border-left: 5px solid #D91A5F;
+    padding-left: 1rem;
+  }
+  
+  /* Meetings Section */
+  .meetings {
+    background: #e3f2fd;
+    border-left: 5px solid #D91A5F;
+  }
+  
+  /* Join Us Section */
+  .join {
+    background: #ffedd5;
+    border-left: 5px solid #ff8c00;
+  }
+  
+  /* Testimonials */
+  .testimonials blockquote {
+    font-style: italic;
+    background: #fff3cd;
+    padding: 1rem;
+    border-left: 5px solid #ffcc00;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+    background: #f1f8ff;
+    border-left: 5px solid #D91A5F;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .about-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact p {
+      font-size: 1rem;
+    }
+  }
+  

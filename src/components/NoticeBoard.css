@@ -1,32 +1,32 @@
 /* Section Styling */
-.notice-section {
+.projects-section {
     padding-top: 64px; /* Adjusted for spacing */
     padding-bottom: 64px;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: #e1d4b3;
+    background-color: #e4d4b3;
   }
   
-  .notice-header {
+  .projects-header {
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
   }
   
-  .notice-title {
-    font-size: 4.5rem;
-    font-weight: 600;
+  .projects-title {
+    font-size: 2rem; /* Adjust based on screen size */
+    font-weight: bold;
     color: #2d3748; /* Dark Gray */
   }
   
-  .notice-description {
+  .projects-description {
     margin-top: 16px;
     color: #718096; /* Lighter Gray */
     font-size: 1.125rem; /* Slightly larger text */
   }
   
   /* Grid for Project Cards */
-  .notice-list {
+  .projects-list {
     max-width: 1280px;
     margin: 40px auto 0;
     display: grid;
@@ -35,47 +35,58 @@
   }
   
   @media (min-width: 640px) {
-    .notice-list {
+    .projects-list {
       grid-template-columns: repeat(2, 1fr);
       gap: 32px;
     }
   }
   
   @media (min-width: 768px) {
-    .notice-list {
-      grid-template-columns: repeat(2, 1fr);
+    .projects-list {
+      grid-template-columns: repeat(3, 1fr);
       gap: 40px;
     }
   }
   
   /* Project Card Styling */
-  .notice-card {
-    background-color: #f5f4f3; /* Light Gray */
+  .project-card {
+    background-color: #e1d4b3; /* Light Gray */
     padding: 24px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
   }
   
-  .notice-image {
+  .project-image {
     border-radius: 8px;
     margin-bottom: 16px;
     width: 100%;
-    height: 300px; /* Adjust based on image */
+    height: 200px; /* Adjust based on image */
     object-fit: cover;
   }
   
-  .notice-sub-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #2d3748; /* Dark Gray */
+  .project-modal-image {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 400px; /* Adjust based on image */
+    object-fit: cover;
   }
+
+  .project-title {
+    font-size: 2rem; /* Adjust based on screen size */
+    font-weight: bold;
+    color: #2d3748; /* Dark Gray */
+    white-space: pre-wrap;  /* This preserves line breaks and spaces */
+}
   
-  .notice-text {
+  .project-text {
     margin-top: 12px;
     color: #718096; /* Lighter Gray */
     font-size: 1rem;
-  }
+    white-space: pre-wrap;  /* This preserves line breaks and spaces */
+}
   

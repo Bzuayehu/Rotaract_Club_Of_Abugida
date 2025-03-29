@@ -1,0 +1,143 @@
+/* ClubService.css */
+
+/* General Styling for Fellowship (Club Service) */
+.club-service {
+    padding:5rem 20px;
+    text-align: center;
+    background-color: #e4d4b3; /* Warm beige background */
+  }
+  
+  .club-service .projects-header {
+    margin-bottom: 30px;
+  }
+  
+  .club-service .projects-title {
+    font-size: 2.5rem;
+    color: #9e1317; /* Deep cranberry */
+  }
+  
+  .club-service .projects-description {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Projects List Container (Card Wrapper) */
+  .club-service .projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 20px; /* Space between cards */
+    padding: 0 20px; /* Add some padding to the sides */
+  }
+  
+  /* Project Cards */
+  .club-service .project-card {
+    background-color: #ffffff;
+    border: 2px solid #9e1317; /* Cranberry border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .club-service .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .club-service .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .club-service .project-title {
+    font-size: 1.5rem;
+    color: #9e1317; /* Deep cranberry */
+    margin: 15px 0 10px;
+  }
+  
+  .club-service .project-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Impact Metrics */
+  .club-service .impact-metrics {
+    font-size: 0.9rem;
+    color: #9e1317; /* Deep cranberry */
+    margin: 10px 0;
+  }
+  
+  /* Testimonial */
+  .club-service .testimonial {
+    font-style: italic;
+    color: #9e1317; /* Deep cranberry */
+    margin: 10px 0;
+  }
+  
+  /* Gallery Styling */
+  .club-service .gallery {
+    margin-top: 20px;
+  }
+  
+  .club-service .gallery h4 {
+    font-size: 1.2rem;
+    color: #9e1317; /* Deep cranberry */
+    margin-bottom: 10px;
+  }
+  
+  .club-service .gallery-images {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .club-service .gallery-images::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .club-service .gallery-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .club-service .gallery-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Call-to-Action Button */
+  .club-service .cta-button {
+    background-color: #9e1317; /* Cranberry button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .club-service .cta-button:hover {
+    background-color: #7a0f12; /* Darker cranberry on hover */
+  }
+  
+  /* Media Queries for Responsive Behavior */
+  @media (max-width: 900px) {
+    .club-service .projects-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .club-service .projects-list {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }

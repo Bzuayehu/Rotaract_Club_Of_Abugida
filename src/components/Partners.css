@@ -1,0 +1,59 @@
+.partners {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .partners h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .mother-club, .interact-clubs, .sponsors {
+    margin-bottom: 3rem;
+    padding-left: 10%;
+  }
+  
+  .mother-club img, .interact-clubs-list img, .sponsors-list img {
+    max-width: 100%;
+    height: 100px;
+    margin: 1rem 0;
+  }
+  
+  /* Auto-Scrolling Container */
+  .interact-clubs-list, .sponsors-list {
+    display: flex;
+    overflow: hidden; /* Hide overflow */
+    gap: 2rem;
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+  /* Animation for Interact Clubs */
+  .interact-clubs-list {
+    /* animation: scrollHorizontal s linear infinite; Adjust time as needed */
+  }
+  
+  /* Animation for Sponsors */
+  .sponsors-list {
+    min-width: 0%; 
+    animation: scrollHorizontal 30s infinite; /* Adjust time as needed */
+  }
+  
+  /* Keyframes for Horizontal Scrolling */
+  @keyframes scrollHorizontal {
+    from {
+      transform: translateX(-5%);
+    }
+    to {
+      transform: translateX(-10%); /* Move container by 50% of its width */
+    }
+  }
+  
+  .interact-club {
+    text-align: center;
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+  }
+  
+  .interact-club p {
+    margin-top: 0.5rem;
+  }

@@ -1,0 +1,81 @@
+/* ProjectDetail.module.css */
+.container {
+    max-width: 1200px;
+    margin: 10rem auto 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.jpg');
+    background-size: cover;
+    padding: 4rem 1rem;
+    color: white;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .category {
+    background: #e63946;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .quickFacts {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .quickFacts p {
+    margin: 0.5rem 0;
+  }
+  
+  .section {
+    margin: 2rem 0;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .outcomesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .outcomeItem {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .outcomeValue {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a9d8f;
+  }
+  
+  .outcomeLabel {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }

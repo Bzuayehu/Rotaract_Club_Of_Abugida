@@ -1,0 +1,180 @@
+
+.bods {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .bods h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bods-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .bod-card {
+    width: 200px;
+    text-align: center;
+    /* background: #f9f9f9; */
+    background: #e4d4b3;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bod-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .bod-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .bod-card p {
+    font-size: 1rem;
+    color: #667;
+  }
+  
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-media-links a {
+    color: #DB5079;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media-links a:hover {
+    color: #DB5079; /* Match your theme color */
+  }
+
+  .bod-card p a {
+    color: inherit; /* Inherit the color from the parent */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .bod-card p a:hover {
+    color: #DB5079; /* Change color on hover (match your theme) */
+  }
+
+  /* Past Presidents Card */
+/* .past-presidents {
+  background-color: #e4d4b3;
+  border: 2px dashed #9e1317; 
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.past-presidents:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.past-presidents-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.past-presidents-link h3 {
+  font-size: 1.5rem;
+  color: #9e1317; /
+  margin-bottom: 10px;
+}
+
+.past-presidents-link p {
+  font-size: 1rem;
+  color: #667;
+} */
+
+.past-presidents {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4d4b3; /* Light background for emphasis */
+  border: 2px solid #ddd; /* Add a border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.past-presidents:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.past-presidents-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.animated-icon {
+  font-size: 3rem; /* Bigger size */
+  color: #DB5079;  
+  animation: bounce 1.5s infinite; /* Add bounce animation */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+/* .bods {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .bods h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .bods-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .bod-card {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .bod-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .bod-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .bod-card p {
+    font-size: 1rem;
+    color: #666;
+  } */

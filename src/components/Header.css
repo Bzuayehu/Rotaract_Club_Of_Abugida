@@ -1,7 +1,7 @@
 /* Header Container */
 .header-container {
-  padding: 180px 120px;
-  margin-top: 5rem;
+  padding: 120px 60px; /* Reduced padding for better fit */
+  margin-top: 0; /* Removed margin-top */
   position: relative;
   height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-/* Header Background with Overlay */
+/* Background with Smooth Transition */
 .header-background {
   position: absolute;
   top: 0;
@@ -18,8 +18,8 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: 1; /* Keeps the background behind the content */
-  transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+  z-index: 1; 
+  transition: background-image 1s ease-in-out;
 }
 
 .header-background::before {
@@ -29,62 +29,120 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top right, rgb(228,212,179, 0.3), rgba(217, 26, 95, 0.2)); /* Gradient from color to transparent */
-  z-index: 1; /* Ensures the overlay is above the background image */
+  background: linear-gradient(to top right, rgba(228, 212, 179, 0.3), rgba(217, 26, 95, 0.2));
+  z-index: 1;
 }
 
 /* Layout for Content */
 .header-content {
-  position: relative; /* To place content above the overlay */
-  z-index: 2; /* Makes sure the text stays above the overlay */
+  position: relative;
+  z-index: 2; 
   text-align: center;
 }
 
-/* Text Section */
+/* Responsive Typography */
 .sub-heading {
   color: #f8f8f8;
-  font-size: 60px;
+  font-size: 50px; /* Adjusted for better scaling */
   font-weight: bold;
-}
-
-@media (min-width: 768px) {
-  .sub-heading {
-    font-size: 60px;
-  }
 }
 
 .main-heading {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-@media (min-width: 768px) {
-  .main-heading {
-    font-size: 40px;
-  }
-}
-
 .heading-description {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   margin-bottom: 32px;
 }
 
-/* Call-To-Action Button */
-.cta-button {
-  display: inline-block;
+/* CTA Button */
+.submit-button {
   background: linear-gradient(to top left, #000428, #D91A5F);
   color: white;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 12px;
-  text-decoration: none;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-.cta-button:hover {
-  background: linear-gradient(to bottom right, #fafafa, #D91A5F);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 100px 40px;
+  }
+
+  .sub-heading {
+    font-size: 40px;
+  }
+
+  .main-heading {
+    font-size: 20px;
+  }
+
+  .heading-description {
+    font-size: 15px;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 80px 30px;
+  }
+
+  .sub-heading {
+    font-size: 35px;
+  }
+
+  .main-heading {
+    font-size: 18px;
+  }
+
+  .heading-description {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 60px 20px;
+  }
+
+  .sub-heading {
+    font-size: 28px;
+  }
+
+  .main-heading {
+    font-size: 16px;
+  }
+
+  .heading-description {
+    font-size: 13px;
+  }
+
+  .submit-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
 }

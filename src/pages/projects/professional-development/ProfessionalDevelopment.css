@@ -1,0 +1,143 @@
+/* ProfessionalDevelopment.css */
+
+/* General Styling for Professional Development */
+.professional-development {
+    padding: 5rem 20px;
+    text-align: center;
+    background-color: #e4d4b3; /* Warm beige background */
+  }
+  
+  .professional-development .projects-header {
+    margin-bottom: 30px;
+  }
+  
+  .professional-development .projects-title {
+    font-size: 2.5rem;
+    color: #9e1317; /* Deep cranberry */
+  }
+  
+  .professional-development .projects-description {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Projects List Container (Card Wrapper) */
+  .professional-development .projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 20px; /* Space between cards */
+    padding: 0 20px; /* Add some padding to the sides */
+  }
+  
+  /* Project Cards */
+  .professional-development .project-card {
+    background-color: #ffffff;
+    border: 2px solid #9e1317; /* Cranberry border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .professional-development .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .professional-development .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .professional-development .project-title {
+    font-size: 1.5rem;
+    color: #9e1317; /* Deep cranberry */
+    margin: 15px 0 10px;
+  }
+  
+  .professional-development .project-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Impact Metrics */
+  .professional-development .impact-metrics {
+    font-size: 0.9rem;
+    color: #9e1317; /* Deep cranberry */
+    margin: 10px 0;
+  }
+  
+  /* Testimonial */
+  .professional-development .testimonial {
+    font-style: italic;
+    color: #9e1317; /* Deep cranberry */
+    margin: 10px 0;
+  }
+  
+  /* Gallery Styling */
+  .professional-development .gallery {
+    margin-top: 20px;
+  }
+  
+  .professional-development .gallery h4 {
+    font-size: 1.2rem;
+    color: #9e1317; /* Deep cranberry */
+    margin-bottom: 10px;
+  }
+  
+  .professional-development .gallery-images {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .professional-development .gallery-images::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .professional-development .gallery-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .professional-development .gallery-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Call-to-Action Button */
+  .professional-development .cta-button {
+    background-color: #9e1317; /* Cranberry button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .professional-development .cta-button:hover {
+    background-color: #7a0f12; /* Darker cranberry on hover */
+  }
+  
+  /* Media Queries for Responsive Behavior */
+  @media (max-width: 900px) {
+    .professional-development .projects-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .professional-development .projects-list {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }

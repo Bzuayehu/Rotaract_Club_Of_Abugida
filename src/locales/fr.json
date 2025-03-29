@@ -1,4 +1,7 @@
 {
+    "home":"Accueil",
+    "directorship_position": "Poste de Direction",
+    "contact_us": "Contactez Nous",
     "about_us": "À propos de nous",
     "donate": "Faire un don",
     "club_name": "Rotaract Club d'Abugida",
@@ -27,6 +30,20 @@
             "description": "Événements et rencontres pour créer des amitiés solides et des connexions durables."
           }
     ],
+    "news_and_events": "Actualités et Événements",
+    "news_and_events_description": "Restez informé de nos dernières nouvelles et événements à venir.",
+    "awards_recognition_title": "Prix et Reconnaissances",
+    "awards_recognition_description": "Nous sommes fiers d'avoir reçu les prix et reconnaissances suivants pour notre travail.",
+    "projectss": "Projets",
+    "community_service": "Service Communautaire",
+    "professional_development": "Développement Professionnel",
+    "fellowships": "Camaraderie",
+    "join_title": "Rejoignez-nous",
+    "join_description": "Faites partie de notre communauté et contribuez à un monde meilleur.",
+    "join_button": "Rejoignez-nous",
+    "join_form_name": "Votre Nom",
+    "join_form_phone": "Votre Téléphone",
+    "join_form_email": "Votre E-mail",
     "contact_title": "Prenez Contact",
     "contact_description": "Vous avez des questions ou souhaitez collaborer ? Contactez-nous !",
     "contact_email": "E-mail",

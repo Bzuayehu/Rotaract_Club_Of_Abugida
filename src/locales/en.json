@@ -1,4 +1,7 @@
 {
+    "home": "Home",
+    "directorship_position": "Directorship Position",
+    "contact_us": "Contact Us",
     "about_us": "About Us",
     "donate": "Donate",
     "club_name": "Rotaract Club of Abugida",
@@ -27,6 +30,20 @@
         "description": "Networking events and gatherings to build strong friendships and connections."
         }
     ],
+    "news_and_events": "News and Events",
+    "news_and_events_description": "Stay updated with our latest news and upcoming events.",
+    "awards_recognition_title": "Awards and Recognition",
+    "awards_recognition_description": "We are proud to have received the following awards and recognition for our work.",
+    "projectss": "Projects",
+    "community_service": "Community Service",
+    "professional_development": "Professional Development",
+    "fellowships": "Fellowships",
+    "join_title": "Join Us",
+    "join_description": "Become a part of our community and make a difference in the world.",
+    "join_button": "Join Now",
+    "join_form_name": "Your Name",
+    "join_form_phone": "Your Phone",
+    "join_form_email": "Your Email",
     "contact_title": "Get in Touch",
     "contact_description": "Have questions or want to collaborate? Reach out to us!",
     "contact_email": "Email",

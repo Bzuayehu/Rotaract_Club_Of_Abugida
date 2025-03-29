@@ -14,7 +14,7 @@
   }
   
   .projects-title {
-    font-size: 4.5rem; /* Adjust based on screen size */
+    font-size: 2rem; /* Adjust based on screen size */
     font-weight: bold;
     color: #2d3748; /* Dark Gray */
   }
@@ -27,7 +27,7 @@
   
   /* Grid for Project Cards */
   .projects-list {
-    max-width: 1080px;
+    max-width: 1280px;
     margin: 40px auto 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -35,6 +35,9 @@
   }
   
   @media (min-width: 640px) {
+    .project-title {
+      font-size: 0.5rem;
+    }
     .projects-list {
       grid-template-columns: repeat(2, 1fr);
       gap: 32px;
@@ -50,20 +53,21 @@
   
   /* Project Card Styling */
   .project-card {
-    background-color: #f5f4f3; /* Light Gray */
+    background-color: #e1d4b3; /* Light Gray */
     padding: 24px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
   }
   
   .project-image {
     border-radius: 8px;
     margin-bottom: 16px;
     width: 100%;
-    height: 300px; /* Adjust based on image */
+    height: 200px; /* Adjust based on image */
     object-fit: cover;
   }
   

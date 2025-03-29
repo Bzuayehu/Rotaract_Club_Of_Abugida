@@ -1,3 +1,10 @@
+
+
+#root { /* Or your main app container */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 *,
 *::before,
 *::after {
@@ -8,23 +15,30 @@
 
 body {
   margin: 0; /* Removes default margin */
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primary-bg);
 }
 
 
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --bglight-color: #f5f4fa;
+  --bglight-color: #e4d4b3;
   --primary-color: #edf2f8;
-  --white-color: #fff;
-  --lightGray-color: #d8d8da;
+  --white-color: #e4d4b3;
+  --lightGray-color: #e4d4b3;
   --gray-color: #12274c;
   --brown-color: #0d1022;
   --black-color: #131625;
+
+  --primary-bg: #e4d4b3;
+  --accent: #D91A5F;
+
+  
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
   height: 10px;
 }
 
@@ -33,10 +47,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0e114f;
-  border-radius: 10px;
+  background-color: #e4d4b3;
+  border-radius: 5px;
 }
 
 ::-webkit-slider-thumb:hover {
-  background-color: #082f6d;
+  background-color: #777571;
 }

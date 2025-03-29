@@ -1,0 +1,75 @@
+.awards-section {
+    background: linear-gradient(135deg, #c01b0f,);
+    color: #DB5079;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.awards-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.awards-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.award-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.award-card {
+    background: #f4e5c7;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.award-card i {
+    font-size: 2.5rem;
+    color: #DB5079;
+    margin-bottom: 1rem;
+}
+
+.award-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.award-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #DB5079;
+}
+/* .fa-trophy{
+    color: hsl(51, 60%, 60%);
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .professional-development-section h2,
+    .club-service-section h2,
+    .awards-section h2 {
+        font-size: 2rem;
+    }
+
+    .professional-development-section p,
+    .club-service-section p,
+    .awards-section p {
+        font-size: 1rem;
+    }
+}

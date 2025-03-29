@@ -4,48 +4,116 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 990;
+  background-color: #e4d4b3;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Show navbar when scrolled to second section */
+.navbar-container.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .navbar-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 4.5rem;
   width: 100%;
-  gap: 2.5rem;
-  background-color: #e4d4b3;
-  padding: 0 1.25rem;
+  padding: 0 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-logo img {
-  width: 250px;
+/* Show navbar when scrolling past first section */
+.navbar-container.show {
+  transform: translateY(0);
 }
 
+/* Hidden when back at first section */
+.navbar-container.hidden {
+  transform: translateY(-100%);
+}
+/* Logo */
+.navbar-logo img {
+  width: 180px;
+}
+
+/* Navbar Links */
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  margin-right: 3rem;
+  gap: 1rem;
+  margin-right: 1rem;
 }
 
-.navbar-links li a {
-  color: #000428;
-  font-weight: 600;
+.nav-link {
   text-decoration: none;
+  color: rgb(43, 43, 43);
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.navbar-links li a:hover {
-  color: #004e92;
+.nav-link:hover {
+  color: #D91A5F;
+}
+.nav-link:last-child:hover{
+  color: white;
+
+
 }
 
-/* Styling for the Language Selector */
+/* projects drop down */
+.projects-dropdown-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.projects-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem 0;
+  min-width: 220px;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: #f8f8f8;
+  color: #D91A5F;
+  padding-left: 2rem;
+}
+
+.projects-toggle::after {
+  content: '▼';
+  font-size: 0.6em;
+  margin-left: 8px;
+  color: #D91A5F;
+  vertical-align: middle;
+}
+
+/* Language Selector */
 .language-selector {
-  padding: 0.5rem;
+  padding: 0.4rem;
   border: 2px solid #D91A5F;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: #ffffff;
   cursor: pointer;
 }
@@ -55,16 +123,95 @@
   border-color: #D91A5F;
 }
 
-/* Media Query for Responsive Layout */
-@media (max-width: 768px) {
-  .navbar-links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
+/* Donate Button */
+.submit-button {
+  background: linear-gradient(90deg, #D91A5F, #D91A5F);
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .navbar-main {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
+    height: 4rem;
+    padding: 0 0.75rem;
+  }
+
+  .navbar-logo img {
+    width: 150px;
+  }
+
+  .navbar-links {
+    gap: 0.75rem;
+    margin-right: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .language-selector {
+    font-size: 0.85rem;
+    padding: 0.35rem;
+  }
+
+  .submit-button {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .projects-dropdown {
+    min-width: 180px;
+  }
+  
+  .dropdown-item {
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-main {
+    height: 4.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .navbar-logo img {
+    width: 130px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .language-selector {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  .submit-button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
   }
 }
