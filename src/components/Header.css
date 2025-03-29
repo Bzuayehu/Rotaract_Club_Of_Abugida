@@ -1,0 +1,87 @@
+/* Header Container */
+.header-container {
+  background: #77012c;
+  padding: 48px 40px;
+  margin-top: 60px;
+}
+
+/* Layout for Content */
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+  .header-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+/* Text Section */
+.sub-heading {
+  color: #ddd;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .sub-heading {
+    font-size: 16px;
+  }
+}
+
+.main-heading {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .main-heading {
+    font-size: 40px;
+  }
+}
+
+.description {
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+/* Call-To-Action Button */
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to top left, #000428, #D91A5F);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to bottom right, #fafafa, #D91A5F);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.header-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header-image {
+    display: block;
+  }
+}
+
+.header-image img {
+  width: 100%;
+  border-radius: 10px;
+}

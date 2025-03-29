@@ -1,0 +1,57 @@
+/* About Us Section Styles */
+.about-section {
+    padding: 4rem 1.5rem;
+    background-color: #f3f4f6;
+  }
+  
+  .about_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-container {
+    flex: 1;
+    padding-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .text-container {
+      padding-left: 2rem;
+    }
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .description {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  

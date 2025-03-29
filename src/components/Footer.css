@@ -1,0 +1,35 @@
+/* Footer Section Styles */
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .footer_container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    color: #030303;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #D91A5F;
+  }
+  
