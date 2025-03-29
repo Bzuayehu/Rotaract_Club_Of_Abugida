@@ -4,7 +4,7 @@ import Ipp from '../assets/Ipp-removebg-preview.png';
 import president from '../assets/presidentt-removebg-preview.png';
 import vice from '../assets/viceP-removebg-preview.png';
 import communityServc from '../assets/CommunityServ-removebg-preview.png';
-import clubservc from '../assets/clubservc-removebg-preview.png';
+import clubservc from '../assets/ClubServc-removebg-preview.png';
 import pr from '../assets/pr-removebg-preview.png';
 import secretary from '../assets/secretary-removebg-preview.png';
 import membership from '../assets/membership-removebg-preview.png';
