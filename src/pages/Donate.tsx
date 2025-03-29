@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './Donate.css';
 
 export default function Donate() {
