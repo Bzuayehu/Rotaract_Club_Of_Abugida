@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './BODs.css';
 import Ipp from '../assets/Ipp-removebg-preview.png';
 import president from '../assets/presidentt-removebg-preview.png';
@@ -17,7 +17,7 @@ import fundraising from '../assets/fundraisng-removebg-preview.png';
 import interact from '../assets/interact-removebg-preview.png';
 import internationalServc from '../assets/international_Srvcc-removebg-preview-2.png';
 import professionalDev from '../assets/international_Servc-removebg-preview.png';
-import { FaLinkedin, FaTwitter, FaFacebook, FaHistory, FaTelegram } from 'react-icons/fa'; // Import social media icons
+import { FaLinkedin, FaFacebook, FaHistory, FaTelegram } from 'react-icons/fa'; // Import social media icons
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 

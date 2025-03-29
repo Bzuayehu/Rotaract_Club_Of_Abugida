@@ -1,7 +1,7 @@
 import aboutImage from "../assets/banner.jpg";
 import "./AboutUs.css";
-import { useTranslation } from 'react-i18next';
-import { FiArrowRight } from 'react-icons/fi';
+// import { useTranslation } from 'react-i18next';
+// import { FiArrowRight } from 'react-icons/fi';
 // import img from '../assets/Aboutt.jpg';
 import React from "react";
 

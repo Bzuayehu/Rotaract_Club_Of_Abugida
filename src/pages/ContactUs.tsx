@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaWhatsapp, FaTelegram } from 'react-icons/fa'; // Import social media icons
+import { FaFacebook, FaInstagram, FaTiktok, FaTelegram } from 'react-icons/fa'; // Import social media icons
 // import { Link } from 'react-router-dom';
 import './ContactUs.css';
 import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa6';

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import guestSpeaker from "../assets/images/guest-speaker.jpg";
 // import training from "../assets/images/training.jpg";
 // import workshop from "../assets/images/workshop.jpg";

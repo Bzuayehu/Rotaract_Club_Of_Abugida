@@ -1,7 +1,7 @@
 
 import ProjectDetail from '../../../components/ProjectDetail';
 import { Project } from '../../../types';
-import img from '../../../assets/fellowship.jpg'
+// import img from '../../../assets/fellowship.jpg'
 
 // pages/projects/fellowship/Sleepover.tsx
 const Sleepover = () => {

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './Partners.css';
 import magicOfROtary from '../assets/The_Magic_of_Rotary.png';
 import bloodBank from '../assets/Ethiopian_blood_bank_logo.png';
@@ -14,15 +14,15 @@ import wuddasieDiadnostic from '../assets/WudassieDiagnosticCenter-removebg-prev
 import ScrollingSponsors from './ScrollingSponsors';
 
 const Partners = () => {
-  const motherClub = {
-    name: 'Rotary Club of Addis Ababa',
-    description: 'Our mother club, guiding us in our mission and vision.',
-    logo: motherClubLogo,
-  };
+//   const motherClub = {
+//     name: 'Rotary Club of Addis Ababa',
+//     description: 'Our mother club, guiding us in our mission and vision.',
+//     logo: motherClubLogo,
+//   };
 
-  const interactClubs = [
-    { id: 1, name: 'Interact Club of School A', logo: 'path/to/interact1-logo.png' },
-  ];
+//   const interactClubs = [
+//     { id: 1, name: 'Interact Club of School A', logo: 'path/to/interact1-logo.png' },
+//   ];
 
   const sponsors = [
     { id: 1, name: 'The Magic of Rotary', logo: magicOfROtary },

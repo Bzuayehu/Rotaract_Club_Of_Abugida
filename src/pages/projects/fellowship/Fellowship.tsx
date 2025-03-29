@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import trips from "../assets/images/trips.jpg";
 // import buheFellowship from "../assets/images/buhe-fellowship.jpg";
 // import coffeeTime from "../assets/images/coffee-time.jpg";

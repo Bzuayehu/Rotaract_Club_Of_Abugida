@@ -1,7 +1,7 @@
 // pages/projects/community-service/BloodDonation.tsx
 import ProjectDetail from '../../../components/ProjectDetail';
 import { Project } from '../../../types';
-import img from '../../../assets/fellowship.jpg'
+// import img from '../../../assets/fellowship.jpg'
 
 const BloodDonation = () => {
   const projectData: Project = {

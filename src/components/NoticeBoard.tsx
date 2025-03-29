@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import Modal from "./Modal"; // Import Modal component
 import blooddonation from "../assets/blooddonation.jpg";
 import sleepover from "../assets/sleepover.jpg";
-import communityServc from "../assets/community_Servc-removebg-preview.png";
-import clubservc from "../assets/club_Servc-removebg-preview.png";
+// import communityServc from "../assets/community_Servc-removebg-preview.png";
+// import clubservc from "../assets/club_Servc-removebg-preview.png";
 import "./NoticeBoard.css"; // Import CSS file
 
 interface Notice {
