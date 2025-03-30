@@ -217,7 +217,7 @@ export default function  BODs() {
       <h2>Board of Directors 2024/2025</h2>
       <div className="bods-list">
         {/* Add Past Presidents Card with Animated Icon */}
-        <div className="bod-card past-presidents">
+        <div className="bod-card past-presidents1">
           <Link to="/past-presidents" className="past-presidents-link">
             <FaHistory className="animated-icon" /> {/* Animated icon */}
             <h3>Past Presidents</h3>

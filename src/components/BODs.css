@@ -2,6 +2,11 @@
 .bods {
     padding: 2rem;
     text-align: center;
+    /* background: #e4d4b3;  */
+    /* border: 2px solid #ddd;  */
+    /* border-radius: 10px; */
+    /* margin: 2rem 0; */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
   }
   
   .bods h2 {
@@ -69,38 +74,7 @@
     color: #DB5079; /* Change color on hover (match your theme) */
   }
 
-  /* Past Presidents Card */
-/* .past-presidents {
-  background-color: #e4d4b3;
-  border: 2px dashed #9e1317; 
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.past-presidents:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.past-presidents-link {
-  text-decoration: none;
-  color: #333;
-}
-
-.past-presidents-link h3 {
-  font-size: 1.5rem;
-  color: #9e1317; /
-  margin-bottom: 10px;
-}
-
-.past-presidents-link p {
-  font-size: 1rem;
-  color: #667;
-} */
-
-.past-presidents {
+.past-presidents1 {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -140,41 +114,18 @@
     transform: translateY(-5px);
   }
 }
-/* .bods {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .bods h2 {
-    font-size: 2rem;
-    margin-bottom: 4rem;
-  }
-  
-  .bods-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
+
+@media (max-width: 768px) {
   .bod-card {
-    width: 200px;
-    text-align: center;
+    width: 100%; /* Full width on smaller screens */
+    margin: 0 auto; /* Center the card */
+    padding: 0.5rem; /* Reduce padding */
   }
-  
-  .bod-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+  .bods-list {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align */
   }
-  
-  .bod-card h3 {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem;
+  .bods{
+    padding: 0.5rem; /* Reduce padding on smaller screens */
   }
-  
-  .bod-card p {
-    font-size: 1rem;
-    color: #666;
-  } */
+}
