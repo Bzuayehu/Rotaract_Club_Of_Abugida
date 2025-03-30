@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './awards.css'; // Make sure your CSS file is properly linked
+import './Awards.css'; // Make sure your CSS file is properly linked
 
 interface AwardCardProps {
   title: string;
