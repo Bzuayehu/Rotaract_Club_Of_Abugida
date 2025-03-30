@@ -13,10 +13,10 @@ import sergntArm from '../assets/sergentArm-removebg-preview.png';
 import trf from '../assets/buze-removebg-preview.png';
 import projectOfcr from '../assets/project_Ofcr-removebg-preview.png';
 import grc from '../assets/Grc-removebg-preview-2.png';
-import fundraising from '../assets/fundraisng-removebg-preview.png';
-import interact from '../assets/interact-removebg-preview.png';
-import internationalServc from '../assets/international_Srvcc-removebg-preview-2.png';
-import professionalDev from '../assets/international_Servc-removebg-preview.png';
+import fundraising from '../assets/Fundraisng-removebg-preview.png';
+import interact from '../assets/Interact-removebg-preview.png';
+import internationalServc from '../assets/International_Srvcc-removebg-preview-2.png';
+import professionalDev from '../assets/International_Servc-removebg-preview.png';
 import { FaLinkedin, FaFacebook, FaHistory, FaTelegram } from 'react-icons/fa'; // Import social media icons
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
