@@ -128,4 +128,9 @@
   .bods{
     padding: 0.5rem; /* Reduce padding on smaller screens */
   }
+  .bod-card img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+   
+  }
 }
