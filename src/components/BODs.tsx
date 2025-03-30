@@ -12,7 +12,7 @@ import treasurer from '../assets/Treasurer-removebg-preview.png';
 import sergntArm from '../assets/sergentArm-removebg-preview.png';
 import trf from '../assets/buze-removebg-preview.png';
 import projectOfcr from '../assets/project_Ofcr-removebg-preview.png';
-import grc from '../assets/grc-removebg-preview-2.png';
+import grc from '../assets/Grc-removebg-preview-2.png';
 import fundraising from '../assets/fundraisng-removebg-preview.png';
 import interact from '../assets/interact-removebg-preview.png';
 import internationalServc from '../assets/international_Srvcc-removebg-preview-2.png';
