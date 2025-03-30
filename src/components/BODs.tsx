@@ -5,7 +5,7 @@ import president from '../assets/presidentt-removebg-preview.png';
 import vice from '../assets/viceP-removebg-preview.png';
 import communityServc from '../assets/CommunityServ-removebg-preview.png';
 import clubservc from '../assets/ClubServc-removebg-preview.png';
-import pr from '../assets/pr-removebg-preview.png';
+// import pr from '../assets/Pr-removebg-preview.png';
 import secretary from '../assets/secretary-removebg-preview.png';
 import membership from '../assets/membership-removebg-preview.png';
 import treasurer from '../assets/Treasurer-removebg-preview.png';
@@ -82,7 +82,7 @@ export default function  BODs() {
       id: 6,
       name: 'Nardos',
       role: 'Public Relations Director',
-      image: pr,
+      image: secretary,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
         twitter: 'https://twitter.com',
