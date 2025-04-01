@@ -5,11 +5,11 @@ import president from '../assets/presidentt-removebg-preview.png';
 import vice from '../assets/viceP-removebg-preview.png';
 import communityServc from '../assets/CommunityServ-removebg-preview.png';
 import clubservc from '../assets/ClubServc-removebg-preview.png';
-// import pr from '../assets/Pr-removebg-preview.png';
+import Pr from '../assets/Pr-removebg-preview.png';
 import secretary from '../assets/secretary-removebg-preview.png';
 import membership from '../assets/membership-removebg-preview.png';
 import treasurer from '../assets/Treasurer-removebg-preview.png';
-import sergntArm from '../assets/sergentArm-removebg-preview.png';
+import sergntArm from '../assets/sergentArm-removebg-preview-3.png';
 import trf from '../assets/buze-removebg-preview.png';
 import projectOfcr from '../assets/project_Ofcr-removebg-preview.png';
 import grc from '../assets/Grc-removebg-preview-2.png';
@@ -82,7 +82,7 @@ export default function  BODs() {
       id: 6,
       name: 'Nardos',
       role: 'Public Relations Director',
-      image: secretary,
+      image: Pr,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
         twitter: 'https://twitter.com',

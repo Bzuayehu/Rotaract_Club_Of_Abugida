@@ -1,6 +1,19 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import meeting from "../../../assets/professional.webp";
+import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
 import "./CommunityService.css";
 
 const communityProjects = [

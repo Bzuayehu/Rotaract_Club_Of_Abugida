@@ -17,7 +17,12 @@ const BlanketDonation = () => {
         "Winter support"
       ],
       partners: ["Rotary Club ENTOTO", "Missionary Brothers of Charity"],
-      relatedProjects: ["extending-love", "yewedekutin-ansu"]
+      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "School Painting", "Addis Holiday"],
+      // gallery: [
+      //   // "https://example.com/image1.jpg",
+      //   // "https://example.com/image2.jpg",
+      //   // "https://example.com/image3.jpg"
+      // ],
     };
     return <ProjectDetail project={projectData} />;
   };

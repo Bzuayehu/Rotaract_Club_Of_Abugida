@@ -36,7 +36,7 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
         <p>{project.description}</p>
         {project.impact && (
           <>
-            <h3>Impact</h3>
+            <h3 className={styles.impact}>Impact</h3>
             <ul>
               {project.impact.map((item, index) => (
                 <li key={index}>{item}</li>

@@ -17,7 +17,7 @@ const SchoolPainting = () => {
         "Tree-planting plan initiated"
       ],
       partners: ["Rotary Club ENTOTO"],
-      relatedProjects: ["brana-project", "eye-vision"]
+      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "Addis Holiday", "Blanket Donation"],
     };
     return <ProjectDetail project={projectData} />;
   };

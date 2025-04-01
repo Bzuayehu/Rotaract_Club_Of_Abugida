@@ -1,6 +1,6 @@
 import communityService from "../assets/communityservice.jpg";
 import professionalDevelopment from "../assets/professional.webp";
-import fellowship from "../assets/fellowship.jpg";
+import fellowship from "../assets/Buhe Fellowship/buhe_1.jpg";
 import "./Projects.css"; // Import the CSS file
 import { useTranslation } from "react-i18next";
 import Modal from "./Modal"; // Import the modal component

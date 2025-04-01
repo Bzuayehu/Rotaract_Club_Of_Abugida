@@ -28,19 +28,19 @@ const AwardsSection = () => {
       description: '26th District Conference Assembly (DCA), 2012/13',
     },
     {
-      title: 'best club year',
+      title: 'Best Club Of The Year',
       description: 'Ethiopia Rotaract Country Team, 2013/14',
     },
     {
-      title: 'blood donation',
+      title: 'Blood Donation',
       description: 'Ministry of Health, 2015/16',
     },
     {
-      title: 'tana awards',
+      title: 'Tana Awards',
       description: 'Held in Bahir Dar, 2018/19',
     },
     {
-      title: 'summer volunteer',
+      title: 'Summer Volunteer',
       description: 'Addis Ababa City Administration, 2020/21',
     },
   ];

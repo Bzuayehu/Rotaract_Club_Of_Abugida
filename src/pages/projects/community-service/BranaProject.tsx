@@ -21,7 +21,8 @@ const BranaProject = () => {
         { label: "Students Helped", value: "5,000+" }
       ],
       partners: ["Local Schools", "Government Education Bureau"],
-      relatedProjects: ["sanitary-pad", "school-painting"]
+      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Extending Love", "Eye Vision", "School Painting", "Addis Holiday", "Blanket Donation"],
+
     };
     return <ProjectDetail project={projectData} />;
   };

@@ -21,7 +21,7 @@ const EyeVision = () => {
         { label: "Schools Targeted (2024)", value: "Repi Primary" }
       ],
       partners: ["Local Health Organizations"],
-      relatedProjects: ["brana-project", "school-painting"]
+      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Extending Love", "School Painting", "Addis Holiday", "Blanket Donation"],
     };
     return <ProjectDetail project={projectData} />;
   };

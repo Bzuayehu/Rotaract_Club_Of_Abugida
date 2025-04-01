@@ -20,7 +20,7 @@ const SchoolFeeding = () => {
         { label: "Families Employed", value: "6" }
       ],
       partners: ["Hizbawi Serawit Primary School"],
-      relatedProjects: ["blood-donation", "brana-project"]
+      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "School Painting", "Addis Holiday", "Blanket Donation"],
     };
     return <ProjectDetail project={projectData} />;
   };

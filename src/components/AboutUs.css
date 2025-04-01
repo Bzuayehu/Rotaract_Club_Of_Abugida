@@ -17,7 +17,7 @@
 .about-text h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #2a5c3f; /*Green shade */
+  color: #5c4c2a; /*Green shade */
   /* color: #D91A5F; */
 }
 
@@ -59,7 +59,7 @@
 
 .about-images {
   position: relative;
-  width: 45%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,30 +67,50 @@
 
 .background-box {
   position: absolute;
-  width: 80%;
+  width: 70%;
   height: 80%;
-  background-color: #f5f5f5;
+  background-color: hsl(0, 4%, 81%);
   border-radius: 12px;
   z-index: 0;
 }
 
 .top-image {
-  width: 50%;
+  width: 60%;
   border-radius: 12px;
   position: absolute;
-  top: -20px;
-  right: -10px;
+  top: -95px;
+  right: -50px;
   z-index: 2;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .bottom-image {
-  width: 70%;
+  width: 65%;
   border-radius: 12px;
   position: relative;
-  top: 50px;
-  left: -10px;
+  top: -80px;
+  left: -100px;
   z-index: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.third-image {
+  width: 70%;
+  border-radius: 12px;
+  position: absolute;
+  bottom: -40px;
+  right: -60px;
+  z-index: 2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fourth-image {
+  width: 80%;
+  border-radius: 12px;
+  position: absolute;
+  bottom: -90px;
+  left: -25px;
+  z-index: 2;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -128,9 +148,9 @@
 /* Mobile */
 @media (max-width: 768px) {
   .about-us {
-    padding: 50px 5%;
+    padding: 50px 2%;
     margin-top: 10rem;
-    bottom: -27%;
+    bottom: -30%;
   }
 
   .about-text h2 {

@@ -6,12 +6,14 @@
 }
 
 .awards-section h2 {
+    color: #2d3748;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .awards-section p {
+    color: #718096;
     font-size: 1.2rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);

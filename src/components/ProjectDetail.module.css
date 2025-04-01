@@ -18,6 +18,11 @@
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
+  .impact{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #D91A5F;
+  }
   
   .category {
     background: #e63946;

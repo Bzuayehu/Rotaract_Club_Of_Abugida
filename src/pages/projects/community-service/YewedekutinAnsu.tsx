@@ -16,7 +16,7 @@ const YewedekutinAnsu = () => {
         "Awareness campaigns"
       ],
       partners: ["Yewedekutin Ansu Association"],
-      relatedProjects: ["addis-holiday", "blanket-donation"]
+      relatedProjects: ["Sanitary Pad Donaton","school feeding", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "School Painting", "Addis Holiday", "Blanket Donation"],
     };
     return <ProjectDetail project={projectData} />;
   };

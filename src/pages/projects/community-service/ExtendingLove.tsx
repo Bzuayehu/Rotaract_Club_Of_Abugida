@@ -16,7 +16,7 @@ const ExtendingLove = () => {
         "Christmas celebrations"
       ],
       partners: ["Missionary Brothers of Charity"],
-      relatedProjects: ["blanket-donation", "yewedekutin-ansu"]
+      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Eye Vision", "School Painting", "Addis Holiday", "Blanket Donation"],
     };
     return <ProjectDetail project={projectData} />;
   };

@@ -17,7 +17,7 @@ const AddisHoliday = () => {
         "3 events/year"
       ],
       partners: ["Rotaract Clubs of Ethiopia"],
-      relatedProjects: ["yewedekutin-ansu", "school-feeding"]
+      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "School Painting", "Blanket Donation"],
     };
     return <ProjectDetail project={projectData} />;
   };

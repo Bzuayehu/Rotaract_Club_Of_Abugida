@@ -21,7 +21,7 @@ const SanitaryPad = () => {
         { label: "Training Sessions", value: "20+" }
       ],
       partners: ["WISE Organization", "Rotary Club of Addis Abeba ARADA"],
-      relatedProjects: ["brana-project", "school-feeding"]
+      relatedProjects: ["yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "School Painting", "Addis Holiday", "Blanket Donation"],
     };
     return <ProjectDetail project={projectData} />;
   };
