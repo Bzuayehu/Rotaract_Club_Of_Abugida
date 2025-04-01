@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 // Import images
 // import banner1 from '../assets/banner.jpg';
 // import banner2 from '../assets/community.jpg';
-import banner3 from '../assets/communityservice.jpg';
+// import banner3 from '../assets/communityservice.jpg';
 import banner4 from "../assets/Blood Donation/65th_3.jpg";
 import banner5 from "../assets/Buhe Fellowship/buhe_6.jpg";
 import banner6 from "../assets/Book Donation/bookdonation.jpg";
