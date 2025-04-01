@@ -50,20 +50,20 @@ export default function Footer() {
         <div className="footer-section">
           <h3 className="footer-heading">Follow Us</h3>
           <div className="social-icons">
-          <a href="https://linkedin.com" aria-label="LinkedIn">
-              <i className="fab fa-linkedin"></i>
+          <a href="https://www.facebook.com/RACAbugida?mibextid=b06tZ0" aria-label="Facebook">
+              <i className="fab fa-facebook"></i>
             </a>
-            <a href="https://twitter.com" aria-label="Telegram">
+            <a href="https://t.me/racabugida" aria-label="Telegram">
               <i className="fab fa-telegram"></i>
             </a>
-            <a href="https://instagram.com" aria-label="Instagram">
+            <a href="https://www.instagram.com/rac_abugida" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://tiktok.com" aria-label="Tiktok">
+            <a href="http://www.tiktok.com/@racabugida1" aria-label="Tiktok">
               <i className="fab fa-tiktok"></i>
             </a>
-            <a href="https://facebook.com" aria-label="Facebook">
-              <i className="fab fa-facebook"></i>
+            <a href="https://www.linkedin.com/company/racabugida/" aria-label="LinkedIn">
+              <i className="fab fa-linkedin"></i>
             </a>
           </div>
         </div>

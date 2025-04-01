@@ -12,8 +12,9 @@
   .bods h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #2d3748 !important; /* Dark Gray */
+
   }
-  
   .bods-list {
     display: flex;
     justify-content: center;

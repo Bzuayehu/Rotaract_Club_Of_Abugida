@@ -15,8 +15,8 @@ export default function ScrollingSponsors({ sponsors }: ScrollingSponsorsProps) 
       <div style={{ overflow: "hidden", whiteSpace: "nowrap", width: "100%", display: "flex" }}>
       <motion.div
         style={{ display: "flex", minWidth: "250%" }} // Ensures seamless scrolling
-        animate={{ x: "-100%" }}
-        transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
+        animate={{ x: "-270%" }}
+        transition={{ repeat: Infinity, duration: 50, ease: "linear" }}
       >
         {/* Duplicate sponsors to create a continuous loop */}
         {[...sponsors, ...sponsors].map((sponsor) => (
@@ -25,7 +25,7 @@ export default function ScrollingSponsors({ sponsors }: ScrollingSponsorsProps) 
             src={sponsor.logo}
             alt={sponsor.name}
             className="sponsor-item"
-            style={{ maxWidth: "100%", height: "100px", marginRight: "20px"}} // Adjust size as needed
+            style={{ maxWidth: "100%", height:"100px", marginRight: "20px"}} // Adjust size as needed
           />
         ))}
         {[...sponsors, ...sponsors].map((sponsor) => (

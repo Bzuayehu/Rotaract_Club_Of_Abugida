@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTiktok, FaTelegram } from 'react-icons/fa'; // Import social media icons
+import { FaFacebook, FaInstagram, FaTiktok, FaTelegram, FaLinkedin } from 'react-icons/fa'; // Import social media icons
 // import { Link } from 'react-router-dom';
 import './ContactUs.css';
-import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa6';
+// import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa6';
 
 const ContactUs: React.FC = () => {
   const [formData, setFormData] = React.useState({
@@ -61,7 +61,7 @@ const ContactUs: React.FC = () => {
           <div className="form-group">
             <label htmlFor="message">Message:</label>
             <textarea
-              placeholder="Write your message "
+              placeholder="Write your message"
               id="message"
               name="message"
               value={formData.message}
@@ -95,12 +95,11 @@ const ContactUs: React.FC = () => {
         <div className="social-links">
           <h3>Follow Us:</h3>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook" className='facebook-icon'><FaFacebook/></a>
-            <a href="#" aria-label="Instagram" className='instagram-icon'><FaInstagram/></a>
-            <a href="#" aria-label="Telegram" className='telegram-icon'><FaTelegram/></a>
-            <a href="#" aria-label="Tiktok" className='tiktok-icon'><FaTiktok/></a>
-            <a href="#" aria-label="Linkedin" className='linkedin-icon'><FaLinkedin/></a>
-            <a href="#" aria-label="Instagram" className='linkedin-icon'><FaLinkedinIn/></a>
+            <a href="https://www.facebook.com/RACAbugida?mibextid=b06tZ0" aria-label="Facebook" className='facebook-icon'><FaFacebook/></a>
+            <a href="https://www.instagram.com/rac_abugida" aria-label="Instagram" className='instagram-icon'><FaInstagram/></a>
+            <a href="https://t.me/racabugida" aria-label="Telegram" className='telegram-icon'><FaTelegram/></a>
+            <a href="http://www.tiktok.com/@racabugida1" aria-label="Tiktok" className='tiktok-icon'><FaTiktok/></a>
+            <a href="https://www.linkedin.com/company/racabugida/" aria-label="Linkedin" className='linkedin-icon'><FaLinkedin/></a>
           </div>
         </div>
       </div>

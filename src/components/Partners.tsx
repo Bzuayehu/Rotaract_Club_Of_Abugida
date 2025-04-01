@@ -7,7 +7,9 @@ import fanta from '../assets/Fanta-Logo.png';
 import yearsOfService from '../assets/100_years_of_Service.png';
 import motherClubLogo from '../assets/RotaryEntoto.png';
 import shegerGebeta from '../assets/Sheger_Gebeta-removebg-preview.png';
-import HamletMassage from '../assets/Hamlet_Massage-removebg-preview.png';
+import HamletMassage from '../assets/Untitled design.png';
+// import HamletMassage1 from '../assets/Hamlet_Massage-removebg-preview.png';
+
 import eye from '../assets/Eye-removebg-preview.png';
 // import wuddasieDiadnostic from '../assets/WudassieDiagnosticCenter.jpg';
 import wuddasieDiadnostic from '../assets/WudassieDiagnosticCenter-removebg-preview.png';
