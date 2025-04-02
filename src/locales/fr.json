@@ -8,6 +8,8 @@
     "tagline": "Rejoignez le mouvement mondial des jeunes leaders",
     "mission": "Agir pour construire un monde meilleur grâce au service communautaire, au leadership et à l'innovation.",
     "join_movement": "Rejoignez le mouvement",
+    "get_to_know_the_team":"Apprenez à connaître l'équipe",
+    "providing_service_above":"Offrir un service supérieur à soi-même à la communauté",
     "about_us_title": "À propos de nous",
     "about_us_paragraph_1": "Le Rotaract Club d'Abugida a été fondé en juin 2002 et officiellement reconnu le 23 juin 2003. Depuis sa création, le club participe à divers projets communautaires, professionnels et de fraternité afin de contribuer à la société. Le club est convaincu que ses projets ont eu un impact significatif sur la communauté et ses membres.",
     "about_us_paragraph_2": "Le Rotaract Club d'Abugida compte 150 membres inscrits, dont 50 à 80 membres actifs. Ces membres sont très dévoués et responsables dans chaque projet entrepris par le club.",
@@ -30,6 +32,7 @@
             "description": "Événements et rencontres pour créer des amitiés solides et des connexions durables."
           }
     ],
+    "BOD_Title":"Rencontrez notre conseil d'administration",
     "President": "Président",
     "Vice_President": "Vice-Président",
     "Secretary": "Secrétaire",
@@ -83,6 +86,7 @@
             "description": "A élargi le réseau de membres du club."
         }
     ],
+    "our_partners":"Nos partenaires",
     "term":"Terme",
     "achievements":"Réalisations",
     "news_and_events": "Actualités et Événements",

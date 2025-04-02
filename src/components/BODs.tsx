@@ -218,7 +218,7 @@ export default function  BODs() {
 
   return (
     <div className="bods" id='bods'>
-      <h2 className="bod-title">Board of Directors 2024/2025</h2>
+      <h2 className="bod-title"> {t("BOD_Title")} 2024/2025</h2>
       <div className="bods-list">
         {/* Add Past Presidents Card with Animated Icon */}
         <div className="bod-card past-presidents2">

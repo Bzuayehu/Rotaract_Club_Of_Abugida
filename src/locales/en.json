@@ -11,6 +11,8 @@
     "tagline": "Join the Global Movement of Young Leaders",
     "mission": "Taking action to build a better world through community service, leadership, and innovation.",
     "join_movement": "Join the movement",
+    "get_to_know_the_team":"Get to know the team",
+    "providing_service_above":"Providing service above self to the community",
     "about_us_title": "About Us",
     "about_us_paragraph_1": "Rotaract Club of Abugida was established in June 2002 and chartered on June 23, 2003. Since its establishment, the club has been participating in various community, professional, and fellowship projects to contribute to society. The club believes its projects have had a significant impact on both the community and its members.",
     "about_us_paragraph_2": "Rotaract Club of Abugida has 150 registered and 50 to 80 active members. These members are highly dedicated and responsible for each project the club undertakes.",
@@ -33,6 +35,7 @@
         "description": "Networking events and gatherings to build strong friendships and connections."
         }
     ],
+    "BOD_Title":"Meet Our Board of Directors",
     "President": "President",
     "Vice_President": "Vice President",
     "Secretary": "Secretary",
@@ -87,6 +90,7 @@
             "description": "Expanded the club's membership and outreach programs."
         }
     ],
+    "our_partners":"Our Partners",
     "term": "Term",
     "achievements":"Achievements",
     "news_and_events": "News and Events",

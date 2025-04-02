@@ -13,13 +13,13 @@ const AboutUs: React.FC = () => {
   return (
     <section className="about-us" id="aboutus">
       <div className="about-text">
-        <h2>About Us</h2>
+        <h2>{t("about_us")}</h2>
         <h3>
-          <span className="highlight">Rotaract Club of Abugida</span> Providing service above self to the community
+          <span className="highlight">{t("Rotaract_Club_of_Abugida")}</span> {t("providing_service_above")}
         </h3>
         <p className="description">{t("about_us_paragraph_1")}</p>
         <p className="description">{t("about_us_paragraph_2")}</p>
-        <button className="cta-button">Get to know The Team →</button>
+        <button className="cta-button">{t("get_to_know_the_team")} →</button>
       </div>
 
       <div className="about-images">

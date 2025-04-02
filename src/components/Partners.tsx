@@ -14,8 +14,11 @@ import eye from '../assets/Eye-removebg-preview.png';
 // import wuddasieDiadnostic from '../assets/WudassieDiagnosticCenter.jpg';
 import wuddasieDiadnostic from '../assets/WudassieDiagnosticCenter-removebg-preview.png';
 import ScrollingSponsors from './ScrollingSponsors';
+import { useTranslation } from "react-i18next";
 
 const Partners = () => {
+  const { t, } = useTranslation();
+
 //   const motherClub = {
 //     name: 'Rotary Club of Addis Ababa',
 //     description: 'Our mother club, guiding us in our mission and vision.',
@@ -41,7 +44,7 @@ const Partners = () => {
 
   return (
     <div className="partners">
-      <h2>Our Partners</h2>
+      <h2>{t("our_partners")}</h2>
 
       {/* Mother Club */}
       {/* <div className="mother-club">
