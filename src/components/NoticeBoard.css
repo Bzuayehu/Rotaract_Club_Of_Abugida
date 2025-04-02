@@ -47,11 +47,11 @@
     cursor: pointer;
   }
   
-  .project-image {
+  .project-image1 {
     border-radius: 8px;
     margin-bottom: 16px;
     width: 100%;
-    height: 200px; /* Adjust based on image */
+    height: fit-content; /* Adjust based on image */
     object-fit: cover;
   }
   

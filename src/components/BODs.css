@@ -75,7 +75,7 @@
     color: #DB5079; /* Change color on hover (match your theme) */
   }
 
-.past-presidents1 {
+.past-presidents2 {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.past-presidents:hover {
+.past-presidents2:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }

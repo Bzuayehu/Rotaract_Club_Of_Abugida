@@ -19,14 +19,18 @@ import internationalServc from '../assets/International_Srvcc-removebg-preview-2
 import professionalDev from '../assets/International_Servc-removebg-preview.png';
 import { FaLinkedin, FaFacebook, FaHistory, FaTelegram } from 'react-icons/fa'; // Import social media icons
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+
 // import { Link } from 'react-router-dom';
 
 export default function  BODs() {
+  const { t, } = useTranslation();
+
   const boardMembers = [
     {
       id: 0,
       name: 'Tensae Bekele',
-      role: 'President',
+      role: t('President'),
       image: president,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -37,7 +41,7 @@ export default function  BODs() {
     {
       id: 1,
       name: 'Peniel Hailu',
-      role: 'Immediate Past President',
+      role: t('Immediate_Past_President'),
       image: Ipp,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -48,7 +52,7 @@ export default function  BODs() {
     {
       id: 3,
       name: 'Tsedale',
-      role: 'Vice President',
+      role: t('Vice_President'),
       image: vice,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -59,7 +63,7 @@ export default function  BODs() {
     {
       id: 4,
       name: 'Metabel Mitiku',
-      role: 'Community Service Director',
+      role: t('Community_Service_Director'),
       image: communityServc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -70,7 +74,7 @@ export default function  BODs() {
     {
       id: 5,
       name: 'Alemayehu chala',
-      role: 'Club Service Director',
+      role: t('Club_Service_Director'),
       image: clubservc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -81,7 +85,7 @@ export default function  BODs() {
     {
       id: 6,
       name: 'Nardos',
-      role: 'Public Relations Director',
+      role: t('Public_Relations_Director'),
       image: Pr,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -92,7 +96,7 @@ export default function  BODs() {
     {
       id: 7,
       name: 'Zemenay',
-      role: 'Secretary',
+      role: t('Secretary'),
       image: secretary,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -103,7 +107,7 @@ export default function  BODs() {
     {
       id: 8,
       name: 'Lemmi Lemma Lejisa',
-      role: 'Memebership Extension and Retention Director',
+      role: t('Memebership_Extension_and_Retention_Director'),
       image: membership,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -114,7 +118,7 @@ export default function  BODs() {
     {
       id: 9,
       name: 'Solomon',
-      role: 'Treasurer',
+      role: t('Treasurer'),
       image: treasurer,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -125,7 +129,7 @@ export default function  BODs() {
     {
       id: 10,
       name: 'Gitu Taye',
-      role: 'Sergeant at Arms Director',
+      role: t('Sergeant_at_Arms_Director'),
       image: sergntArm,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -136,7 +140,7 @@ export default function  BODs() {
     {
       id: 11,
       name: 'Bzuayehu Mamuye',
-      role: 'The Rotary Foundation Director',
+      role: t('The_Rotary_Foundation_Director'),
       image: trf,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -147,7 +151,7 @@ export default function  BODs() {
     {
       id: 12,
       name: 'Adonias',
-      role: 'Project Officer',
+      role: t('Project_Officer'),
       image: projectOfcr,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -158,7 +162,7 @@ export default function  BODs() {
     {
       id: 13,
       name: 'Tamene',
-      role: 'Green Rotaract Concept Director',
+      role: t('Green_Rotaract_Concept_Director'),
       image: grc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -169,7 +173,7 @@ export default function  BODs() {
     {
       id: 14,
       name: 'Ashenafi Getachew',
-      role: 'Fundraising Director',
+      role: t('Fundraising_Director'),
       image: fundraising,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -180,7 +184,7 @@ export default function  BODs() {
     {
       id: 15,
       name: 'Bethelhem Birhanu', 
-      role: 'Interact Director',
+      role: t('Interact_Director'),
       image: interact,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -191,7 +195,7 @@ export default function  BODs() {
     {
       id: 16,
       name: 'Bezawit',
-      role: 'International Service Director',
+      role: t('International_Service_Director'),
       image: internationalServc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -202,7 +206,7 @@ export default function  BODs() {
     {
       id: 17,
       name: 'Gelila',
-      role: 'Professional Development Director',
+      role: t('Professional_Development_Director'),
       image: professionalDev,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
@@ -217,11 +221,11 @@ export default function  BODs() {
       <h2 className="bod-title">Board of Directors 2024/2025</h2>
       <div className="bods-list">
         {/* Add Past Presidents Card with Animated Icon */}
-        <div className="bod-card past-presidents1">
+        <div className="bod-card past-presidents2">
           <Link to="/past-presidents" className="past-presidents-link">
             <FaHistory className="animated-icon" /> {/* Animated icon */}
-            <h3>Past Presidents</h3>
-            <p>Explore the legacy of our past leaders.</p>
+            <h3>{t("Past_Presidents")}</h3>
+            <p>{t("Explore_the_legacy_of_our_past_leaders")}</p>
           </Link>
         </div>
         {boardMembers.map(member => (

@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Modal from "./Modal"; // Import Modal component
 import blooddonation from "../assets/blooddonation.jpg";
-import sleepover from "../assets/sleepover.jpg";
+// import sleepover from "../assets/sleepover.jpg";
+import sleepover from "../assets/News and Events/call out forArtists.png";
+
 // import communityServc from "../assets/community_Servc-removebg-preview.png";
 // import clubservc from "../assets/club_Servc-removebg-preview.png";
 import "./NoticeBoard.css"; // Import CSS file
@@ -40,160 +42,15 @@ We are doing a second round card sorting come JOIN US!!! Register on the link be
 
 💪🏾💪🏾💪🏾Working together for a better outcome 💪🏾💪🏾💪🏾`,
       image: blooddonation,
-    },
-    {
-      title: "Sleepover Fellowship",
-      description: `🎉 Join Us for the SLEEPOVER FELLOWSHIP! 🎉
-
-Get ready for an unforgettable night filled with fun, laughter, and adventure! 🌟
-
-📅 Date: December 28, 2024  
-🕒 Time: 9:30 LT (Dont be late)
-📍 Location: Piassa, in front of St. George Church  
-
-Price: 250 ETB  
-Bank Accounts:
-- Tensae / Solomon  
-  - BOA: 197804645  
-  - CBE: 1000649057889  
-
-📝 Register Here: https://forms.gle/iXg6PJev1AdqQbvF9
-
-       Activities:
-✨ Delicious Dinner
-🎲 Exciting Games and Activities 
-🏞️ Morning Hiking Adventure  
-🔥 Cozy Campfire
-📷 Capturing memories
-
-Don't Forget to Bring:
-🧺 A mini blanket  
-🧥 A warm jacket  
-👟 Appropriate shoes for hiking 
-
-📞 Contact Us:
-     Alex: 0941229771  
-    Tensae: 0912911344  
-
-We can't wait to see you there for a night of memories and fun!! ✨`,
-      image: sleepover,
     },{
-      title: "Sleepover Fellowship",
+      title: "Artist Call Out",
       description: `🎉 Join Us for the SLEEPOVER FELLOWSHIP! 🎉
 
 Get ready for an unforgettable night filled with fun, laughter, and adventure! 🌟
 
 📅 Date: December 28, 2024  
 🕒 Time: 9:30 LT (Dont be late)
-📍 Location: Piassa, in front of St. George Church  
-
-Price: 250 ETB  
-Bank Accounts:
-- Tensae / Solomon  
-  - BOA: 197804645  
-  - CBE: 1000649057889  
-
-📝 Register Here: https://forms.gle/iXg6PJev1AdqQbvF9
-
-       Activities:
-✨ Delicious Dinner
-🎲 Exciting Games and Activities 
-🏞️ Morning Hiking Adventure  
-🔥 Cozy Campfire
-📷 Capturing memories
-
-Don't Forget to Bring:
-🧺 A mini blanket  
-🧥 A warm jacket  
-👟 Appropriate shoes for hiking 
-
-📞 Contact Us:
-     Alex: 0941229771  
-    Tensae: 0912911344  
-
-We can't wait to see you there for a night of memories and fun!! ✨`,
-      image: sleepover,
-    },{
-      title: "Sleepover Fellowship",
-      description: `🎉 Join Us for the SLEEPOVER FELLOWSHIP! 🎉
-
-Get ready for an unforgettable night filled with fun, laughter, and adventure! 🌟
-
-📅 Date: December 28, 2024  
-🕒 Time: 9:30 LT (Dont be late)
-📍 Location: Piassa, in front of St. George Church  
-
-Price: 250 ETB  
-Bank Accounts:
-- Tensae / Solomon  
-  - BOA: 197804645  
-  - CBE: 1000649057889  
-
-📝 Register Here: https://forms.gle/iXg6PJev1AdqQbvF9
-
-       Activities:
-✨ Delicious Dinner
-🎲 Exciting Games and Activities 
-🏞️ Morning Hiking Adventure  
-🔥 Cozy Campfire
-📷 Capturing memories
-
-Don't Forget to Bring:
-🧺 A mini blanket  
-🧥 A warm jacket  
-👟 Appropriate shoes for hiking 
-
-📞 Contact Us:
-     Alex: 0941229771  
-    Tensae: 0912911344  
-
-We can't wait to see you there for a night of memories and fun!! ✨`,
-      image: sleepover,
-    },{
-      title: "Sleepover Fellowship",
-      description: `🎉 Join Us for the SLEEPOVER FELLOWSHIP! 🎉
-
-Get ready for an unforgettable night filled with fun, laughter, and adventure! 🌟
-
-📅 Date: December 28, 2024  
-🕒 Time: 9:30 LT (Dont be late)
-📍 Location: Piassa, in front of St. George Church  
-
-Price: 250 ETB  
-Bank Accounts:
-- Tensae / Solomon  
-  - BOA: 197804645  
-  - CBE: 1000649057889  
-
-📝 Register Here: https://forms.gle/iXg6PJev1AdqQbvF9
-
-       Activities:
-✨ Delicious Dinner
-🎲 Exciting Games and Activities 
-🏞️ Morning Hiking Adventure  
-🔥 Cozy Campfire
-📷 Capturing memories
-
-Don't Forget to Bring:
-🧺 A mini blanket  
-🧥 A warm jacket  
-👟 Appropriate shoes for hiking 
-
-📞 Contact Us:
-     Alex: 0941229771  
-    Tensae: 0912911344  
-
-We can't wait to see you there for a night of memories and fun!! ✨`,
-      image: sleepover,
-    },{
-      title: "Sleepover Fellowship",
-      description: `🎉 Join Us for the SLEEPOVER FELLOWSHIP! 🎉
-
-Get ready for an unforgettable night filled with fun, laughter, and adventure! 🌟
-
-📅 Date: December 28, 2024  
-🕒 Time: 9:30 LT (Dont be late)
-📍 Location: Piassa, in front of St. George Church  
+📍 Location: Piassa, in front of St. George Church 
 
 Price: 250 ETB  
 Bank Accounts:
@@ -240,7 +97,7 @@ We can't wait to see you there for a night of memories and fun!! ✨`,
       <div className="projects-list">
         {notices.map((notice, index) => (
           <div key={index} className="project-card" onClick={() => openModal(notice)}>
-            <img src={notice.image} alt={notice.title} className="project-image" />
+            <img src={notice.image} alt={notice.title} className="project-image1" />
             <h3 className="project-sub-title">{notice.title}</h3>
             <p className="project-text">
               {notice.description.length > 30

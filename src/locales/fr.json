@@ -30,6 +30,61 @@
             "description": "Événements et rencontres pour créer des amitiés solides et des connexions durables."
           }
     ],
+    "President": "Président",
+    "Vice_President": "Vice-Président",
+    "Secretary": "Secrétaire",
+    "Treasurer": "Trésorier",
+    "Community_Service_Director": "Directeur du Service Communautaire",
+    "Club_Service_Director": "Directeur du Service au Club",
+    "Public_Relations_Director": "Directeur des Relations Publiques",
+    "Memebership_Extension_and_Retention_Director": "Directeur de l'Extension et de la Rétention des Membres",
+    "Sergeant_at_Arms_Director": "Directeur des Gardes",
+    "The_Rotary_Foundation_Director": "Directeur de la Fondation Rotary",
+    "International_Service_Director": "Directeur du Service International",
+    "Green_Rotaract_Concept_Director": "Directeur du Concept Green Rotaract",
+    "Fundraising_Director": "Directeur de la Collecte de Fonds",
+    "Project_Officer": "Responsable de Projet",
+    "Interact_Director": "Directeur Interact",
+    "Professional_Development_Director": "Directeur du Développement Professionnel",
+    "Immediate_Past_President": "président sortant",
+    "Rotaract_Club_of_Abugida": "Rotaract Club d'Abugida",
+
+    "Past_Presidents": "Anciens Présidents",
+    "Explore_the_legacy_of_our_past_leaders": "Explorez l'héritage de nos anciens dirigeants",
+    "pastPresidents": [
+        {
+            "name": "John Doe",
+            "year": "2020-2021",
+            "description": "A dirigé le club à travers une année de croissance et de service communautaire."
+        },
+        {
+            "name": "Jane Smith",
+            "year": "2019-2020",
+            "description": "A initié plusieurs projets de développement durable."
+        },
+        {
+          "name": "Alice Johnson",
+          "year": "2018-2019",
+          "description":"L'accent est mis sur le service communautaire et les activités de camaraderie"
+        },
+        {
+            "name": "Michael Johnson",
+            "year": "2018-2019",
+            "description": "A renforcé les relations internationales du club."
+        },
+        {
+            "name": "Emily Davis",
+            "year": "2017-2018",
+            "description": "A mis en place des programmes de mentorat pour les jeunes."
+        },
+        {
+            "name": "David Wilson",
+            "year": "2016-2017",
+            "description": "A élargi le réseau de membres du club."
+        }
+    ],
+    "term":"Terme",
+    "achievements":"Réalisations",
     "news_and_events": "Actualités et Événements",
     "news_and_events_description": "Restez informé de nos dernières nouvelles et événements à venir.",
     "awards_recognition_title": "Prix et Reconnaissances",

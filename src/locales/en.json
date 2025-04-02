@@ -1,4 +1,7 @@
+
+
 {
+
     "home": "Home",
     "directorship_position": "Directorship Position",
     "contact_us": "Contact Us",
@@ -30,6 +33,62 @@
         "description": "Networking events and gatherings to build strong friendships and connections."
         }
     ],
+    "President": "President",
+    "Vice_President": "Vice President",
+    "Secretary": "Secretary",
+    "Treasurer": "Treasurer",
+    "Community_Service_Director": "Community Service Director",
+    "Club_Service_Director": "Club Service Director",
+    "Public_Relations_Director": "Public Relations Director",
+    "Memebership_Extension_and_Retention_Director": "Membership Extension and Retention Director",
+    "Sergeant_at_Arms_Director": "Sergeant at Arms Director",
+    "The_Rotary_Foundation_Director": "The Rotary Foundation Director",
+    "International_Service_Director": "International Service Director",
+    "Green_Rotaract_Concept_Director": "Green Rotaract Concept Director",
+    "Fundraising_Director": "Fundraising Director",
+    "Project_Officer": "Project Officer",
+    "Interact_Director": "Interact Director",
+    "Professional_Development_Director": "Professional Development Director",
+    "Immediate_Past_President": "Immediate Past President",
+    "Rotaract_Club_of_Abugida": "Rotaract Club of Abugida",
+
+
+    "Past_Presidents": "Past Presidents",
+    "Explore_the_legacy_of_our_past_leaders": "Explore the legacy of our past leaders",
+    "pastPresidents": [
+        {
+            "name": "John Doe",
+            "year": "2020-2021",
+            "description": "Led the club through a year of growth and community service."
+        },
+        {
+            "name": "Jane Smith",
+            "year": "2019-2020",
+            "description": "Focused on professional development and networking opportunities."
+        },
+        {
+            "name": "Alice Johnson",
+            "year": "2018-2019",
+            "description": "Emphasized community service and fellowship activities."
+        },
+        {
+            "name": "Michael Brown",
+            "year": "2017-2018",
+            "description": "Strengthened the club's international relations and partnerships."
+        },
+        {
+            "name": "Emily Davis",
+            "year": "2016-2017",
+            "description": "Implemented sustainable projects and initiatives."
+        },
+        {
+            "name": "David Wilson",
+            "year": "2015-2016",
+            "description": "Expanded the club's membership and outreach programs."
+        }
+    ],
+    "term": "Term",
+    "achievements":"Achievements",
     "news_and_events": "News and Events",
     "news_and_events_description": "Stay updated with our latest news and upcoming events.",
     "awards_recognition_title": "Awards and Recognition",
