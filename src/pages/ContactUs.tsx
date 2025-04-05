@@ -3,8 +3,11 @@ import { FaFacebook, FaInstagram, FaTiktok, FaTelegram, FaLinkedin } from 'react
 // import { Link } from 'react-router-dom';
 import './ContactUs.css';
 // import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa6';
+import { useTranslation } from "react-i18next";
+
 
 const ContactUs: React.FC = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -28,14 +31,14 @@ const ContactUs: React.FC = () => {
   return (
     <div className="contact-container">
       <div className="contact-form">
-        <h2>Get In Touch</h2>
-        <p>Leave us a message, and we'll get back to you as soon as possible.</p>
+        <h2>{t("get_in_touch")}</h2>
+        <p className='getintouch'>{t("get_in_touch_description")}</p>
         
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">{t("name")}:</label>
             <input
-              placeholder='Full Name'
+              placeholder={t("full_name")}
               type="text"
               id="name"
               name="name"
@@ -46,9 +49,9 @@ const ContactUs: React.FC = () => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">{t("contact_email")}:</label>
             <input
-              placeholder='Email Address'
+              placeholder={t("email_address")}
               type="email"
               id="email"
               name="email"
@@ -59,9 +62,9 @@ const ContactUs: React.FC = () => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">{t("message")}:</label>
             <textarea
-              placeholder="Write your message"
+              placeholder={t("contact_form_message")}
               id="message"
               name="message"
               value={formData.message}
@@ -71,29 +74,29 @@ const ContactUs: React.FC = () => {
             ></textarea>
           </div>
           
-          <button type="submit" className="submit-btn">Submit</button>
+          <button type="submit" className="submit-btn">{t("contact_form_submit")}</button>
         </form>
       </div>
       
       <div className="contact-info1">
-        <h2>CONTACT US</h2>
+        <h2>{t("contact_us_capitalized")}</h2>
         <div className="info-item">
-          <h3>Address</h3>
-          <p>4 Kilo, Addis Ababa, Ethiopia</p>
+          <h3>{t("address")}</h3>
+          <p>{t("address_description")}</p>
         </div>
         
         <div className="info-item">
-          <h3>Phone</h3>
+          <h3>{t("contact_phone")}</h3>
           <p>+251938594992</p>
         </div>
         
         <div className="info-item">
-          <h3>Email</h3>
-          <p>contactus@hummflytech.com</p>
+          <h3>{t("contact_email")}</h3>
+          <p>abugidarotaract@gmail.com</p>
         </div>
         
         <div className="social-links">
-          <h3>Follow Us:</h3>
+          <h3>{t("follow_us")}:</h3>
           <div className="social-icons">
             <a href="https://www.facebook.com/RACAbugida?mibextid=b06tZ0" aria-label="Facebook" className='facebook-icon'><FaFacebook/></a>
             <a href="https://www.instagram.com/rac_abugida" aria-label="Instagram" className='instagram-icon'><FaInstagram/></a>

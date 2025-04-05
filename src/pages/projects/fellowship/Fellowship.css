@@ -1,10 +1,17 @@
 /* ClubService.css */
-
+--root{
+  --primary-bg: #e4d4b3;
+  --accent: #DB5079; /* Deep cranberry */
+  --text-dark: #333;
+  --text-light: #f8f8f8;
+  --hthree:#686565;
+  --text:#667;
+}
 /* General Styling for Fellowship (Club Service) */
 .club-service {
     padding:5rem 20px;
     text-align: center;
-    background-color: #e4d4b3; /* Warm beige background */
+    background-color: var(--primary-bg); /* Warm beige background */
   }
   
   .club-service .projects-header {
@@ -13,7 +20,7 @@
   
   .club-service .projects-title {
     font-size: 2.5rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
   }
   
   .club-service .projects-description {
@@ -32,7 +39,7 @@
   /* Project Cards */
   .club-service .project-card {
     background-color: #ffffff;
-    border: 2px solid #9e1317; /* Cranberry border */
+    /* border: 2px solid #9e1317;  */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -41,7 +48,7 @@
   }
   
   .club-service .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.005);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
@@ -54,26 +61,26 @@
   
   .club-service .project-title {
     font-size: 1.5rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin: 15px 0 10px;
   }
   
   .club-service .project-text {
     font-size: 1rem;
-    color: #666;
+    color: #667;
   }
   
   /* Impact Metrics */
   .club-service .impact-metrics {
     font-size: 0.9rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin: 10px 0;
   }
   
   /* Testimonial */
   .club-service .testimonial {
     font-style: italic;
-    color: #9e1317; /* Deep cranberry */
+    color: #667; /* Deep cranberry */
     margin: 10px 0;
   }
   
@@ -84,7 +91,7 @@
   
   .club-service .gallery h4 {
     font-size: 1.2rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin-bottom: 10px;
   }
   
@@ -115,7 +122,7 @@
   
   /* Call-to-Action Button */
   .club-service .cta-button {
-    background-color: #9e1317; /* Cranberry button */
+    background-color: var(--accent); /* Cranberry button */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -123,10 +130,12 @@
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+
   }
   
   .club-service .cta-button:hover {
-    background-color: #7a0f12; /* Darker cranberry on hover */
+    background-color: #b33f62; /* Darker cranberry on hover */
   }
   
   /* Media Queries for Responsive Behavior */

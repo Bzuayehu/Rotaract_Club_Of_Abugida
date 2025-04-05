@@ -1,8 +1,10 @@
 import "./Footer.css";
 import  logo from '../assets/logo.png'
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -17,17 +19,17 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div className="footer-section">
-          <h3 className="footer-heading">Contact Us</h3>
+          <h3 className="footer-heading">{t("contact_us")}</h3>
           <ul className="contact-list">
-            <li><a href="mailto:contact@abugida.org">contact@abugida.org</a></li>
+            <li><a href="mailto:abugidarotaract@gmail.com">abugidarotaract@gmail.com</a></li>
             <li><a href="tel:+1234567890">+123 456 7890</a></li>
-            <li>Addis Ababa, Ethiopia</li>
+            <li>{t("address_description")}</li>
             <li>
               <Link 
                 to="/contact-us" 
                 className="quick-link-button"
               >
-                Contact Us
+                {t("contact_us")}
               </Link>
             </li>
           </ul>
@@ -37,18 +39,18 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className="footer-section">
-          <h3 className="footer-heading">Quick Links</h3>
+          <h3 className="footer-heading">{t("quick_links")}</h3>
           <ul className="quick-links">
-            <li><a href="/about">About Us</a></li>
+            <li><a href="/about">{t("about_us")}</a></li>
             <li><a href="/events">Events</a></li>
             <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/donate">Donate</a></li>
+            <li><a href="/donate">{t("donate")}</a></li>
           </ul>
         </div>
 
         {/* Social Media */}
         <div className="footer-section">
-          <h3 className="footer-heading">Follow Us</h3>
+          <h3 className="footer-heading">{t("follow_us")}</h3>
           <div className="social-icons">
           <a href="https://www.facebook.com/RACAbugida?mibextid=b06tZ0" aria-label="Facebook">
               <i className="fab fa-facebook"></i>

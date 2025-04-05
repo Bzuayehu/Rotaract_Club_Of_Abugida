@@ -1,10 +1,20 @@
 /* CommunityService.css */
+--root{
+    --primary-bg: #e4d4b3;
+    --accent: #DB5079; /* Deep cranberry */
+    --text-dark: #333;
+    --text-light: #f8f8f8;
+    --hthree:#686565;
+    --text:#667;
+  }
+  
+  /* Community Service Page */
 
 /* General Styling for Community Service */
 .community-service {
     padding:6rem 20px;
     text-align: center;
-    background-color: #e4d4b3; /* Warm beige background */
+    background-color: var(--primary-bg); /* Warm beige background */
   }
   
   .community-service .projects-header {
@@ -13,7 +23,7 @@
   
   .community-service .projects-title {
     font-size: 2.5rem;
-    color: #DB5079; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
   }
   
   .community-service .projects-description {
@@ -34,7 +44,7 @@
   .community-service .project-card {
     background-color: #ffffff;
     /* background: #e4d4b3; */
-    border: 2px solid #DB5079; /* Cranberry border */
+    /* border: 2px solid #DB5079;  */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -45,7 +55,7 @@
   }
   
   .community-service .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.007);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
@@ -58,26 +68,26 @@
   
   .community-service .project-title {
     font-size: 1.5rem;
-    color: #DB5079; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin: 15px 0 10px;
   }
   
   .community-service .project-text {
     font-size: 1rem;
-    color: #666;
+    color: #667;
   }
   
   /* Impact Metrics */
   .community-service .impact-metrics {
     font-size: 0.9rem;
-    color: #DB5079; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin: 10px 0;
   }
   
   /* Testimonial */
   .community-service .testimonial {
     font-style: italic;
-    color: #DB5079; /* Deep cranberry */
+    color: #667; /* Deep cranberry */
     margin: 10px 0;
   }
   
@@ -88,7 +98,7 @@
   
   .community-service .gallery h4 {
     font-size: 1.2rem;
-    color: #DB5079; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin-bottom: 10px;
   }
   
@@ -119,7 +129,7 @@
   
   /* Call-to-Action Button */
   .community-service .cta-button {
-    background-color: #DB5079; /* Cranberry button */
+    background-color: var(--accent); /* Cranberry button */
     background: linear-gradient(to top left, #ee81a1, #DB5079);
     color: #fff;
     border: none;
@@ -128,10 +138,14 @@
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+
   }
   
+  
   .community-service .cta-button:hover {
-    background-color: #c4456a; /* Darker cranberry on hover */
+    background-color: #b74265; /* Darker cranberry on hover */
+   
   
   }
   

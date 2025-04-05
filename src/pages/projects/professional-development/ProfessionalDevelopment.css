@@ -1,5 +1,13 @@
 /* ProfessionalDevelopment.css */
 
+--root{
+  --primary-bg: #e4d4b3;
+  --accent: #DB5079; /* Deep cranberry */
+  --text-dark: #333;
+  --text-light: #f8f8f8;
+  --hthree:#686565;
+  --text:#667;
+}
 /* General Styling for Professional Development */
 .professional-development {
     padding: 5rem 20px;
@@ -13,7 +21,7 @@
   
   .professional-development .projects-title {
     font-size: 2.5rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
   }
   
   .professional-development .projects-description {
@@ -32,7 +40,7 @@
   /* Project Cards */
   .professional-development .project-card {
     background-color: #ffffff;
-    border: 2px solid #9e1317; /* Cranberry border */
+    /* border: 2px solid #9e1317;  */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -54,26 +62,26 @@
   
   .professional-development .project-title {
     font-size: 1.5rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin: 15px 0 10px;
   }
   
   .professional-development .project-text {
     font-size: 1rem;
-    color: #666;
+    color: #667;
   }
   
   /* Impact Metrics */
   .professional-development .impact-metrics {
     font-size: 0.9rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin: 10px 0;
   }
   
   /* Testimonial */
   .professional-development .testimonial {
     font-style: italic;
-    color: #9e1317; /* Deep cranberry */
+    color: #667; /* Deep cranberry */
     margin: 10px 0;
   }
   
@@ -84,7 +92,7 @@
   
   .professional-development .gallery h4 {
     font-size: 1.2rem;
-    color: #9e1317; /* Deep cranberry */
+    color: var(--accent); /* Deep cranberry */
     margin-bottom: 10px;
   }
   
@@ -115,7 +123,7 @@
   
   /* Call-to-Action Button */
   .professional-development .cta-button {
-    background-color: #9e1317; /* Cranberry button */
+    background-color: var(--accent); /* Cranberry button */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -123,10 +131,12 @@
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+
   }
   
   .professional-development .cta-button:hover {
-    background-color: #7a0f12; /* Darker cranberry on hover */
+    background-color:#b74265; /* Darker cranberry on hover */
   }
   
   /* Media Queries for Responsive Behavior */

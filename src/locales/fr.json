@@ -1,6 +1,7 @@
 {
     "home":"Accueil",
     "directorship_position": "Poste de Direction",
+   "contact_us_capitalized": "CONTACTEZ NOUS",
     "contact_us": "Contactez Nous",
     "about_us": "À propos de nous",
     "donate": "Faire un don",
@@ -101,15 +102,25 @@
     "join_description": "Faites partie de notre communauté et contribuez à un monde meilleur.",
     "join_button": "Rejoignez-nous",
     "join_form_name": "Votre Nom",
+    "name"  : "Nom",
+    "full_name": "Nom Complet",
     "join_form_phone": "Votre Téléphone",
     "join_form_email": "Votre E-mail",
+    
     "contact_title": "Prenez Contact",
     "contact_description": "Vous avez des questions ou souhaitez collaborer ? Contactez-nous !",
     "contact_email": "E-mail",
+    "email_address": "Adresse E-mail",
     "contact_phone": "Téléphone",
     "contact_form_name": "Votre Nom",
     "contact_form_email": "Votre E-mail",
+    "message": "Message",
     "contact_form_message": "Votre Message",
-    "contact_form_submit": "Envoyer le Message"        
+    "contact_form_submit": "Envoyer le Message",
+    "address": "Adresse",
+    "address_description": "Addis-Abeba, Éthiopie",
+    "follow_us": "Suivez-nous",
+    "get_in_touch": "Prenez Contact",
+    "get_in_touch_description": "Nous serions ravis de vous entendre ! Que vous ayez des questions, des suggestions ou que vous souhaitiez simplement nous contacter, n'hésitez pas à nous contacter. Vos commentaires et vos demandes sont importants pour nous et nous sommes là pour vous aider. Laissez-nous un message et nous vous répondrons dans les plus brefs délais."
 }
   

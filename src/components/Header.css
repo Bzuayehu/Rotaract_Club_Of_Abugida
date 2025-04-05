@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
 }
 
 /* Background with Smooth Transition */
@@ -21,6 +20,15 @@
   background-position: center;
   z-index: 1; 
   transition: background-image 1s ease-in-out;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2; */
 }
 
 .header-background::before {
@@ -33,6 +41,16 @@
   background: linear-gradient(to top right, rgba(228, 212, 179, 0.3), rgba(217, 26, 95, 0.2));
   z-index: 1;
 }
+/* .header-background::after {
+  content: '';
+  position: absolute;
+  backdrop-filter: blur(1px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+} */
 
 /* Layout for Content */
 .header-content {
@@ -46,6 +64,9 @@
   color: #f8f8f8;
   font-size: 50px; /* Adjusted for better scaling */
   font-weight: bold;
+}
+.tagline{
+  color: #D91A5F;
 }
 
 .main-heading {
@@ -77,6 +98,67 @@
 .submit-button:hover {
   transform: scale(1.05);
 }
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* ➕ New: Left-align text */
+.left-align {
+  text-align: left;
+}
+
+/* ➕ New: Logo styling */
+.header-logo img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ➕ Wrapper for background and overlay */
+.header-background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Already existing background layer */
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  z-index: 1;
+}
+
+/* ➕ Overlay layer */
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.4); /* dark overlay */
+  backdrop-filter: blur(2px); /* optional blur for more depth */
+  z-index: 2;
+}
+
+/* Make sure header content sits above overlay */
+.header-content {
+  position: relative;
+  z-index: 3;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
@@ -100,9 +182,24 @@
     font-size: 0.9rem;
     padding: 8px 16px;
   }
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-align {
+    text-align: center;
+  }
+
+  .header-logo img {
+    max-width: 160px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
+  
   .header-container {
     padding: 80px 30px;
   }
@@ -122,6 +219,21 @@
   .submit-button {
     font-size: 0.85rem;
     padding: 8px 14px;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-align {
+    text-align: center;
+  }
+
+  .header-logo img {
+    max-width: 160px;
+    margin-bottom: 20px;
   }
 }
 
@@ -145,5 +257,19 @@
   .submit-button {
     font-size: 0.8rem;
     padding: 6px 12px;
+  }
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-align {
+    text-align: center;
+  }
+
+  .header-logo img {
+    max-width: 160px;
+    margin-bottom: 20px;
   }
 }

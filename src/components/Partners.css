@@ -1,4 +1,6 @@
 .partners {
+  backdrop-filter: blur(12px);
+  
     padding: 2rem;
     text-align: center;
   }

@@ -4,6 +4,7 @@
 
     "home": "Home",
     "directorship_position": "Directorship Position",
+    "contact_us_capitalized": "CONTACT US",
     "contact_us": "Contact Us",
     "about_us": "About Us",
     "donate": "Donate",
@@ -105,6 +106,8 @@
     "join_description": "Become a part of our community and make a difference in the world.",
     "join_button": "Join Now",
     "join_form_name": "Your Name",
+    "name": "Name",
+    "full_name": "Full Name",
     "join_form_phone": "Your Phone",
     "join_form_email": "Your Email",
     "contact_title": "Get in Touch",
@@ -113,7 +116,15 @@
     "contact_phone": "Phone",
     "contact_form_name": "Your Name",
     "contact_form_email": "Your Email",
+    "email_address": "Email Address",
+    "message": "Message",
     "contact_form_message": "Your Message",
-    "contact_form_submit": "Send Message"
+    "contact_form_submit": "Send Message",
+    "quick_links": "Quick Links",
+    "address": "Address",
+    "address_description": "Addis Ababa, Ethiopia",
+    "follow_us": "Follow Us",
+    "get_in_touch": "Get in Touch",
+    "get_in_touch_description": "We would love to hear from you! Whether you have questions, suggestions, or just want to connect, feel free to reach out to us. Your feedback and inquiries are important to us, and we are here to assist you in any way we can.  Leave us a message, and we'll get back to you as soon as possible."
 }
   

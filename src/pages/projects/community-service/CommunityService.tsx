@@ -1,7 +1,65 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
+// import bd from "../../../assets/Blood Donation/65th_1.jpg";
+import bloodDonation1 from "../../../assets/Blood Donation/65th_1.jpg";
+import bloodDonation2 from "../../../assets/Blood Donation/65th_11.jpg";
+import bloodDonation3 from "../../../assets/Blood Donation/65th_8.jpg";
+
+//brana project
+import bp from "../../../assets/Book Donation/bookdonation.jpg";
+import bp1 from "../../../assets/Book Donation/bookdonation2.jpg";
+import bp2 from "../../../assets/Book Donation/bookdonation6.jpg";
+import bp3 from "../../../assets/Book Donation/bookdonation4.jpg";
+
+//sanitary pad
+// import sp from "../../../assets/Blood Donation/65th_8.jpg";
+// import sp1 from "../../../assets/Blood Donation/65th_8.jpg";
+// import sp2 from "../../../assets/Blood Donation/65th_8.jpg";
+// import sp3 from "../../../assets/Blood Donation/65th_8.jpg";
+
+//school feeding
+// import sf from "../../../assets/Blood Donation/65th_8.jpg";
+// import sf1 from "../../../assets/Blood Donation/65th_8.jpg";
+// import sf2 from "../../../assets/Blood Donation/65th_8.jpg";
+// import sf3 from "../../../assets/Blood Donation/65th_8.jpg";
+
+//yewedekutn Ansu
+// import ya from "../../../assets/Blood Donation/65th_8.jpg";
+// import ya1 from "../../../assets/Blood Donation/65th_8.jpg";
+// import ya2 from "../../../assets/Blood Donation/65th_8.jpg";
+// import ya3 from "../../../assets/Blood Donation/65th_8.jpg";
+
+//Extending Love
+// import el from "../../../assets/Blood Donation/65th_8.jpg";
+// import el1 from "../../../assets/Blood Donation/65th_8.jpg";
+// import el2 from "../../../assets/Blood Donation/65th_8.jpg";
+// import el3 from "../../../assets/Blood Donation/65th_8.jpg";
+
+//School painting
+import scp from "../../../assets/School Painting/photo_2025-03-31_18-13-05.jpg";
+import scp1 from "../../../assets/School Painting/photo_2025-03-31_18-13-10.jpg";
+import scp2 from "../../../assets/School Painting/photo_2025-03-31_18-12-55.jpg";
+import scp3 from "../../../assets/School Painting/photo_2025-03-31_18-12-43.jpg";
+
+//Addis Holiday Lunch
+// import ahl from "../../../assets/Blood Donation/65th_8.jpg";
+// import ahl1 from "../../../assets/Blood Donation/65th_8.jpg";
+// import ahl2 from "../../../assets/Blood Donation/65th_8.jpg";
+// import ahl3 from "../../../assets/Blood Donation/65th_8.jpg";
+
+//Blanket Donation
+// import bld from "../../../assets/Blood Donation/65th_8.jpg";
+// import bld1 from "../../../assets/Blood Donation/65th_8.jpg";
+// import bld2 from "../../../assets/Blood Donation/65th_8.jpg";
+// import bld3 from "../../../assets/Blood Donation/65th_8.jpg";
+
+//eye vision
+// import ev from "../../../assets/Blood Donation/65th_8.jpg";
+// import ev1 from "../../../assets/Blood Donation/65th_8.jpg";
+// import ev2 from "../../../assets/Blood Donation/65th_8.jpg";
+// import ev3 from "../../../assets/Blood Donation/65th_8.jpg";
+
 // import meeting from "../../../assets/Blood Donation/65th_1.jpg";
 // import meeting from "../../../assets/Blood Donation/65th_1.jpg";
 // import meeting from "../../../assets/Blood Donation/65th_1.jpg";
@@ -22,7 +80,7 @@ const communityProjects = [
     title: "Blood Donation",
     description: "Organizing blood donation drives to support local hospitals and save lives.",
     image: meeting,
-    gallery: [meeting, meeting, meeting], // Replace with actual images
+    gallery: [bloodDonation1, bloodDonation2, bloodDonation3], // Replace with actual images
     impact: "500+ lives saved",
     testimonial: "The blood donation drive was a lifesaver for many in our community. - Participant",
   },
@@ -30,8 +88,8 @@ const communityProjects = [
     id: "branaProject", // Unique ID for routing
     title: "Brana Project",
     description: "A community development initiative focused on improving local infrastructure.",
-    image: meeting,
-    gallery: [meeting, meeting, meeting], // Replace with actual images
+    image: bp,
+    gallery: [bp1, bp2, bp3], // Replace with actual images
     impact: "10+ infrastructure projects completed",
     testimonial: "The Brana Project has transformed our neighborhood. - Local Resident",
   },
@@ -75,8 +133,8 @@ const communityProjects = [
     id: "schoolPainting", // Unique ID for routing
     title: "School Painting",
     description: "Beautifying school environments through painting and renovation.",
-    image: meeting,
-    gallery: [meeting, meeting, meeting], // Replace with actual images
+    image: scp,
+    gallery: [scp1, scp2, scp3], // Replace with actual images
     impact: "10+ schools renovated",
     testimonial: "The school painting project has created a better learning environment. - Teacher",
   },
