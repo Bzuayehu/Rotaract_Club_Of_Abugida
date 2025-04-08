@@ -59,8 +59,7 @@ export default function About() {
           <h2>Our Meetings</h2>
           <p>
             Our general assemblies are held every two weeks at the National Blood Bank (Red Cross) near Addis Ababa stadium 
-            on Sundays at 10:00 LT. We start by toasting to Ethiopia and conclude by toasting to Rotary International, 
-            reinforcing our commitment to community service and global impact.
+            on Sundays at 9:00 LT.
           </p>
         </section>
   
@@ -72,7 +71,7 @@ export default function About() {
             leadership development, or networking opportunities, the Rotaract Club of Abugida provides a platform to grow and contribute.
           </p>
           <p>
-            <strong>Join us and be part of the change!</strong>
+            <strong><a href="page.html#joinus">Join us and be part of the change!</a></strong>
           </p>
         </section>
   

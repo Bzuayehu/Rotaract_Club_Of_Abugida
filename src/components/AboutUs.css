@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 50px 10%;
   gap: 30px;
-  position:sticky;
+  position:relative;
   bottom: 5%;
   padding-top: 10rem;
 

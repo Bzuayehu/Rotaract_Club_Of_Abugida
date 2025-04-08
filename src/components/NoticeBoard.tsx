@@ -42,42 +42,26 @@ We are doing a second round card sorting come JOIN US!!! Register on the link be
 
 💪🏾💪🏾💪🏾Working together for a better outcome 💪🏾💪🏾💪🏾`,
       image: blooddonation,
-    },{
-      title: "Artist Call Out",
-      description: `🎉 Join Us for the SLEEPOVER FELLOWSHIP! 🎉
-
-Get ready for an unforgettable night filled with fun, laughter, and adventure! 🌟
-
-📅 Date: December 28, 2024  
-🕒 Time: 9:30 LT (Dont be late)
-📍 Location: Piassa, in front of St. George Church 
-
-Price: 250 ETB  
-Bank Accounts:
-- Tensae / Solomon  
-  - BOA: 197804645  
-  - CBE: 1000649057889  
-
-📝 Register Here: https://forms.gle/iXg6PJev1AdqQbvF9
-
-       Activities:
-✨ Delicious Dinner
-🎲 Exciting Games and Activities 
-🏞️ Morning Hiking Adventure  
-🔥 Cozy Campfire
-📷 Capturing memories
-
-Don't Forget to Bring:
-🧺 A mini blanket  
-🧥 A warm jacket  
-👟 Appropriate shoes for hiking 
-
-📞 Contact Us:
-     Alex: 0941229771  
-    Tensae: 0912911344  
-
-We can't wait to see you there for a night of memories and fun!! ✨`,
-      image: sleepover,
+    },{  title: "Artists Call Out",
+      description: `📣✨ Calling All Artists! 🎨 Unleash Your Creativity and Make a Difference! ✨
+    
+    Are you an artist with a passion for creating and a desire to make a positive impact? 💖 The Rotaract Club of Abugida is hosting a fundraising art exhibition 🖼 to support The Rotary Foundation, and we're looking for talented individuals like you to showcase their work! 🌟
+    
+    Here's what you'll get from the exhibition:
+    • Showcase your art & reach a wider audience. 📣
+    • Give back & support impactful projects. 🙌
+    • Connect with fellow artists & share your passion. 🤝
+    
+    ➡️ Register here🔗 (https://forms.gle/VdxK2v58dMcMaAf46)  before the deadline! ⏳
+    
+    • Deadline for registration: April 17 🗓
+    
+    • Contact information:
+      📞 +251 96 906 3839 (Bizuayehu)
+      📱 +251 91 291 1344 (Tensae)
+    
+    Spread the word and share this call with your fellow artists! 🗣 Let's make this exhibition a success! 🎉`,
+      image: sleepover, // Replace this with your actual image reference
     },
   ];
 

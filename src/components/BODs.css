@@ -95,14 +95,21 @@
 }
 
 .past-presidents-link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
+  /* border:2px solid #DB5079; */
+  align-items: center;
+
 }
 
 .animated-icon {
   font-size: 3rem; /* Bigger size */
   color: #DB5079;  
   animation: bounce 1.5s infinite; /* Add bounce animation */
+  /* display: inline-block; */
+  /* border:2px solid #DB5079; */
 }
 
 @keyframes bounce {

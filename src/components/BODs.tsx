@@ -34,7 +34,7 @@ export default function  BODs() {
       image: president,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        telegram: 'https://twitter.com',
+        telegram: 'https://t.me/TensuBeke',
         facebook: 'https://facebook.com',
       },
     },
@@ -45,7 +45,7 @@ export default function  BODs() {
       image: Ipp,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -56,7 +56,7 @@ export default function  BODs() {
       image: vice,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -67,7 +67,7 @@ export default function  BODs() {
       image: communityServc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -78,7 +78,7 @@ export default function  BODs() {
       image: clubservc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -89,7 +89,7 @@ export default function  BODs() {
       image: Pr,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -100,7 +100,7 @@ export default function  BODs() {
       image: secretary,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -111,7 +111,7 @@ export default function  BODs() {
       image: membership,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://t.me/maranatajesus1',
         facebook: 'https://facebook.com',
       },
     },
@@ -122,7 +122,7 @@ export default function  BODs() {
       image: treasurer,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -133,7 +133,7 @@ export default function  BODs() {
       image: sergntArm,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -144,7 +144,7 @@ export default function  BODs() {
       image: trf,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -155,7 +155,7 @@ export default function  BODs() {
       image: projectOfcr,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -166,7 +166,7 @@ export default function  BODs() {
       image: grc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -177,7 +177,7 @@ export default function  BODs() {
       image: fundraising,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -188,7 +188,7 @@ export default function  BODs() {
       image: interact,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -199,7 +199,7 @@ export default function  BODs() {
       image: internationalServc,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -210,7 +210,7 @@ export default function  BODs() {
       image: professionalDev,
       socialMedia: {
         linkedin: 'https://www.linkedin.com',
-        twitter: 'https://twitter.com',
+        telegram: 'https://twitter.com',
         facebook: 'https://facebook.com',
       },
     },
@@ -239,7 +239,7 @@ export default function  BODs() {
               <a href={member.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <Link to={`${member.socialMedia.twitter}`} target="_blank" rel="noopener noreferrer">
+              <Link to={`${member.socialMedia.telegram}`} target="_blank" rel="noopener noreferrer">
                 <FaTelegram />
               </Link>
               <a href={member.socialMedia.facebook} target="_blank" rel="noopener noreferrer">

@@ -5,7 +5,9 @@ export default function JoinUs() {
   const { t } = useTranslation();
 
   return (
+    
     <section id="joinus" className="contact-section">
+      <a id="joinus" />
       <div className="container">
         <div>
           <h2 className="title">{t("join_title")}</h2>

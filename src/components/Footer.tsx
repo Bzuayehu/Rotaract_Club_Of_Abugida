@@ -10,11 +10,11 @@ export default function Footer() {
       <div className="footer-container">
         {/* Club Logo Section */}
         <div className="footer-section">
-          <img 
+          <a href={"/"}><img 
             src={logo}  // Update with your logo path
             alt="Rotaract Club of Abugida Logo"
             className="club-logo"
-          />
+          /></a>
         </div>
 
         {/* Contact Info */}
