@@ -27,28 +27,23 @@ const AwardsSection = () => {
 
   const awards = [
     {
-      title: 'Best Community Service',
-      description: '26th District Conference Assembly (DCA), 2012/13',
+      key:'best_community_service',
       image: image,
     },
     {
-      title: 'Best Club Of The Year',
-      description: 'Ethiopia Rotaract Country Team, 2013/14',
+      key:'best_club_year',
       image:image,
     },
     {
-      title: 'Blood Donation',
-      description: 'Ministry of Health, 2015/16',
+      key:'blood_donation',
       image: image,
     },
     {
-      title: 'Tana Awards',
-      description: 'Held in Bahir Dar, 2018/19',
+      key:'tana_awards',
       image: image,
     },
     {
-      title: 'Summer Volunteer',
-      description: 'Addis Ababa City Administration, 2020/21',
+      key:'summer_volunteer',
       image: image,
     },
   ];
@@ -59,7 +54,7 @@ const AwardsSection = () => {
       <p>{t('awards_recognition_description')}</p>
       <div className="award-grid">
         {awards.map((award, index) => (
-          <AwardCard key={index} title={award.title} description={award.description} image={award.image} />
+          <AwardCard key={index} title={t(`${award.key}.title`)} description={t(`${award.key}.description`)} image={award.image} />
         ))}
       </div>
     </section>

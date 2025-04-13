@@ -94,6 +94,29 @@
     "news_and_events_description": "Restez informé de nos dernières nouvelles et événements à venir.",
     "awards_recognition_title": "Prix et Reconnaissances",
     "awards_recognition_description": "Nous sommes fiers d'avoir reçu les prix et reconnaissances suivants pour notre travail.",
+
+    "best_community_service": {
+    "title": "Meilleur service communautaire",
+    "description": "26e Assemblée de la Conférence de District (DCA), 2012/13"
+  },
+  "best_club_year": {
+    "title": "Meilleur club de l'année",
+    "description": "Équipe nationale Rotaract Éthiopie, 2013/14"
+  },
+  "blood_donation": {
+    "title": "Don de sang",
+    "description": "Ministère de la Santé, 2015/16"
+  },
+  "tana_awards": {
+    "title": "Prix Tana",
+    "description": "Tenue à Bahir Dar, 2018/19"
+  },
+  "summer_volunteer": {
+    "title": "Bénévole d'été",
+    "description": "Administration municipale d'Addis-Abeba, 2020/21"
+  },
+
+    "see_more": "Voir plus",
     "projectss": "Projets",
     "community_service": "Service Communautaire",
     "professional_development": "Développement Professionnel",
@@ -117,6 +140,7 @@
     "message": "Message",
     "contact_form_message": "Votre Message",
     "contact_form_submit": "Envoyer le Message",
+    "quick_links": "Liens Rapides",
     "address": "Adresse",
     "address_description": "Addis-Abeba, Éthiopie",
     "follow_us": "Suivez-nous",

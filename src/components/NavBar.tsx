@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import Logo from "../assets/logo.png";
 import "./NavBar.css";
 import { useTranslation } from "react-i18next";
@@ -84,6 +84,7 @@ export default function NavBar() {
           >
             <option value="en">EN</option>
             <option value="fr">FR</option>
+            <option value="am">AM</option>
           </select>
           <Link to="/donate" className="submit-button nav-link">
             {t("donate")}

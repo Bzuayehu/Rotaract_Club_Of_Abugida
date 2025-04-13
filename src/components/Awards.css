@@ -78,6 +78,8 @@
 .award-card:hover i {
     color: #FFD700;
 }
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .awards-section h2 {

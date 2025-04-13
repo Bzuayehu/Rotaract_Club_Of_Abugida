@@ -11,6 +11,8 @@ import banner1 from "../assets/Blood Donation/65th_3.jpg";
 import banner2 from "../assets/Buhe Fellowship/buhe_6.jpg";
 import banner3 from "../assets/Book Donation/bookdonation.jpg";
 import banner4 from "../assets/Buhe Fellowship/buhe_7.jpg";
+import banner5 from "../assets/General/Grand-palace-TRF.jpg";
+
 
 import rotract_logo from "../assets/RotOnlyLogo.png"; // Corrected typo: rotract_logo
 
@@ -21,7 +23,7 @@ const PARALLAX_AMOUNT = 200; // Increased parallax effect
 
 const Header = () => {
   const { t } = useTranslation();
-  const backgrounds = [banner1, banner2, banner3, banner4];
+  const backgrounds = [banner1, banner2, banner3, banner4,banner5];
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -338,6 +340,8 @@ const Header = () => {
             d="M0,64 C240,112,480,112,720,64 S1200,16, 1440,64 L1440,120 L0,120 Z"
             // fill="url(#curveGradient)" // Optional: Use gradient fill
             fill="#eeddb9" // Or use solid color
+            // fill="#181819"
+
             className="text-white" // Or match your page background color below the header
           ></path>
         </svg>

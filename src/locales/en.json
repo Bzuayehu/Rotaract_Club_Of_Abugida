@@ -98,6 +98,28 @@
     "news_and_events_description": "Stay updated with our latest news and upcoming events.",
     "awards_recognition_title": "Awards and Recognition",
     "awards_recognition_description": "We are proud to have received the following awards and recognition for our work.",
+
+    "best_community_service": {
+        "title": "Best Community Service",
+        "description": "26th District Conference Assembly (DCA), 2012/13"
+    },
+    "best_club_year": {
+        "title": "Best Club Of The Year",
+        "description": "Ethiopia Rotaract Country Team, 2013/14"
+    },
+    "blood_donation": {
+        "title": "Blood Donation",
+        "description": "Ministry of Health, 2015/16"
+    },
+    "tana_awards": {
+        "title": "Tana Awards",
+        "description": "Held in Bahir Dar, 2018/19"
+    },
+    "summer_volunteer": {
+        "title": "Summer Volunteer",
+        "description": "Addis Ababa City Administration, 2020/21"
+    },
+    "see_more": "See More",
     "projectss": "Projects",
     "community_service": "Community Service",
     "professional_development": "Professional Development",

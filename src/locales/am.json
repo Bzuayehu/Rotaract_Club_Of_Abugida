@@ -1,0 +1,148 @@
+{
+    "home": "መነሻ",
+    "directorship_position": "የአሰራር አባል ስራ",
+    "contact_us_capitalized": "አግኙን",
+    "contact_us": "አግኙን",
+    "about_us": "ስለ እኛ",
+    "donate": "ዕርዳታ",
+    "club_name": "የአቡጊዳ ሮታራክት ክለብ",
+    "tagline": "የወጣት አመራሮች ግሎባል ንቅናቄ ይቀላቀሉ",
+    "mission": "በማህበረሰብ አገልግሎት፣ አመራር እና ግኝት የተሻለ ዓለም ለመገንባት እርምጃ መውሰድ።",
+    "join_movement": "ንቅናቄውን ይቀላቀሉ",
+    "get_to_know_the_team":"ቡድኑን ይወቁ",
+    "providing_service_above":"ራስን በላይ የማህበረሰብ አገልግሎት መስጠት",
+    "about_us_title": "ስለ እኛ",
+    "about_us_paragraph_1": "የሮተራክት ክለብ አቡጊዳ በጁን 2002 ተመሠርቶ በጁን 23፣ 2003 የተፈቀደለት ነው። ከተመሠረተ ጊዜ ጀምሮ ክለቡ በማህበረሰብ፣ ሙያዊ እና ወዳጅነት ፕሮጀክቶች ውስጥ በመሳተፍ ለማህበረሰቡ አስተዋፅዖ አድርጓል። ክለቡ ፕሮጀክቶቹ በማህበረሰቡ እና አባሎቹ ላይ ጉልህ ተጽዕኖ እንዳሳደረው ያምናል።",
+    "about_us_paragraph_2": "የሮተራክት ክለብ አቡጊዳ 150 የተመዘገቡ እና 50 እስከ 80 ንቁ አባሎች አሉት። እነዚህ አባሎች ከፍተኛ ቁርጠኝነት ያላቸው እና ክለቡ በሚወስዳቸው እያንዳንዱ ፕሮጀክት ተጠያቂ ናቸው።",
+    "about_us_paragraph_3": "አጠቃላይ ስብሰባዎች በየሁለት ሳምንቱ በአዲስ አበባ ስታዲየም አካባቢ በቀድሞው የደም ባንክ (ቀይ መስቀል) በእለት 10፡00 ይካሄዳሉ። ስብሰባዎቹ በኢትዮጵያ ላይ ተከብረው ይጀምራሉ እና በሮተሪ ኢንተርናሽናል ላይ ተከብረው ያበቃሉ። ክለባችን ከ8 በላይ የማህበረሰብ አገልግሎት ፕሮጀክቶችን፣ ከሙያዊ አገልግሎት እንቅስቃሴዎች እና ወዳጅነት ጋር ያበረታታል። ክለቡ ያከናወናቸው ፕሮጀክቶች እና ዝግጅቶች ከዚህ በታች ባሉ አጭር መግለጫዎች ይገኛሉ።",
+    "news_title": "ዜና እና መጪ ዝግጅቶች",
+    "news_description": "እዚህ አንዳንድ የለገሱ እና መጪ ዝግጅቶች ይገኛሉ",
+    "projects_title": "የእኛ ፕሮጀክቶች",
+    "projects_description": "በተለያዩ አስተዋፅዖ ያላቸው ተቋማት ልዩነት ለማምጣት ቁርጠኛ ነን።",
+    "projects": [
+        {
+        "title": "ማህበረሰብ አገልግሎት",
+        "description": "ማህበረሰቡን ለማሻሻል እና ለተፈላጊዎች ድጋፍ አስተዋፅዖ ያላቸው ፕሮጀክቶችን እንተገብራለን።"
+        },
+        {
+        "title": "ሙያዊ ልማት",
+        "description": "አባሎች ሙያቸውን እንዲያዳብሩ የሚረዱ ስልጠናዎች እና አውደ ርዕዮቶች።"
+        },
+        {
+        "title": "ወዳጅነት እንቅስቃሴዎች",
+        "description": "ጠንካራ ወዳጅነት እና ግንኙነቶች ለመገንባት የመስተጋብር ዝግጅቶች።"
+        }
+    ],
+    "BOD_Title":"የአሰራር አባላትን ይገናኙ",
+    "President": "ፕሬዝዳንት",
+    "Vice_President": "ምክትል ፕሬዝዳንት",
+    "Secretary": "ሴክሬተር",
+    "Treasurer": "ቤተ መንገሻ",
+    "Community_Service_Director": "የማህበረሰብ አገልግሎት ዳይሬክተር",
+    "Club_Service_Director": "የክለብ �ለገልጋይ ዳይሬክተር",
+    "Public_Relations_Director": "የህዝብ ግንኙነት ዳይሬክተር",
+    "Memebership_Extension_and_Retention_Director": "የአባልነት ማስፋፊያ እና ቅሬታ ዳይሬክተር",
+    "Sergeant_at_Arms_Director": "የሥነ ሥርዓት ዳይሬክተር",
+    "The_Rotary_Foundation_Director": "የሮተሪ ፋውንዴሽን ዳይሬክተር", 
+    "International_Service_Director": "የዓለም አቀፍ አገልግሎት ዳይሬክተር",
+    "Green_Rotaract_Concept_Director": "አረንጓዴ ሮተራክት ፅንሰ-ሀሳብ ዳይሬክተር",
+    "Fundraising_Director": "ገንዘብ ማሰባሰብ ዳይሬክተር",
+    "Project_Officer": "የፕሮጀክት አሰራሚ",
+    "Interact_Director": "የኢንተራክት ዳይሬክተር",
+    "Professional_Development_Director": "የሙያዊ ልማት ዳይሬክተር",
+    "Immediate_Past_President": "የቅርብ ጊዜ ፕሬዝዳንት",
+    "Rotaract_Club_of_Abugida": "የአቡጊዳ ሮታራክት ክለብ",
+
+    "Past_Presidents": "የቀድሞ ፕሬዝዳንቶች",
+    "Explore_the_legacy_of_our_past_leaders": "የቀድሞ ፕሬዝዳንቶቻቸንን ስራዎች ይመልከቱ",
+    "pastPresidents": [
+        {
+            "name": "ጆን ዶው",
+            "year": "2020-2021",
+            "description": "ክለቡን በእድገት እና በማህበረሰብ አገልግሎት ዓመት አስተዳድሯል።"
+        },
+        {
+            "name": "ጄን ስሚት",
+            "year": "2019-2020",
+            "description": "በሙያዊ ልማት እና የመስተጋብር እድሎች ላይ ተሰማርቷል።"
+        },
+        {
+            "name": "አሊስ ጆንሰን",
+            "year": "2018-2019",
+            "description": "በማህበረሰብ አገልግሎት እና ወዳጅነት እንቅስቃሴዎች ላይ አተኩሯል።"
+        },
+        {
+            "name": "ማይክል ብራውን",
+            "year": "2017-2018", 
+            "description": "የክለቡን ዓለም አቀፍ ግንኙነቶች እና ትብብሮች አጠናክሯል።"
+        },
+        {
+            "name": "ኢሚሊ ዴቪስ",
+            "year": "2016-2017",
+            "description": "በተቀጣጠሉ ፕሮጀክቶች እና ተቋማት ተግባራዊ አድርጓል።"
+        },
+        {
+            "name": "ዴቪድ ዊልሰን",
+            "year": "2015-2016",
+            "description": "የክለቡን አባልነት እና የድረስ ፕሮግራሞች አስፋቷል።"
+        }
+    ],
+    "our_partners":"የእኛ ትብብር አድራጊዎች",
+    "term": "ዘመን",
+    "achievements":"ውጤቶች",
+    "news_and_events": "ዜና እና ዝግጅቶች",
+    "news_and_events_description": "በየጊዜው ከእኛ ጋር የተዘመኑ ዜናዎችን እና ዝግጅቶችን ይከታተሉ።",
+    "awards_recognition_title": "ሽልማቶች እና ታዋቂነት",
+    "awards_recognition_description": "ለስራችን የሚከተሉትን ሽልማቶች እና ተጠቂነት ስናገኝ የምንኮራ ነው።",
+
+    "best_community_service": {
+    "title": "የማህበረሰብ አገልግሎት ሽልማት",
+    "description": "26ኛው የወረዳ ጉባኤ (DCA), 2012/13"
+  },
+  "best_club_year": {
+    "title": "የዓመቱ ምርጥ ክለብ",
+    "description": "ኢትዮጵያ ሮተራክት አገር ቡድን, 2013/14"
+  },
+  "blood_donation": {
+    "title": "የደም ልገሳ",
+    "description": "ጤና ሚኒስቴር, 2015/16"
+  },
+  "tana_awards": {
+    "title": "ጣና ሽልማት",
+    "description": "ባሕር ዳር የተካሄደ, 2018/19"
+  },
+  "summer_volunteer": {
+    "title": "የበጋ እርዳታ",
+    "description": "አዲስ አበባ ከተማ አስተዳደር, 2020/21"
+  },
+
+   "see_more": "በዚህ ይመልከቱ",
+    "projectss": "ፕሮጀክቶች",
+    "community_service": "ማህበረሰብ አገልግሎት",
+    "professional_development": "ሙያዊ ልማት", 
+    "fellowships": "ወዳጅነቶች",
+    "join_title": "እኛን ይቀላቀሉ",
+    "join_description": "በአለም ላይ �ውጥ ለማምጣት የእኛ ማህበረሰብ �ባል ይሁኑ።",
+    "join_button": "አሁን ይቀላቀሉ",
+    "join_form_name": "ስምዎ",
+    "name": "ስም",
+    "full_name": "ሙሉ ስም",
+    "join_form_phone": "ስልክ ቁጥርዎ",
+    "join_form_email": "ኢሜልዎ",
+    "contact_title": "አግኙን",
+    "contact_description": "ጥያቄዎች �ይም ትብብር ይፈልጋሉ? ያግኙን!",
+    "contact_email": "ኢሜል",
+    "contact_phone": "ስልክ",
+    "contact_form_name": "ስምዎ", 
+    "contact_form_email": "ኢሜልዎ",
+    "email_address": "የኢሜል አድራሻ",
+    "message": "መልእክት",
+    "contact_form_message": "መልእክትዎ",
+    "contact_form_submit": "መልእክት ላክ",
+    "quick_links": "ፈጣን አገናኞች",
+    "address": "አድራሻ",
+    "address_description": "አዲስ አበባ፣ ኢትዮጵያ",
+    "follow_us": "ተከተሉን",
+    "get_in_touch": "አግኙን",
+    "get_in_touch_description": "ከእርስዎ መስማት እንደምንወድ! ጥያቄ፣ አስተያየት ወይም በቀላሉ ለመገናኘት የሚፈልጉ ከሆነ ነፃነት ይውሰዱ። አስተያየትዎ እና ጥያቄዎትዎ ለእኛ አስፈላጊ ናቸው፣ እና በማንኛውም መንገድ ለመርዳት ዝግጁ ነን። መልእክትዎን ይተውልን፣ እናም በተቻለ ፍጥነት እንመለሳለን።"
+}
