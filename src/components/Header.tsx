@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import banner1 from "../assets/Blood Donation/65th_3.jpg";
-import banner2 from "../assets/Buhe Fellowship/buhe_6.jpg";
+// import banner2 from "../assets/Buhe Fellowship/buhe_6.jpg";
 import banner3 from "../assets/Book Donation/bookdonation.jpg";
 import banner4 from "../assets/Buhe Fellowship/buhe_7.jpg";
 import banner5 from "../assets/General/Grand-palace-TRF.jpg";
@@ -24,7 +24,7 @@ const PARALLAX_AMOUNT = 200; // Increased parallax effect
 
 const Header = () => {
   const { t } = useTranslation();
-  const backgrounds = [banner1, banner2, banner3, banner4,banner5,banner6];
+  const backgrounds = [banner1, banner3, banner4,banner5,banner6];
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
