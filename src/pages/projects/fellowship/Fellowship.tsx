@@ -8,10 +8,10 @@
 
 
 //Buhe Fellowship
-import buheFellowship from "../../../assets/Buhe_Fellowship/buhe_13_withGuest.jpg";
-import buheFellowship1 from "../../../assets/Buhe_Fellowship/buhe_7.jpg";
-import buheFellowship2 from "../../../assets/Buhe_Fellowship/buhe_12.jpg";
-import buheFellowship3 from "../../../assets/Buhe_Fellowship/buhe_2.jpg";
+import buheFellowship from "../../../assets/Buhe-Fellowship/buhe_13_withGuest.jpg";
+import buheFellowship1 from "../../../assets/Buhe-Fellowship/buhe_7.jpg";
+import buheFellowship2 from "../../../assets/Buhe-Fellowship/buhe_12.jpg";
+import buheFellowship3 from "../../../assets/Buhe-Fellowship/buhe_2.jpg";
 // import buheFellowship4 from "../../../assets/Buhe Fellowship/buhe_9.jpg";
 // import buheFellowship5 from "../../../assets/Buhe Fellowship/buhe_10.jpg";
 // import buheFellowship6 from "../../../assets/Buhe Fellowship/buhe_11.jpg";
@@ -26,10 +26,10 @@ import coffeeTime3 from "../../../assets/Coffee-time/photo_2025-03-28_20-40-02.j
 // import coffeeTime6 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-10.jpg";
 
 //Sleepover
-import sleepover from "../../../assets/Sleep_Over/IMG_20250403_103904_043.jpg";
-import sleepover1 from "../../../assets/Sleep_Over/IMG_20250403_103930_280.jpg";
-import sleepover2 from "../../../assets/Sleep_Over/IMG_20250403_103937_375.jpg";
-import sleepover3 from "../../../assets/Sleep_Over/IMG_20250403_110129_718.jpg";
+import sleepover from "../../../assets/Sleep-Over/IMG_20250403_103904_043.jpg";
+import sleepover1 from "../../../assets/Sleep-Over/IMG_20250403_103930_280.jpg";
+import sleepover2 from "../../../assets/Sleep-Over/IMG_20250403_103937_375.jpg";
+import sleepover3 from "../../../assets/Sleep-Over/IMG_20250403_110129_718.jpg";
 // import sleepover4 from "../../../assets/Sleep Over/IMG_20250403_110445_794.jpg";
 
 
@@ -43,10 +43,10 @@ import trips from "../../../assets/Trip/photo_2025-04-06_14-16-59.jpg";
 import trips1 from "../../../assets/Trip/pic1.jpg";
 import trips2 from "../../../assets/Trip/photo_2025-04-05_20-12-53.jpg";
 import trips3 from "../../../assets/Trip/photo_2025-04-15_21-47-33.jpg";
-import trips4 from "../../../assets/Trip/abc_2926.png";
-import trips5 from "../../../assets/Trip/abc_3247.png";
-import trips6 from "../../../assets/Trip/abc_3250.png";
-import trips7 from "../../../assets/Trip/abc_3258.png";
+import trips4 from "../../../assets/Trip/abc-2926.png";
+import trips5 from "../../../assets/Trip/abc-3247.png";
+import trips6 from "../../../assets/Trip/abc-3250.png";
+import trips7 from "../../../assets/Trip/abc-3258.png";
 
 
 // import trips1 from "../../../assets/Trips/trips_1.jpg";

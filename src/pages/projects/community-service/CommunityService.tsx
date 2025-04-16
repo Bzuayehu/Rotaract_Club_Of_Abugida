@@ -13,12 +13,12 @@ import bp2 from "../../../assets/Book Donation/bookdonation6.jpg";
 import bp3 from "../../../assets/Book Donation/bookdonation4.jpg";
 
 //sanitary pad
-import sp from "../../../assets/Sanitary_Pad/photo_10_2025-02-26_10-26-07.jpg";
-import sp1 from "../../../assets/Sanitary_Pad/photo_11_2025-02-26_10-26-07.jpg";
-import sp2 from "../../../assets/Sanitary_Pad/photo_12_2025-02-26_10-26-07.jpg";
-import sp3 from "../../../assets/Sanitary_Pad/photo_3_2025-02-26_10-26-07.jpg";  
-import sp4 from "../../../assets/Sanitary_Pad/photo_4_2025-02-26_10-26-07.jpg";
-import sp5 from "../../../assets/Sanitary_Pad/photo_9_2025-02-26_10-26-07.jpg";
+import sp from "../../../assets/Sanitary-Pad/photo_10_2025-02-26_10-26-07.jpg";
+import sp1 from "../../../assets/Sanitary-Pad/photo_11_2025-02-26_10-26-07.jpg";
+import sp2 from "../../../assets/Sanitary-Pad/photo_12_2025-02-26_10-26-07.jpg";
+import sp3 from "../../../assets/Sanitary-Pad/photo_3_2025-02-26_10-26-07.jpg";  
+import sp4 from "../../../assets/Sanitary-Pad/photo_4_2025-02-26_10-26-07.jpg";
+import sp5 from "../../../assets/Sanitary-Pad/photo_9_2025-02-26_10-26-07.jpg";
 
 //school feeding
 // import sf from "../../../assets/Blood Donation/65th_8.jpg";
@@ -43,12 +43,12 @@ import el5 from "../../../assets/Extending Love /photo_91_2025-02-26_10-26-07.jp
 
 
 //School painting
-import scp from "../../../assets/School_Painting/scp_best.jpg";
-import scp1 from "../../../assets/School_Painting/scp18_best.jpg";
-import scp2 from "../../../assets/School_Painting/photo_2025-03-31_18-12-43.jpg";
-import scp3 from "../../../assets/School_Painting/photo_2025-03-31_18-13-05.jpg";
-import scp4 from "../../../assets/School_Painting/photo_2025-03-31_18-12-55.jpg";
-import scp5 from "../../../assets/School_Painting/photo_2025-03-31_18-13-10.jpg";
+import scp from "../../../assets/School-Painting/scp_best.jpg";
+import scp1 from "../../../assets/School-Painting/scp18_best.jpg";
+import scp2 from "../../../assets/School-Painting/photo_2025-03-31_18-12-43.jpg";
+import scp3 from "../../../assets/School-Painting/photo_2025-03-31_18-13-05.jpg";
+import scp4 from "../../../assets/School-Painting/photo_2025-03-31_18-12-55.jpg";
+import scp5 from "../../../assets/School-Painting/photo_2025-03-31_18-13-10.jpg";
 
 
 
