@@ -43,10 +43,10 @@ import trips from "../../../assets/Trip/photo_2025-04-06_14-16-59.jpg";
 import trips1 from "../../../assets/Trip/pic1.jpg";
 import trips2 from "../../../assets/Trip/photo_2025-04-05_20-12-53.jpg";
 import trips3 from "../../../assets/Trip/photo_2025-04-15_21-47-33.jpg";
-import trips4 from "../../../assets/Trip/ABC_2926.JPG";
-import trips5 from "../../../assets/Trip/ABC_3247.JPG";
-import trips6 from "../../../assets/Trip/ABC_3250.JPG";
-import trips7 from "../../../assets/Trip/ABC_3258.JPG";
+import trips4 from "../../../assets/Trip/abc_2926.png";
+import trips5 from "../../../assets/Trip/abc_3247.png";
+import trips6 from "../../../assets/Trip/abc_3250.png";
+import trips7 from "../../../assets/Trip/abc_3258.png";
 
 
 // import trips1 from "../../../assets/Trips/trips_1.jpg";
