@@ -17,10 +17,10 @@ import buheFellowship3 from "../../../assets/Buhe_Fellowship/buhe_2.jpg";
 // import buheFellowship6 from "../../../assets/Buhe Fellowship/buhe_11.jpg";
 
 //Coffee Time
-import coffeeTime from "../../../assets/Coffee_Time/best-pic.jpg";
-import coffeeTime1 from "../../../assets/Coffee_Time/february-birthcake.jpg";
-import coffeeTime2 from "../../../assets/Coffee_Time/photo_2025-02-28_21-04-58.jpg";
-import coffeeTime3 from "../../../assets/Coffee_Time/photo_2025-03-28_20-40-02.jpg";
+import coffeeTime from "../../../assets/Coffee-time/best-pic.jpg";
+import coffeeTime1 from "../../../assets/Coffee-time/february-birthcake.jpg";
+import coffeeTime2 from "../../../assets/Coffee-time/photo_2025-02-28_21-04-58.jpg";
+import coffeeTime3 from "../../../assets/Coffee-time/photo_2025-03-28_20-40-02.jpg";
 // import coffeeTime4 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-35.jpg";
 // import coffeeTime5 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-42.jpg";
 // import coffeeTime6 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-10.jpg";
