@@ -43,10 +43,10 @@ import trips from "../../../assets/Trip/photo_2025-04-06_14-16-59.jpg";
 import trips1 from "../../../assets/Trip/pic1.jpg";
 import trips2 from "../../../assets/Trip/photo_2025-04-05_20-12-53.jpg";
 import trips3 from "../../../assets/Trip/photo_2025-04-15_21-47-33.jpg";
-import trips4 from "../../../assets/Trip/abc-2926.png";
-import trips5 from "../../../assets/Trip/abc-3247.png";
-import trips6 from "../../../assets/Trip/abc-3250.png";
-import trips7 from "../../../assets/Trip/abc-3258.png";
+// import trips4 from "../../../assets/Trip/abc-2926.png";
+// import trips5 from "../../../assets/Trip/abc-3247.png";
+// import trips6 from "../../../assets/Trip/abc-3250.png";
+// import trips7 from "../../../assets/Trip/abc-3258.png";
 
 
 // import trips1 from "../../../assets/Trips/trips_1.jpg";
@@ -65,7 +65,7 @@ const clubProjects = [
     title: "Trips",
     description: "Organizing group outings to explore new places.",
     image: trips1,
-    gallery: [trips5, trips, trips2,trips3, trips5, trips6,trips7,trips4], // Replace with actual images
+    gallery: [trips, trips, trips2,trips3, trips2], // Replace with actual images
     impact: "10+ trips organized",
     testimonial: "The trips are always so much fun and a great way to bond. - Member",
   },
