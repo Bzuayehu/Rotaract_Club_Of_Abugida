@@ -21,7 +21,24 @@ const Trainings = () => {
         { label: "Participant Satisfaction", value: "95%" }
       ],
       partners: ["Leadership Institutes", "Business Hubs"],
-      relatedProjects: ["activities", "15-minute-guest"]
+      relatedProjects: [
+        {
+          title: "Activities",
+          category: "Professional Development"
+        },
+        {
+          title: "Fifteen Minute Guest",
+          category: "Professional Development"
+        },
+        {
+          title: "Visits",
+          category: "Professional Development"
+        },
+        {
+          title: "Guest Speakers",
+          category: "Professional Development"
+        }
+      ]
     };
     return <ProjectDetail project={projectData} />;
   };

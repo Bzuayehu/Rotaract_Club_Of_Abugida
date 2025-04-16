@@ -147,6 +147,174 @@
     "address_description": "Addis Ababa, Ethiopia",
     "follow_us": "Follow Us",
     "get_in_touch": "Get in Touch",
-    "get_in_touch_description": "We would love to hear from you! Whether you have questions, suggestions, or just want to connect, feel free to reach out to us. Your feedback and inquiries are important to us, and we are here to assist you in any way we can.  Leave us a message, and we'll get back to you as soon as possible."
+    "get_in_touch_description": "We would love to hear from you! Whether you have questions, suggestions, or just want to connect, feel free to reach out to us. Your feedback and inquiries are important to us, and we are here to assist you in any way we can.  Leave us a message, and we'll get back to you as soon as possible.",
+
+
+
+
+        "directorship_positions_title": "Directorship Positions",
+        "duties": "Duties",
+        "powers": "Powers",
+      
+        "president": {
+          "title": "President",
+          "description": "The President ensures the club's professional and leadership development activities are successful and that its service projects benefit the community.",
+          "duties": [
+            "Preside over all regular and special meetings of the club and the board of directors.",
+            "Oversee club functions and operations.",
+            "Actively promote Rotaract and this club through legal methods that reflect the Rotary spirit of goodwill and friendship.",
+            "Set future visions and goals for the club and oversee that they are carried out and met.",
+            "Maintain strong relations with the sponsoring Rotary club(s) and establish new relationships with Rotary clubs abroad."
+          ],
+          "powers": [
+            "Call any special meetings of the club and the board of directors.",
+            "Create and assign tasks and assignments to the Vice President and other Directors."
+          ]
+        },
+        "vice_president": {
+          "title": "Vice President",
+          "description": "The Vice President assists the President and presides over meetings in the President's absence.",
+          "duties": [
+            "Preside over meetings in the absence of the President.",
+            "Assist the President in overseeing club functions and operations.",
+            "Help set future visions and goals for the club.",
+            "Maintain strong relations with the sponsoring Rotary club(s) and other partners."
+          ],
+          "powers": [
+            "Call meetings of the club and the board of directors during the absence of the President.",
+            "Create and assign tasks and assignments to any Director."
+          ]
+        },
+        "secretary": {
+          "title": "Secretary",
+          "description": "The Secretary ensures the club functions efficiently by maintaining records and communication.",
+          "duties": [
+            "Maintain all club records, including membership, attendance, and important documents.",
+            "Take meeting minutes and ensure they are communicated to attendees.",
+            "Track attendance and apply attendance rules.",
+            "Assist the President in ensuring the club meets deadlines."
+          ],
+          "powers": [
+            "Track attendance and apply attendance rules.",
+            "Regularly update club data for active members."
+          ]
+        },
+        "communityservice": {
+          "title": "Community Service Director",
+          "description": "Organizes projects that address community needs and opportunities.",
+          "duties": [
+            "Conduct service projects that include assessments, planning, and evaluation.",
+            "Develop goals for community service projects.",
+            "Create a balanced program of service."
+          ],
+          "powers": [
+            "Host community service projects.",
+            "Commit to community service-related projects on behalf of the club."
+          ]
+        },
+        "treasurer": {
+          "title": "Treasurer",
+          "description": "Oversees the club's financial transactions and fundraising efforts.",
+          "duties": [
+            "Maintain a record of the club's financial transactions.",
+            "Deposit proceeds from fundraising projects.",
+            "Collect membership dues and maintain a record of paid members."
+          ],
+          "powers": [
+            "Oversee the club's bank account.",
+            "Approve reimbursements."
+          ]
+        },
+        "professionaldevelopment": {
+          "title": "Director of Professional Development",
+          "description": "Enhances members' professional skills through events and projects.",
+          "duties": [
+            "Organize professional development events.",
+            "Maintain a database of professional contacts.",
+            "Deliver regular updates to the President and Vice President."
+          ],
+          "powers": [
+            "Create professional development projects and events.",
+            "Commit to professional development projects on behalf of the club."
+          ]
+        },
+        "club_service": {
+          "title": "Director of Club Service",
+          "description": "Focuses on member recruitment and retention through fellowships and socials.",
+          "duties": [
+            "Organize fellowships for club members.",
+            "Maintain a database of Rotaractors and their engagement levels.",
+            "Develop strategies for membership development and retention."
+          ],
+          "powers": [
+            "Create fellowship projects or socials for the club.",
+            "Commit to fellowship-related projects on behalf of the club."
+          ]
+        },
+        "public_relations": {
+          "title": "Director of Public Relations",
+          "description": "Promotes the club and its events through various media channels.",
+          "duties": [
+            "Publicize all ongoing and future club events.",
+            "Maintain the club's social media presence.",
+            "Deliver regular updates to the President and Vice President."
+          ],
+          "powers": [
+            "Create public relations projects and events.",
+            "Commit to public relations projects on behalf of the club."
+          ]
+        },
+        "international_service": {
+          "title": "Director of International Service",
+          "description": "Oversees international community service projects and partnerships.",
+          "duties": [
+            "Organize education and volunteering abroad opportunities.",
+            "Maintain a database of international service contacts.",
+            "Deliver regular updates to the President and Vice President."
+          ],
+          "powers": [
+            "Create international volunteering projects and events.",
+            "Commit to international volunteering on behalf of the club."
+          ]
+        },
+        "interact_club": {
+          "title": "Director of Interact Club",
+          "description": "Mentors the Interact Club and supports its development.",
+          "duties": [
+            "Attend Interact Club meetings and assess their status.",
+            "Support Interact Club projects and build relationships with their families/school administration."
+          ],
+          "powers": [
+            "Create meetings to increase engagement between Rotaract and Interact Club members.",
+            "Develop strategies for Interact Club member engagement."
+          ]
+        },
+        "project_officer": {
+          "title": "Director of Project Officer",
+          "description": "Ensures all club projects are completed on time and reports are compiled.",
+          "duties": [
+            "Collect reports from all directors and compile monthly reports.",
+            "Ensure all planned projects are completed on time.",
+            "Notify the President and Vice President of upcoming activities."
+          ],
+          "powers": [
+            "Enforce timely submission of plans and reports from Directors.",
+            "Ensure members understand and engage in projects."
+          ]
+        },
+        "sergeant_at_arms": {
+          "title": "Sergeant at Arms",
+          "description": "Ensures orderly and dignified club meetings.",
+          "duties": [
+            "Handle physical preparations for meetings.",
+            "Maintain a schedule of events and activities.",
+            "Assist members and guests to have a positive experience."
+          ],
+          "powers": [
+            "Set time for starting and ending club meetings.",
+            "Decide penalties for misbehavior and enforce discipline rules."
+          ]
+        }
+      
 }
   

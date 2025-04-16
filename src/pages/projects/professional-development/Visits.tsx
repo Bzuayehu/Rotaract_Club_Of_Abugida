@@ -21,7 +21,24 @@ const Visits = () => {
       { label: "Participant Feedback", value: "4.8/5" },
     ],
     partners: ["Ethio Tech Hub", "Rotaract Enterprise Members"],
-    relatedProjects: ["guest-speakers", "activities"],
+    relatedProjects: [
+      {
+        title: "Activities",
+        category: "Professional Development"
+      },
+      {
+        title: "Fifteen Minute Guest",
+        category: "Professional Development"
+      },
+      {
+        title: "Trainings",
+        category: "Professional Development"
+      },
+      {
+        title: "Guest Speakers",
+        category: "Professional Development"
+      }
+    ]
   };
   return <ProjectDetail project={projectData} />;
 };

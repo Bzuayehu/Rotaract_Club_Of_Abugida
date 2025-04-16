@@ -7,7 +7,7 @@ const IveAMessage = () => {
     const projectData: Project = {
       id: "ive-a-message",
       category: "Fellowship",
-      title: "I’ve a Message",
+      title: "I have a Message",
       date: "Annual",
       location: "Addis Ababa",
       description: "Creative platform for members to express themselves through art, music, poetry, and storytelling. First held in 2018.",
@@ -20,7 +20,24 @@ const IveAMessage = () => {
         { label: "Art Pieces Displayed", value: "100+" },
         { label: "Participant Satisfaction", value: "98%" }
       ],
-      relatedProjects: ["buhe", "sleepover"]
+      relatedProjects: [
+        {
+          title: "Buhe Fellowship",
+          category: "Fellowship"
+        },
+        {
+          title: "sleepover",
+          category: "Fellowship"
+        },
+        {
+          title: "Trips",
+          category: "Fellowship"
+        },
+        {
+          title: "Coffee Time",
+          category: "Fellowship"
+        }
+      ]
     };
     return <ProjectDetail project={projectData} />;
   };

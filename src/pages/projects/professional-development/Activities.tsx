@@ -21,7 +21,24 @@ const Activities = () => {
         { label: "Ideas Generated", value: "100+" },
         { label: "Member Engagement", value: "90%" }
       ],
-      relatedProjects: ["trainings", "visits"]
+      relatedProjects: [
+        {
+          title: "Fifteen Minute Guest",
+          category: "Professional Development"
+        },
+        {
+          title: "Trainings",
+          category: "Professional Development"
+        },
+        {
+          title: "Visits",
+          category: "Professional Development"
+        },
+        {
+          title: "Guest Speakers",
+          category: "Professional Development"
+        }
+      ]
     };
     return <ProjectDetail project={projectData} />;
   };

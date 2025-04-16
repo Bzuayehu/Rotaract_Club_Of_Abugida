@@ -12,6 +12,7 @@ import banner2 from "../assets/Buhe Fellowship/buhe_6.jpg";
 import banner3 from "../assets/Book Donation/bookdonation.jpg";
 import banner4 from "../assets/Buhe Fellowship/buhe_7.jpg";
 import banner5 from "../assets/General/Grand-palace-TRF.jpg";
+import banner6 from "../assets/General/photo_46_2025-02-26_10-26-07.jpg";
 
 
 import rotract_logo from "../assets/RotOnlyLogo.png"; // Corrected typo: rotract_logo
@@ -23,7 +24,7 @@ const PARALLAX_AMOUNT = 200; // Increased parallax effect
 
 const Header = () => {
   const { t } = useTranslation();
-  const backgrounds = [banner1, banner2, banner3, banner4,banner5];
+  const backgrounds = [banner1, banner2, banner3, banner4,banner5,banner6];
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({

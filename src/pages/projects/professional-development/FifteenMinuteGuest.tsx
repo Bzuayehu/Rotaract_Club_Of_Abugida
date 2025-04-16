@@ -22,7 +22,24 @@ const FifteenMinuteGuest = () => {
       { label: "Sessions/Year", value: "20+" },
       { label: "Members Participated", value: "150+" }
     ],
-    relatedProjects: ["guest-speakers", "trainings"]
+    relatedProjects: [
+      {
+        title: "Activities",
+        category: "Professional Development"
+      },
+      {
+        title: "Trainings",
+        category: "Professional Development"
+      },
+      {
+        title: "Visits",
+        category: "Professional Development"
+      },
+      {
+        title: "Guest Speakers",
+        category: "Professional Development"
+      }
+    ]
   };
   return <ProjectDetail project={projectData} />;
 };

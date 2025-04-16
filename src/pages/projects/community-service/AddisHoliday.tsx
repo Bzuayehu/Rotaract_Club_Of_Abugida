@@ -17,7 +17,17 @@ const AddisHoliday = () => {
         "3 events/year"
       ],
       partners: ["Rotaract Clubs of Ethiopia"],
-      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "School Painting", "Blanket Donation"],
+      relatedProjects: [
+        { title: "Sanitary Pad Donation", category: "Community Service" },
+        { title: "School Feeding", category: "Community Service" },
+        { title: "Blood Donation", category: "Community Service" },
+        { title: "Brana Project", category: "Community Service" },
+        { title: "Extending Love", category: "Community Service" },
+        { title: "Eye Vision", category: "Community Service" },
+        { title: "School Painting", category: "Community Service" },
+        { title: "Yewedekutn Ansu", category: "Community Service" },
+        { title: "Blanket Donation", category: "Community Service" }
+      ],
     };
     return <ProjectDetail project={projectData} />;
   };

@@ -7,6 +7,34 @@ import meeting from "../../../assets/blooddonation.jpg"
 import "./ProfessionalDevelopment.css";
 import { Link } from "react-router-dom";
 
+
+//fiftteen minute guest
+// import fifteenMinuteGuest from "../../../assets/15MinutesWithMe/15minuteswithme.jpg";
+// import fifteenMinuteGuest from "../../../assets/15MinutesWithMe/15minuteswithme.jpg";
+// import fifteenMinuteGuest1 from "../../../assets/15MinutesWithMe/15minuteswithme1.jpg";
+// import fifteenMinuteGuest2 from "../../../assets/15MinutesWithMe/15minuteswithme2.jpg";
+
+
+//guest speaker
+// import guestSpeaker from "../../../assets/Guest Speaker/guestSpeaker.jpg";
+// import guestSpeaker1 from "../../../assets/Guest Speaker/guestSpeaker1.jpg";
+// import guestSpeaker2 from "../../../assets/Guest Speaker/guestSpeaker2.jpg";
+// import guestSpeaker3 from "../../../assets/Guest Speaker/guestSpeaker3.jpg";
+// import guestSpeaker4 from "../../../assets/Guest Speaker/guestSpeaker4.jpg";
+
+//training
+import training from "../../../assets/Proffessional Development/photo_2_2025-02-26_10-38-21.jpg";
+import training1 from "../../../assets/Proffessional Development/photo_11_2025-02-26_10-38-21.jpg";
+import training2 from "../../../assets/Proffessional Development/photo_8_2025-02-26_10-38-21.jpg";
+import training3 from "../../../assets/Proffessional Development/photo_3_2025-02-26_10-38-21.jpg";
+
+
+
+//visits
+// import visits from "../../../assets/Visits/visits.jpg";
+// import visits1 from "../../../assets/Visits/visits1.jpg";
+// import visits2 from "../../../assets/Visits/visits2.jpg";
+// import visits3 from "../../../assets/Visits/visits3.jpg";
 const professionalProjects = [
   {
     id:"fifteenMinuteGuest",
@@ -30,8 +58,8 @@ const professionalProjects = [
     id:"trainings",
     title: "Trainings",
     description: "Workshops and skill-building sessions.",
-    image: meeting,
-    gallery: [meeting, meeting, meeting], // Replace with actual images
+    image: training,
+    gallery: [training1, training2, training3], // Replace with actual images
     impact: "100+ members trained",
     testimonial: "The training sessions have boosted my confidence. - Participant",
   },

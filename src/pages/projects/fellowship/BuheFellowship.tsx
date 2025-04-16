@@ -21,7 +21,24 @@ const BuheFellowship = () => {
         { label: "Social Media Reach", value: "5,000+" }
       ],
       partners: ["Ethiopian Rotaract Network"],
-      relatedProjects: ["trips", "coffee-time"]
+      relatedProjects: [
+        {
+          title: "Trips",
+          category: "Fellowship"
+        },
+        {
+          title: "sleepover",
+          category: "Fellowship"
+        },
+        {
+          title: "I Have a Message",
+          category: "Fellowship"
+        },
+        {
+          title: "Coffee Time",
+          category: "Fellowship"
+        }
+      ]
     };
     return <ProjectDetail project={projectData} />;
   };

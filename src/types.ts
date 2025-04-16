@@ -1,4 +1,10 @@
 // types.ts
+
+export interface RelatedProject {
+  title: string;
+  category: 'Community Service' | 'Professional Development' | 'Fellowship';
+}
+
 export interface Project {
     id: string;
     category: "Community Service" | "Professional Development" | "Fellowship";
@@ -11,5 +17,5 @@ export interface Project {
     outcomes?: { label: string; value: string }[];
     testimonials?: string[];
     partners?: string[];
-    relatedProjects?: string[]; // IDs of related projects
+    relatedProjects?: RelatedProject[]; // IDs of related projects
   }

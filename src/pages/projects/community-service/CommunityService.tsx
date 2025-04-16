@@ -13,10 +13,12 @@ import bp2 from "../../../assets/Book Donation/bookdonation6.jpg";
 import bp3 from "../../../assets/Book Donation/bookdonation4.jpg";
 
 //sanitary pad
-// import sp from "../../../assets/Blood Donation/65th_8.jpg";
-// import sp1 from "../../../assets/Blood Donation/65th_8.jpg";
-// import sp2 from "../../../assets/Blood Donation/65th_8.jpg";
-// import sp3 from "../../../assets/Blood Donation/65th_8.jpg";
+import sp from "../../../assets/Sanitary Pad/photo_10_2025-02-26_10-26-07.jpg";
+import sp1 from "../../../assets/Sanitary Pad/photo_11_2025-02-26_10-26-07.jpg";
+import sp2 from "../../../assets/Sanitary Pad/photo_12_2025-02-26_10-26-07.jpg";
+import sp3 from "../../../assets/Sanitary Pad/photo_3_2025-02-26_10-26-07.jpg";  
+import sp4 from "../../../assets/Sanitary Pad/photo_4_2025-02-26_10-26-07.jpg";
+import sp5 from "../../../assets/Sanitary Pad/photo_9_2025-02-26_10-26-07.jpg";
 
 //school feeding
 // import sf from "../../../assets/Blood Donation/65th_8.jpg";
@@ -31,16 +33,25 @@ import bp3 from "../../../assets/Book Donation/bookdonation4.jpg";
 // import ya3 from "../../../assets/Blood Donation/65th_8.jpg";
 
 //Extending Love
-// import el from "../../../assets/Blood Donation/65th_8.jpg";
-// import el1 from "../../../assets/Blood Donation/65th_8.jpg";
-// import el2 from "../../../assets/Blood Donation/65th_8.jpg";
-// import el3 from "../../../assets/Blood Donation/65th_8.jpg";
+import el from "../../../assets/Extending Love /IMG_20250403_101502_944.jpg";
+import el1 from "../../../assets/Extending Love /IMG_20250403_101649_402.jpg";
+import el2 from "../../../assets/Extending Love /IMG_20250403_101719_009.jpg"
+import el3 from "../../../assets/Extending Love /IMG_20250403_101920_179.jpg";
+import el4 from "../../../assets/Extending Love /photo_2025-02-26_10-34-23.jpg";
+import el5 from "../../../assets/Extending Love /photo_91_2025-02-26_10-26-07.jpg";
+
+
 
 //School painting
-import scp from "../../../assets/School Painting/photo_2025-03-31_18-13-05.jpg";
-import scp1 from "../../../assets/School Painting/photo_2025-03-31_18-13-10.jpg";
-import scp2 from "../../../assets/School Painting/photo_2025-03-31_18-12-55.jpg";
-import scp3 from "../../../assets/School Painting/photo_2025-03-31_18-12-43.jpg";
+import scp from "../../../assets/School Painting/scp_best.jpg";
+import scp1 from "../../../assets/School Painting/scp18_best.jpg";
+import scp2 from "../../../assets/School Painting/photo_2025-03-31_18-12-43.jpg";
+import scp3 from "../../../assets/School Painting/photo_2025-03-31_18-13-05.jpg";
+import scp4 from "../../../assets/School Painting/photo_2025-03-31_18-12-55.jpg";
+import scp5 from "../../../assets/School Painting/photo_2025-03-31_18-13-10.jpg";
+
+
+
 
 //Addis Holiday Lunch
 // import ahl from "../../../assets/Blood Donation/65th_8.jpg";
@@ -60,18 +71,6 @@ import scp3 from "../../../assets/School Painting/photo_2025-03-31_18-12-43.jpg"
 // import ev2 from "../../../assets/Blood Donation/65th_8.jpg";
 // import ev3 from "../../../assets/Blood Donation/65th_8.jpg";
 
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
-// import meeting from "../../../assets/Blood Donation/65th_1.jpg";
 import "./CommunityService.css";
 
 const communityProjects = [
@@ -97,8 +96,8 @@ const communityProjects = [
     id: "sanitaryPadDonation", // Unique ID for routing
     title: "Sanitary Pad Donation",
     description: "Providing sanitary pads to underprivileged girls to promote menstrual hygiene.",
-    image: meeting,
-    gallery: [meeting, meeting, meeting], // Replace with actual images
+    image: sp,
+    gallery: [sp1, sp2, sp3, sp4,sp5], // Replace with actual images
     impact: "1,000+ girls supported",
     testimonial: "This initiative has made a huge difference in our lives. - Beneficiary",
   },
@@ -124,8 +123,8 @@ const communityProjects = [
     id: "extendingLove", // Unique ID for routing
     title: "Extending Love Project",
     description: "Spreading kindness and support to vulnerable groups.",
-    image: meeting,
-    gallery: [meeting, meeting, meeting], // Replace with actual images
+    image: el5,
+    gallery: [el1, el, el2, el3,el4], // Replace with actual images
     impact: "1,000+ lives touched",
     testimonial: "The Extending Love Project has shown us the power of kindness. - Volunteer",
   },
@@ -134,7 +133,7 @@ const communityProjects = [
     title: "School Painting",
     description: "Beautifying school environments through painting and renovation.",
     image: scp,
-    gallery: [scp1, scp2, scp3], // Replace with actual images
+    gallery: [scp1, scp2, scp3, scp4, scp5], // Replace with actual images
     impact: "10+ schools renovated",
     testimonial: "The school painting project has created a better learning environment. - Teacher",
   },

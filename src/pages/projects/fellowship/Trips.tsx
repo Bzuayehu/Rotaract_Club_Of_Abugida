@@ -21,7 +21,24 @@ const Trips = () => {
       { label: "Destinations Visited", value: "15+" },
       { label: "New Leaders Trained", value: "20+/year" }
     ],
-    relatedProjects: ["buhe", "sleepover"]
+    relatedProjects: [
+      {
+        title: "Buhe Fellowship",
+        category: "Fellowship"
+      },
+      {
+        title: "sleepover",
+        category: "Fellowship"
+      },
+      {
+        title: "I Have a Message",
+        category: "Fellowship"
+      },
+      {
+        title: "Coffee Time",
+        category: "Fellowship"
+      }
+    ]
   };
   return <ProjectDetail project={projectData} />;
 };

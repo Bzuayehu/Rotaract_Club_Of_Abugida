@@ -143,11 +143,24 @@
   @media (max-width: 900px) {
     .professional-development .projects-list {
       grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      padding: 0 5px;
+
     }
+
+    .professional-development{
+      padding:6rem 0px;
+    }
+
+
   }
   
   @media (max-width: 600px) {
     .professional-development .projects-list {
       grid-template-columns: 1fr; /* 1 column on small screens */
+      padding: 0 5px;
+
+    }
+    .professional-development{
+      padding:6rem 0px;
     }
   }

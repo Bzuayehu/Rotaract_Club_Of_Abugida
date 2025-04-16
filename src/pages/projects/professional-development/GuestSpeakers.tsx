@@ -22,7 +22,24 @@ const GuestSpeakers = () => {
       { label: "Average Attendance", value: "80+" }
     ],
     partners: ["Local Entrepreneurs", "Rotary Advisors"],
-    relatedProjects: ["trainings", "visits"]
+    relatedProjects: [
+      {
+        title: "Activities",
+        category: "Professional Development"
+      },
+      {
+        title: "Fifteen Minute Guest",
+        category: "Professional Development"
+      },
+      {
+        title: "Trainings",
+        category: "Professional Development"
+      },
+      {
+        title: "Visits",
+        category: "Professional Development"
+      }
+    ]
   };
   return <ProjectDetail project={projectData} />;
 };

@@ -21,7 +21,24 @@ const Sleepover = () => {
         { label: "Activities/Night", value: "5-7" },
         { label: "Member Retention", value: "85%" }
       ],
-      relatedProjects: ["coffee-time", "trips"]
+      relatedProjects: [
+        {
+          title: "Buhe Fellowship",
+          category: "Fellowship"
+        },
+        {
+          title: "Trips",
+          category: "Fellowship"
+        },
+        {
+          title: "I Have a Message",
+          category: "Fellowship"
+        },
+        {
+          title: "Coffee Time",
+          category: "Fellowship"
+        }
+      ]
     };
     return <ProjectDetail project={projectData} />;
   };

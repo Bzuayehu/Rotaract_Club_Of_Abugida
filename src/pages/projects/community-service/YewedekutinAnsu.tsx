@@ -16,7 +16,17 @@ const YewedekutinAnsu = () => {
         "Awareness campaigns"
       ],
       partners: ["Yewedekutin Ansu Association"],
-      relatedProjects: ["Sanitary Pad Donaton","school feeding", "Blood Donation", "Brana Project", "Extending Love", "Eye Vision", "School Painting", "Addis Holiday", "Blanket Donation"],
+      relatedProjects: [
+        { title: "Sanitary Pad Donation", category: "Community Service" },
+        { title: "School Feeding", category: "Community Service" },
+        { title: "Blood Donation", category: "Community Service" },
+        { title: "Brana Project", category: "Community Service" },
+        { title: "Extending Love", category: "Community Service" },
+        { title: "Eye Vision", category: "Community Service" },
+        { title: "School Painting", category: "Community Service" },
+        { title: "Addis Holiday Lunch", category: "Community Service" },
+        { title: "Blanket Donation", category: "Community Service" }
+      ],
     };
     return <ProjectDetail project={projectData} />;
   };

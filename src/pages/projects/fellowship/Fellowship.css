@@ -143,10 +143,19 @@
     .club-service .projects-list {
       grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
     }
+
+    .club-service{
+      padding:6rem 0px;
+    }
+    .club-service .projects-list{
+      padding: 0 5px;
+
+    }
   }
   
   @media (max-width: 600px) {
     .club-service .projects-list {
       grid-template-columns: 1fr; /* 1 column on small screens */
     }
+
   }

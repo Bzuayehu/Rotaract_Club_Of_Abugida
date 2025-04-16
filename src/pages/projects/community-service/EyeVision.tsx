@@ -21,7 +21,17 @@ const EyeVision = () => {
         { label: "Schools Targeted (2024)", value: "Repi Primary" }
       ],
       partners: ["Local Health Organizations"],
-      relatedProjects: ["Sanitary Pad Donaton","yewedekutin ansu", "school feeding", "Blood Donation", "Brana Project", "Extending Love", "School Painting", "Addis Holiday", "Blanket Donation"],
+      relatedProjects: [
+        { title: "Sanitary Pad Donation", category: "Community Service" },
+        { title: "School Feeding", category: "Community Service" },
+        { title: "Blood Donation", category: "Community Service" },
+        { title: "Brana Project", category: "Community Service" },
+        { title: "Extending Love", category: "Community Service" },
+        { title: "Yewedekutn Ansu", category: "Community Service" },
+        { title: "School Painting", category: "Community Service" },
+        { title: "Addis Holiday Lunch", category: "Community Service" },
+        { title: "Blanket Donation", category: "Community Service" }
+      ],
     };
     return <ProjectDetail project={projectData} />;
   };

@@ -71,7 +71,7 @@ export default function App() {
         <Route path="/fellowship/projectDetail/coffeeTime" element={<CoffeeTime />} />
         <Route path="/fellowship/projectDetail/buheFellowship" element={<BuheFellowship />} />
         <Route path="/fellowship/projectDetail/sleepover" element={<Sleepover />} />
-        <Route path="/fellowship/projectDetail/I-have-a-message" element={<IveAMessage />} />
+        <Route path="/fellowship/projectDetail/iHaveAMessage" element={<IveAMessage />} />
         
       </Routes>
       <Footer /> 

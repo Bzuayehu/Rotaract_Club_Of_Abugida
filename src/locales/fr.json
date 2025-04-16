@@ -145,6 +145,175 @@
     "address_description": "Addis-Abeba, Éthiopie",
     "follow_us": "Suivez-nous",
     "get_in_touch": "Prenez Contact",
-    "get_in_touch_description": "Nous serions ravis de vous entendre ! Que vous ayez des questions, des suggestions ou que vous souhaitiez simplement nous contacter, n'hésitez pas à nous contacter. Vos commentaires et vos demandes sont importants pour nous et nous sommes là pour vous aider. Laissez-nous un message et nous vous répondrons dans les plus brefs délais."
+    "get_in_touch_description": "Nous serions ravis de vous entendre ! Que vous ayez des questions, des suggestions ou que vous souhaitiez simplement nous contacter, n'hésitez pas à nous contacter. Vos commentaires et vos demandes sont importants pour nous et nous sommes là pour vous aider. Laissez-nous un message et nous vous répondrons dans les plus brefs délais.",
+
+
+
+
+
+    
+      "directorship_positions_title": "Postes de Direction",
+      "duties": "Devoirs",
+      "powers": "Pouvoirs",
+    
+      "president": {
+        "title": "Président",
+        "description": "Le Président veille au succès des activités de développement professionnel et de leadership du club et à ce que ses projets de service profitent à la communauté.",
+        "duties": [
+          "Présider toutes les réunions régulières et spéciales du club et du conseil d'administration.",
+          "Superviser les fonctions et opérations du club.",
+          "Promouvoir activement le Rotaract et ce club par des méthodes légales reflétant l'esprit Rotary de bonne volonté et d'amitié.",
+          "Établir des visions et objectifs futurs pour le club et veiller à leur réalisation.",
+          "Maintenir des relations solides avec le(s) club(s) Rotary parrain(s) et établir de nouvelles relations avec des clubs Rotary à l'étranger."
+        ],
+        "powers": [
+          "Convoquer des réunions spéciales du club et du conseil d'administration.",
+          "Créer et attribuer des tâches à la Vice-Présidente et aux autres Directeurs."
+        ]
+      },
+      "vice_president": {
+        "title": "Vice-Président",
+        "description": "Le Vice-Président assiste le Président et préside les réunions en l'absence du Président.",
+        "duties": [
+          "Présider les réunions en l'absence du Président.",
+          "Aider le Président à superviser les fonctions et opérations du club.",
+          "Contribuer à l'établissement des visions et objectifs futurs du club.",
+          "Maintenir des relations solides avec les clubs Rotary partenaires."
+        ],
+        "powers": [
+          "Convoquer des réunions en l'absence du Président.",
+          "Attribuer des tâches à n'importe quel Directeur."
+        ]
+      },
+      "secretary": {
+    "title": "Secrétaire",
+    "description": "Le Secrétaire assure le bon fonctionnement du club en maintenant les dossiers et communications.",
+    "duties": [
+      "Tenir à jour les dossiers du club (adhésions, présences, documents importants).",
+      "Rédiger les procès-verbaux des réunions et les communiquer aux participants.",
+      "Suivre les présences et appliquer le règlement d'assiduité.",
+      "Aider le Président à respecter les échéances."
+    ],
+    "powers": [
+      "Contrôler et appliquer les règles de présence.",
+      "Mettre à jour régulièrement les données des membres actifs."
+    ]
+  },
+  "communityservice": {
+    "title": "Directeur du Service Communautaire",
+    "description": "Organise des projets répondant aux besoins de la communauté.",
+    "duties": [
+      "Mener des projets incluant évaluations, planification et suivi.",
+      "Définir des objectifs pour les projets de service communautaire.",
+      "Élaborer un programme équilibré de services."
+    ],
+    "powers": [
+      "Organiser des projets de service communautaire.",
+      "S'engager dans des projets au nom du club."
+    ]
+  },
+  "treasurer": {
+    "title": "Trésorier",
+    "description": "Gère les transactions financières et les collectes de fonds.",
+    "duties": [
+      "Tenir un registre des transactions financières.",
+      "Déposer les fonds collectés.",
+      "Collecter les cotisations des membres."
+    ],
+    "powers": [
+      "Gérer le compte bancaire du club.",
+      "Approuver les remboursements."
+    ]
+  },
+  "professionaldevelopment": {
+    "title": "Directeur du Développement Professionnel",
+    "description": "Améliore les compétences professionnelles des membres.",
+    "duties": [
+      "Organiser des événements de développement professionnel.",
+      "Maintenir un réseau de contacts professionnels.",
+      "Rendre compte régulièrement au Président."
+    ],
+    "powers": [
+      "Créer des projets de développement professionnel.",
+      "S'engager dans des projets au nom du club."
+    ]
+  },
+  "club_service": {
+    "title": "Directeur du Service du Club",
+    "description": "Se concentre sur le recrutement et la fidélisation des membres.",
+    "duties": [
+      "Organiser des activités de cohésion.",
+      "Suivre l'engagement des membres.",
+      "Élaborer des stratégies de fidélisation."
+    ],
+    "powers": [
+      "Créer des activités sociales.",
+      "S'engager dans des projets de cohésion."
+    ]
+  },
+  "public_relations": {
+    "title": "Directeur des Relations Publiques",
+    "description": "Promouvoir le club via les médias.",
+    "duties": [
+      "Diffuser les activités du club.",
+      "Gérer les réseaux sociaux du club.",
+      "Rendre compte régulièrement au Président."
+    ],
+    "powers": [
+      "Lancer des campagnes de communication.",
+      "Représenter le club dans les médias."
+    ]
+  },
+  "international_service": {
+    "title": "Directeur du Service International",
+    "description": "Gère les projets de service internationaux.",
+    "duties": [
+      "Organiser des opportunités de volontariat à l'étranger.",
+      "Maintenir un réseau de contacts internationaux.",
+      "Rendre compte régulièrement au Président."
+    ],
+    "powers": [
+      "Développer des partenariats internationaux.",
+      "Représenter le club à l'étranger."
+    ]
+  },
+  "interact_club": {
+    "title": "Directeur du Club Interact",
+    "description": "Encadre le club Interact.",
+    "duties": [
+      "Assister aux réunions Interact.",
+      "Soutenir les projets Interact."
+    ],
+    "powers": [
+      "Organiser des rencontres Interact-Rotaract.",
+      "Développer des stratégies d'engagement."
+    ]
+  },
+  "project_officer": {
+    "title": "Chef de Projets",
+    "description": "Garantit l'exécution des projets.",
+    "duties": [
+      "Compiler les rapports mensuels.",
+      "Suivre les délais des projets.",
+      "Informer le Président des activités."
+    ],
+    "powers": [
+      "Exiger la soumission des rapports.",
+      "Vérifier la compréhension des projets."
+    ]
+  },
+  "sergeant_at_arms": {
+    "title": "Sergent d'Armes",
+    "description": "Assure le bon déroulement des réunions.",
+    "duties": [
+      "Préparer les réunions matériellement.",
+      "Gérer l'horaire des événements.",
+      "Accueillir les membres et invités."
+    ],
+    "powers": [
+      "Fixer les horaires des réunions.",
+      "Appliquer la discipline."
+    ]
+  }
 }
   

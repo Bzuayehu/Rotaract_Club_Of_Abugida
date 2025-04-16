@@ -21,7 +21,24 @@ const CoffeeTime = () => {
       { label: "Average Attendance", value: "40+" },
       { label: "Ideas Implemented", value: "20+/year" },
     ],
-    relatedProjects: ["buhe", "ive-a-message"],
+    relatedProjects: [
+      {
+        title: "Buhe Fellowship",
+        category: "Fellowship"
+      },
+      {
+        title: "sleepover",
+        category: "Fellowship"
+      },
+      {
+        title: "I Have a Message",
+        category: "Fellowship"
+      },
+      {
+        title: "Trips",
+        category: "Fellowship"
+      }
+    ]
   };
   return <ProjectDetail project={projectData} />;
 };
