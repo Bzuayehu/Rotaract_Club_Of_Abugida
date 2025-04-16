@@ -8,28 +8,28 @@
 
 
 //Buhe Fellowship
-import buheFellowship from "../../../assets/Buhe Fellowship/buhe_13_withGuest.jpg";
-import buheFellowship1 from "../../../assets/Buhe Fellowship/buhe_7.jpg";
-import buheFellowship2 from "../../../assets/Buhe Fellowship/buhe_12.jpg";
-import buheFellowship3 from "../../../assets/Buhe Fellowship/buhe_2.jpg";
+import buheFellowship from "../../../assets/Buhe_Fellowship/buhe_13_withGuest.jpg";
+import buheFellowship1 from "../../../assets/Buhe_Fellowship/buhe_7.jpg";
+import buheFellowship2 from "../../../assets/Buhe_Fellowship/buhe_12.jpg";
+import buheFellowship3 from "../../../assets/Buhe_Fellowship/buhe_2.jpg";
 // import buheFellowship4 from "../../../assets/Buhe Fellowship/buhe_9.jpg";
 // import buheFellowship5 from "../../../assets/Buhe Fellowship/buhe_10.jpg";
 // import buheFellowship6 from "../../../assets/Buhe Fellowship/buhe_11.jpg";
 
 //Coffee Time
-import coffeeTime from "../../../assets/Coffee Time/best-pic.jpg";
-import coffeeTime1 from "../../../assets/Coffee Time/february-birthcake.jpg";
-import coffeeTime2 from "../../../assets/Coffee Time/photo_2025-02-28_21-04-58.jpg";
-import coffeeTime3 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-02.jpg";
+import coffeeTime from "../../../assets/Coffee_Time/best-pic.jpg";
+import coffeeTime1 from "../../../assets/Coffee_Time/february-birthcake.jpg";
+import coffeeTime2 from "../../../assets/Coffee_Time/photo_2025-02-28_21-04-58.jpg";
+import coffeeTime3 from "../../../assets/Coffee_Time/photo_2025-03-28_20-40-02.jpg";
 // import coffeeTime4 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-35.jpg";
 // import coffeeTime5 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-42.jpg";
 // import coffeeTime6 from "../../../assets/Coffee Time/photo_2025-03-28_20-40-10.jpg";
 
 //Sleepover
-import sleepover from "../../../assets/Sleep Over/IMG_20250403_103904_043.jpg";
-import sleepover1 from "../../../assets/Sleep Over/IMG_20250403_103930_280.jpg";
-import sleepover2 from "../../../assets/Sleep Over/IMG_20250403_103937_375.jpg";
-import sleepover3 from "../../../assets/Sleep Over/IMG_20250403_110129_718.jpg";
+import sleepover from "../../../assets/Sleep_Over/IMG_20250403_103904_043.jpg";
+import sleepover1 from "../../../assets/Sleep_Over/IMG_20250403_103930_280.jpg";
+import sleepover2 from "../../../assets/Sleep_Over/IMG_20250403_103937_375.jpg";
+import sleepover3 from "../../../assets/Sleep_Over/IMG_20250403_110129_718.jpg";
 // import sleepover4 from "../../../assets/Sleep Over/IMG_20250403_110445_794.jpg";
 
 

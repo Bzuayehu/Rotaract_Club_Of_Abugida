@@ -23,10 +23,10 @@ import { Link } from "react-router-dom";
 // import guestSpeaker4 from "../../../assets/Guest Speaker/guestSpeaker4.jpg";
 
 //training
-import training from "../../../assets/Proffessional Development/photo_2_2025-02-26_10-38-21.jpg";
-import training1 from "../../../assets/Proffessional Development/photo_11_2025-02-26_10-38-21.jpg";
-import training2 from "../../../assets/Proffessional Development/photo_8_2025-02-26_10-38-21.jpg";
-import training3 from "../../../assets/Proffessional Development/photo_3_2025-02-26_10-38-21.jpg";
+import training from "../../../assets/Proffessional_Development/photo_2_2025-02-26_10-38-21.jpg";
+import training1 from "../../../assets/Proffessional_Development/photo_11_2025-02-26_10-38-21.jpg";
+import training2 from "../../../assets/Proffessional_Development/photo_8_2025-02-26_10-38-21.jpg";
+import training3 from "../../../assets/Proffessional_Development/photo_3_2025-02-26_10-38-21.jpg";
 
 
 
