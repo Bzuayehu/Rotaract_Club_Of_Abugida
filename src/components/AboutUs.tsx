@@ -1,4 +1,4 @@
-import buhe from "../assets/Buhe Fellowship/buhe_1.jpg";
+import buhe from "../assets/Buhe-Fellowship/buhe_1.jpg";
 import bd1 from "../assets/Blood Donation/65th_3.jpg";
 import bd2 from "../assets/Blood Donation/65th_10.jpg";
 import bkd4 from "../assets/Book Donation/bookdonation.jpg";
