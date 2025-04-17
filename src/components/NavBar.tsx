@@ -25,7 +25,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className={`navbar-container ${showNav ? "show" : "hidden"}`}>
+    <div onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className={`navbar-container ${showNav ? "show" : "hidden"}`}>
       <div className="navbar-main">
         <div className="navbar-logo">
           <a href="/">
