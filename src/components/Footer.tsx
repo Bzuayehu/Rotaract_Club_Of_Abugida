@@ -41,10 +41,10 @@ export default function Footer() {
         <div className="footer-section">
           <h3 className="footer-heading">{t("quick_links")}</h3>
           <ul className="quick-links">
-            <li><a href="/about">{t("about_us")}</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/donate">{t("donate")}</a></li>
+            <li><Link to="/about">{t("about_us")}</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/donate">{t("donate")}</Link></li>
           </ul>
         </div>
 

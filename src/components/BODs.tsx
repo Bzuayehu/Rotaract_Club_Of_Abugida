@@ -219,6 +219,12 @@ export default function  BODs() {
   return (
     <div className="bods" id='bods'>
       <h2 className="bod-title"> {t("BOD_Title")} 2024/2025</h2>
+      <p className='bods-description'>{t("bods_description")}</p>
+      <p className='bod-quote-text'>
+      <blockquote className="bod-quote">
+  <em>“{t('bod_quote')}”</em>
+</blockquote>
+        </p>
       <div className="bods-list">
         {/* Add Past Presidents Card with Animated Icon */}
         <div className="bod-card past-presidents2">

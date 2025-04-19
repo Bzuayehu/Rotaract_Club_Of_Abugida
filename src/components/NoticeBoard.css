@@ -1,7 +1,7 @@
 /* Section Styling */
 .projects-section {
-    padding-top: 64px; /* Adjusted for spacing */
-    padding-bottom: 64px;
+    padding-top: 30px; /* Adjusted for spacing */
+    padding-bottom:30px;
     padding-left: 16px;
     padding-right: 16px;
     background-color: #e4d4b3;
@@ -40,7 +40,7 @@
     background-color: #e1d4b3; /* Light Gray */
     padding: 24px;
     border-radius: 8px;
-    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,4 +89,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
   }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding-top: 64px; /* Adjusted for spacing */
+   
+  }
+  
 }

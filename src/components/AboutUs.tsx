@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 // import { FiArrowRight } from 'react-icons/fi';
 // import img from '../assets/Aboutt.jpg';
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs: React.FC = () => {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ const AboutUs: React.FC = () => {
         </h3>
         <p className="description">{t("about_us_paragraph_1")}</p>
         <p className="description">{t("about_us_paragraph_2")}</p>
-        <button className="cta-button">{t("get_to_know_the_team")} →</button>
+        <Link to="/about"><button className="cta-button">{t("get_to_know_the_team")} →</button></Link>
       </div>
 
       <div className="about-images">
@@ -28,8 +29,6 @@ const AboutUs: React.FC = () => {
         <img src={bkd4} alt="bottom image" className="bottom-image" />
         <img src={bd2} alt="top image" className="third-image" />
         <img src={bd1} alt="top image" className="fourth-image" />
-
-
       </div>
     </section>
   );

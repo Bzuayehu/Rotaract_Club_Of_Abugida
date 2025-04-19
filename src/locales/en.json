@@ -1,320 +1,367 @@
-
-
 {
+  "home": "Home",
+  "directorship_position": "Directorship Position",
+  "contact_us_capitalized": "CONTACT US",
+  "contact_us": "Contact Us",
+  "about_us": "About Us",
+  "donate": "Donate",
+  "club_name": "Rotaract Club of Abugida",
+  "tagline": "Join the Global Movement of Young Leaders",
+  "mission": "Taking action to build a better world through community service, leadership, and innovation.",
+  "join_movement": "Join the movement",
+  "get_to_know_the_team": "Get to know the team",
+  "providing_service_above": "Providing service above self to the community",
+  "about_us_title": "About Us",
+  "about_us_paragraph_1": "Rotaract Club of Abugida was established in June 2002 and chartered on June 23, 2003. Since its establishment, the club has been participating in various community, professional, and fellowship projects to contribute to society. The club believes its projects have had a significant impact on both the community and its members.",
+  "about_us_paragraph_2": "Rotaract Club of Abugida has 150 registered and 50 to 80 active members. These members are highly dedicated and responsible for each project the club undertakes.",
+  "about_us_paragraph_3": "The general assemblies are held every two weeks at the National Blood Bank (Red Cross) around Addis Ababa Stadium at 10:00 LT on Sundays. The meetings start with a toast to Ethiopia and end with a toast to Rotary International. Our Club manages more than 8 community service projects, along with professional service activities and fellowships. Below are brief descriptions of the projects and events the club has accomplished.",
+  "news_title": "News and Upcoming Events",
+  "news_description": "Here are some past and upcoming events",
+  "projects_title": "Our Projects",
+  "projects_description": "We are committed to making a difference through various impactful initiatives.",
+  "projects": [
+    {
+      "title": "Community Service",
+      "description": "We undertake impactful projects to improve society and support those in need."
+    },
+    {
+      "title": "Professional Development",
+      "description": "Workshops and training sessions to help members grow in their careers."
+    },
+    {
+      "title": "Fellowship Activities",
+      "description": "Networking events and gatherings to build strong friendships and connections."
+    }
+  ],
+  "BOD_Title": "Meet Our Board of Directors",
+  "President": "President",
+  "Vice_President": "Vice President",
+  "Secretary": "Secretary",
+  "Treasurer": "Treasurer",
+  "Community_Service_Director": "Community Service Director",
+  "Club_Service_Director": "Club Service Director",
+  "Public_Relations_Director": "Public Relations Director",
+  "Memebership_Extension_and_Retention_Director": "Membership Extension and Retention Director",
+  "Sergeant_at_Arms_Director": "Sergeant at Arms Director",
+  "The_Rotary_Foundation_Director": "The Rotary Foundation Director",
+  "International_Service_Director": "International Service Director",
+  "Green_Rotaract_Concept_Director": "Green Rotaract Concept Director",
+  "Fundraising_Director": "Fundraising Director",
+  "Project_Officer": "Project Officer",
+  "Interact_Director": "Interact Director",
+  "Professional_Development_Director": "Professional Development Director",
+  "Immediate_Past_President": "Immediate Past President",
+  "Rotaract_Club_of_Abugida": "Rotaract Club of Abugida",
 
-    "home": "Home",
-    "directorship_position": "Directorship Position",
-    "contact_us_capitalized": "CONTACT US",
-    "contact_us": "Contact Us",
-    "about_us": "About Us",
-    "donate": "Donate",
-    "club_name": "Rotaract Club of Abugida",
-    "tagline": "Join the Global Movement of Young Leaders",
-    "mission": "Taking action to build a better world through community service, leadership, and innovation.",
-    "join_movement": "Join the movement",
-    "get_to_know_the_team":"Get to know the team",
-    "providing_service_above":"Providing service above self to the community",
-    "about_us_title": "About Us",
-    "about_us_paragraph_1": "Rotaract Club of Abugida was established in June 2002 and chartered on June 23, 2003. Since its establishment, the club has been participating in various community, professional, and fellowship projects to contribute to society. The club believes its projects have had a significant impact on both the community and its members.",
-    "about_us_paragraph_2": "Rotaract Club of Abugida has 150 registered and 50 to 80 active members. These members are highly dedicated and responsible for each project the club undertakes.",
-    "about_us_paragraph_3": "The general assemblies are held every two weeks at the National Blood Bank (Red Cross) around Addis Ababa Stadium at 10:00 LT on Sundays. The meetings start with a toast to Ethiopia and end with a toast to Rotary International. Our Club manages more than 8 community service projects, along with professional service activities and fellowships. Below are brief descriptions of the projects and events the club has accomplished.",
-    "news_title": "News and Upcoming Events",
-    "news_description": "Here are some past and upcoming events",
-    "projects_title": "Our Projects",
-    "projects_description": "We are committed to making a difference through various impactful initiatives.",
-    "projects": [
-        {
-        "title": "Community Service",
-        "description": "We undertake impactful projects to improve society and support those in need."
-        },
-        {
-        "title": "Professional Development",
-        "description": "Workshops and training sessions to help members grow in their careers."
-        },
-        {
-        "title": "Fellowship Activities",
-        "description": "Networking events and gatherings to build strong friendships and connections."
-        }
+  "Past_Presidents": "Past Presidents",
+  "Explore_the_legacy_of_our_past_leaders": "Explore the legacy of our past leaders",
+  "pastPresidents": [
+    {
+      "name": "John Doe",
+      "year": "2020-2021",
+      "description": "Led the club through a year of growth and community service."
+    },
+    {
+      "name": "Jane Smith",
+      "year": "2019-2020",
+      "description": "Focused on professional development and networking opportunities."
+    },
+    {
+      "name": "Alice Johnson",
+      "year": "2018-2019",
+      "description": "Emphasized community service and fellowship activities."
+    },
+    {
+      "name": "Michael Brown",
+      "year": "2017-2018",
+      "description": "Strengthened the club's international relations and partnerships."
+    },
+    {
+      "name": "Emily Davis",
+      "year": "2016-2017",
+      "description": "Implemented sustainable projects and initiatives."
+    },
+    {
+      "name": "David Wilson",
+      "year": "2015-2016",
+      "description": "Expanded the club's membership and outreach programs."
+    }
+  ],
+  "our_partners": "Our Partners",
+  "term": "Term",
+  "achievements": "Achievements",
+  "news_and_events": "News and Events",
+  "news_and_events_description": "Stay updated with our latest news and upcoming events.",
+  "awards_recognition_title": "Awards and Recognition",
+  "awards_recognition_description": "We are proud to have received the following awards and recognition for our work.",
+
+  "best_community_service": {
+    "title": "Best Community Service",
+    "description": "26th District Conference Assembly (DCA), 2012/13"
+  },
+  "best_club_year": {
+    "title": "Best Club Of The Year",
+    "description": "Ethiopia Rotaract Country Team, 2013/14"
+  },
+  "blood_donation": {
+    "title": "Blood Donation",
+    "description": "Ministry of Health, 2015/16"
+  },
+  "tana_awards": {
+    "title": "Tana Awards",
+    "description": "Held in Bahir Dar, 2018/19"
+  },
+  "summer_volunteer": {
+    "title": "Summer Volunteer",
+    "description": "Addis Ababa City Administration, 2020/21"
+  },
+  "see_more": "See More",
+  "projectss": "Projects",
+  "community_service": "Community Service",
+  "professional_development": "Professional Development",
+  "fellowships": "Fellowships",
+  "join_title": "Join Us",
+  "join_description": "Become a part of our community and make a difference in the world.",
+  "join_button": "Join Now",
+  "join_form_name": "Your Name",
+  "name": "Name",
+  "full_name": "Full Name",
+  "join_form_phone": "Your Phone",
+  "join_form_email": "Your Email",
+  "contact_title": "Get in Touch",
+  "contact_description": "Have questions or want to collaborate? Reach out to us!",
+  "contact_email": "Email",
+  "contact_phone": "Phone",
+  "contact_form_name": "Your Name",
+  "contact_form_email": "Your Email",
+  "email_address": "Email Address",
+  "message": "Message",
+  "contact_form_message": "Your Message",
+  "contact_form_submit": "Send Message",
+  "quick_links": "Quick Links",
+  "address": "Address",
+  "address_description": "Addis Ababa, Ethiopia",
+  "follow_us": "Follow Us",
+  "get_in_touch": "Get in Touch",
+  "get_in_touch_description": "We would love to hear from you! Whether you have questions, suggestions, or just want to connect, feel free to reach out to us. Your feedback and inquiries are important to us, and we are here to assist you in any way we can.  Leave us a message, and we'll get back to you as soon as possible.",
+
+  "directorship_positions_title": "Directorship Positions",
+  "duties": "Duties",
+  "powers": "Powers",
+
+  "president": {
+    "title": "President",
+    "description": "The President ensures the club's professional and leadership development activities are successful and that its service projects benefit the community.",
+    "duties": [
+      "Preside over all regular and special meetings of the club and the board of directors.",
+      "Oversee club functions and operations.",
+      "Actively promote Rotaract and this club through legal methods that reflect the Rotary spirit of goodwill and friendship.",
+      "Set future visions and goals for the club and oversee that they are carried out and met.",
+      "Maintain strong relations with the sponsoring Rotary club(s) and establish new relationships with Rotary clubs abroad."
     ],
-    "BOD_Title":"Meet Our Board of Directors",
-    "President": "President",
-    "Vice_President": "Vice President",
-    "Secretary": "Secretary",
-    "Treasurer": "Treasurer",
-    "Community_Service_Director": "Community Service Director",
-    "Club_Service_Director": "Club Service Director",
-    "Public_Relations_Director": "Public Relations Director",
-    "Memebership_Extension_and_Retention_Director": "Membership Extension and Retention Director",
-    "Sergeant_at_Arms_Director": "Sergeant at Arms Director",
-    "The_Rotary_Foundation_Director": "The Rotary Foundation Director",
-    "International_Service_Director": "International Service Director",
-    "Green_Rotaract_Concept_Director": "Green Rotaract Concept Director",
-    "Fundraising_Director": "Fundraising Director",
-    "Project_Officer": "Project Officer",
-    "Interact_Director": "Interact Director",
-    "Professional_Development_Director": "Professional Development Director",
-    "Immediate_Past_President": "Immediate Past President",
-    "Rotaract_Club_of_Abugida": "Rotaract Club of Abugida",
-
-
-    "Past_Presidents": "Past Presidents",
-    "Explore_the_legacy_of_our_past_leaders": "Explore the legacy of our past leaders",
-    "pastPresidents": [
-        {
-            "name": "John Doe",
-            "year": "2020-2021",
-            "description": "Led the club through a year of growth and community service."
-        },
-        {
-            "name": "Jane Smith",
-            "year": "2019-2020",
-            "description": "Focused on professional development and networking opportunities."
-        },
-        {
-            "name": "Alice Johnson",
-            "year": "2018-2019",
-            "description": "Emphasized community service and fellowship activities."
-        },
-        {
-            "name": "Michael Brown",
-            "year": "2017-2018",
-            "description": "Strengthened the club's international relations and partnerships."
-        },
-        {
-            "name": "Emily Davis",
-            "year": "2016-2017",
-            "description": "Implemented sustainable projects and initiatives."
-        },
-        {
-            "name": "David Wilson",
-            "year": "2015-2016",
-            "description": "Expanded the club's membership and outreach programs."
-        }
+    "powers": [
+      "Call any special meetings of the club and the board of directors.",
+      "Create and assign tasks and assignments to the Vice President and other Directors."
+    ]
+  },
+  "vice_president": {
+    "title": "Vice President",
+    "description": "The Vice President assists the President and presides over meetings in the President's absence.",
+    "duties": [
+      "Preside over meetings in the absence of the President.",
+      "Assist the President in overseeing club functions and operations.",
+      "Help set future visions and goals for the club.",
+      "Maintain strong relations with the sponsoring Rotary club(s) and other partners."
     ],
-    "our_partners":"Our Partners",
-    "term": "Term",
-    "achievements":"Achievements",
-    "news_and_events": "News and Events",
-    "news_and_events_description": "Stay updated with our latest news and upcoming events.",
-    "awards_recognition_title": "Awards and Recognition",
-    "awards_recognition_description": "We are proud to have received the following awards and recognition for our work.",
-
-    "best_community_service": {
-        "title": "Best Community Service",
-        "description": "26th District Conference Assembly (DCA), 2012/13"
-    },
-    "best_club_year": {
-        "title": "Best Club Of The Year",
-        "description": "Ethiopia Rotaract Country Team, 2013/14"
-    },
-    "blood_donation": {
-        "title": "Blood Donation",
-        "description": "Ministry of Health, 2015/16"
-    },
-    "tana_awards": {
-        "title": "Tana Awards",
-        "description": "Held in Bahir Dar, 2018/19"
-    },
-    "summer_volunteer": {
-        "title": "Summer Volunteer",
-        "description": "Addis Ababa City Administration, 2020/21"
-    },
-    "see_more": "See More",
-    "projectss": "Projects",
-    "community_service": "Community Service",
-    "professional_development": "Professional Development",
-    "fellowships": "Fellowships",
-    "join_title": "Join Us",
-    "join_description": "Become a part of our community and make a difference in the world.",
-    "join_button": "Join Now",
-    "join_form_name": "Your Name",
-    "name": "Name",
-    "full_name": "Full Name",
-    "join_form_phone": "Your Phone",
-    "join_form_email": "Your Email",
-    "contact_title": "Get in Touch",
-    "contact_description": "Have questions or want to collaborate? Reach out to us!",
-    "contact_email": "Email",
-    "contact_phone": "Phone",
-    "contact_form_name": "Your Name",
-    "contact_form_email": "Your Email",
-    "email_address": "Email Address",
-    "message": "Message",
-    "contact_form_message": "Your Message",
-    "contact_form_submit": "Send Message",
-    "quick_links": "Quick Links",
-    "address": "Address",
-    "address_description": "Addis Ababa, Ethiopia",
-    "follow_us": "Follow Us",
-    "get_in_touch": "Get in Touch",
-    "get_in_touch_description": "We would love to hear from you! Whether you have questions, suggestions, or just want to connect, feel free to reach out to us. Your feedback and inquiries are important to us, and we are here to assist you in any way we can.  Leave us a message, and we'll get back to you as soon as possible.",
-
-
-
-
-        "directorship_positions_title": "Directorship Positions",
-        "duties": "Duties",
-        "powers": "Powers",
-      
-        "president": {
-          "title": "President",
-          "description": "The President ensures the club's professional and leadership development activities are successful and that its service projects benefit the community.",
-          "duties": [
-            "Preside over all regular and special meetings of the club and the board of directors.",
-            "Oversee club functions and operations.",
-            "Actively promote Rotaract and this club through legal methods that reflect the Rotary spirit of goodwill and friendship.",
-            "Set future visions and goals for the club and oversee that they are carried out and met.",
-            "Maintain strong relations with the sponsoring Rotary club(s) and establish new relationships with Rotary clubs abroad."
-          ],
-          "powers": [
-            "Call any special meetings of the club and the board of directors.",
-            "Create and assign tasks and assignments to the Vice President and other Directors."
-          ]
-        },
-        "vice_president": {
-          "title": "Vice President",
-          "description": "The Vice President assists the President and presides over meetings in the President's absence.",
-          "duties": [
-            "Preside over meetings in the absence of the President.",
-            "Assist the President in overseeing club functions and operations.",
-            "Help set future visions and goals for the club.",
-            "Maintain strong relations with the sponsoring Rotary club(s) and other partners."
-          ],
-          "powers": [
-            "Call meetings of the club and the board of directors during the absence of the President.",
-            "Create and assign tasks and assignments to any Director."
-          ]
-        },
-        "secretary": {
-          "title": "Secretary",
-          "description": "The Secretary ensures the club functions efficiently by maintaining records and communication.",
-          "duties": [
-            "Maintain all club records, including membership, attendance, and important documents.",
-            "Take meeting minutes and ensure they are communicated to attendees.",
-            "Track attendance and apply attendance rules.",
-            "Assist the President in ensuring the club meets deadlines."
-          ],
-          "powers": [
-            "Track attendance and apply attendance rules.",
-            "Regularly update club data for active members."
-          ]
-        },
-        "communityservice": {
-          "title": "Community Service Director",
-          "description": "Organizes projects that address community needs and opportunities.",
-          "duties": [
-            "Conduct service projects that include assessments, planning, and evaluation.",
-            "Develop goals for community service projects.",
-            "Create a balanced program of service."
-          ],
-          "powers": [
-            "Host community service projects.",
-            "Commit to community service-related projects on behalf of the club."
-          ]
-        },
-        "treasurer": {
-          "title": "Treasurer",
-          "description": "Oversees the club's financial transactions and fundraising efforts.",
-          "duties": [
-            "Maintain a record of the club's financial transactions.",
-            "Deposit proceeds from fundraising projects.",
-            "Collect membership dues and maintain a record of paid members."
-          ],
-          "powers": [
-            "Oversee the club's bank account.",
-            "Approve reimbursements."
-          ]
-        },
-        "professionaldevelopment": {
-          "title": "Director of Professional Development",
-          "description": "Enhances members' professional skills through events and projects.",
-          "duties": [
-            "Organize professional development events.",
-            "Maintain a database of professional contacts.",
-            "Deliver regular updates to the President and Vice President."
-          ],
-          "powers": [
-            "Create professional development projects and events.",
-            "Commit to professional development projects on behalf of the club."
-          ]
-        },
-        "club_service": {
-          "title": "Director of Club Service",
-          "description": "Focuses on member recruitment and retention through fellowships and socials.",
-          "duties": [
-            "Organize fellowships for club members.",
-            "Maintain a database of Rotaractors and their engagement levels.",
-            "Develop strategies for membership development and retention."
-          ],
-          "powers": [
-            "Create fellowship projects or socials for the club.",
-            "Commit to fellowship-related projects on behalf of the club."
-          ]
-        },
-        "public_relations": {
-          "title": "Director of Public Relations",
-          "description": "Promotes the club and its events through various media channels.",
-          "duties": [
-            "Publicize all ongoing and future club events.",
-            "Maintain the club's social media presence.",
-            "Deliver regular updates to the President and Vice President."
-          ],
-          "powers": [
-            "Create public relations projects and events.",
-            "Commit to public relations projects on behalf of the club."
-          ]
-        },
-        "international_service": {
-          "title": "Director of International Service",
-          "description": "Oversees international community service projects and partnerships.",
-          "duties": [
-            "Organize education and volunteering abroad opportunities.",
-            "Maintain a database of international service contacts.",
-            "Deliver regular updates to the President and Vice President."
-          ],
-          "powers": [
-            "Create international volunteering projects and events.",
-            "Commit to international volunteering on behalf of the club."
-          ]
-        },
-        "interact_club": {
-          "title": "Director of Interact Club",
-          "description": "Mentors the Interact Club and supports its development.",
-          "duties": [
-            "Attend Interact Club meetings and assess their status.",
-            "Support Interact Club projects and build relationships with their families/school administration."
-          ],
-          "powers": [
-            "Create meetings to increase engagement between Rotaract and Interact Club members.",
-            "Develop strategies for Interact Club member engagement."
-          ]
-        },
-        "project_officer": {
-          "title": "Director of Project Officer",
-          "description": "Ensures all club projects are completed on time and reports are compiled.",
-          "duties": [
-            "Collect reports from all directors and compile monthly reports.",
-            "Ensure all planned projects are completed on time.",
-            "Notify the President and Vice President of upcoming activities."
-          ],
-          "powers": [
-            "Enforce timely submission of plans and reports from Directors.",
-            "Ensure members understand and engage in projects."
-          ]
-        },
-        "sergeant_at_arms": {
-          "title": "Sergeant at Arms",
-          "description": "Ensures orderly and dignified club meetings.",
-          "duties": [
-            "Handle physical preparations for meetings.",
-            "Maintain a schedule of events and activities.",
-            "Assist members and guests to have a positive experience."
-          ],
-          "powers": [
-            "Set time for starting and ending club meetings.",
-            "Decide penalties for misbehavior and enforce discipline rules."
-          ]
-        }
-      
+    "powers": [
+      "Call meetings of the club and the board of directors during the absence of the President.",
+      "Create and assign tasks and assignments to any Director."
+    ]
+  },
+  "secretary": {
+    "title": "Secretary",
+    "description": "The Secretary ensures the club functions efficiently by maintaining records and communication.",
+    "duties": [
+      "Maintain all club records, including membership, attendance, and important documents.",
+      "Take meeting minutes and ensure they are communicated to attendees.",
+      "Track attendance and apply attendance rules.",
+      "Assist the President in ensuring the club meets deadlines."
+    ],
+    "powers": [
+      "Track attendance and apply attendance rules.",
+      "Regularly update club data for active members."
+    ]
+  },
+  "communityservice": {
+    "title": "Community Service Director",
+    "description": "Organizes projects that address community needs and opportunities.",
+    "duties": [
+      "Conduct service projects that include assessments, planning, and evaluation.",
+      "Develop goals for community service projects.",
+      "Create a balanced program of service."
+    ],
+    "powers": [
+      "Host community service projects.",
+      "Commit to community service-related projects on behalf of the club."
+    ]
+  },
+  "treasurer": {
+    "title": "Treasurer",
+    "description": "Oversees the club's financial transactions and fundraising efforts.",
+    "duties": [
+      "Maintain a record of the club's financial transactions.",
+      "Deposit proceeds from fundraising projects.",
+      "Collect membership dues and maintain a record of paid members."
+    ],
+    "powers": ["Oversee the club's bank account.", "Approve reimbursements."]
+  },
+  "professionaldevelopment": {
+    "title": "Director of Professional Development",
+    "description": "Enhances members' professional skills through events and projects.",
+    "duties": [
+      "Organize professional development events.",
+      "Maintain a database of professional contacts.",
+      "Deliver regular updates to the President and Vice President."
+    ],
+    "powers": [
+      "Create professional development projects and events.",
+      "Commit to professional development projects on behalf of the club."
+    ]
+  },
+  "club_service": {
+    "title": "Director of Club Service",
+    "description": "Focuses on member recruitment and retention through fellowships and socials.",
+    "duties": [
+      "Organize fellowships for club members.",
+      "Maintain a database of Rotaractors and their engagement levels.",
+      "Develop strategies for membership development and retention."
+    ],
+    "powers": [
+      "Create fellowship projects or socials for the club.",
+      "Commit to fellowship-related projects on behalf of the club."
+    ]
+  },
+  "public_relations": {
+    "title": "Director of Public Relations",
+    "description": "Promotes the club and its events through various media channels.",
+    "duties": [
+      "Publicize all ongoing and future club events.",
+      "Maintain the club's social media presence.",
+      "Deliver regular updates to the President and Vice President."
+    ],
+    "powers": [
+      "Create public relations projects and events.",
+      "Commit to public relations projects on behalf of the club."
+    ]
+  },
+  "international_service": {
+    "title": "Director of International Service",
+    "description": "Oversees international community service projects and partnerships.",
+    "duties": [
+      "Organize education and volunteering abroad opportunities.",
+      "Maintain a database of international service contacts.",
+      "Deliver regular updates to the President and Vice President."
+    ],
+    "powers": [
+      "Create international volunteering projects and events.",
+      "Commit to international volunteering on behalf of the club."
+    ]
+  },
+  "interact_club": {
+    "title": "Director of Interact Club",
+    "description": "Mentors the Interact Club and supports its development.",
+    "duties": [
+      "Attend Interact Club meetings and assess their status.",
+      "Support Interact Club projects and build relationships with their families/school administration."
+    ],
+    "powers": [
+      "Create meetings to increase engagement between Rotaract and Interact Club members.",
+      "Develop strategies for Interact Club member engagement."
+    ]
+  },
+  "project_officer": {
+    "title": "Director of Project Officer",
+    "description": "Ensures all club projects are completed on time and reports are compiled.",
+    "duties": [
+      "Collect reports from all directors and compile monthly reports.",
+      "Ensure all planned projects are completed on time.",
+      "Notify the President and Vice President of upcoming activities."
+    ],
+    "powers": [
+      "Enforce timely submission of plans and reports from Directors.",
+      "Ensure members understand and engage in projects."
+    ]
+  },
+  "sergeant_at_arms": {
+    "title": "Sergeant at Arms",
+    "description": "Ensures orderly and dignified club meetings.",
+    "duties": [
+      "Handle physical preparations for meetings.",
+      "Maintain a schedule of events and activities.",
+      "Assist members and guests to have a positive experience."
+    ],
+    "powers": [
+      "Set time for starting and ending club meetings.",
+      "Decide penalties for misbehavior and enforce discipline rules."
+    ]
+  },
+  "membership_extension": {
+    "title": "Membership Extension and Retention Director",
+    "description": "Focuses on recruiting new members and retaining existing ones.",
+    "duties": [
+      "Organize membership drives and recruitment events.",
+      "Develop strategies for member retention and engagement.",
+      "Maintain a database of potential members."
+    ],
+    "powers": [
+      "Create membership extension projects and events.",
+      "Commit to membership-related projects on behalf of the club."
+    ]
+  },
+  "green_rotaract": {
+    "title": "Green Rotaract Concept Director",
+    "description": "Promotes environmental sustainability and awareness.",
+    "duties": [
+      "Organize environmental projects and initiatives.",
+      "Maintain a database of environmental contacts.",
+      "Deliver regular updates to the President and Vice President."
+    ],
+    "powers": [
+      "Create green projects and events.",
+      "Commit to environmental projects on behalf of the club."
+    ]
+  },
+  "The_Rotary_Foundation": {
+    "title": "The Rotary Foundation Director",
+    "description": "Oversees the club's involvement with The Rotary Foundation.",
+    "duties": [
+      "Promote The Rotary Foundation's programs and initiatives.",
+      "Organize fundraising events for The Rotary Foundation.",
+      "Maintain a database of foundation contacts."
+    ],
+    "powers": [
+      "Create projects related to The Rotary Foundation.",
+      "Commit to foundation-related projects on behalf of the club."
+    ]
+  },
+  "fundraising_director": {
+    "title": "Fundraising Director",
+    "description": "Oversees the club's fundraising efforts and strategies.",
+    "duties": [
+      "Organize fundraising events and campaigns.",
+      "Maintain a database of potential donors and sponsors.",
+      "Deliver regular updates to the President and Vice President."
+    ],
+    "powers": [
+      "Create fundraising projects and events.",
+      "Commit to fundraising projects on behalf of the club."
+    ]
+  },
+  "View_BODs": "View BODs of this presidency",
+  "back": "Back",
+  "Board_of_Directors": "Board of Directors",
+  "b":" ",
+  "bods_description":"Our Board of Directors is the driving force behind the Rotaract Club of Abugida’s vision, values, and vibrant spirit. These remarkable individuals dedicate their time, energy, and creativity to lead with purpose, serve with heart, and inspire our members to dream big and act boldly. Whether it’s coordinating impactful projects, fostering fellowship, or upholding the club’s mission, each BOD plays a unique role in shaping the legacy we continue to build.",
+  "partners_description":"At the Rotaract Club of Abugida, we believe that lasting change is only possible when passionate minds and kind hearts come together. Our journey is strengthened and empowered by the unwavering support of our partners — organizations and clubs who share our mission, values, and vision for a better world.",
+  "bod_quote":"Behind every successful club there is a passionate team of changemakers."
 }
-  

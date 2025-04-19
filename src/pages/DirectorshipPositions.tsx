@@ -16,7 +16,11 @@ export default function DirectorshipPositions() {
     'international_service',
     'interact_club',
     'project_officer',
-    'sergeant_at_arms'
+    'sergeant_at_arms',
+    'membership_extension',
+    'green_rotaract',
+    'The_Rotary_Foundation',
+    'fundraising_director'
   ];
 
   return (

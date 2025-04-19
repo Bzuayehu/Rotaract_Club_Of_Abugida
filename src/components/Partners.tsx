@@ -45,6 +45,9 @@ const Partners = () => {
   return (
     <div className="partners">
       <h2>{t("our_partners")}</h2>
+      <p className='partners-description'>{t("partners_description")}</p>
+
+      {/* Sponsors */}
 
       {/* Mother Club */}
       {/* <div className="mother-club">

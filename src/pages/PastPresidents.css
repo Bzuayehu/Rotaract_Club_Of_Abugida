@@ -1,90 +1,212 @@
 .past-presidents1 {
-  margin-top: 5rem;
-  padding: 20px;
+  padding: 5rem 2rem 0 2rem;
+  max-width: 100%;
+  margin: 10px 20px;
+  min-height: 100vh;
+  /* text-align: center; */
+}
+.past-presidents1 h2{
   text-align: center;
+  
 }
-
-.past-presidents1 h2 {
-  font-size: 2.5rem;
-  color: #9e1317; /* Deep cranberry */
-  margin-bottom: 20px;
-}
-
 .past-presidents-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  padding: 20px;
-  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .past-president-card {
-  background-color: #e4d4b3; 
-  /* border: 2px solid #9e1317 */
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
+  background:var(--primary-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 
 .past-president-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .past-president-card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 260px;
+  height: 250px;
   object-fit: cover;
-  margin-bottom: 15px;
-  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.past-president-card h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
+.past-president-card:hover img {
+  transform: scale(1.03);
 }
 
-.past-president-card p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-/* CTA Button */
-.cta-button {
-  background-color: #9e1317; /* Cranberry button */
-  color: #fff;
+.bod-toggle-button {
+  background: var(--accent);
+  color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
   cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.bod-toggle-button:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--accent);
+}
+
+.bod-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bod-info {
+  padding: 0.5rem;
+}
+
+.bod-info strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #2c3e50;
+}
+
+.cta-button {
   display: inline-block;
+  margin: 2rem auto;
+  padding: 1rem 2.5rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-align: center;
 }
 
 .cta-button:hover {
-  background-color: #7a0f12; /* Darker cranberry on hover */
+  background-color: #f21063;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px #f21063;
 }
 
-/* Responsive Styling */
-@media (max-width: 1024px) {
-  .past-presidents-list {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+
+
+/* BOD Modal Content Styles */
+.bod-modal-content {
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.bod-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.bod-card-pp {
+  background: var(--primary-bg);
+  /* border-radius: 10px; */
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bod-card-pp:hover {
+  transform: translateY(-5px);
+}
+
+.bod-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--primary-bg);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bod-details h4 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.bod-role {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
-  .past-presidents-list {
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  .bod-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bod-image {
+    width: 100px;
+    height: 100px;
+  }
+  .past-presidents1 {
+    padding: 5rem 0rem 0rem 0rem;
+    max-width: 100%;
+    margin: 0px 5px;
+ 
+  }
+  .past-president-card {
+    padding: 0.5rem;
+    
+  }
+  .past-president-card img {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+  }
+  .cta-button {
+    width: 100%;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .past-presidents-list {
-      grid-template-columns: 1fr; /* Single column on very small screens */
+  .bod-grid {
+    grid-template-columns: 1fr;
   }
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.past-president-card {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.past-president-card:nth-child(1) { animation-delay: 0.1s; }
+.past-president-card:nth-child(2) { animation-delay: 0.2s; }
+.past-president-card:nth-child(3) { animation-delay: 0.3s; }
+.past-president-card:nth-child(4) { animation-delay: 0.4s; }
+.past-president-card:nth-child(5) { animation-delay: 0.5s; }
+.past-president-card:nth-child(6) { animation-delay: 0.6s; }

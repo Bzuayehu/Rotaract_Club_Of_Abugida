@@ -25,14 +25,23 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className={`navbar-container ${showNav ? "show" : "hidden"}`}>
+    <div className={`navbar-container ${showNav ? "show" : "hidden"}`}>
       <div className="navbar-main">
         <div className="navbar-logo">
           <a href="/">
             <img src={Logo} alt="logo" width={210} />
           </a>
         </div>
-
+<span className="nav-right">
+<select 
+            className="language-selector-on-mobile"
+            value={i18n.language}
+            onChange={(e) => i18n.changeLanguage(e.target.value)}
+          >
+            <option onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} value="en">EN</option>
+            <option onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} value="fr">FR</option>
+            <option onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} value="am">AM</option>
+          </select>
         {/* Hamburger Icon for Mobile */}
         <div
           className="mobile-menu-icon"
@@ -40,10 +49,12 @@ export default function NavBar() {
         >
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
+</span>
+        
         <div
           className={`navbar-links ${isMobileMenuOpen ? "mobile-show" : ""}`}
         >
-          <Link to="/" className="nav-link">
+          <Link to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("home")}
           </Link>
           {/* Projects Dropdown */}
@@ -56,37 +67,37 @@ export default function NavBar() {
 
             {showProjects && (
               <div className="projects-dropdown">
-                <Link to="/community-service" className="dropdown-item">
+                <Link to="/community-service" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                   {t("community_service")}
                 </Link>
-                <Link to="/professional-development" className="dropdown-item">
+                <Link to="/professional-development" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                   {t("professional_development")}
                 </Link>
-                <Link to="/fellowship" className="dropdown-item">
+                <Link to="/fellowship" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                   {t("fellowships")}
                 </Link>
               </div>
             )}
           </div>
-          <Link to="/directorship-positions" className="nav-link">
+          <Link to="/directorship-positions" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("directorship_position")}
           </Link>
-          <Link to="/contact-us" className="nav-link">
+          <Link to="/contact-us" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("contact_us")}
           </Link>
-          <Link to="/about" className="nav-link">
+          <Link to="/about" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("about_us")}
           </Link>
-          <select
+          <select 
             className="language-selector"
             value={i18n.language}
             onChange={(e) => i18n.changeLanguage(e.target.value)}
           >
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="am">AM</option>
+            <option onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} value="en">EN</option>
+            <option onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} value="fr">FR</option>
+            <option onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} value="am">AM</option>
           </select>
-          <Link to="/donate" className="submit-button nav-link">
+          <Link to="/donate" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="submit-button nav-link">
             {t("donate")}
           </Link>
         </div>

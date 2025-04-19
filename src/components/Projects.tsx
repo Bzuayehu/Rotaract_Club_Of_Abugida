@@ -5,11 +5,13 @@ import "./Projects.css"; // Import the CSS file
 import { useTranslation } from "react-i18next";
 import Modal from "./Modal"; // Import the modal component
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface Project {
   title: string;
   description: string;
   image: string;
+  path: string;
 }
 
 export default function Projects() {
@@ -22,16 +24,19 @@ export default function Projects() {
       title: t("projects.0.title"),
       description: t("projects.0.description"),
       image: communityService,
+      path: "community-service",
     },
     {
       title: t("projects.1.title"),
       description: t("projects.1.description"),
       image: professionalDevelopment,
+      path: "professional-development",
     },
     {
       title: t("projects.2.title"),
       description: t("projects.2.description"),
       image: fellowship,
+      path: "fellowship",
     },
   ];
 
@@ -50,13 +55,22 @@ export default function Projects() {
       <div className="projects-list">
         {projects.map((project, index) => (
           <div
+            className="projects-project-card"
             key={index}
-            className="project-card"
             onClick={() => openModal(project)}
           >
-            <img src={project.image} alt={project.title} className="project-image" />
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-text">{project.description}</p>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+              onClick={() => openModal(project)}
+            />
+            <h3 className="project-title" onClick={() => openModal(project)}>
+              {project.title}
+            </h3>
+            <Link to={`/${project.path}`} key={index}>
+              <p className="project-text">{project.description} ...see more</p>{" "}
+            </Link>
           </div>
         ))}
       </div>

@@ -1,101 +1,101 @@
 {
-    "home":"Accueil",
-    "directorship_position": "Poste de Direction",
-   "contact_us_capitalized": "CONTACTEZ NOUS",
-    "contact_us": "Contactez Nous",
-    "about_us": "À propos de nous",
-    "donate": "Faire un don",
-    "club_name": "Rotaract Club d'Abugida",
-    "tagline": "Rejoignez le mouvement mondial des jeunes leaders",
-    "mission": "Agir pour construire un monde meilleur grâce au service communautaire, au leadership et à l'innovation.",
-    "join_movement": "Rejoignez le mouvement",
-    "get_to_know_the_team":"Apprenez à connaître l'équipe",
-    "providing_service_above":"Offrir un service supérieur à soi-même à la communauté",
-    "about_us_title": "À propos de nous",
-    "about_us_paragraph_1": "Le Rotaract Club d'Abugida a été fondé en juin 2002 et officiellement reconnu le 23 juin 2003. Depuis sa création, le club participe à divers projets communautaires, professionnels et de fraternité afin de contribuer à la société. Le club est convaincu que ses projets ont eu un impact significatif sur la communauté et ses membres.",
-    "about_us_paragraph_2": "Le Rotaract Club d'Abugida compte 150 membres inscrits, dont 50 à 80 membres actifs. Ces membres sont très dévoués et responsables dans chaque projet entrepris par le club.",
-    "about_us_paragraph_3": "Les assemblées générales ont lieu toutes les deux semaines à la Banque nationale du sang (Croix-Rouge) près du stade d'Addis-Abeba à 10h00 LT le dimanche. Les réunions commencent par un toast à l'Éthiopie et se terminent par un toast à Rotary International. Notre club gère plus de 8 projets de service communautaire, ainsi que des activités professionnelles et des rencontres de fraternité. Voici un aperçu des projets et événements accomplis par le club.",
-    "news_title": "Actualités et événements à venir",
-    "news_description": "Voici quelques événements passés et à venir",
-    "projects_title": "Nos Projets",
-    "projects_description": "Nous nous engageons à faire une différence à travers diverses initiatives impactantes.",
-    "projects": [
-          {
-            "title": "Service Communautaire",
-            "description": "Nous réalisons des projets impactants pour améliorer la société et aider ceux qui en ont besoin."
-          },
-          {
-            "title": "Développement Professionnel",
-            "description": "Ateliers et sessions de formation pour aider les membres à progresser dans leur carrière."
-          },
-          {
-            "title": "Activités de Fraternité",
-            "description": "Événements et rencontres pour créer des amitiés solides et des connexions durables."
-          }
-    ],
-    "BOD_Title":"Rencontrez notre conseil d'administration",
-    "President": "Président",
-    "Vice_President": "Vice-Président",
-    "Secretary": "Secrétaire",
-    "Treasurer": "Trésorier",
-    "Community_Service_Director": "Directeur du Service Communautaire",
-    "Club_Service_Director": "Directeur du Service au Club",
-    "Public_Relations_Director": "Directeur des Relations Publiques",
-    "Memebership_Extension_and_Retention_Director": "Directeur de l'Extension et de la Rétention des Membres",
-    "Sergeant_at_Arms_Director": "Directeur des Gardes",
-    "The_Rotary_Foundation_Director": "Directeur de la Fondation Rotary",
-    "International_Service_Director": "Directeur du Service International",
-    "Green_Rotaract_Concept_Director": "Directeur du Concept Green Rotaract",
-    "Fundraising_Director": "Directeur de la Collecte de Fonds",
-    "Project_Officer": "Responsable de Projet",
-    "Interact_Director": "Directeur Interact",
-    "Professional_Development_Director": "Directeur du Développement Professionnel",
-    "Immediate_Past_President": "président sortant",
-    "Rotaract_Club_of_Abugida": "Rotaract Club d'Abugida",
+  "home": "Accueil",
+  "directorship_position": "Poste de Direction",
+  "contact_us_capitalized": "CONTACTEZ NOUS",
+  "contact_us": "Contactez Nous",
+  "about_us": "À propos de nous",
+  "donate": "Faire un don",
+  "club_name": "Rotaract Club d'Abugida",
+  "tagline": "Rejoignez le mouvement mondial des jeunes leaders",
+  "mission": "Agir pour construire un monde meilleur grâce au service communautaire, au leadership et à l'innovation.",
+  "join_movement": "Rejoignez le mouvement",
+  "get_to_know_the_team": "Apprenez à connaître l'équipe",
+  "providing_service_above": "Offrir un service supérieur à soi-même à la communauté",
+  "about_us_title": "À propos de nous",
+  "about_us_paragraph_1": "Le Rotaract Club d'Abugida a été fondé en juin 2002 et officiellement reconnu le 23 juin 2003. Depuis sa création, le club participe à divers projets communautaires, professionnels et de fraternité afin de contribuer à la société. Le club est convaincu que ses projets ont eu un impact significatif sur la communauté et ses membres.",
+  "about_us_paragraph_2": "Le Rotaract Club d'Abugida compte 150 membres inscrits, dont 50 à 80 membres actifs. Ces membres sont très dévoués et responsables dans chaque projet entrepris par le club.",
+  "about_us_paragraph_3": "Les assemblées générales ont lieu toutes les deux semaines à la Banque nationale du sang (Croix-Rouge) près du stade d'Addis-Abeba à 10h00 LT le dimanche. Les réunions commencent par un toast à l'Éthiopie et se terminent par un toast à Rotary International. Notre club gère plus de 8 projets de service communautaire, ainsi que des activités professionnelles et des rencontres de fraternité. Voici un aperçu des projets et événements accomplis par le club.",
+  "news_title": "Actualités et événements à venir",
+  "news_description": "Voici quelques événements passés et à venir",
+  "projects_title": "Nos Projets",
+  "projects_description": "Nous nous engageons à faire une différence à travers diverses initiatives impactantes.",
+  "projects": [
+    {
+      "title": "Service Communautaire",
+      "description": "Nous réalisons des projets impactants pour améliorer la société et aider ceux qui en ont besoin."
+    },
+    {
+      "title": "Développement Professionnel",
+      "description": "Ateliers et sessions de formation pour aider les membres à progresser dans leur carrière."
+    },
+    {
+      "title": "Activités de Fraternité",
+      "description": "Événements et rencontres pour créer des amitiés solides et des connexions durables."
+    }
+  ],
+  "BOD_Title": "Rencontrez notre conseil d'administration",
+  "President": "Président",
+  "Vice_President": "Vice-Président",
+  "Secretary": "Secrétaire",
+  "Treasurer": "Trésorier",
+  "Community_Service_Director": "Directeur du Service Communautaire",
+  "Club_Service_Director": "Directeur du Service au Club",
+  "Public_Relations_Director": "Directeur des Relations Publiques",
+  "Memebership_Extension_and_Retention_Director": "Directeur de l'Extension et de la Rétention des Membres",
+  "Sergeant_at_Arms_Director": "Directeur des Gardes",
+  "The_Rotary_Foundation_Director": "Directeur de la Fondation Rotary",
+  "International_Service_Director": "Directeur du Service International",
+  "Green_Rotaract_Concept_Director": "Directeur du Concept Green Rotaract",
+  "Fundraising_Director": "Directeur de la Collecte de Fonds",
+  "Project_Officer": "Responsable de Projet",
+  "Interact_Director": "Directeur Interact",
+  "Professional_Development_Director": "Directeur du Développement Professionnel",
+  "Immediate_Past_President": "président sortant",
+  "Rotaract_Club_of_Abugida": "Rotaract Club d'Abugida",
 
-    "Past_Presidents": "Anciens Présidents",
-    "Explore_the_legacy_of_our_past_leaders": "Explorez l'héritage de nos anciens dirigeants",
-    "pastPresidents": [
-        {
-            "name": "John Doe",
-            "year": "2020-2021",
-            "description": "A dirigé le club à travers une année de croissance et de service communautaire."
-        },
-        {
-            "name": "Jane Smith",
-            "year": "2019-2020",
-            "description": "A initié plusieurs projets de développement durable."
-        },
-        {
-          "name": "Alice Johnson",
-          "year": "2018-2019",
-          "description":"L'accent est mis sur le service communautaire et les activités de camaraderie"
-        },
-        {
-            "name": "Michael Johnson",
-            "year": "2018-2019",
-            "description": "A renforcé les relations internationales du club."
-        },
-        {
-            "name": "Emily Davis",
-            "year": "2017-2018",
-            "description": "A mis en place des programmes de mentorat pour les jeunes."
-        },
-        {
-            "name": "David Wilson",
-            "year": "2016-2017",
-            "description": "A élargi le réseau de membres du club."
-        }
-    ],
-    "our_partners":"Nos partenaires",
-    "term":"Terme",
-    "achievements":"Réalisations",
-    "news_and_events": "Actualités et Événements",
-    "news_and_events_description": "Restez informé de nos dernières nouvelles et événements à venir.",
-    "awards_recognition_title": "Prix et Reconnaissances",
-    "awards_recognition_description": "Nous sommes fiers d'avoir reçu les prix et reconnaissances suivants pour notre travail.",
+  "Past_Presidents": "Anciens Présidents",
+  "Explore_the_legacy_of_our_past_leaders": "Explorez l'héritage de nos anciens dirigeants",
+  "pastPresidents": [
+    {
+      "name": "John Doe",
+      "year": "2020-2021",
+      "description": "A dirigé le club à travers une année de croissance et de service communautaire."
+    },
+    {
+      "name": "Jane Smith",
+      "year": "2019-2020",
+      "description": "A initié plusieurs projets de développement durable."
+    },
+    {
+      "name": "Alice Johnson",
+      "year": "2018-2019",
+      "description": "L'accent est mis sur le service communautaire et les activités de camaraderie"
+    },
+    {
+      "name": "Michael Johnson",
+      "year": "2018-2019",
+      "description": "A renforcé les relations internationales du club."
+    },
+    {
+      "name": "Emily Davis",
+      "year": "2017-2018",
+      "description": "A mis en place des programmes de mentorat pour les jeunes."
+    },
+    {
+      "name": "David Wilson",
+      "year": "2016-2017",
+      "description": "A élargi le réseau de membres du club."
+    }
+  ],
+  "our_partners": "Nos partenaires",
+  "term": "Terme",
+  "achievements": "Réalisations",
+  "news_and_events": "Actualités et Événements",
+  "news_and_events_description": "Restez informé de nos dernières nouvelles et événements à venir.",
+  "awards_recognition_title": "Prix et Reconnaissances",
+  "awards_recognition_description": "Nous sommes fiers d'avoir reçu les prix et reconnaissances suivants pour notre travail.",
 
-    "best_community_service": {
+  "best_community_service": {
     "title": "Meilleur service communautaire",
     "description": "26e Assemblée de la Conférence de District (DCA), 2012/13"
   },
@@ -116,76 +116,71 @@
     "description": "Administration municipale d'Addis-Abeba, 2020/21"
   },
 
-    "see_more": "Voir plus",
-    "projectss": "Projets",
-    "community_service": "Service Communautaire",
-    "professional_development": "Développement Professionnel",
-    "fellowships": "Camaraderie",
-    "join_title": "Rejoignez-nous",
-    "join_description": "Faites partie de notre communauté et contribuez à un monde meilleur.",
-    "join_button": "Rejoignez-nous",
-    "join_form_name": "Votre Nom",
-    "name"  : "Nom",
-    "full_name": "Nom Complet",
-    "join_form_phone": "Votre Téléphone",
-    "join_form_email": "Votre E-mail",
-    
-    "contact_title": "Prenez Contact",
-    "contact_description": "Vous avez des questions ou souhaitez collaborer ? Contactez-nous !",
-    "contact_email": "E-mail",
-    "email_address": "Adresse E-mail",
-    "contact_phone": "Téléphone",
-    "contact_form_name": "Votre Nom",
-    "contact_form_email": "Votre E-mail",
-    "message": "Message",
-    "contact_form_message": "Votre Message",
-    "contact_form_submit": "Envoyer le Message",
-    "quick_links": "Liens Rapides",
-    "address": "Adresse",
-    "address_description": "Addis-Abeba, Éthiopie",
-    "follow_us": "Suivez-nous",
-    "get_in_touch": "Prenez Contact",
-    "get_in_touch_description": "Nous serions ravis de vous entendre ! Que vous ayez des questions, des suggestions ou que vous souhaitiez simplement nous contacter, n'hésitez pas à nous contacter. Vos commentaires et vos demandes sont importants pour nous et nous sommes là pour vous aider. Laissez-nous un message et nous vous répondrons dans les plus brefs délais.",
+  "see_more": "Voir plus",
+  "projectss": "Projets",
+  "community_service": "Service Communautaire",
+  "professional_development": "Développement Professionnel",
+  "fellowships": "Camaraderie",
+  "join_title": "Rejoignez-nous",
+  "join_description": "Faites partie de notre communauté et contribuez à un monde meilleur.",
+  "join_button": "Rejoignez-nous",
+  "join_form_name": "Votre Nom",
+  "name": "Nom",
+  "full_name": "Nom Complet",
+  "join_form_phone": "Votre Téléphone",
+  "join_form_email": "Votre E-mail",
 
+  "contact_title": "Prenez Contact",
+  "contact_description": "Vous avez des questions ou souhaitez collaborer ? Contactez-nous !",
+  "contact_email": "E-mail",
+  "email_address": "Adresse E-mail",
+  "contact_phone": "Téléphone",
+  "contact_form_name": "Votre Nom",
+  "contact_form_email": "Votre E-mail",
+  "message": "Message",
+  "contact_form_message": "Votre Message",
+  "contact_form_submit": "Envoyer le Message",
+  "quick_links": "Liens Rapides",
+  "address": "Adresse",
+  "address_description": "Addis-Abeba, Éthiopie",
+  "follow_us": "Suivez-nous",
+  "get_in_touch": "Prenez Contact",
+  "get_in_touch_description": "Nous serions ravis de vous entendre ! Que vous ayez des questions, des suggestions ou que vous souhaitiez simplement nous contacter, n'hésitez pas à nous contacter. Vos commentaires et vos demandes sont importants pour nous et nous sommes là pour vous aider. Laissez-nous un message et nous vous répondrons dans les plus brefs délais.",
 
+  "directorship_positions_title": "Postes de Direction",
+  "duties": "Devoirs",
+  "powers": "Pouvoirs",
 
-
-
-    
-      "directorship_positions_title": "Postes de Direction",
-      "duties": "Devoirs",
-      "powers": "Pouvoirs",
-    
-      "president": {
-        "title": "Président",
-        "description": "Le Président veille au succès des activités de développement professionnel et de leadership du club et à ce que ses projets de service profitent à la communauté.",
-        "duties": [
-          "Présider toutes les réunions régulières et spéciales du club et du conseil d'administration.",
-          "Superviser les fonctions et opérations du club.",
-          "Promouvoir activement le Rotaract et ce club par des méthodes légales reflétant l'esprit Rotary de bonne volonté et d'amitié.",
-          "Établir des visions et objectifs futurs pour le club et veiller à leur réalisation.",
-          "Maintenir des relations solides avec le(s) club(s) Rotary parrain(s) et établir de nouvelles relations avec des clubs Rotary à l'étranger."
-        ],
-        "powers": [
-          "Convoquer des réunions spéciales du club et du conseil d'administration.",
-          "Créer et attribuer des tâches à la Vice-Présidente et aux autres Directeurs."
-        ]
-      },
-      "vice_president": {
-        "title": "Vice-Président",
-        "description": "Le Vice-Président assiste le Président et préside les réunions en l'absence du Président.",
-        "duties": [
-          "Présider les réunions en l'absence du Président.",
-          "Aider le Président à superviser les fonctions et opérations du club.",
-          "Contribuer à l'établissement des visions et objectifs futurs du club.",
-          "Maintenir des relations solides avec les clubs Rotary partenaires."
-        ],
-        "powers": [
-          "Convoquer des réunions en l'absence du Président.",
-          "Attribuer des tâches à n'importe quel Directeur."
-        ]
-      },
-      "secretary": {
+  "president": {
+    "title": "Président",
+    "description": "Le Président veille au succès des activités de développement professionnel et de leadership du club et à ce que ses projets de service profitent à la communauté.",
+    "duties": [
+      "Présider toutes les réunions régulières et spéciales du club et du conseil d'administration.",
+      "Superviser les fonctions et opérations du club.",
+      "Promouvoir activement le Rotaract et ce club par des méthodes légales reflétant l'esprit Rotary de bonne volonté et d'amitié.",
+      "Établir des visions et objectifs futurs pour le club et veiller à leur réalisation.",
+      "Maintenir des relations solides avec le(s) club(s) Rotary parrain(s) et établir de nouvelles relations avec des clubs Rotary à l'étranger."
+    ],
+    "powers": [
+      "Convoquer des réunions spéciales du club et du conseil d'administration.",
+      "Créer et attribuer des tâches à la Vice-Présidente et aux autres Directeurs."
+    ]
+  },
+  "vice_president": {
+    "title": "Vice-Président",
+    "description": "Le Vice-Président assiste le Président et préside les réunions en l'absence du Président.",
+    "duties": [
+      "Présider les réunions en l'absence du Président.",
+      "Aider le Président à superviser les fonctions et opérations du club.",
+      "Contribuer à l'établissement des visions et objectifs futurs du club.",
+      "Maintenir des relations solides avec les clubs Rotary partenaires."
+    ],
+    "powers": [
+      "Convoquer des réunions en l'absence du Président.",
+      "Attribuer des tâches à n'importe quel Directeur."
+    ]
+  },
+  "secretary": {
     "title": "Secrétaire",
     "description": "Le Secrétaire assure le bon fonctionnement du club en maintenant les dossiers et communications.",
     "duties": [
@@ -310,10 +305,65 @@
       "Gérer l'horaire des événements.",
       "Accueillir les membres et invités."
     ],
+    "powers": ["Fixer les horaires des réunions.", "Appliquer la discipline."]
+  },
+  "membership_extension": {
+    "title": "Directeur de l'Extension et de la Rétention des Membres",
+    "description": "S'assure que le club est actif et en croissance.",
+    "duties": [
+      "Élaborer des stratégies d'extension.",
+      "Suivre les tendances d'adhésion.",
+      "Rendre compte régulièrement au Président."
+    ],
     "powers": [
-      "Fixer les horaires des réunions.",
-      "Appliquer la discipline."
+      "Créer des campagnes d'adhésion.",
+      "Représenter le club dans les événements."
     ]
-  }
+  },
+  "green_rotaract": {
+    "title": "Directeur du Concept Green Rotaract",
+    "description": "Promouvoir la durabilité au sein du club.",
+    "duties": [
+      "Organiser des projets écologiques.",
+      "Sensibiliser à la durabilité.",
+      "Rendre compte régulièrement au Président."
+    ],
+    "powers": [
+      "Développer des initiatives vertes.",
+      "Représenter le club dans les événements écologiques."
+    ]
+  },
+  "The_Rotary_Foundation": {
+    "title": "Directeur de la Fondation Rotary",
+    "description": "Gérer les projets de la Fondation Rotary.",
+    "duties": [
+      "Organiser des collectes de fonds pour la fondation.",
+      "Sensibiliser aux programmes de la fondation.",
+      "Rendre compte régulièrement au Président."
+    ],
+    "powers": [
+      "Développer des initiatives de collecte de fonds.",
+      "Représenter le club dans les événements de la fondation."
+    ]
+  },
+  "fundraising_director": {
+    "title": "Directeur de la Collecte de Fonds",
+    "description": "Organiser des événements de collecte de fonds.",
+    "duties": [
+      "Élaborer un plan de collecte de fonds.",
+      "Gérer les budgets des événements.",
+      "Rendre compte régulièrement au Président."
+    ],
+    "powers": [
+      "Développer des partenariats pour la collecte de fonds.",
+      "Représenter le club dans les événements de collecte."
+    ]
+  },
+  "View_BODs": "Voir le conseil d'administration de cette présidence",
+  "back": "Retour",
+  "Board_of_Directors": "Conseil d'administration",
+  "b":" ",
+  "bods_description":"Notre conseil d'administration est le moteur de la vision, des valeurs et de l'esprit dynamique du Rotaract Club d'Abugida. Ces personnes remarquables consacrent leur temps, leur énergie et leur créativité à diriger avec détermination, à servir avec cœur et à inspirer nos membres à rêver grand et à agir avec audace. Qu'il s'agisse de coordonner des projets marquants, de favoriser la camaraderie ou de défendre la mission du club, chaque conseil d'administration joue un rôle unique dans la construction de l'héritage que nous continuons de construire.",
+  "partners_description":"Au Rotaract Club d'Abugida, nous sommes convaincus qu'un changement durable n'est possible que si des esprits passionnés et des cœurs bienveillants s'unissent. Notre parcours est renforcé et renforcé par le soutien indéfectible de nos partenaires – organisations et clubs qui partagent notre mission, nos valeurs et notre vision d'un monde meilleur.",
+  "bod_quote":"Derrière chaque club qui réussit, il y a une équipe passionnée d’acteurs du changement."
 }
-  

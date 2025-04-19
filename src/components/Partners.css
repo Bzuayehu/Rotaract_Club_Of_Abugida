@@ -11,6 +11,12 @@
     color: #2d3748 !important; /* Dark Gray */
 
   }
+  .partners-description{
+    color: #718096 !important; /* Lighter Gray */
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0rem 0.5rem;
+  }
   
   .mother-club, .interact-clubs, .sponsors {
     margin-bottom: 3rem;
