@@ -8,6 +8,7 @@ import ContactUs from '../components/ContactUs';
 import BODs from '../components/BODs';
 import AwardsSection from '../components/Awards';
 import Partners from '../components/Partners';
+import FAQ from '../components/FAQ';
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <BODs />
       <AwardsSection />
       <Partners />
+      <FAQ />
       <ContactUs />
     </div>
   );

@@ -1,5 +1,9 @@
 import "./Footer.css";
-import  logo from '../assets/logo.png'
+// import  logo from '../assets/logo.png'
+// import  logo from '../assets/Abugida-RI24-25-Lockup w-2.png'
+// import  logo from '../assets/logos/Abugida-RI24-25-Lockup co-2.png'
+import logo from '../assets/logos/image-removebg-preview.png'
+
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -10,7 +14,7 @@ export default function Footer() {
       <div className="footer-container">
         {/* Club Logo Section */}
         <div className="footer-section">
-          <a href={"/"}><img 
+          <a className="logoo" href={"/"}><img 
             src={logo}  // Update with your logo path
             alt="Rotaract Club of Abugida Logo"
             className="club-logo"

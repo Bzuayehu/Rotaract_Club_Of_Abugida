@@ -3,11 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 10%;
+  padding: 100px 4%;
   gap: 30px;
   position:relative;
   bottom: 5%;
-  padding-top: 10rem;
+  /* padding-top: 15rem; */
 
 }
 
@@ -149,8 +149,8 @@
 /* Mobile */
 @media (max-width: 768px) {
   .about-us {
-    padding: 50px 2%;
-    margin-top: 10rem;
+    padding: 80px 2%;
+    /* margin-top: 10rem; */
     bottom: -30%;
   }
 

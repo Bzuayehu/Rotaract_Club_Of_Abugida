@@ -113,3 +113,80 @@
     }
   }
   
+
+
+  /* Expandable Sections */
+.expandable-sections {
+  margin-bottom: 3rem;
+}
+
+.expandable-section {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #e4d4b3;
+  box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #D91A5F;
+  font-size: 2rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  color: #D91A5F;
+}
+
+.arrow.expanded {
+  transform: rotate(180deg);
+}
+
+.section-content {
+  padding-top: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Maintain existing section-specific styles */
+.mission, .history, .values, .impact {
+  border-left: 5px solid #D91A5F;
+}
+
+.meetings {
+  background: #e3f2fd;
+  border-left: 5px solid #D91A5F;
+}
+
+.join {
+  background: #ffedd5;
+  border-left: 5px solid #ff8c00;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  background: #fff3cd;
+  padding: 1rem;
+  border-left: 5px solid #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  text-align: center;
+  background: #f1f8ff;
+  border-left: 5px solid #D91A5F;
+}

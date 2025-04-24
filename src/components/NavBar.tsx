@@ -1,5 +1,11 @@
 import { useState, useEffect} from "react";
-import Logo from "../assets/logo.png";
+// import Logo from "../assets/logo.png";
+// import Logo from "../assets/Abugida-RI24-25-Lockup-logo.png";
+import  Logo from '../assets/logos/Abugida-RI24-25-Lockup co-2.png'
+
+// import Logo from '../assets/logos/image-removebg-preview.png'
+
+
 import "./NavBar.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";

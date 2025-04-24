@@ -56,3 +56,26 @@ body {
 ::-webkit-slider-thumb:hover {
   background-color: #777571;
 }
+
+
+
+
+
+/* Add to your global CSS or component CSS */
+@layer utilities {
+  .letter-spacing-wide {
+    letter-spacing: 0.08em;
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .hover-scale-105 {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-scale-105:hover {
+    transform: scale(1.05);
+  }
+}

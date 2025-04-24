@@ -29,12 +29,17 @@
   border: none;
 }
 
+
 .club-logo {
   max-width: 280px; /* Increased from 220px */
   width: 100%;
   height: auto;
   margin: 0;
   transition: transform 0.3s ease;
+  /* background-color: #D91A5F; */
+  /* padding:2rem 4rem; */
+  border-radius: 10px;
+
 }
 /* Hover effect */
 .club-logo:hover {

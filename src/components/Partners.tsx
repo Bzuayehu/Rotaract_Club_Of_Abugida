@@ -40,14 +40,21 @@ const Partners = () => {
     { id: 8, name: 'Eye', logo: eye },
     { id: 9, name: 'Wuddasie Diagnostic Center', logo: wuddasieDiadnostic },
     { id: 10, name: 'Rotary Club of Entoto', logo: motherClubLogo },
+    { id: 1, name: 'The Magic of Rotary', logo: magicOfROtary },
+    { id: 2, name: 'Ethiopian blood bank', logo: bloodBank },
+    { id: 3, name: 'Impact Catalyst', logo: impactCatalyst },
+    { id: 4, name: 'Fanta', logo: fanta },
+    { id: 5, name: '100 years of Service', logo: yearsOfService },
+    { id: 6, name: 'Sheger Gebeta', logo: shegerGebeta },
+    { id: 7, name: 'Hamlet Massage', logo: HamletMassage },
+    { id: 8, name: 'Eye', logo: eye },
+    { id: 9, name: 'Wuddasie Diagnostic Center', logo: wuddasieDiadnostic },
+    { id: 10, name: 'Rotary Club of Entoto', logo: motherClubLogo },
   ];
 
   return (
     <div className="partners">
       <h2>{t("our_partners")}</h2>
-      <p className='partners-description'>{t("partners_description")}</p>
-
-      {/* Sponsors */}
 
       {/* Mother Club */}
       {/* <div className="mother-club">

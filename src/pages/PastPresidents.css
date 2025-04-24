@@ -97,9 +97,9 @@
 }
 
 .cta-button:hover {
-  background-color: #f21063;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px #f21063;
+  background-color: #ac2959;
+  transform: translateY(-0.5px);
+  box-shadow: 0 1px 5px #972d54;
 }
 
 
