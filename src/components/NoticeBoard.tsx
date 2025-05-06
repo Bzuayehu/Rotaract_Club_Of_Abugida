@@ -8,6 +8,7 @@ import sleepover from "../assets/News and Events/call out forArtists.png";
 // import communityServc from "../assets/community_Servc-removebg-preview.png";
 // import clubservc from "../assets/club_Servc-removebg-preview.png";
 import "./NoticeBoard.css"; // Import CSS file
+import { Link } from "react-router-dom";
 
 interface Notice {
   title: string;
@@ -83,7 +84,7 @@ We are doing a second round card sorting come JOIN US!!! Register on the link be
           <div key={index} className="project-card" onClick={() => openModal(notice)}>
             <img src={notice.image} alt={notice.title} className="project-image1" />
             <h3 className="project-sub-title">{notice.title}</h3>
-            <p className="project-text">
+            <Link to={"/events"}><p className="project-text">
               {notice.description.length > 30
                 ? `${notice.description.substring(0, 30)}... `
                 : notice.description}
@@ -91,6 +92,7 @@ We are doing a second round card sorting come JOIN US!!! Register on the link be
                 <span className="see-more">See more</span>
               )}
             </p>
+            </Link>
           </div>
         ))}
       </div>

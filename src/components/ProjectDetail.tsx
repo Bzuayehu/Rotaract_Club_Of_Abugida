@@ -4,19 +4,25 @@ import { Project } from "../types";
 import styles from "./ProjectDetail.module.css";
 import { useState } from "react";
 import { GalleryHorizontal, GalleryHorizontalEnd } from "lucide-react";
+import ImageModal from "./ImageModal";
 
 interface ProjectDetailProps {
   project: Project;
 }
 
 const ProjectDetail = ({ project }: ProjectDetailProps) => {
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   // const [showAllImages, setShowAllImages] = useState(false);
-// const imagesToShow = showAllImages ? project.gallery : project.gallery?.slice(0, 3);
+  // const imagesToShow = showAllImages ? project.gallery : project.gallery?.slice(0, 3);
 
-const [showAllGallery, setShowAllGallery] = useState(false);
+  const [showAllGallery, setShowAllGallery] = useState(false);
   const toggleGallery = () => setShowAllGallery(!showAllGallery);
 
-  const visibleImages = showAllGallery ? project.gallery : project.gallery?.slice(0, 4);
+  const visibleImages = showAllGallery
+    ? project.gallery
+    : project.gallery?.slice(0, 4);
+
+    const visibleImagesall = project.gallery
   return (
     <div className={styles.container}>
       {/* Header Section */}
@@ -57,7 +63,7 @@ const [showAllGallery, setShowAllGallery] = useState(false);
       </div>
 
       {/* Gallery */}
-      
+
       {/* {project.gallery && (
         <div className={styles.gallery}>
           {imagesToShow?.map((img, index) => (
@@ -74,14 +80,22 @@ const [showAllGallery, setShowAllGallery] = useState(false);
         </div>
       )} */}
 
-{project.gallery && (
+      {project.gallery && (
         <div className={styles.gallery}>
           {visibleImages?.map((img, index) => (
-            <img key={index} src={img} alt={`Project activity ${index + 1}`} />
+            <img
+              key={index}
+              src={img}
+              onClick={() => setSelectedIndex(index)}
+              alt={`Project activity ${index + 1}`}
+            />
           ))}
 
           {project.gallery.length > 4 && (
-            <button onClick={toggleGallery} className={styles.toggleGalleryButton}>
+            <button
+              onClick={toggleGallery}
+              className={styles.toggleGalleryButton}
+            >
               {showAllGallery ? (
                 <>
                   <GalleryHorizontalEnd size={20} />
@@ -96,6 +110,16 @@ const [showAllGallery, setShowAllGallery] = useState(false);
             </button>
           )}
         </div>
+      )}
+
+{selectedIndex !== null && (
+        <ImageModal
+          images={visibleImagesall?.map((img) => img) || []}
+          // titles={visibleImages?.map((img) => img)}
+          currentIndex={selectedIndex}
+          onClose={() => setSelectedIndex(null)}
+          onNavigate={(newIndex) => setSelectedIndex(newIndex)}
+        />
       )}
       {/* Outcomes */}
       {project.outcomes && (
@@ -127,11 +151,11 @@ const [showAllGallery, setShowAllGallery] = useState(false);
 
               // const slug = related.title.toLowerCase().replace(/\s+/g, "-");
               const slug = related.title
-  .toLowerCase()
-  .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) =>
-    index === 0 ? word.toLowerCase() : word.toUpperCase()
-  )
-  .replace(/\s+/g, "");
+                .toLowerCase()
+                .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) =>
+                  index === 0 ? word.toLowerCase() : word.toUpperCase()
+                )
+                .replace(/\s+/g, "");
               return (
                 <li key={index} className={styles.relatedProjectItem}>
                   <Link to={`${basePath}/${slug}`}>{related.title}</Link>

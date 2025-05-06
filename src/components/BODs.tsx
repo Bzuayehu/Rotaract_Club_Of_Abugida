@@ -4,19 +4,19 @@ import Ipp from '../assets/Ipp-removebg-preview.png';
 import president from '../assets/presidentt-removebg-preview.png';
 import vice from '../assets/viceP-removebg-preview.png';
 import communityServc from '../assets/CommunityServ-removebg-preview.png';
-import clubservc from '../assets/ClubServc-removebg-preview.png';
+import clubservc from '../assets/BODs/ClubServc-removebg-preview-2.png';
 import Pr from '../assets/Pr-removebg-preview.png';
 import secretary from '../assets/secretary-removebg-preview.png';
 import membership from '../assets/membership-removebg-preview.png';
 import treasurer from '../assets/Treasurer-removebg-preview.png';
-import sergntArm from '../assets/sergentArm-removebg-preview-3.png';
+import sergntArm from '../assets/BODs/sergentArm-removebg-preview-3-2.png'
 import trf from '../assets/buze-removebg-preview.png';
 import projectOfcr from '../assets/project_Ofcr-removebg-preview.png';
 import grc from '../assets/Grc-removebg-preview-2.png';
 import fundraising from '../assets/Fundraisng-removebg-preview.png';
-import interact from '../assets/Interact-removebg-preview.png';
-import internationalServc from '../assets/International_Srvcc-removebg-preview-2.png';
-import professionalDev from '../assets/International_Servc-removebg-preview.png';
+import interact from '../assets/BODs/Interact-removebg-preview-2.png';
+import internationalServc from '../assets/BODs/International_Srvcc-removebg-preview-2-2.png';
+import professionalDev from '../assets/BODs/International_Servc-removebg-preview-2.png';
 import { FaLinkedin, FaFacebook, FaHistory, FaTelegram } from 'react-icons/fa'; // Import social media icons
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
@@ -227,13 +227,15 @@ export default function  BODs() {
         </p>
       <div className="bods-list">
         {/* Add Past Presidents Card with Animated Icon */}
+        <Link to="/past-presidents" className="past-presidents-link">
+
         <div className="bod-card past-presidents2">
-          <Link to="/past-presidents" className="past-presidents-link">
             <FaHistory className="animated-icon" /> {/* Animated icon */}
             <h3>{t("Past_Presidents")}</h3>
             <p>{t("Explore_the_legacy_of_our_past_leaders")}</p>
-          </Link>
         </div>
+        </Link>
+
         {boardMembers.map(member => (
           <div key={member.id} className="bod-card">
             <img src={member.image} alt={member.name} />

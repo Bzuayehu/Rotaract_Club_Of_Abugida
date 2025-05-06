@@ -113,7 +113,7 @@
   background-color: #e4d4b3; /* Light background for emphasis */
   /* border: 0.5px solid #cbc3b2;  */
   /* box-shadow: 0 1px 15px rgba(0,0,0,0.1); */
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); */
 
   border-radius: 10px; /* Rounded corners */
   padding: 10px;
@@ -126,12 +126,14 @@
 }
 
 .past-presidents-link {
+
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-decoration: none;
   color: inherit;
   /* border:2px solid #DB5079; */
-  align-items: center;
+  /* align-items: center; */
 
 }
 
@@ -169,6 +171,14 @@
 }
 
 @media (max-width: 768px) {
+  .bods-description{
+    font-size: small;
+  }
+  .bod-quote {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Reduce padding */
+    margin: 0 auto 4rem auto; /* Center align */
+  }
   .bod-card {
     width: 100%; /* Full width on smaller screens */
     margin: 0 auto; /* Center the card */

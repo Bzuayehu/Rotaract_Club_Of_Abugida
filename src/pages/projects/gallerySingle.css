@@ -1,0 +1,76 @@
+.gallery-single-container {
+    color: white;
+    padding: 2rem;
+  }
+  
+  .gallery-single-hero {
+    background: #111;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery-single-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gallery-single-hero p {
+    font-size: 1rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+  }
+  
+  .gallery-single-hero button {
+    padding: 0.6rem 1.2rem;
+    background-color: #45b883;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .breadcrumb {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+  .breadcrumb span {
+    color: #45b883;
+    cursor: pointer;
+  }
+  
+  .main-image-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }

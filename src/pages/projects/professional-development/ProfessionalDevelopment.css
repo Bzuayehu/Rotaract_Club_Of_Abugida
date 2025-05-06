@@ -10,7 +10,7 @@
 }
 /* General Styling for Professional Development */
 .professional-development {
-    padding: 5rem 20px;
+    padding: 0 20px;
     text-align: center;
     background-color: #e4d4b3; /* Warm beige background */
   }
@@ -148,7 +148,7 @@
     }
 
     .professional-development{
-      padding:6rem 0px;
+      padding:1rem 0px;
     }
 
 

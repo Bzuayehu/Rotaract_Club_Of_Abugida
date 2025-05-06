@@ -8,12 +8,12 @@ import  Logo from '../assets/logos/Abugida-RI24-25-Lockup co-2.png'
 
 import "./NavBar.css";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function NavBar() {
   const { t, i18n } = useTranslation();
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(true);
   const [showProjects, setShowProjects] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu
 
@@ -60,9 +60,9 @@ export default function NavBar() {
         <div
           className={`navbar-links ${isMobileMenuOpen ? "mobile-show" : ""}`}
         >
-          <Link to="/" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("home")}
-          </Link>
+          </NavLink>
           {/* Projects Dropdown */}
           <div
             className="projects-dropdown-container"
@@ -73,27 +73,33 @@ export default function NavBar() {
 
             {showProjects && (
               <div className="projects-dropdown">
-                <Link to="/community-service" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                <NavLink to="/community-service" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                   {t("community_service")}
-                </Link>
-                <Link to="/professional-development" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                </NavLink>
+                <NavLink to="/professional-development" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                   {t("professional_development")}
-                </Link>
-                <Link to="/fellowship" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                </NavLink>
+                <NavLink to="/fellowship" className="dropdown-item" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                   {t("fellowships")}
-                </Link>
+                </NavLink>
               </div>
             )}
           </div>
-          <Link to="/directorship-positions" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          <NavLink to="/news" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {t("news_and_events")}
+          </NavLink>
+          <NavLink to="/gallery" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {t("gallery")}
+          </NavLink>
+          <NavLink to="/directorship-positions" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("directorship_position")}
-          </Link>
-          <Link to="/contact-us" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          </NavLink>
+          <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("contact_us")}
-          </Link>
-          <Link to="/about" className="nav-link" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          </NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {t("about_us")}
-          </Link>
+          </NavLink>
           <select 
             className="language-selector"
             value={i18n.language}

@@ -131,16 +131,21 @@ const Header = () => {
         style={{ y: backgroundY }} // Apply parallax
       >
         <AnimatePresence mode="popLayout">
-          <motion.div
-            key={backgroundIndex}
-            className="absolute inset-0 w-full h-full bg-center bg-contain object-cover"
-            style={{ backgroundImage: `url(${backgrounds[backgroundIndex]})`, }}
-            initial={{ opacity: 0, scale: 1.05 }} // Start slightly zoomed
-            animate={{ opacity: 1, scale: 1 }} // Zoom in effect
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.8, ease: [0.6, -0.05, 0.01, 0.99] }} // Slower, smoother transition
-          />
-        </AnimatePresence>
+  <motion.div
+    key={backgroundIndex}
+    className="absolute inset-0 w-full h-full bg-center sm:bg-contain bg-cover object-cover" // Using bg-cover for better fit
+    style={{
+      backgroundImage: `url(${backgrounds[backgroundIndex]})`,
+      // Add media queries within the style prop to make it responsive
+      // Removed invalid @media query. Use Tailwind CSS classes or external CSS for responsiveness.
+    }}
+    initial={{ opacity: 0, scale: 1.1 }}  // Slight zoom for more dramatic entrance
+    animate={{ opacity: 1, scale: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1.5, ease: [0.4, 0, 0.2, 1] }} // More natural ease function
+  />
+</AnimatePresence>
+
 
         {/* --- Enhanced Gradient Overlay --- */}
         {/* Added slight radial gradient for a vignette effect */}
