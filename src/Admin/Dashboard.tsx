@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import { FiMenu, FiUsers, FiCalendar, FiSettings, FiActivity, FiFolder, FiPlus, FiCheckSquare } from 'react-icons/fi';
+import { FiMenu, FiUsers, FiActivity, FiFolder, FiPlus, FiCheckSquare } from 'react-icons/fi';
 
 // Types
 interface Project {
