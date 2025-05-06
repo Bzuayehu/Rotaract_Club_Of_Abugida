@@ -1,7 +1,7 @@
 // Donate.jsx
 import { useState, FormEvent, ChangeEvent } from "react";
 import { FiCopy, FiPhone, FiUpload, FiCheckCircle } from "react-icons/fi";
-import axios, { AxiosError, AxiosResponse } from "axios";
+import axios, { AxiosError} from "axios";
 import "./Donate.css";
 
 interface FormData {
