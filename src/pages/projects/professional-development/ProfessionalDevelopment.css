@@ -159,6 +159,26 @@
     .professional-development .projects-list {
       grid-template-columns: 1fr; /* 1 column on small screens */
       padding: 0 5px;
+    }
+
+    .professional-development .project-card {
+      background-color:var(--primary-bg);
+      /* background: white; */
+      box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .professional-development .cta-button{
+
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 2.5rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      text-align: center;
 
     }
     .professional-development{
