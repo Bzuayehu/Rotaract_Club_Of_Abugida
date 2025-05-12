@@ -1,129 +1,122 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import './FAQ.css'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import img from '../assets/Coffee-time/best-pic.jpg';
 
-// Sample project data interface
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  type: 'Community Service' | 'Leadership' | 'Fundraising' | 'Awareness';
-  image: string;
-}
-
-const projectTypeColor: Record<Project['type'], string> = {
-  'Community Service': 'border-blue-500',
-  'Leadership': 'border-green-500',
-  'Fundraising': 'border-yellow-500',
-  'Awareness': 'border-purple-500',
-};
-
-const sampleProjects: Project[] = [
-  {
-    id: 1,
-    title: 'Clean Water Initiative',
-    description: 'Providing clean water to underserved communities.',
-    type: 'Community Service',
-    image: img,
-  },
-  {
-    id: 2,
-    title: 'Leadership Workshop 2025',
-    description: 'Empowering youth through leadership training.',
-    type: 'Leadership',
-    image: img,
-  },
-  {
-    id: 3,
-    title: 'Vision Art Exhibition',
-    description: 'Raising funds for eye care through community art.',
-    type: 'Fundraising',
-    image: img,
-  },
-  {
-    id: 4,
-    title: 'Mental Health Awareness Week',
-    description: 'Spreading awareness on mental health and well-being.',
-    type: 'Awareness',
-    image: img,
-  },
-  {
-    id: 3,
-    title: 'Vision Art Exhibition',
-    description: 'Raising funds for eye care through community art.',
-    type: 'Fundraising',
-    image: img,
-  },
-  {
-    id: 4,
-    title: 'Mental Health Awareness Week',
-    description: 'Spreading awareness on mental health and well-being.',
-    type: 'Awareness',
-    image: img,
-  },
-  {
-    id: 3,
-    title: 'Vision Art Exhibition',
-    description: 'Raising funds for eye care through community art.',
-    type: 'Fundraising',
-    image: img,
-  },
-  {
-    id: 4,
-    title: 'Mental Health Awareness Week',
-    description: 'Spreading awareness on mental health and well-being.',
-    type: 'Awareness',
-    image: img,
-  },
-];
-
-const FAQ: React.FC = () => {
-  const [search, setSearch] = useState('');
-  const [filteredProjects, setFilteredProjects] = useState<Project[]>(sampleProjects);
-
+const FAQ = () => {
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ duration: 800, once: true });
   }, []);
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
+  const [showAll, setShowAll] = useState(false);
 
-  useEffect(() => {
-    setFilteredProjects(
-      sampleProjects.filter(project =>
-        project.title.toLowerCase().includes(search.toLowerCase()) ||
-        project.description.toLowerCase().includes(search.toLowerCase())
-      )
-    );
-  }, [search]);
+  const faqItems = [
+    {
+      id: 'rotary-definition',
+      question: 'What is rotary?',
+      answer: 'Rotary International is a global network of 1.4 million neighbors, friends, leaders, and problem-solvers who unite to take action and create lasting change in communities worldwide.'
+    },
+    {
+      id: 'rotary-activities',
+      question: 'What does rotary do?',
+      answer: 'Rotary focuses on six areas: promoting peace, fighting disease, providing clean water, saving mothers and children, supporting education, and growing local economies through various service projects.'
+    },
+    {
+      id: 'rotaract-definition',
+      question: 'What is rotaract?',
+      answer: 'Rotaract is Rotary International\'s service club for young adults ages 18-30. The Rotaract Club of Abugida focuses on community service, leadership development, and professional networking.'
+    },
+    {
+      id: 'interact-definition',
+      question: 'What is interact?',
+      answer: 'Interact is Rotary\'s service club for youth ages 12-18. Clubs are sponsored by local Rotary clubs and provide opportunities for leadership and community service.'
+    },
+    {
+      id: 'clubs-info',
+      question: 'What are clubs and how many are there?',
+      answer: 'Rotary has over 46,000 clubs worldwide. Rotaract has over 10,000 clubs, and Interact has over 20,000 clubs globally.'
+    },
+    {
+      id: 'ethiopia-clubs',
+      question: 'How many rotaract clubs are there in Ethiopia?',
+      answer: 'Ethiopia has a growing network of Rotaract clubs across major cities and universities, with new clubs being established regularly.'
+    },
+    {
+      id: 'join-process',
+      question: 'How to join?',
+      answer: 'You can join the Rotaract Club of Abugida by attending our meetings, contacting our membership chair, or reaching out through our social media platforms.'
+    },
+    {
+      id: 'abugida-club',
+      question: 'What is the Rotaract Club of Abugida?',
+      answer: 'Established in 2003, our club brings together young professionals and students to serve the community, develop leadership skills, and create lasting friendships.'
+    },
+    {
+      id: 'projects',
+      question: 'What are the rotary and rotaract projects?',
+      answer: 'Our projects include blood donation drives, educational support programs, environmental initiatives, and professional development workshops.'
+    },
+    {
+      id: 'induction',
+      question: 'What is induction?',
+      answer: 'Induction is the formal ceremony where new members are officially welcomed into the Rotaract Club of Abugida.'
+    },
+    {
+      id: 'hierarchy',
+      question: 'What is the hierarchy in rotaract?',
+      answer: 'Rotaract clubs have a Board of Directors including President, Vice President, Secretary, Treasurer, and various committee chairs.'
+    },
+    {
+      id: 'board-definition',
+      question: 'What is board of director?',
+      answer: 'The Board of Directors leads the club, consisting of elected officers who oversee operations, projects, and member engagement.'
+    },
+    {
+      id: 'benefits',
+      question: 'What is the benefit of joining a rotaract club?',
+      answer: 'Benefits include leadership development, community impact, professional networking, friendship, and personal growth opportunities.'
+    }
+  ];
+
+  const visibleItems = showAll ? faqItems : faqItems.slice(0, 6);
+
+  const toggleItem = (id: string) => {
+    setExpandedItems(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
 
   return (
-    <div className="px-4 py-10 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center">Our Impactful Projects</h1>
-      <input
-        type="text"
-        placeholder="Search projects..."
-        className="w-full p-3 mb-8 border rounded-lg shadow-sm"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {filteredProjects.map((project) => (
-          <div
-            key={project.id}
-            className={`border-t-4 ${projectTypeColor[project.type]} bg-white rounded-xl shadow-lg overflow-hidden`}
-            data-aos="fade-up"
-          >
-            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-            <div className="p-5">
-              <span className={`inline-block text-xs font-semibold mb-2 uppercase ${projectTypeColor[project.type]}`}>{project.type}</span>
-              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-              <p className="text-sm text-gray-600">{project.description}</p>
-              <button className="mt-4 text-blue-600 font-medium hover:underline">View More →</button>
+    <section className="faq-container" id="faq" data-aos="fade-up">
+      <h2 className="faq-title" data-aos="fade-up">Frequently Asked Questions</h2>
+      <div className="faq-items" data-aos="fade-up">
+        {visibleItems.map((item,index) => (
+          <div key={item.id} className="faq-item" data-aos="fade-up" data-aos-delay={index * 100}>
+            <div 
+              className="faq-question" 
+              onClick={() => toggleItem(item.id)}
+            >
+              <h3>{item.question}</h3>
+              <span className={`faq-arrow ${expandedItems[item.id] ? 'expanded' : ''}`}>▼</span>
             </div>
+            {expandedItems[item.id] && (
+              <div className="faq-answer">
+                <p>{item.answer}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
-    </div>
+      {!showAll && faqItems.length > 6 && (
+        <button 
+          className="see-more-btn" 
+          onClick={() => setShowAll(true)}
+        >
+          See More Questions
+        </button>
+      )}
+    </section>
   );
 };
 
