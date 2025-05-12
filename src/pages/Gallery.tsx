@@ -1,4 +1,3 @@
-
 import ImageModal from "../components/ImageModal"; // Adjust the import path as necessary
 import "./Gallery.css";
 import img1 from "../assets/Coffee-time/photo_2025-03-28_20-45-21.jpg";
@@ -30,12 +29,13 @@ import img24 from "../assets/Trip/ABC_3258.JPG";
 import img25 from "../assets/Trip/ABC_3266.JPG";
 import img26 from "../assets/Trip/pic1.jpg";
 
-
 import img27 from "../assets/Proffessional-Development/photo_2_2025-02-26_10-38-21.jpg";
 import img28 from "../assets/Proffessional-Development/photo_3_2025-02-26_10-38-21.jpg";
 
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type ImageItem = {
   id?: number;
@@ -45,157 +45,35 @@ type ImageItem = {
 };
 
 const images: ImageItem[] = [
-  {
-    id: 1,
-    src: img1,
-    title: "Coffee time",
-    category: "Fellowship",
-  },
-  {
-    src: img11,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img26,
-    title: "Trip",
-    category: "Fellowship",
-  },
-  {
-    src: img2,
-    title: "Coffee time",
-    category: "Fellowship",
-  },
-  {
-    src: img12,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img3,
-    title: "Coffee time",
-    category: "Fellowship",
-  },
-  {
-    src: img5,
-    title: "Extending Love",
-    category: "Community Service",
-  },
-  {
-    src: img13,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img7,
-    title: "Extending Love",
-    category: "Community Service",
-  },
-  {
-    src: img14,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img10,
-    title: "Extending Love",
-    category: "Community Service",
-  },
-  {
-    src: img23,
-    title: "Trip",
-    category: "Fellowship",
-  },
-  {
-    src: img24,
-    title: "Trip",
-    category: "Fellowship",
-  },
-  {
-    src: img18,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img15,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img6,
-    title: "Extending Love",
-    category: "Community Service",
-  },
-  {
-    src: img16,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img17,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-  {
-    src: img4,
-    title: "Coffee time",
-    category: "Fellowship",
-  },
-  {
-    src: img22,
-    title: "Trip",
-    category: "Fellowship",
-  },
-  {
-    src: img8,
-    title: "Extending Love",
-    category: "Community Service",
-  },
-  {
-    src: img9,
-    title: "Extending Love",
-    category: "Community Service",
-  },
-  {
-    src: img19,
-    title: "Blood Donation",
-    category: "Community Service",
-  },
-
-  {
-    src: img20,
-    title: "Trip",
-    category: "Fellowship",
-  },
-  {
-    src: img21,
-    title: "Trip",
-    category: "Fellowship",
-  },
-  {
-    src: img28,
-    title: "Training",
-    category: "Professional Development",
-  },
-  {
-    src: img22,
-    title: "Trip",
-    category: "Fellowship",
-  },
-  
-  {
-    src: img25,
-    title: "Trip",
-    category: "Fellowship",
-  },
-
-  {
-    src: img27,
-    title: "Training",
-    category: "Professional Development",
-  },
-  
-  
+  { id: 1, src: img1, title: "Coffee time", category: "Fellowship" },
+  { src: img11, title: "Blood Donation", category: "Community Service" },
+  { src: img26, title: "Trip", category: "Fellowship" },
+  { src: img2, title: "Coffee time", category: "Fellowship" },
+  { src: img12, title: "Blood Donation", category: "Community Service" },
+  { src: img3, title: "Coffee time", category: "Fellowship" },
+  { src: img5, title: "Extending Love", category: "Community Service" },
+  { src: img13, title: "Blood Donation", category: "Community Service" },
+  { src: img7, title: "Extending Love", category: "Community Service" },
+  { src: img14, title: "Blood Donation", category: "Community Service" },
+  { src: img10, title: "Extending Love", category: "Community Service" },
+  { src: img23, title: "Trip", category: "Fellowship" },
+  { src: img24, title: "Trip", category: "Fellowship" },
+  { src: img18, title: "Blood Donation", category: "Community Service" },
+  { src: img15, title: "Blood Donation", category: "Community Service" },
+  { src: img6, title: "Extending Love", category: "Community Service" },
+  { src: img16, title: "Blood Donation", category: "Community Service" },
+  { src: img17, title: "Blood Donation", category: "Community Service" },
+  { src: img4, title: "Coffee time", category: "Fellowship" },
+  { src: img22, title: "Trip", category: "Fellowship" },
+  { src: img8, title: "Extending Love", category: "Community Service" },
+  { src: img9, title: "Extending Love", category: "Community Service" },
+  { src: img19, title: "Blood Donation", category: "Community Service" },
+  { src: img20, title: "Trip", category: "Fellowship" },
+  { src: img21, title: "Trip", category: "Fellowship" },
+  { src: img28, title: "Training", category: "Professional Development" },
+  { src: img22, title: "Trip", category: "Fellowship" },
+  { src: img25, title: "Trip", category: "Fellowship" },
+  { src: img27, title: "Training", category: "Professional Development" },
 ];
 
 const categories = [
@@ -208,36 +86,21 @@ const categories = [
 
 export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  // const [modalImage, setModalImage] = useState<string | null>(null);
-// const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-//   const [filteredImagess, setFilteredImagess] = useState<ImageItem[]>([]);
-const openModal = (url: number) => {
-  // setModalImage(url);
-  setSelectedIndex(url)
-};
-
-const closeModal = () => {
-  // setModalImage(null);
-  setSelectedIndex(null)
-};
-
-
-
-
-// const handleImageClick = (image: ImageItem) => {
-//   const categoryImages = images.filter((img) => img.category === image.category);
-//   const index = categoryImages.findIndex((img) => img.src === image.src);
-
-//   setFilteredImagess(categoryImages);
-//   setSelectedCategory(image.category);
-//   setSelectedIndex(index);
-// };
-
-
-
-const navigate = useNavigate(); // from react-router
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  const openModal = (index: number) => {
+    setSelectedIndex(index);
+  };
+
+  const closeModal = () => {
+    setSelectedIndex(null);
+  };
 
   const filteredImages = images.filter((img) => {
     const matchesCategory =
@@ -272,15 +135,32 @@ const navigate = useNavigate(); // from react-router
           ))}
         </div>
       </div>
+
       <div className="gallery-grid">
         {filteredImages.map((img, index) => (
-          <div className="gallery-item" key={index}>
-            <img className="imgg" src={img.src} alt={img.title} />
-            <p>{img.title}</p>
+          <div
+            className="gallery-item"
+            key={index}
+            data-aos="zoom-in"
+            data-aos-delay={index * 50}
+          >
+            <img
+              className="imgg"
+              src={img.src}
+              alt={img.title}
+              data-aos="fade-in"
+              data-aos-delay={index * 50 + 100}
+            />
+            <p
+              data-aos="fade-up"
+              data-aos-delay={index * 50 + 200}
+            >
+              {img.title}
+            </p>
 
             <div className="gallery-hover-overlay">
               <button
-                onClick={() => openModal(index)} 
+                onClick={() => openModal(index)}
                 className="gallery-icon zoom"
               >
                 🔍
@@ -294,18 +174,25 @@ const navigate = useNavigate(); // from react-router
             </div>
           </div>
         ))}
-      </div>{/* Modal for image preview */}
-      
+      </div>
+
       {selectedIndex !== null && (
         <ImageModal
-          images={activeCategory=="All"?images.map((img) => img.src):filteredImages.map((img) => img.src)}
-          titles={activeCategory=="All"?images.map((img) => img.title):filteredImages.map((img) => img.title)}
+          images={
+            activeCategory === "All"
+              ? images.map((img) => img.src)
+              : filteredImages.map((img) => img.src)
+          }
+          titles={
+            activeCategory === "All"
+              ? images.map((img) => img.title)
+              : filteredImages.map((img) => img.title)
+          }
           currentIndex={selectedIndex}
-          onClose={() => closeModal()}
+          onClose={closeModal}
           onNavigate={(newIndex) => setSelectedIndex(newIndex)}
         />
-      )} 
-      
+      )}
     </div>
   );
 }

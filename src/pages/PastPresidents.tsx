@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import "./PastPresidents.css";
 import pp1 from "../assets/Ipp-removebg-preview.png";
+import Nardos from "../assets/BODs/Nardos-removebg-preview.png";
+
 
 interface BOD {
   name: string;
@@ -92,7 +94,7 @@ export default function PastPresidents() {
       name: "Nardos Seleshi",
       year: "2018-2019",
       description: t("pastPresidents.5.description"),
-      image: pp1,
+      image: Nardos,
       bods: [
         { name: "Tigist Melaku", role: "Vice President", image: pp1 },
         { name: "Nahom Solomon", role: "IT Director", image: pp1 },

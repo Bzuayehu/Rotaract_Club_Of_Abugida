@@ -2,9 +2,11 @@
 import { Link } from "react-router-dom";
 import { Project } from "../types";
 import styles from "./ProjectDetail.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GalleryHorizontal, GalleryHorizontalEnd } from "lucide-react";
 import ImageModal from "./ImageModal";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface ProjectDetailProps {
   project: Project;
@@ -12,50 +14,60 @@ interface ProjectDetailProps {
 
 const ProjectDetail = ({ project }: ProjectDetailProps) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  // const [showAllImages, setShowAllImages] = useState(false);
-  // const imagesToShow = showAllImages ? project.gallery : project.gallery?.slice(0, 3);
-
   const [showAllGallery, setShowAllGallery] = useState(false);
   const toggleGallery = () => setShowAllGallery(!showAllGallery);
+
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
 
   const visibleImages = showAllGallery
     ? project.gallery
     : project.gallery?.slice(0, 4);
 
-    const visibleImagesall = project.gallery
+  const visibleImagesall = project.gallery;
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-aos="fade-up">
       {/* Header Section */}
-      <div className={styles.header}>
-        <h1 className={styles.title}>{project.title}</h1>
-        <span className={styles.category}>{project.category}</span>
+      <div className={styles.header} data-aos="fade-down">
+        <h1 className={styles.title} data-aos="fade-right">
+          {project.title}
+        </h1>
+        <span className={styles.category} data-aos="fade-left">
+          {project.category}
+        </span>
       </div>
 
       {/* Quick Facts */}
-      <div className={styles.quickFacts}>
-        <p>
+      <div className={styles.quickFacts} data-aos="fade-up">
+        <p data-aos="fade-up">
           <strong>Date:</strong> {project.date}
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="100">
           <strong>Location:</strong> {project.location}
         </p>
         {project.partners && (
-          <p>
+          <p data-aos="fade-up" data-aos-delay="200">
             <strong>Partners:</strong> {project.partners.join(", ")}
           </p>
         )}
       </div>
 
       {/* Description & Impact */}
-      <div className={styles.section}>
-        <h2>About the Project</h2>
-        <p>{project.description}</p>
+      <div className={styles.section} data-aos="fade-up">
+        <h2 data-aos="fade-right">About the Project</h2>
+        <p data-aos="fade-up">{project.description}</p>
         {project.impact && (
           <>
-            <h3 className={styles.impact}>Impact</h3>
+            <h3 className={styles.impact} data-aos="fade-right">
+              Impact
+            </h3>
             <ul>
               {project.impact.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+                  {item}
+                </li>
               ))}
             </ul>
           </>
@@ -63,31 +75,16 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
       </div>
 
       {/* Gallery */}
-
-      {/* {project.gallery && (
-        <div className={styles.gallery}>
-          {imagesToShow?.map((img, index) => (
-            <img key={index} src={img} alt={`Project activity ${index + 1}`} />
-          ))}
-          {project.gallery.length > 3 && (
-            <button
-              className={styles.toggleGalleryButton}
-              onClick={() => setShowAllImages(!showAllImages)}
-            >
-              {showAllImages ? "Show Less" : "See More pictures"}
-            </button>
-          )}
-        </div>
-      )} */}
-
       {project.gallery && (
-        <div className={styles.gallery}>
+        <div className={styles.gallery} data-aos="fade-up">
           {visibleImages?.map((img, index) => (
             <img
               key={index}
               src={img}
               onClick={() => setSelectedIndex(index)}
               alt={`Project activity ${index + 1}`}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
             />
           ))}
 
@@ -95,6 +92,7 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
             <button
               onClick={toggleGallery}
               className={styles.toggleGalleryButton}
+              data-aos="fade-up"
             >
               {showAllGallery ? (
                 <>
@@ -112,22 +110,27 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
         </div>
       )}
 
-{selectedIndex !== null && (
+      {selectedIndex !== null && (
         <ImageModal
           images={visibleImagesall?.map((img) => img) || []}
-          // titles={visibleImages?.map((img) => img)}
           currentIndex={selectedIndex}
           onClose={() => setSelectedIndex(null)}
           onNavigate={(newIndex) => setSelectedIndex(newIndex)}
         />
       )}
+
       {/* Outcomes */}
       {project.outcomes && (
-        <div className={styles.section}>
-          <h2>Outcomes</h2>
+        <div className={styles.section} data-aos="fade-up">
+          <h2 data-aos="fade-right">Outcomes</h2>
           <div className={styles.outcomesGrid}>
             {project.outcomes.map((outcome, index) => (
-              <div key={index} className={styles.outcomeItem}>
+              <div
+                key={index}
+                className={styles.outcomeItem}
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
+              >
                 <div className={styles.outcomeValue}>{outcome.value}</div>
                 <div className={styles.outcomeLabel}>{outcome.label}</div>
               </div>
@@ -138,8 +141,8 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
 
       {/* Related Projects */}
       {project.relatedProjects && (
-        <div className={styles.section}>
-          <h2>Related Projects</h2>
+        <div className={styles.section} data-aos="fade-up">
+          <h2 data-aos="fade-right">Related Projects</h2>
           <ul className={styles.relatedProjects}>
             {project.relatedProjects.map((related, index) => {
               const basePath =
@@ -149,15 +152,20 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
                   ? "/professional-development/projectDetail"
                   : "/fellowship/projectDetail";
 
-              // const slug = related.title.toLowerCase().replace(/\s+/g, "-");
               const slug = related.title
                 .toLowerCase()
                 .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) =>
                   index === 0 ? word.toLowerCase() : word.toUpperCase()
                 )
                 .replace(/\s+/g, "");
+
               return (
-                <li key={index} className={styles.relatedProjectItem}>
+                <li
+                  key={index}
+                  className={styles.relatedProjectItem}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
                   <Link to={`${basePath}/${slug}`}>{related.title}</Link>
                 </li>
               );

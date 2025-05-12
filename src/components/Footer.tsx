@@ -6,23 +6,31 @@ import logo from '../assets/logos/image-removebg-preview.png'
 
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   const { t } = useTranslation();
   return (
-    <footer className="footer">
+    <footer className="footer" data-aos="fade-up">
       <div className="footer-container">
         {/* Club Logo Section */}
-        <div className="footer-section">
-          <a className="logoo" href={"/"}><img 
-            src={logo}  // Update with your logo path
-            alt="Rotaract Club of Abugida Logo"
-            className="club-logo"
-          /></a>
+        <div className="footer-section" data-aos="zoom-in">
+          <a className="logoo" href={"/"}>
+            <img 
+              src={logo}
+              alt="Rotaract Club of Abugida Logo"
+              className="club-logo"
+            />
+          </a>
         </div>
 
         {/* Contact Info */}
-        <div className="footer-section">
+        <div className="footer-section" data-aos="fade-right">
           <h3 className="footer-heading">{t("contact_us")}</h3>
           <ul className="contact-list">
             <li><a href="mailto:abugidarotaract@gmail.com">abugidarotaract@gmail.com</a></li>
@@ -37,12 +45,10 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-          {/* <button>Contact Us </button> */}
-
         </div>
 
         {/* Quick Links */}
-        <div className="footer-section">
+        <div className="footer-section" data-aos="fade-up">
           <h3 className="footer-heading">{t("quick_links")}</h3>
           <ul className="quick-links">
             <li><Link to="/about">{t("about_us")}</Link></li>
@@ -53,10 +59,10 @@ export default function Footer() {
         </div>
 
         {/* Social Media */}
-        <div className="footer-section">
+        <div className="footer-section" data-aos="fade-left">
           <h3 className="footer-heading">{t("follow_us")}</h3>
           <div className="social-icons">
-          <a href="https://www.facebook.com/RACAbugida?mibextid=b06tZ0" aria-label="Facebook">
+            <a href="https://www.facebook.com/RACAbugida?mibextid=b06tZ0" aria-label="Facebook">
               <i className="fab fa-facebook"></i>
             </a>
             <a href="https://t.me/racabugida" aria-label="Telegram">
@@ -76,7 +82,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="copyright">
+      <div className="copyright" data-aos="fade-up">
         <p>&copy; {new Date().getFullYear()} Rotaract Club of Abugida. All Rights Reserved.</p>
       </div>
     </footer>

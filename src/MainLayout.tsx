@@ -6,12 +6,11 @@ const MainLayout = () => {
   return (
     <>
       <NavBar />
-      <main style={{ marginTop: "5rem" }}>
+      <main style={{ marginTop: "4.5rem" }}>
         <Outlet />
       </main>
       <Footer />
     </>
   );
 };
-
 export default MainLayout;

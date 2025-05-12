@@ -13,6 +13,7 @@
     padding: 0 20px;
     text-align: center;
     background-color: #e4d4b3; /* Warm beige background */
+    overflow-x: hidden;
   }
   
   .professional-development .projects-header {

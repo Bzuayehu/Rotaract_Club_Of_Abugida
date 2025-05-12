@@ -3,6 +3,7 @@
     margin:0 auto;
     padding: 2rem 1rem;
     color: #333;
+    overflow: hidden;
   }
   
   /* Loading and Error States */

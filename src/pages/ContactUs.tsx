@@ -1,12 +1,15 @@
-import React from 'react';
-import { FaFacebook, FaInstagram, FaTiktok, FaTelegram, FaLinkedin } from 'react-icons/fa'; // Import social media icons
-// import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { FaFacebook, FaInstagram, FaTiktok, FaTelegram, FaLinkedin } from 'react-icons/fa';
 import './ContactUs.css';
-// import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa6';
 import { useTranslation } from "react-i18next";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactUs: React.FC = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+  
   const { t } = useTranslation();
   const [formData, setFormData] = React.useState({
     name: '',
@@ -29,8 +32,8 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-form">
+    <div className="contact-container" data-aos="fade-down">
+      <div className="contact-form" data-aos="fade-right">
         <h2>{t("get_in_touch")}</h2>
         <p className='getintouch'>{t("get_in_touch_description")}</p>
         
@@ -78,7 +81,7 @@ const ContactUs: React.FC = () => {
         </form>
       </div>
       
-      <div className="contact-info1">
+      <div className="contact-info1" data-aos="fade-left">
         <h2>{t("contact_us_capitalized")}</h2>
         <div className="info-item">
           <h3>{t("address")}</h3>
@@ -97,7 +100,7 @@ const ContactUs: React.FC = () => {
         
         <div className="social-links">
           <h3>{t("follow_us")}:</h3>
-          <div className="social-icons">
+          <div className="social-icons" data-aos="zoom-in">
             <a href="https://www.facebook.com/RACAbugida?mibextid=b06tZ0" aria-label="Facebook" className='facebook-icon'><FaFacebook/></a>
             <a href="https://www.instagram.com/rac_abugida" aria-label="Instagram" className='instagram-icon'><FaInstagram/></a>
             <a href="https://t.me/racabugida" aria-label="Telegram" className='telegram-icon'><FaTelegram/></a>

@@ -3,6 +3,7 @@
     padding: 20px;
     text-align: center;
     background-color: #e4d4b3;
+    overflow: hidden;
   }
   
   h1 {

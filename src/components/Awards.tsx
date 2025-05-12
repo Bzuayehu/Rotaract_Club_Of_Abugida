@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Awards.css";
 import image from "../assets/certeficate.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface AwardCardProps {
   title: string;
@@ -13,11 +15,11 @@ const AwardCard: React.FC<AwardCardProps> = ({ title, description, image }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="award-card">
+    <div className="award-card" data-aos="zoom-in" data-aos-duration="800">
       <img src={image} alt={title} className="certificate-img" />
       <i className="fas fa-trophy"></i>
-      <h3>{t(title)}</h3>
-      <p>{description}</p>
+      <h3 data-aos="fade-right">{t(title)}</h3>
+      <p data-aos="fade-left">{description}</p>
     </div>
   );
 };
@@ -49,12 +51,17 @@ const AwardsSection = () => {
     },
   ];
 
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <section id="awards" className="awards-section">
-      <h2 className="award-recognition-title">
+    <section id="awards" className="awards-section" data-aos="fade-up">
+      <h2 className="award-recognition-title" data-aos="fade-up">
         {t("awards_recognition_title")}
       </h2>
-      <p>{t("awards_recognition_description")}</p>
+      <p data-aos="fade-up">{t("awards_recognition_description")}</p>
       <div className="award-grid">
         {awards.slice(0, visibleCount).map((award, index) => (
           <AwardCard
@@ -69,6 +76,7 @@ const AwardsSection = () => {
         <button
           className="see-more-button"
           onClick={() => setVisibleCount(awards.length)}
+          data-aos="fade-up"
         >
           {t("see_more")}
         </button>

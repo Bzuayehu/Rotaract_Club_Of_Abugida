@@ -5,6 +5,7 @@
     padding-left: 16px;
     padding-right: 16px;
     background-color: #e4d4b3;
+    overflow-x: hidden;
   }
   
   .projects-header {

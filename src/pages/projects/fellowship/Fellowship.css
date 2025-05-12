@@ -12,6 +12,7 @@
     padding:1rem 20px;
     text-align: center;
     background-color: var(--primary-bg); /* Warm beige background */
+    overflow-x: hidden;
   }
   
   .club-service .projects-header {

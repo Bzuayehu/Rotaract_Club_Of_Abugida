@@ -78,3 +78,12 @@ module.exports = {
       require('@tailwindcss/line-clamp'),
     ]
   }
+  module.exports = {
+    extend: {
+    colors: {
+      primary: '#B91C1C', // Customize to your brand
+    },
+    animation: {
+      'bounce-slow': 'bounce 3s infinite',
+    },
+  }}

@@ -1,8 +1,10 @@
-// Donate.jsx
 import { useState, FormEvent, ChangeEvent } from "react";
 import { FiCopy, FiPhone, FiUpload, FiCheckCircle } from "react-icons/fi";
-import axios, { AxiosError} from "axios";
+import axios, { AxiosError } from "axios";
 import "./Donate.css";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS CSS
+import React from "react";
 
 interface FormData {
   name: string;
@@ -30,6 +32,11 @@ export default function Donate() {
     screenshot: null,
   });
 
+  // Initialize AOS
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
+
   const copyToClipboard = async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
@@ -51,11 +58,11 @@ export default function Donate() {
       }
 
       const reader = new FileReader();
-      
+
       reader.onloadend = async () => {
         try {
-          if (typeof reader.result !== 'string') {
-            throw new Error('Failed to read file as data URL');
+          if (typeof reader.result !== "string") {
+            throw new Error("Failed to read file as data URL");
           }
           const base64Data = reader.result.split(",")[1];
 
@@ -75,7 +82,7 @@ export default function Donate() {
             },
             onUploadProgress: (progressEvent) => {
               const progress = Math.round(
-                (progressEvent.loaded / ((progressEvent.total || 1))) * 100
+                (progressEvent.loaded / (progressEvent.total || 1)) * 100
               );
               setUploadProgress(progress);
             },
@@ -106,7 +113,6 @@ export default function Donate() {
       };
 
       reader.readAsDataURL(formData.screenshot);
-
     } catch (error) {
       const err = error as Error;
       setMessage(err.message);
@@ -128,23 +134,27 @@ export default function Donate() {
   return (
     <div className="donate-container">
       {/* Hero Section */}
-      <section className="donate-hero">
-        <h1 className="hero-title">Empower Positive Change</h1>
-        <p className="hero-subtitle">
-          Your support fuels community transformation
-        </p>
+      <section className="donate-hero1" data-aos="fade-up">
+        <div className="hero-overlay1">
+          <div className="hero-content1" data-aos="fade-down">
+            <h1 className="hero-title1" data-aos="fade-right">Empower Positive Change</h1>
+            <p className="hero-subtitle2" data-aos="fade-up">
+              Your support fuels community transformation
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Donation Methods */}
-      <section className="donation-methods">
-        <h2 className="section-title">Secure Donation Channels</h2><div className="methods-grid">
+      <section className="donation-methods" data-aos="fade-up">
+        <h2 className="section-title" data-aos="fade-up">Secure Donation Channels</h2>
+        <div className="methods-grid">
           {/* Bank Transfer Card */}
-          <div className="method-card bank-card">
+          <div className="method-card bank-card" data-aos="zoom-in">
             <div className="method-header">
               <div className="method-icon">🏦</div>
               <h3>Bank Transfer</h3>
             </div>
-
             <div className="method-body">
               <div className="bank-detail">
                 <div className="bank-info">
@@ -159,7 +169,6 @@ export default function Donate() {
                     </button>
                   </div>
                 </div>
-
                 <div className="bank-info">
                   <span className="bank-name">Bank of Abyssinia</span>
                   <div className="account-detail">
@@ -177,12 +186,11 @@ export default function Donate() {
           </div>
 
           {/* Telebirr Card */}
-          <div className="method-card telebirr-card">
+          <div className="method-card telebirr-card" data-aos="zoom-in">
             <div className="method-header">
               <div className="method-icon">📱</div>
               <h3>Telebirr</h3>
             </div>
-
             <div className="method-body">
               <div className="telebirr-detail">
                 <div className="contact-info">
@@ -204,12 +212,11 @@ export default function Donate() {
           </div>
 
           {/* Online Payment Card */}
-          <div className="method-card online-card">
+          <div className="method-card online-card" data-aos="zoom-in">
             <div className="method-header">
               <div className="method-icon">💳</div>
               <h3>Online Payment</h3>
             </div>
-
             <div className="method-body">
               <div className="coming-soon">
                 <FiCheckCircle className="coming-icon" />
@@ -222,7 +229,7 @@ export default function Donate() {
       </section>
 
       {uploadProgress > 0 && (
-        <div className="progress-bar">
+        <div className="progress-bar" data-aos="fade-up">
           <div
             className="progress-fill"
             style={{ width: `${uploadProgress}%` }}
@@ -237,16 +244,23 @@ export default function Donate() {
           className={`status-message ${
             message.includes("Error") ? "error" : "success"
           }`}
+          data-aos="fade-up"
         >
           {message}
         </div>
       )}
+
       {/* Donation Form */}
-      <section className="donation-form-section">
-        <h2 className="section-title">Donation Details</h2><form className="donation-form" onSubmit={handleSubmit}>
-          <div className="form-row">
+      <section className="donation-form-section" data-aos="fade-up">
+        <h2 className="section-title" data-aos="fade-right">
+          Donation Details
+        </h2>
+        <form className="donation-form" onSubmit={handleSubmit}>
+          <div className="form-row" data-aos="fade-up">
             <div className="input-group">
-              <label htmlFor="name">Full Name</label>
+              <label htmlFor="name" data-aos="fade-right">
+                Full Name
+              </label>
               <input
                 type="text"
                 id="name"
@@ -257,8 +271,7 @@ export default function Donate() {
                 }
               />
             </div>
-
-            <div className="input-group">
+            <div className="input-group" data-aos="fade-up">
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -272,7 +285,7 @@ export default function Donate() {
             </div>
           </div>
 
-          <div className="form-row">
+          <div className="form-row" data-aos="fade-right">
             <div className="input-group">
               <label htmlFor="amount">Amount (ETB)</label>
               <input
@@ -285,23 +298,22 @@ export default function Donate() {
                 }
               />
             </div>
-
-            <div className="input-group">
+            <div className="input-group" data-aos="fade-up">
               <label htmlFor="screenshot" className="file-upload-label">
                 <FiUpload className="upload-icon" />
                 <span>Upload Payment Proof</span>
                 <input
-                 type="file"
-                 id="screenshot"
-                 accept="image/*"
-                 className="file-input"
-                 onChange={handleFileChange}
+                  type="file"
+                  id="screenshot"
+                  accept="image/*"
+                  className="file-input"
+                  onChange={handleFileChange}
                 />
               </label>
             </div>
           </div>
 
-          <div className="input-group">
+          <div className="input-group" data-aos="fade-up">
             <label htmlFor="message">Message (Optional)</label>
             <textarea
               id="message"
@@ -312,7 +324,12 @@ export default function Donate() {
             ></textarea>
           </div>
 
-          <button type="submit" className="submit-button1" disabled={loading}>
+          <button
+            type="submit"
+            className="submit-button1"
+            disabled={loading}
+            data-aos="fade-up"
+          >
             {loading ? "Submitting..." : "Confirm Donation"}
           </button>
         </form>
@@ -320,17 +337,17 @@ export default function Donate() {
 
       {/* Toast Notification */}
       {showToast && (
-        <div className="toast">
+        <div className="toast" data-aos="fade-up">
           <FiCheckCircle /> Copied to clipboard!
         </div>
       )}
 
       {/* Appreciation Section */}
-      <section className="appreciation-section">
-        <h2 className="appreciation-title">
+      <section className="appreciation-section" data-aos="fade-up">
+        <h2 className="appreciation-title" data-aos="fade-right">
           Thank You for Making a Difference!
         </h2>
-        <p className="appreciation-text">
+        <p className="appreciation-text" data-aos="fade-up">
           Your generosity helps us create sustainable change in our community.
         </p>
       </section>

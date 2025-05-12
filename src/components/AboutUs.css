@@ -8,6 +8,7 @@
   position:relative;
   bottom: 5%;
   /* padding-top: 15rem; */
+  overflow: hidden;
 
 }
 
@@ -70,7 +71,7 @@
   position: absolute;
   width: 70%;
   height: 80%;
-  background-color: hsl(0, 4%, 81%);
+  background-color: transparent;
   border-radius: 12px;
   z-index: 0;
 }

@@ -15,12 +15,13 @@
     margin:0 auto;
     padding: 0 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
   }
   
   /* Hero Banner */
   .hero-banner {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: white;
+    color: rgb(13, 10, 10);
     padding: 3rem 2rem;
     border-radius: 12px;
     margin: 2rem 0;

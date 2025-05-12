@@ -6,7 +6,26 @@
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #e4d4b3;
+    overflow: hidden;
   }
+
+  /* .faq-container { */
+    /* max-width: 100%; */
+    /* margin: 1rem auto; */
+    /* padding: 2rem 120px; */
+    /* font-family: Arial, sans-serif; */
+    /* color: #333; */
+    /* Use a specific background image path */
+    /* background-image: url("../assets/unsure-hesitant-worried-cute-africanamerican-girl-face-tough-decision-look-up-thoughtful-make-plan-t.jpg"); Corrected Path! */
+  
+    /* background-size: cover; Or contain, auto, or specific dimensions */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; Key property for fixed background */
+    /* position: relative; Important for containing the background */
+    /* overflow: hidden;   Important for containing the background */
+  /* } */
+  
   
   .faq-title {
     font-size: 2.5rem;

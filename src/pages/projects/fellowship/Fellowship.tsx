@@ -1,12 +1,3 @@
-// import React from "react";
-// import trips from "../assets/images/trips.jpg";
-// import buheFellowship from "../assets/images/buhe-fellowship.jpg";
-// import coffeeTime from "../assets/images/coffee-time.jpg";
-// import sleepover from "../assets/images/sleepover.jpg";
-// import message from "../assets/images/message.jpg";
-// import meeting from "../../../assets/about.jpg"
-
-
 //Buhe Fellowship
 import buheFellowship from "../../../assets/Buhe-Fellowship/buhe_13_withGuest.jpg";
 import buheFellowship1 from "../../../assets/Buhe-Fellowship/buhe_7.jpg";
@@ -32,11 +23,9 @@ import sleepover2 from "../../../assets/Sleep-Over/IMG_20250403_103937_375.jpg";
 import sleepover3 from "../../../assets/Sleep-Over/IMG_20250403_110129_718.jpg";
 // import sleepover4 from "../../../assets/Sleep Over/IMG_20250403_110445_794.jpg";
 
-
 //I've a Message
 import message from "../../../assets/I've a Message/photo_17_2025-02-26_10-26-07.jpg";
 import message1 from "../../../assets/I've a Message/photo_22_2025-02-26_10-26-07.jpg";
-
 
 //Trips
 import trips from "../../../assets/Trip/photo_2025-04-06_14-16-59.jpg";
@@ -48,29 +37,30 @@ import trips3 from "../../../assets/Trip/photo_2025-04-15_21-47-33.jpg";
 // import trips6 from "../../../assets/Trip/abc-3250.png";
 // import trips7 from "../../../assets/Trip/abc-3258.png";
 
-
 // import trips1 from "../../../assets/Trips/trips_1.jpg";
 // import trips2 from "../../../assets/Trips/trips_2.jpg";
 // import trips3 from "../../../assets/Trips/trips_3.jpg";
 // import trips4 from "../../../assets/Trips/trips_4.jpg";
 
-
-
 import "./Fellowship.css";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const clubProjects = [
   {
-    id:"trips",
+    id: "trips",
     title: "Trips",
     description: "Organizing group outings to explore new places.",
     image: trips1,
-    gallery: [trips, trips, trips2,trips3, trips2], // Replace with actual images
+    gallery: [trips, trips, trips2, trips3, trips2], // Replace with actual images
     impact: "10+ trips organized",
-    testimonial: "The trips are always so much fun and a great way to bond. - Member",
+    testimonial:
+      "The trips are always so much fun and a great way to bond. - Member",
   },
   {
-    id:"buheFellowship",
+    id: "buheFellowship",
     title: "Buhe Fellowship",
     description: "Celebrating cultural traditions together.",
     image: buheFellowship1,
@@ -79,7 +69,7 @@ const clubProjects = [
     testimonial: "Buhe Fellowship is a highlight of the year. - Participant",
   },
   {
-    id:"coffeeTime",
+    id: "coffeeTime",
     title: "Coffee Time",
     description: "Casual meet-ups over coffee.",
     image: coffeeTime,
@@ -88,7 +78,7 @@ const clubProjects = [
     testimonial: "Coffee Time is a great way to relax and connect. - Member",
   },
   {
-    id:"sleepover",
+    id: "sleepover",
     title: "Sleepover",
     description: "Overnight gatherings for fun and bonding.",
     image: sleepover,
@@ -96,7 +86,8 @@ const clubProjects = [
     impact: "20+ sleepovers organized",
     testimonial: "The sleepovers are always a blast! - Member",
   },
-  {id:"iHaveAMessage",
+  {
+    id: "iHaveAMessage",
     title: "I have a Message",
     description: "Sharing motivational messages and stories.",
     image: message,
@@ -108,42 +99,101 @@ const clubProjects = [
 ];
 
 export default function Fellowship() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
-    <section className="club-service">
-      <div className="projects-header">
-        <h2 className="projects-title">Fellowship (Club Service) Projects</h2>
-        <p className="projects-description">We build strong friendships and connections through fun and meaningful activities.</p>
+    <section className="club-service" data-aos="fade-up">
+      <div className="projects-header" data-aos="fade-down">
+        <h2
+          className="projects-title"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          Fellowship (Club Service) Projects
+        </h2>
+        <p
+          className="projects-description"
+          ata-aos="fade-left"
+          data-aos-delay="200"
+        >
+          We build strong friendships and connections through fun and meaningful
+          activities.
+        </p>
       </div>
 
       <div className="projects-list">
         {clubProjects.map((project, index) => (
-          <div key={index} className="project-card">
-            <img src={project.image} alt={project.title} className="project-image" />
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-text">{project.description}</p>
+          <div
+            key={index}
+            className="project-card"
+            data-aos="zoom-in-up"
+            data-aos-delay={`${100 + index * 100}`}
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+              data-aos="fade-in"
+              data-aos-delay="300"
+            />
+            <h3
+              className="project-title"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
+              {project.title}
+            </h3>
+            <p
+              className="project-text"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              {project.description}
+            </p>
 
             {/* Impact Metrics */}
-            <div className="impact-metrics">
+            {/* <div
+              className="impact-metrics"
+              data-aos="flip-up"
+              data-aos-delay="600"
+            >
               <p>Impact: {project.impact}</p>
-            </div>
+            </div> */}
 
             {/* Testimonial */}
-            <div className="testimonial">
+            <div
+              className="testimonial"
+              data-aos="zoom-in"
+              data-aos-delay="650"
+            >
               <p>"{project.testimonial}"</p>
             </div>
 
             {/* Gallery for each sub-project */}
-            <div className="gallery">
+            {/* <div className="gallery">
               <h4>Gallery</h4>
               <div className="gallery-images">
                 {project.gallery.map((image, idx) => (
-                  <img key={idx} src={image} alt={`${project.title} ${idx + 1}`} className="gallery-image" />
+                  <img
+                    key={idx}
+                    src={image}
+                    alt={`${project.title} ${idx + 1}`}
+                    className="gallery-image"
+                    data-aos="zoom-in"
+                    data-aos-delay={`${750 + idx * 50}`}
+                  />
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Call-to-Detail Button */}
-            <Link to={`/fellowship/projectDetail/${project.id}`} className="cta-button">
+            <Link
+              to={`/fellowship/projectDetail/${project.id}`}
+              className="cta-button"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
               Learn More
             </Link>
           </div>

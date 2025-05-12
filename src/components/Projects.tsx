@@ -4,8 +4,10 @@ import fellowship from "../assets/Buhe-Fellowship/buhe_1.jpg";
 import "./Projects.css"; // Import the CSS file
 import { useTranslation } from "react-i18next";
 import Modal from "./Modal"; // Import the modal component
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface Project {
   title: string;
@@ -45,31 +47,40 @@ export default function Projects() {
     setIsModalOpen(true);
   };
 
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
-    <section id="services" className="projects-section">
-      <div className="projects-header">
-        <h2 className="projects-title">{t("projects_title")}</h2>
-        <p className="projects-description">{t("projects_description")}</p>
+    <section id="services" className="projects-section" data-aos="fade-up">
+      <div className="projects-header" data-aos="fade-up">
+        <h2 className="projects-title" data-aos="fade-right">{t("projects_title")}</h2>
+        <p className="projects-description"data-aos="fade-up">{t("projects_description")}</p>
       </div>
 
-      <div className="projects-list">
+      <div className="projects-list" data-aos="fade-up">
         {projects.map((project, index) => (
           <div
             className="projects-project-card"
             key={index}
             onClick={() => openModal(project)}
+            data-aos="zoom-in"
+            data-aos-delay={`${index * 100}`}
           >
             <img
               src={project.image}
               alt={project.title}
               className="project-image"
               onClick={() => openModal(project)}
+              data-aos="zoom-in"
+              data-aos-delay={`${index * 100}`}
             />
-            <h3 className="project-title" onClick={() => openModal(project)}>
+            <h3 className="project-title" onClick={() => openModal(project)} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
               {project.title}
             </h3>
             <Link to={`/${project.path}`} key={index}>
-              <p className="project-text">{project.description} ...see more</p>{" "}
+              <p className="project-text" data-aos="fade-up" data-aos-delay={`${index * 100}`}>{project.description} ...see more</p>{" "}
             </Link>
           </div>
         ))}
@@ -77,9 +88,9 @@ export default function Projects() {
 
       {selectedProject && (
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-          <img src={selectedProject.image} alt={selectedProject.title} className="project-image" />
-          <h2 className="project-title">{selectedProject.title}</h2>
-          <p className="project-text">{selectedProject.description}</p>
+          <img src={selectedProject.image} alt={selectedProject.title} className="project-image" data-aos="zoom-in" />
+          <h2 className="project-title" data-aos="fade-up">{selectedProject.title}</h2>
+          <p className="project-text" data-aos="fade-up">{selectedProject.description}</p>
         </Modal>
       )}
     </section>
