@@ -4,26 +4,26 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import MainLayout from "./MainLayout";
+import MainLayout from "./Layouts/MainLayout";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Donate from "./pages/Donate";
-import ContactUs from "./pages/ContactUs";
-import DirectorshipPositions from "./pages/DirectorshipPositions";
-import PastPresidents from "./pages/PastPresidents";
-import NewsEventsPage from "./pages/NewsAndEvents";
-import DetailPage from "./pages/NewsAndEventDetailPage";
-import ProjectPage from "./pages/projects/ProjectPage"; // Adjust the path if necessary
+import About from "./pages/About Us/About";
+import Donate from "./pages/Donate/Donate";
+import ContactUs from "./pages/Contact Us/ContactUs";
+import DirectorshipPositions from "./pages/DirectorshipPositions/DirectorshipPositions";
+import PastPresidents from "./pages/PastPresidents/PastPresidents";
+import NewsEventsPage from "./pages/NewsAndEvents/NewsAndEvents";
+import DetailPage from "./pages/NewsAndEvents/NewsAndEventsDetail/NewsAndEventDetailPage";
+import ProjectPage from "./pages/projects/ProjectDetail/ProjectPage"; // Adjust the path if necessary
 
 // Projects
-import CommunityService from "./pages/projects/community-service/CommunityService";
-import ProfessionalDevelopment from "./pages/projects/professional-development/ProfessionalDevelopment";
-import Fellowship from "./pages/projects/fellowship/Fellowship";
+import CommunityService from "./pages/projects/ProjectTypes/community-service/CommunityService";
+import ProfessionalDevelopment from "./pages/projects/ProjectTypes/professional-development/ProfessionalDevelopment";
+import Fellowship from "./pages/projects/ProjectTypes/fellowship/Fellowship";
 
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import AdminDashboard from "./Admin/Dashboard";
-import Gallery from "./pages/Gallery";
+import Gallery from "./pages/Gallery/Gallery";
 
 export default function App() {
   const HomeLayout = () => {

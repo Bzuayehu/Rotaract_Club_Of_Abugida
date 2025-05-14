@@ -3,7 +3,7 @@ import professionalDevelopment from "../assets/professional.webp";
 import fellowship from "../assets/Buhe-Fellowship/buhe_1.jpg";
 import "./Projects.css"; // Import the CSS file
 import { useTranslation } from "react-i18next";
-import Modal from "./Modal"; // Import the modal component
+import Modal from "../Modals/Modal"; // Import the modal component
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";

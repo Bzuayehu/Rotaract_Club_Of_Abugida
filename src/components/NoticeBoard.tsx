@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import Modal from "./Modal"; // Import Modal component
+import Modal from "../Modals/Modal"; // Import Modal component
 import blooddonation from "../assets/blooddonation.jpg";
 import sleepover from "../assets/News and Events/call out forArtists.png";
 import "./NoticeBoard.css"; // Import CSS file

@@ -1,0 +1,364 @@
+/* Donate.css */
+:root {
+  --primary: #D91A5F;
+  --secondary: #457b9d;
+  --accent: #f4a261;
+  --background:#e4d4b3;
+  --text-dark: #1d3557;
+  --text-light: #f1faee;
+  --success: #2a9d8f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background);
+    overflow-x: hidden;
+}
+
+.donate-container {
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  overflow: hidden;
+}
+.donation-methods,.donation-form-section{
+  padding: 2rem;
+}
+
+/* Hero Section */
+.donate-hero1 {
+  position: relative;
+  height: 50vh;
+  background-image: url('../../assets/flat-lay-composition-still-life-friendship-day-elements-2.jpg'); /* Update this path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 12px; */
+  width: 100%;
+}
+
+.hero-overlay1 {
+  position: absolute;
+  top: 25%;
+  /* left: 50%; */
+  width: 60%;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 12px;
+
+}
+
+.hero-content1 {
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero-title1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Donation Methods Grid */
+.methods-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 3rem 0;
+}
+
+.method-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-5px);
+}
+
+.bank-card {
+  border-top: 4px solid var(--secondary);
+}
+
+.telebirr-card {
+  border-top: 4px solid var(--success);
+}
+
+.online-card {
+  border-top: 4px solid var(--accent);
+}
+
+.method-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.method-icon {
+  font-size: 2rem;
+}
+
+.bank-detail {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(69, 123, 157, 0.1);
+}
+
+.account-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.account-number {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgba(69, 123, 157, 0.1);
+  color: var(--secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+  background-color: rgba(69, 123, 157, 0.2);
+}
+
+/* Form Styling */
+.donation-form-section {
+  background: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.form-row {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 1.5rem;
+}
+
+.vibrant-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid var(--secondary);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.vibrant-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  border: 2px dashed var(--secondary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-upload-label:hover {
+  border-color: var(--primary);
+  background-color: rgba(230, 57, 70, 0.05);
+}
+
+.submit-button1 {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button1:hover {
+  background-color: #d62828;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--success);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2EC4B6;
+  transition: width 0.3s ease;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Status Messages */
+.status-message {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+.status-message.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+}
+
+.status-message.error {
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+}
+
+/* Loading State */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.status-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .methods-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .hero-title1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle2 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .donate-hero1 {
+    background-image: url('../assets/flat-lay-composition-still-life-friendship-day-elements-2.jpg'); /* Update this path */
+
+  }
+  .hero-overlay1 {
+    top: 25%;
+    width: 80%;
+  
+  }
+}
+
+/* Appreciation Section */
+.appreciation-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  /* border-radius: 1rem; */
+  background: var(--primary);
+  color: white;
+}
+.appreciation-title{
+  color: var(--text-light);
+}
