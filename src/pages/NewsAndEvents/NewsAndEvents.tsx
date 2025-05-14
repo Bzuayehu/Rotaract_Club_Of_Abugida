@@ -166,16 +166,16 @@ const events :EventItem[]=eventRaw.map((event) => ({
       category: "achievements",
     },
   ];
-const now = new Date();
-const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30;
+// const now = new Date();
+// const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30;
 
-const featuredNews = newsData.filter(
-  (news) => now.getTime() - news.date.getTime() <= THIRTY_DAYS
-);
+// const featuredNews = newsData.filter(
+//   (news) => now.getTime() - news.date.getTime() <= THIRTY_DAYS
+// );
 
-const sortedFeaturedNews = featuredNews.sort(
-  (a, b) => b.date.getTime() - a.date.getTime()
-);
+// const sortedFeaturedNews = featuredNews.sort(
+//   (a, b) => b.date.getTime() - a.date.getTime()
+// );
 const sortedFeaturedNewsAll = newsData.sort(
   (a, b) => b.date.getTime() - a.date.getTime()
 );
