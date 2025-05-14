@@ -189,6 +189,11 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .galleryItem img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
   }
   
   /* Call to Action */

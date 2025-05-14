@@ -383,7 +383,7 @@ const projects: Project[] = [
       },
 
       {
-        id: "ive-a-message",
+        id: "iHaveAMessage",
         category: "Fellowship",
         title: "I have a Message",
         date: "Annual",
@@ -670,8 +670,6 @@ const projects: Project[] = [
           }
         ]
       }
-
-  // Add more projects here
 ];
 
 export default projects;
