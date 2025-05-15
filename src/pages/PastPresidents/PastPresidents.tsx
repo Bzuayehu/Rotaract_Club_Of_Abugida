@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import "./PastPresidents.css";
 import pp1 from "../../assets/Ipp-removebg-preview.png";
 import Nardos from "../../assets/BODs/Nardos-removebg-preview.png";
-import fitsum from "../../assets/BODs/Fitsum-removebg-preview.png";
+import fitsum from "../../assets/BODs/fitsum-removebg-preview.png";
 import tsedale from "../../assets/viceP-removebg-preview.png";
 import zemenay from "../../assets/secretary-removebg-preview.png";
 import Adonay from "../../assets/project_Ofcr-removebg-preview.png";
