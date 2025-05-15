@@ -6,10 +6,21 @@ import { useInView } from "react-intersection-observer";
 import "./PastPresidents.css";
 import pp1 from "../../assets/Ipp-removebg-preview.png";
 import Nardos from "../../assets/BODs/Nardos-removebg-preview.png";
-import fitsum from "../../assets/BODs/fitsum-removebg-preview.png";
+import fitsum from "../../assets/BODs/2023:24/FitsumTedla__1_-removebg-preview.png";
 import tsedale from "../../assets/viceP-removebg-preview.png";
 import zemenay from "../../assets/secretary-removebg-preview.png";
 import Adonay from "../../assets/project_Ofcr-removebg-preview.png";
+import gelila from "../../assets/BODs/International_Servc-removebg-preview-2.png";
+import eyerus from "../../assets/BODs/Eyerusalem.png";
+import mercy from "../../assets/BODs/mercyy-removebg-preview (1).png";
+import addisAlem from "../../assets/BODs/addisAlemChekol-Photoroom (1).jpg";
+import alazar from "../../assets/BODs/2023:24/AlazarEshetu__1_-removebg-preview.png";
+import TsionT from "../../assets/BODs/2023:24/TsionTeshome__1_-removebg-preview.png";
+import tsionA from "../../assets/BODs/2023:24/TsionAssefa__1_-removebg-preview.png";
+import milka from "../../assets/BODs/2023:24/Milka__1_-removebg-preview.png";
+import peniel from "../../assets/BODs/2023:24/penielHailu__1_-removebg-preview.png";
+import tesfish from "../../assets/BODs/2023:24/Tesfish__1_-removebg-preview.png";
+import meskel from "../../assets/BODs/2023:24/meskel-removebg-preview.png";
 
 interface BOD {
   name: string;
@@ -42,45 +53,51 @@ export default function PastPresidents() {
       name: "Peniel Hailu",
       year: "2023-2024",
       description: t("pastPresidents.0.description"),
-      image: pp1,
+      image: peniel,
       bods: [
         { name: "Tsedale Gashaw", role: "Secretary", image: tsedale },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
+        { name: "Tesfaye Taye", role: "Treasurer", image: tesfish },
         {
-          name: "Zemenay",
+          name: "Zemenay Tsegaye",
           role: "Community Service Director",
           image: zemenay,
         },
-        { name: "Milka", role: "Club Service Director", image: pp1 },
-        { name: "Meskel Haile", role: "Public Relations Director", image: pp1 },
+        { name: "Milka Endrias", role: "Club Service Director", image: milka },
+        { name: "Meskel Haile", role: "Public Relations Director", image: meskel },
         {
-          name: "Alazar",
+          name: "Alazar Eshetu",
           role: "Membership Extension and Retention Director",
-          image: pp1,
+          image: alazar,
         },
         {
-          name: "Eyerusalem",
+          name: "Eyerusalem Kassahun",
           role: "Sergeant at Arms Director",
-          image: pp1,
+          image: eyerus,
         },
         {
           name: "Tsedale Gashaw",
           role: "The Rotary Foundation Director",
           image: tsedale,
         },
+        { name: "Gelila", role: "Interact Director", image: gelila },
+
         {
-          name: "Gelila",
+          name: "Addisalem Chekol",
           role: "International Service Director",
-          image: pp1,
+          image: addisAlem,
         },
         {
-          name: "Hanna Getachew",
+          name: "Mihret Kebede",
+          role: "Professional Development Director",
+          image: mercy,
+        },
+        {
+          name: "Tsion Teshome",
           role: "Green Rotaract Concept Director",
-          image: pp1,
+          image: TsionT,
         },
         { name: "Adonay Haile", role: "Fundraising Director", image: Adonay },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
+        { name: "Tsion Assefa", role: "Project Officer", image: tsionA },
       ],
     },
     {

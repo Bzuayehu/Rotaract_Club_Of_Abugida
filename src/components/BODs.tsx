@@ -58,7 +58,7 @@ export default function BODs() {
     },
     {
       id: 3,
-      name: "Tsedale",
+      name: "Tsedale Gashaw",
       role: t("Vice_President"),
       image: vice,
       socialMedia: {
@@ -91,7 +91,7 @@ export default function BODs() {
     },
     {
       id: 6,
-      name: "Nardos",
+      name: "Nardos Asfaw",
       role: t("Public_Relations_Director"),
       image: Pr,
       socialMedia: {
@@ -102,7 +102,7 @@ export default function BODs() {
     },
     {
       id: 7,
-      name: "Zemenay",
+      name: "Zemenay Tsegaye",
       role: t("Secretary"),
       image: secretary,
       socialMedia: {
@@ -124,7 +124,7 @@ export default function BODs() {
     },
     {
       id: 9,
-      name: "Solomon",
+      name: "Solomon Tesfaye",
       role: t("Treasurer"),
       image: treasurer,
       socialMedia: {
@@ -157,7 +157,7 @@ export default function BODs() {
     },
     {
       id: 12,
-      name: "Adonias",
+      name: "Adonay Hailu",
       role: t("Project_Officer"),
       image: projectOfcr,
       socialMedia: {
@@ -168,7 +168,7 @@ export default function BODs() {
     },
     {
       id: 13,
-      name: "Tamene",
+      name: "Tamene Dejene",
       role: t("Green_Rotaract_Concept_Director"),
       image: grc,
       socialMedia: {
@@ -212,7 +212,7 @@ export default function BODs() {
     },
     {
       id: 17,
-      name: "Bezawit",
+      name: "Bezawit Tsegaye",
       role: t("International_Service_Director"),
       image: internationalServc,
       socialMedia: {
@@ -223,7 +223,7 @@ export default function BODs() {
     },
     {
       id: 18,
-      name: "Gelila",
+      name: "Gelila G/Hiwot",
       role: t("Professional_Development_Director"),
       image: professionalDev,
       socialMedia: {
