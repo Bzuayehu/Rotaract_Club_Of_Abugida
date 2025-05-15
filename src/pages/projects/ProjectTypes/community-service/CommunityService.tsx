@@ -194,7 +194,7 @@ export default function CommunityService() {
       </p>
     </div>
   
-    <div className="projects-list">
+    <div className="projects-list-communityService">
       {communityProjects.map((project, index) => (
         <div
           key={index}

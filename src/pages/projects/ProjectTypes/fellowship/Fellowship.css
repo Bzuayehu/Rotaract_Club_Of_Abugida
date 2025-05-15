@@ -30,7 +30,7 @@
   }
   
   /* Projects List Container (Card Wrapper) */
-  .club-service .projects-list {
+  .projects-list-fellowship {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
     gap: 20px; /* Space between cards */
@@ -141,14 +141,14 @@
   
   /* Media Queries for Responsive Behavior */
   @media (max-width: 900px) {
-    .club-service .projects-list {
+    .projects-list-fellowship {
       grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
     }
 
     .club-service{
       padding:1rem 0px;
     }
-    .club-service .projects-list{
+    .projects-list-fellowship{
       padding: 0 5px;
 
     }
@@ -173,7 +173,7 @@
       text-align: center;
 
     }
-    .club-service .projects-list {
+    .projects-list-fellowship{
       grid-template-columns: 1fr; /* 1 column on small screens */
     }
 

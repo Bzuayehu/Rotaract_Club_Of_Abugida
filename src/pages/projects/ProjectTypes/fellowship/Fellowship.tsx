@@ -122,7 +122,7 @@ export default function Fellowship() {
         </p>
       </div>
 
-      <div className="projects-list">
+      <div className="projects-list-fellowship">
         {clubProjects.map((project, index) => (
           <div
             key={index}

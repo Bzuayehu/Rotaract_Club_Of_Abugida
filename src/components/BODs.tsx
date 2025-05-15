@@ -17,6 +17,7 @@ import fundraising from "../assets/Fundraisng-removebg-preview.png";
 import interact from "../assets/BODs/Interact-removebg-preview-2.png";
 import internationalServc from "../assets/BODs/International_Srvcc-removebg-preview-2-2.png";
 import professionalDev from "../assets/BODs/International_Servc-removebg-preview-2.png";
+import ClubChampionDr from "../assets//BODs/ClubChampionDr-removebg-preview (1).png";
 import { FaLinkedin, FaFacebook, FaHistory, FaTelegram } from "react-icons/fa"; // Import social media icons
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -187,8 +188,19 @@ export default function BODs() {
         facebook: "https://facebook.com",
       },
     },
-    {
+     {
       id: 15,
+      name: " Aschalew Melese",
+      role: t("Club_Champion_Director"),
+      image: ClubChampionDr,
+      socialMedia: {
+        linkedin: "#",
+        telegram: "#",
+        facebook: "#",
+      },
+    },
+    {
+      id: 16,
       name: "Bethelhem Birhanu",
       role: t("Interact_Director"),
       image: interact,
@@ -199,7 +211,7 @@ export default function BODs() {
       },
     },
     {
-      id: 16,
+      id: 17,
       name: "Bezawit",
       role: t("International_Service_Director"),
       image: internationalServc,
@@ -210,7 +222,7 @@ export default function BODs() {
       },
     },
     {
-      id: 17,
+      id: 18,
       name: "Gelila",
       role: t("Professional_Development_Director"),
       image: professionalDev,

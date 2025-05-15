@@ -1,10 +1,10 @@
 /* Modal Overlay */
-.modal-overlay-1 {
+.modal-overlay-modal {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -12,10 +12,15 @@
   z-index: 1000;
   padding-top: 30px;
   padding-bottom: 30px;
+  overflow: auto !important; /* Enable vertical scrolling */
+
 }
+/* html,body {
+    overflow: hidden;
+  } */
 
 /* Modal Content */
-.modal-content {
+.modal-content-modal {
   background: #e1d4b3;
   padding: 2rem;
   border-radius: 8px;
@@ -27,11 +32,11 @@
   
   /* Allow scrolling if content overflows */
   max-height: 80vh; /* Set a maximum height to ensure it's not too large */
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto !important; /* Enable vertical scrolling */
 }
 
 /* Close Button */
-.close-button {
+.close-button-modal {
   position: absolute;
   top: 10px;
   right: 15px;

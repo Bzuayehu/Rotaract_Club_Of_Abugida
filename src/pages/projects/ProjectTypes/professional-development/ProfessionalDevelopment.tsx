@@ -110,7 +110,7 @@ export default function professionalDevelopment() {
         </p>
       </div>
 
-      <div className="projects-list">
+      <div className="projects-list-pd">
         {professionalProjects.map((project, index) => (
           <div key={index} className="project-card" data-aos="zoom-in-up">
             <img

@@ -281,7 +281,7 @@ body {
   /* body { */
     /* @apply bg-background text-foreground; */
   /* } */
-  body {
+  html,body {
     overflow-x: hidden;
   }
 }

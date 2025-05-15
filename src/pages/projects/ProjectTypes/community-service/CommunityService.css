@@ -33,7 +33,7 @@
   }
   
   /* Projects List Container (Card Wrapper) */
-  .community-service .projects-list {
+  .projects-list-communityService {
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next row */
     justify-content: start; /* Center cards horizontally */
@@ -190,7 +190,7 @@
 
     }
 
-    .community-service .projects-list {
+    .projects-list-communityService {
       padding: 0 5px;
   }
   }
