@@ -79,7 +79,7 @@ export default function PastPresidents() {
           role: "The Rotary Foundation Director",
           image: tsedale,
         },
-        { name: "Gelila", role: "Interact Director", image: gelila },
+        { name: "Gelila G/Hiwot", role: "Interact Director", image: gelila },
 
         {
           name: "Addisalem Chekol",
