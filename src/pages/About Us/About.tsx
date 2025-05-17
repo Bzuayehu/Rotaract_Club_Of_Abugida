@@ -171,7 +171,7 @@ export default function About() {
         </div>
 
         {/* Meetings Section */}
-        <div className="meetings expandable-section" data-aos="fade-up">
+        <div className="meetings1 expandable-section" data-aos="fade-up">
           <div
             className="section-header"
             onClick={() => toggleSection("meetings")}
@@ -195,7 +195,7 @@ export default function About() {
         </div>
 
         {/* Join Section */}
-        <div className="join expandable-section" data-aos="fade-up">
+        <div className="join1 expandable-section" data-aos="fade-up">
           <div className="section-header" onClick={() => toggleSection("join")}>
             <h2>How to Join</h2>
             <span
@@ -256,7 +256,7 @@ export default function About() {
         </div>
 
         {/* Contact Section */}
-        <div className="contact expandable-section" data-aos="fade-up">
+        <div className="contact1 expandable-section" data-aos="fade-up">
           <div
             className="section-header"
             onClick={() => toggleSection("contact")}
