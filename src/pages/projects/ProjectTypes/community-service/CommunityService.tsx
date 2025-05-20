@@ -70,18 +70,6 @@ import "./CommunityService.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import projects from "../../ProjectData/ProjectData";
-const communityProject = projects
-  .filter(project => project.category === "Community Service")
-  .map(project => ({
-    id: project.id,
-    title: project.title,
-    description: project.description,
-    image: project.image, // Implement getMainImage function
-    gallery: project.gallery, // Implement getGalleryImages function
-    impact: project.impact, // Format array to string
-    testimonial: project.testimonials // Get from your data
-  }));
 
 const communityProjects = [
   {
