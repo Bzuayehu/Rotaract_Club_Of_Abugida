@@ -11,12 +11,11 @@ import "aos/dist/aos.css";
 interface ProjectDetailProps {
   project: Project;
 }
-
 const ProjectDetail = ({ project }: ProjectDetailProps) => {
-   const location = useLocation();
+  const location = useLocation();
   const stateProject = location.state?.project as Project | undefined;
 
-    // Use props project first, fallback to state if needed
+  // Use props project first, fallback to state if needed
   const finalProject = project || stateProject;
 
   if (!finalProject) {
