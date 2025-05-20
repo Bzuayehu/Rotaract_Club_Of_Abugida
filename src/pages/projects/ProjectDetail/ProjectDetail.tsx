@@ -1,5 +1,5 @@
 // components/ProjectDetail.tsx
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Project } from "../../../types";
 import styles from "./ProjectDetail.module.css";
 import { useState, useEffect } from "react";
@@ -13,6 +13,15 @@ interface ProjectDetailProps {
 }
 
 const ProjectDetail = ({ project }: ProjectDetailProps) => {
+   const location = useLocation();
+  const stateProject = location.state?.project as Project | undefined;
+
+    // Use props project first, fallback to state if needed
+  const finalProject = project || stateProject;
+
+  if (!finalProject) {
+    return <div className="error-container">Project data not available</div>;
+  }
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [showAllGallery, setShowAllGallery] = useState(false);
   const toggleGallery = () => setShowAllGallery(!showAllGallery);
@@ -37,6 +46,15 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
         <span className={styles.category} data-aos="fade-left">
           {project.category}
         </span>
+      </div>
+
+      {/* Main Image Section */}
+      <div className={styles.mainImageContainer} data-aos="zoom-in">
+        <img 
+          src={project.image} 
+          alt={project.title} 
+          className={styles.mainImage}
+        />
       </div>
 
       {/* Quick Facts */}

@@ -144,3 +144,18 @@
   .toggleGalleryButton:hover::before {
     left: 125%;
   }
+
+  /* ProjectDetail.module.css */
+.mainImageContainer {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mainImage {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
