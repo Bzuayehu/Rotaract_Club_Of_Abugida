@@ -49,13 +49,13 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
       </div>
 
       {/* Main Image Section */}
-      <div className={styles.mainImageContainer} data-aos="zoom-in">
+      {/* <div className={styles.mainImageContainer} data-aos="zoom-in">
         <img 
           src={project.image} 
           alt={project.title} 
           className={styles.mainImage}
         />
-      </div>
+      </div> */}
 
       {/* Quick Facts */}
       <div className={styles.quickFacts} data-aos="fade-up">

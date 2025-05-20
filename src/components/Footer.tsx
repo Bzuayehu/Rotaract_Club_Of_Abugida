@@ -16,7 +16,7 @@ export default function Footer() {
   }, []);
   const { t } = useTranslation();
   return (
-    <footer className="footer" data-aos="fade-up">
+    <footer className="footer1" data-aos="fade-up">
       <div className="footer-container">
         {/* Club Logo Section */}
         <div className="footer-section" data-aos="zoom-in">
