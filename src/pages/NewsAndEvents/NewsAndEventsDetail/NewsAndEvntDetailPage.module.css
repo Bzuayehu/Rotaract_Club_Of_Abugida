@@ -98,14 +98,20 @@
     margin: 2rem 0;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
   }
   
   .featuredImage img {
-    width: 100%;
+
+     width: 70%;
     height: auto;
-    max-height: 500px;
-    object-fit: cover;
+    max-height: 700px;
+    object-fit:fill;
+    
+    /* width: 70%;
+  height: auto;
+  max-height: clamp(200px, 50vh, 600px);
+  object-fit: fill; */
   }
   
   /* Content */

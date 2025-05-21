@@ -1,7 +1,17 @@
 import { useState, useEffect } from "react";
 import "./NewsEventsPage.css";
-import img from "../../assets/Coffee-time/best-pic.jpg";
+// import img from "../../assets/Coffee-time/best-pic.jpg";
 import img1 from "../../assets/Events/Coming Soon.jpg";
+import mtt from "../../assets/News and Events/mt-5.jpg";
+import eu2 from "../../assets/News and Events/eu-2.jpg";
+
+import pt2 from "../../assets/News and Events/pt-2.jpg";
+
+import ev1 from "../../assets/News and Events/ev-1.jpg";
+
+import bkd1 from "../../assets/News and Events/bkd-1.jpg";
+
+import img2 from "../../assets/Blood Donation/Screenshot 2025-05-21 at 1.07.45 in the morning.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,7 +20,7 @@ type EventItem = {
   id: number;
   title: string;
   date: Date;
-  location: string;
+  location: string[];
   description: string;
   image: string;
   isUpcoming: boolean;
@@ -35,150 +45,100 @@ const NewsEventsPage = () => {
   >("upcoming");
   const [activeNewsCategory, setActiveNewsCategory] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
-const [visibleNewsCount, setVisibleNewsCount] = useState(4);
-const [visibleEventsCount, setVisibleEventsCount] = useState(4);
+  const [visibleNewsCount, setVisibleNewsCount] = useState(4);
+  const [visibleEventsCount, setVisibleEventsCount] = useState(4);
 
   const today = new Date();
 
-  
-
   // Sample data
-  const eventRaw= [
+  const eventRaw = [
     {
       id: 1,
       title: "Rac Abugida Art Exhibition",
-      date: new Date(2025, 5, 23),
-      location: "Addis Ababa University, Alle School of Fine Arts and Design",
-      description:"join us for our amaizing art exhibition showcasing the talents of our members and local artists. Enjoy a day of creativity, inspiration, and community engagement.",
+      date: new Date(2025, 5, 14),
+      location: ["Addis Ababa University, Alle School of Fine Arts and Design"],
+      description:
+        "join us for our amaizing art exhibition showcasing the talents of our members and local artists. Enjoy a day of creativity, inspiration, and community engagement.",
       image: img1,
       // isUpcoming: true,
-      category: "fundraiser",
+      category: "fundraising",
     },
     {
       id: 2,
-      title: "Community Clean-Up",
-      date: new Date(2025, 4, 15),
-      location: "Central Park",
-      description: "City-wide clean-up initiative with 100+ volunteers",
-      image: img,
-      // isUpcoming: false,
-      category: "service",
-    },
-    {
-      id: 3,
-      title: "Youth Leadership Workshop",
-      date: new Date(2025, 6, 10),
-      location: "City Library",
-      description: "Empowering young leaders with practical skills",
-      image: img,
-      // isUpcoming: true,
-      category: "education",
-    },
-    {
-      id: 4,
-      title: "Annual Charity Gala",
-      date: new Date(2025, 3, 23),
-      location: "Abugida Convention Center",
+      title: "Rac Abugida 68th Round Blood Donation",
+      date: new Date(2025, 4, 24),
+      location: ["Stadium Red Cross Compound", ", Mexico", ", Megenagna"],
       description:
-        "Join us for our flagship fundraising event with live music and auctions",
-      image: img,
-      // isUpcoming: true,
-      category: "fundraiser",
-    },
-    {
-      id: 5,
-      title: "Community Clean-Up",
-      date: new Date(2025, 4, 15),
-      location: "Central Park",
-      description: "City-wide clean-up initiative with 100+ volunteers",
-      image: img,
-      // isUpcoming: false,
+        "Join Rac Abugida’s 68th Blood Donation at Stadium, Mexico, and Megenagna. Your donation can save lives—be a hero today!",
+      image: img2, // replace with your actual image reference
       category: "service",
-    },
-    {
-      id: 6,
-      title: "Youth Leadership Workshop",
-      date: new Date(2025, 4, 10),
-      location: "City Library",
-      description: "Empowering young leaders with practical skills",
-      image: img,
-      // isUpcoming: true,
-      category: "education",
     },
   ];
-const events :EventItem[]=eventRaw.map((event) => ({
-  ...event,
-  isUpcoming: event.date >= today,
-}));
-
+  const events: EventItem[] = eventRaw.map((event) => ({
+    ...event,
+    isUpcoming: event.date >= today,
+  }));
 
   const newsData: NewsItem[] = [
     {
       id: 1,
-      title: "Rotaract Wins Community Award",
-      date: new Date(2025, 1, 10),
+      title: "General Meeting",
+      date: new Date(2025, 4, 11), // May is month 4 in JavaScript Date (0-indexed)
       summary:
-        "Recognized for outstanding service during the flood relief campaign",
-      image: img,
-      category: "achievements",
+        "Our general meeting was filled with joy, laughter, and reconnection as we welcomed missed members and celebrated Mother's Day with warm tributes.",
+      image: mtt, // replace with your actual image reference
+      category: "updates",
     },
     {
       id: 2,
-      title: "New Partnership with Local NGO",
-      date: new Date(2024, 12, 5),
+      title: "EU 2025 Children’s Race Fundraising Event",
+      date: new Date(2025, 4, 11), // May 11, 2025
       summary:
-        "Collaborating on education initiatives for underprivileged children",
-      image: img,
-      category: "partnerships",
-    },
-    {
-      id: 3,
-      title: "Blood Donation Camp Success",
-      date: new Date(2025, 4, 20),
-      summary: "Collected 150+ units of blood with community participation",
-      image: img,
+        "Our volunteers joined the EU Children’s Race, turning energy into impact by raising funds for future community projects!",
+      image: eu2, // replace with actual image import
       category: "achievements",
     },
     {
-      id: 4,
-      title: "Donated more than 1000 books to local schools",
-      date: new Date(2025, 4, 15),
+      id: 3,
+      title: "MOU with Eye-Plus for Eye Vision Project",
+      date: new Date(2025, 4, 2), //
       summary:
-        "Supporting literacy and education in our community",
-      image: img,
+        "Rotaract Abugida signed an MOU with Eye-Plus Optometrist Clinic to collaborate on the Eye Vision Project.",
+      image: pt2, // Replace with actual image import
+      category: "partnerships",
+    },
+    {
+      id: 4,
+      title: "Eye Vision Test at Eye-Plus Clinic",
+      date: new Date(2025, 3, 30), // May 2, 2025
+      summary:
+        "Successful eye consultation was conducted for Wonderad Primary School students as part of our Eye Vision Project.",
+      image: ev1, // Replace with the actual image used
       category: "achievements",
     },
     {
       id: 5,
-      title: "New Partnership with Local NGO",
-      date: new Date(2025, 4, 5),
+      title: "Over 1100 Books Donated to 4 Schools",
+      date: new Date(2025, 4, 1),
       summary:
-        "Collaborating on education initiatives for underprivileged children",
-      image: img,
-      category: "partnerships",
-    },
-    {
-      id: 6,
-      title: "Blood Donation Camp Success",
-      date: new Date(2025, 4, 20),
-      summary: "Collected 150+ units of blood with community participation",
-      image: img,
+        "With the support of members, donors, and a generous discount from Jaffar Books, we donated over 1100 books to four primary schools—spreading knowledge and joy.",
+      image: bkd1,
       category: "achievements",
     },
   ];
-// const now = new Date();
-// const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30;
+  // const now = new Date();
+  // const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30;
 
-// const featuredNews = newsData.filter(
-//   (news) => now.getTime() - news.date.getTime() <= THIRTY_DAYS
-// );
+  // const featuredNews = newsData.filter(
+  //   (news) => now.getTime() - news.date.getTime() <= THIRTY_DAYS
+  // );
 
-// const sortedFeaturedNews = featuredNews.sort(
-//   (a, b) => b.date.getTime() - a.date.getTime()
-// );
-const sortedFeaturedNewsAll = newsData.sort(
-  (a, b) => b.date.getTime() - a.date.getTime()
-);
+  // const sortedFeaturedNews = featuredNews.sort(
+  //   (a, b) => b.date.getTime() - a.date.getTime()
+  // );
+  const sortedFeaturedNewsAll = newsData.sort(
+    (a, b) => b.date.getTime() - a.date.getTime()
+  );
   const newsCategories = ["all", "achievements", "partnerships", "updates"];
   //   const eventCategories = ['all', 'fundraiser', 'service', 'education'];
 
@@ -257,7 +217,7 @@ const sortedFeaturedNewsAll = newsData.sort(
 
         {filteredNews.length > 0 ? (
           <div className="cards-grid">
-           {filteredNews.slice(0, visibleNewsCount).map((item) => (
+            {filteredNews.slice(0, visibleNewsCount).map((item) => (
               <div key={item.id} className="card" data-aos="zoom-in">
                 <div className="card-image-container">
                   <img src={item.image} alt={item.title} />
@@ -300,15 +260,15 @@ const sortedFeaturedNewsAll = newsData.sort(
       </section>
 
       {visibleNewsCount < filteredNews.length && (
-  <div className="see-more-container-newsEvents" data-aos="fade-up">
-    <button
-      className="see-more-button-newsEvents"
-      onClick={() => setVisibleNewsCount((prev) => prev + 3)}
-    >
-      See More News
-    </button>
-  </div>
-)}
+        <div className="see-more-container-newsEvents" data-aos="fade-up">
+          <button
+            className="see-more-button-newsEvents"
+            onClick={() => setVisibleNewsCount((prev) => prev + 3)}
+          >
+            See More News
+          </button>
+        </div>
+      )}
 
       <section className="events-section">
         <div className="news-events-section-header" data-aos="fade-left">
@@ -331,7 +291,7 @@ const sortedFeaturedNewsAll = newsData.sort(
 
         {filteredEvents.length > 0 ? (
           <div className="cards-grid">
-           {filteredEvents.slice(0, visibleEventsCount).map((event) => (
+            {filteredEvents.slice(0, visibleEventsCount).map((event) => (
               <div key={event.id} className="card" data-aos="zoom-in-up">
                 <Link to={`/events/${event.id}`} className="card-link">
                   <div className="card-image-container">
@@ -380,15 +340,15 @@ const sortedFeaturedNewsAll = newsData.sort(
         )}
       </section>
       {visibleEventsCount < filteredEvents.length && (
-  <div className="see-more-container-newsEvents" data-aos="fade-up">
-    <button
-      className="see-more-button-newsEvents"
-      onClick={() => setVisibleEventsCount((prev) => prev + 3)}
-    >
-      See More Events
-    </button>
-  </div>
-)}
+        <div className="see-more-container-newsEvents" data-aos="fade-up">
+          <button
+            className="see-more-button-newsEvents"
+            onClick={() => setVisibleEventsCount((prev) => prev + 3)}
+          >
+            See More Events
+          </button>
+        </div>
+      )}
 
       <section className="newsletter-cta" data-aos="fade-right">
         <h3 data-aos="fade-up">Never Miss an Update</h3>
