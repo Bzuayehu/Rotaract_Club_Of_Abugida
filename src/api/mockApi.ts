@@ -16,7 +16,7 @@ import eu4 from "../assets/News and Events/eu-4.jpg";
 
 import pt2 from "../assets/News and Events/pt-2.jpg";
 import pt3 from "../assets/News and Events/pt-3.jpg";
-import pt1 from "../assets/News and Events/pt-1.jpg";
+import pt1 from "../assets/News and Events/Pt-1.jpg";
 import pt4 from "../assets/News and Events/pt-4.jpg";
 import pt5 from "../assets/News and Events/pt-5.jpg";
 
