@@ -20,6 +20,7 @@ type ContentItem = {
 
 const NewsAndEventDetailPage = ({ type }: { type: "news" | "event" }) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [showAllImages, setShowAllImages] = useState(false);
 
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -103,7 +104,7 @@ const NewsAndEventDetailPage = ({ type }: { type: "news" | "event" }) => {
         <section className={styles.gallerySection} data-aos="fade-up">
           <h2 className={styles.sectionTitle}>Gallery</h2>
           <div className={styles.galleryGrid}>
-            {item.gallery.map((image, index) => (
+            {(showAllImages ? item.gallery : item.gallery.slice(0, 4)).map((image, index) => (
               <div key={index} className={styles.galleryItem} data-aos="zoom-in-up">
                 <img
                   src={image}
@@ -113,6 +114,15 @@ const NewsAndEventDetailPage = ({ type }: { type: "news" | "event" }) => {
               </div>
             ))}
           </div>
+          {!showAllImages && item.gallery.length > 4 && (
+            <button
+              className={styles.primaryButton}
+              style={{ marginTop: "1rem" }}
+              onClick={() => setShowAllImages(true)}
+            >
+              See more images
+            </button>
+          )}
         </section>
       )}
 

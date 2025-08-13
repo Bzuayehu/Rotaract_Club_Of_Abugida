@@ -4,7 +4,29 @@ import Modal from "../../Modals/Modal";
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import "./PastPresidents.css";
-import pp1 from "../../assets/Ipp-removebg-preview.png";
+
+
+// Importing images for past presidents and BODs
+//2024/2025
+import president from "../../assets/presidentt-removebg-preview.png";
+import vice from "../../assets/viceP-removebg-preview.png";
+import communityServc from "../../assets/CommunityServ-removebg-preview.png";
+import clubservc from "../../assets/BODs/ClubServc-removebg-preview-2.png";
+import Pr from "../../assets/Pr-removebg-preview.png";
+import secretary from "../../assets/secretary-removebg-preview.png";
+import membership from "../../assets/membership-removebg-preview.png";
+import treasurer from "../../assets/Treasurer-removebg-preview.png";
+import sergntArm from "../../assets/BODs/sergentArm-removebg-preview-3-2.png";
+import trf from "../../assets/buze-removebg-preview.png";
+import projectOfcr from "../../assets/project_Ofcr-removebg-preview.png";
+import grc from "../../assets/Grc-removebg-preview-2.png";
+import fundraising from "../../assets/Fundraisng-removebg-preview.png";
+import interact from "../../assets/BODs/Interact-removebg-preview-2.png";
+import internationalServc from "../../assets/BODs/International_Srvcc-removebg-preview-2-2.png";
+import professionalDev from "../../assets/BODs/International_Servc-removebg-preview-2.png";
+import ClubChampionDr from "../../assets//BODs/ClubChampionDr-removebg-preview (1).png";
+
+// import pp1 from "../../assets/Ipp-removebg-preview.png";
 import Nardos from "../../assets/BODs/Nardos-removebg-preview.png";
 import fitsum from "../../assets/BODs/2023:24/FitsumTedla__1_-removebg-preview.png";
 import tsedale from "../../assets/viceP-removebg-preview.png";
@@ -48,8 +70,68 @@ export default function PastPresidents() {
   });
 
   const pastPresidents: PastPresident[] = [
+
     {
       id: 0,
+      name: "Tensae Bekele",
+      year: "2024-2025",
+      description: t("pastPresidents.0.description"),
+      image: president,
+      bods: [
+        { name: "Tsedale Gashaw", role: "Vice President", image: vice },
+
+        { name: "Zemenay Tsegaye", role: "Secretary", image: secretary },
+        { name: "Solomon Tesfaye", role: "Treasurer", image: treasurer },
+        {
+          name: "Metabel Mitiku",
+          role: "Community Service Director",
+          image: communityServc,
+        },
+        { name: "Alemayehu Chala", role: "Club Service Director", image: clubservc },
+        { name: "Nardos Asfaw", role: "Public Relations Director", image: Pr },
+        {
+          name: "Lemmi Lemma",
+          role: "Membership Extension and Retention Director",
+          image: membership,
+        },
+        {
+          name: "Gitu Taye",
+          role: "Sergeant at Arms Director",
+          image: sergntArm,
+        },
+        {
+          name: "Bzuayehu Mamuye",
+          role: "The Rotary Foundation Director",
+          image: trf,
+        },
+        { name: "Bethelhem Birhanu", role: "Interact Director", image: interact },
+
+        {
+          name: "Bezawit Tsegaye",
+          role: "International Service Director",
+          image: internationalServc,
+        },
+        {
+          name: "Gelila G/Hiwot",
+          role: "Professional Development Director",
+          image: professionalDev,
+        },
+         {
+          name: "Aschalew Melese",
+          role: "Club Champion Director",
+          image: ClubChampionDr,
+        },
+        {
+          name: "Tamene Dejene",
+          role: "Green Rotaract Concept Director",
+          image: grc,
+        },
+        { name: "Ashenafi Getachew", role: "Fundraising Director", image: fundraising },
+        { name: "Adonay Hailu", role: "Project Officer", image: projectOfcr },
+      ],
+    },
+    {
+      id: 1,
       name: "Peniel Hailu",
       year: "2023-2024",
       description: t("pastPresidents.0.description"),
@@ -101,188 +183,192 @@ export default function PastPresidents() {
       ],
     },
     {
-      id: 1,
+      id: 2,
       name: "Fitsum Tedla",
       year: "2022-2023",
       description: t("pastPresidents.1.description"),
       image: fitsum,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
-    },
-    {
-      id: 2,
-      name: "Melat Sisay",
-      year: "2021-2022",
-      description: t("pastPresidents.2.description"),
-      image: pp1,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
+      bods:[]
+      // bods: [
+      //   { name: "Sara Alemu", role: "Secretary", image: pp1 },
+      //   { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
+      //   {
+      //     name: "Lily Tesfaye",
+      //     role: "Community Service Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Miki Belay", role: "Club Service Director", image: pp1 },
+      //   { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
+      //   {
+      //     name: "Beniam Dawit",
+      //     role: "Membership Extension and Retention Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Kalkidan Mesfin",
+      //     role: "Sergeant at Arms Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Nahom Tadele",
+      //     role: "The Rotary Foundation Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Selam Wondimu",
+      //     role: "International Service Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Hanna Getachew",
+      //     role: "Green Rotaract Concept Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
+      //   { name: "Lensa Abay", role: "Project Officer", image: pp1 },
+      //   { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
+      // ],
     },
     {
       id: 3,
-      name: "Hiwot Nekatibeb",
-      year: "2020-2021",
-      description: t("pastPresidents.3.description"),
-      image: pp1,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
+      name: "Melat Sisay",
+      year: "2021-2022",
+      description: t("pastPresidents.2.description"),
+      image: "",
+      bods: []
+      // [
+      //   { name: "Sara Alemu", role: "Secretary", image: pp1 },
+      //   { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
+      //   {
+      //     name: "Lily Tesfaye",
+      //     role: "Community Service Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Miki Belay", role: "Club Service Director", image: pp1 },
+      //   { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
+      //   {
+      //     name: "Beniam Dawit",
+      //     role: "Membership Extension and Retention Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Kalkidan Mesfin",
+      //     role: "Sergeant at Arms Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Nahom Tadele",
+      //     role: "The Rotary Foundation Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Selam Wondimu",
+      //     role: "International Service Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Hanna Getachew",
+      //     role: "Green Rotaract Concept Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
+      //   { name: "Lensa Abay", role: "Project Officer", image: pp1 },
+      //   { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
+      // ],
     },
     {
       id: 4,
+      name: "Hiwot Nekatibeb",
+      year: "2020-2021",
+      description: t("pastPresidents.3.description"),
+      image: "",
+      bods: []
+      // [
+      //   { name: "Sara Alemu", role: "Secretary", image: pp1 },
+      //   { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
+      //   {
+      //     name: "Lily Tesfaye",
+      //     role: "Community Service Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Miki Belay", role: "Club Service Director", image: pp1 },
+      //   { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
+      //   {
+      //     name: "Beniam Dawit",
+      //     role: "Membership Extension and Retention Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Kalkidan Mesfin",
+      //     role: "Sergeant at Arms Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Nahom Tadele",
+      //     role: "The Rotary Foundation Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Selam Wondimu",
+      //     role: "International Service Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Hanna Getachew",
+      //     role: "Green Rotaract Concept Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
+      //   { name: "Lensa Abay", role: "Project Officer", image: pp1 },
+      //   { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
+      // ],
+    },
+    {
+      id: 5,
       name: "Yonas Tadesse",
       year: "2019-2020",
       description: t("pastPresidents.4.description"),
-      image: pp1,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
+      image: "",
+      bods: []
+      // bods: [
+      //   { name: "Sara Alemu", role: "Secretary", image: pp1 },
+      //   { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
+      //   {
+      //     name: "Lily Tesfaye",
+      //     role: "Community Service Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Miki Belay", role: "Club Service Director", image: pp1 },
+      //   { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
+      //   {
+      //     name: "Beniam Dawit",
+      //     role: "Membership Extension and Retention Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Kalkidan Mesfin",
+      //     role: "Sergeant at Arms Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Nahom Tadele",
+      //     role: "The Rotary Foundation Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Selam Wondimu",
+      //     role: "International Service Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Hanna Getachew",
+      //     role: "Green Rotaract Concept Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
+      //   { name: "Lensa Abay", role: "Project Officer", image: pp1 },
+      //   { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
+      // ],
     },
     {
       id: 5,
@@ -290,184 +376,47 @@ export default function PastPresidents() {
       year: "2018-2019",
       description: t("pastPresidents.5.description"),
       image: Nardos,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
-    },
-    {
-      id: 3,
-      name: "Hiwot Nekatibeb",
-      year: "2020-2021",
-      description: t("pastPresidents.3.description"),
-      image: pp1,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
-    },
-    {
-      id: 4,
-      name: "Yonas Tadesse",
-      year: "2019-2020",
-      description: t("pastPresidents.4.description"),
-      image: pp1,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
-    },
-    {
-      id: 5,
-      name: "Nardos Seleshi",
-      year: "2018-2019",
-      description: t("pastPresidents.5.description"),
-      image: pp1,
-      bods: [
-        { name: "Sara Alemu", role: "Secretary", image: pp1 },
-        { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
-        {
-          name: "Lily Tesfaye",
-          role: "Community Service Director",
-          image: pp1,
-        },
-        { name: "Miki Belay", role: "Club Service Director", image: pp1 },
-        { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
-        {
-          name: "Beniam Dawit",
-          role: "Membership Extension and Retention Director",
-          image: pp1,
-        },
-        {
-          name: "Kalkidan Mesfin",
-          role: "Sergeant at Arms Director",
-          image: pp1,
-        },
-        {
-          name: "Nahom Tadele",
-          role: "The Rotary Foundation Director",
-          image: pp1,
-        },
-        {
-          name: "Selam Wondimu",
-          role: "International Service Director",
-          image: pp1,
-        },
-        {
-          name: "Hanna Getachew",
-          role: "Green Rotaract Concept Director",
-          image: pp1,
-        },
-        { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
-        { name: "Lensa Abay", role: "Project Officer", image: pp1 },
-        { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
-      ],
-    },
+      bods: []
+      // bods: [
+      //   { name: "Sara Alemu", role: "Secretary", image: pp1 },
+      //   { name: "Samuel Abebe", role: "Treasurer", image: pp1 },
+      //   {
+      //     name: "Lily Tesfaye",
+      //     role: "Community Service Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Miki Belay", role: "Club Service Director", image: pp1 },
+      //   { name: "Mimi Teshome", role: "Public Relations Director", image: pp1 },
+      //   {
+      //     name: "Beniam Dawit",
+      //     role: "Membership Extension and Retention Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Kalkidan Mesfin",
+      //     role: "Sergeant at Arms Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Nahom Tadele",
+      //     role: "The Rotary Foundation Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Selam Wondimu",
+      //     role: "International Service Director",
+      //     image: pp1,
+      //   },
+      //   {
+      //     name: "Hanna Getachew",
+      //     role: "Green Rotaract Concept Director",
+      //     image: pp1,
+      //   },
+      //   { name: "Yonatan Bekele", role: "Fundraising Director", image: pp1 },
+      //   { name: "Lensa Abay", role: "Project Officer", image: pp1 },
+      //   { name: "Ruth Mekonnen", role: "Interact Director", image: pp1 },
+      // ],
+    }
   ];
 
   const openBodModal = (president: PastPresident) => {

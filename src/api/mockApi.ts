@@ -33,6 +33,38 @@ import bkd3 from "../assets/News and Events/bkd-3.jpg";
 import bkd4 from "../assets/News and Events/bkd-4.jpg";
 import bkd5 from "../assets/News and Events/bkd-5.jpg";
 
+
+import newYear from "../assets/News and Events/Newyear.jpg";
+import newyear1 from "../assets/News and Events/newyear1.jpg";
+import newyear2 from "../assets/News and Events/newyear2.jpg";
+import newyear3 from "../assets/News and Events/newyear3.jpg";
+import newyear4 from "../assets/News and Events/newyear4.jpg";
+import newyear5 from "../assets/News and Events/newyear5.jpg";
+import newyear6 from "../assets/News and Events/newyear6.jpg";
+import newyear7 from "../assets/News and Events/newyear7.jpg";
+import newyear8 from "../assets/News and Events/newyear8.jpg";
+import newyear9 from "../assets/News and Events/newyear9.jpg";
+import newyear10 from "../assets/News and Events/newyear10.jpg";
+import newyear11 from "../assets/News and Events/newyear11.jpg";
+import newyear12 from "../assets/News and Events/newyear12.jpg";
+import newyear13 from "../assets/News and Events/newyear13.jpg";
+import newyear14 from "../assets/News and Events/newyear14.jpg";
+import newyear15 from "../assets/News and Events/newyear15.jpg";
+import newyear16 from "../assets/News and Events/newyear16.jpg";
+
+import newYr from "../assets/News and Events/newyr.jpg";
+
+import generalMeeting from "../assets/News and Events/lastmeet3.jpg"
+
+import anniversary from "../assets/News and Events/anniversary.jpg"; // Anniversary image
+import anniversary1 from "../assets/News and Events/anniversary1.jpg";
+import anniversary2 from "../assets/News and Events/anniversary2.jpg";
+import anniversary3 from "../assets/News and Events/anniversary3.jpg";
+import anniversary4 from "../assets/News and Events/anniversary4.jpg";
+import anniversary5 from "../assets/News and Events/anniversary6.jpg";
+import anniversary6 from "../assets/News and Events/anniversary6.jpg";
+
+
 const newsItems = [
   {
     id: "1",
@@ -113,6 +145,76 @@ const newsItems = [
     type: "news",
     gallery: [bkd2, bkd3, bkd4, bkd5], // Add more images from the donation event if available
   },
+
+   {
+  id: "6",
+  title: "🎉 New Year, New Vision!",
+  date: "2025-07-06",
+  content: `
+    <h2>Introducing the 2025/26 Board of Directors</h2>
+    <p>🎊 A new Rotary year has begun, and with it, a renewed spirit of service and leadership! The Rotaract Club of Abugida proudly presents its <strong>Board of Directors for 2025/26</strong>.</p>
+    <p>✨ These passionate individuals are set to lead with purpose, creativity, and commitment to our community. From service projects to empowering the youth, we’re ready to take action and make an even bigger impact this year.</p>
+    <p>🌍 Get ready for a year filled with transformative initiatives, new partnerships, and strengthened bonds of friendship and service.</p>
+    <p>💫 Here's to a year of vision, action, and meaningful change. Let's grow together and create a brighter future!</p>
+    <p><strong>Stay tuned — the best is yet to come.</strong></p>
+  `,
+  image: newYear,
+  category: "updates",
+  type: "news",
+  gallery: [newYear,newyear1,newyear2,newyear3, newyear4, newyear5, newyear6, newyear7, newyear8, newyear9, newyear10, newyear11, newyear12, newyear13, newyear14, newyear15, newyear16],
+},
+{
+  id: "7",
+  title: "🎉 Happy Rotary New Year!🎉",
+  date: "2025-07-01",
+  content: `
+    <h2>🎉 Happy Rotary New Year! 🎊</h2>
+    <p>As we step into a brand new Rotary year, the Rotaract Club of Abugida extends heartfelt wishes to all Rotaractors, Rotarians, and change-makers around the world!</p>
+    <p>💫 May this year be filled with purpose-driven service, transformative leadership, and moments that inspire growth — both individually and as a community.</p>
+    <p>🌱 With new goals ahead and fresh energy in our hearts, we are excited to continue creating lasting impact, building stronger partnerships, and uplifting lives in our communities.</p>
+    <p>📅 Here's to 2025/26 — a year of hope, action, and meaningful change. Let's make it count!</p>
+    <p><strong>Cheers to service above self!</strong></p>
+  `,
+  image: newYr,
+  category: "updates",
+  type: "news",
+  gallery: [] // Add New Year celebration images if available
+},
+{
+  id: "8",
+  title: "🌟 Final General Meeting of the Rotary Year",
+  date: "2025-06-22",
+  content: `
+    <h2>🌟 Wrapping Up the Rotary Year with Gratitude and Purpose</h2>
+    <p>🎉 We just concluded our <strong>final biweekly general meeting of the 2024/25 Rotary year</strong> — and what an amazing journey it has been!</p>
+    <p>💬 The session was filled with heartfelt reflections, appreciation for our dedicated volunteers, and inspiring words from our president about the growth and milestones of the Rotaract Club of Abugida over the past year.</p>
+    <p>🤝 We also took time to recognize the invaluable support of our <strong>partners, members, and friends</strong> who stood with us through every initiative and challenge.</p>
+    <p>🙌 Thank you to everyone who joined us! Your continued commitment is the heartbeat of this club, and your service truly makes a difference.</p>
+    <p>🚀 As we close this chapter and look ahead to a new Rotary year, we invite you to be part of this exciting journey. <strong>Join the Rotaract Club of Abugida</strong> and let’s continue creating meaningful impact — together! 🌍✨</p>
+  `,
+  image: generalMeeting, // Replace with your actual image variable
+  category: "updates",
+  type: "news",
+  gallery: [] // Add meeting photos if available
+},
+{
+  id: "9",
+  title: "🎉 22 Years Anniversary & Handover Celebration!",
+  date: "2025-06-28",
+  content: `
+    <h2>🎉 What an Incredible Night! 🎊</h2>
+    <p>The <strong>22 Years Anniversary Celebration & Handover Ceremony</strong> of the Rotaract Club of Abugida was an unforgettable evening filled with joy, reflection, and unity. 🥂❤️</p>
+    <p>From touching speeches and emotional memories to music, laughter, and celebration, it was a night that honored our past and ignited excitement for the future.</p>
+    <p>💫 A heartfelt thank you to everyone who joined us — your presence made this milestone truly special!</p>
+    <p>📸 Now it’s time to relive the magic — <a href="https://t.me/racapg" target="_blank"><strong>Find your pictures here via our ABUGIDA PHOTO GALLERY</strong></a> 📷✨</p>
+    <p>🚀 Cheers to our incoming <strong>Board of Directors</strong> as they embark on a new chapter of leadership, growth, and impact. We look forward to another amazing year ahead!</p>
+    <p><strong>Here’s to legacy, service, and a future full of purpose! 🌟</strong></p>
+  `,
+  image: anniversary1, // Replace with your actual image variable
+  category: "celebrations",
+  type: "news",
+  gallery: [anniversary,anniversary1, anniversary2, anniversary3, anniversary4, anniversary5, anniversary6] // Add images from the event if available
+}
 ];
 
 const eventItems = [
@@ -130,7 +232,7 @@ const eventItems = [
   {
     id: "2",
     title: "Rac Abugida 68th Round Blood Donation",
-    date: "2025-05-24",
+    date: "2025-09-24",
     location: "Stadium Red Cross Compound, Mexico, Megenagna",
     content:
       "<p>Be a hero in just a few minutes! Join us for the 68th Round Blood Donation campaign organized by Rac Abugida. Taking place across three key locations—Stadium Red Cross Compound, Mexico, and Megenagna—this life-saving initiative brings together compassionate citizens for a noble cause. Your donation can save lives and bring hope to those in urgent need. Let's make a difference together!</p>",

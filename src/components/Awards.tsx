@@ -15,7 +15,7 @@ const AwardCard: React.FC<AwardCardProps> = ({ title, description, image }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="award-card" data-aos="zoom-in" data-aos-duration="800">
+    <div className="award-card" data-aos="fade-up" data-aos-duration="800">
       <img src={image} alt={title} className="certificate-img" />
       <i className="fas fa-trophy"></i>
       <h3 data-aos="fade-right">{t(title)}</h3>

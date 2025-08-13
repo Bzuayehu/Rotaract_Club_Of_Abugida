@@ -10,11 +10,22 @@ import pt2 from "../../assets/News and Events/pt-2.jpg";
 import ev1 from "../../assets/News and Events/ev-1.jpg";
 
 import bkd1 from "../../assets/News and Events/bkd-1.jpg";
+import newYear from "../../assets/News and Events/Newyear.jpg";
+import newYr from "../../assets/News and Events/newyr.jpg";
+import generalMeeting from "../../assets/News and Events/lastmeet3.jpg"; // General Meeting image
+import anniversary from "../../assets/News and Events/anniversary1.jpg"; // Anniversary image
+
+
 
 import img2 from "../../assets/Blood Donation/Screenshot 2025-05-21 at 1.07.45 in the morning.png";
+// import { EventItem, NewsItem, getRecentNews, getUpcomingEvents } from "../../api/newsEventsData";
+
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import EventRegistrationModal from "../../Modals/EventRegistrationModal";
+import EventGalleryModal from "../../Modals/EventGalleryModal";
+import { showCalendarOptions } from "../../utils/calendarUtils";
 
 type EventItem = {
   id: number;
@@ -25,6 +36,7 @@ type EventItem = {
   image: string;
   isUpcoming: boolean;
   category: string;
+  gallery?: string[];
 };
 
 type NewsItem = {
@@ -48,9 +60,27 @@ const NewsEventsPage = () => {
   const [visibleNewsCount, setVisibleNewsCount] = useState(4);
   const [visibleEventsCount, setVisibleEventsCount] = useState(4);
 
+  // Modal states
+  const [registrationModal, setRegistrationModal] = useState<{
+    isOpen: boolean;
+    event: EventItem | null;
+  }>({ isOpen: false, event: null });
+
+  const [galleryModal, setGalleryModal] = useState<{
+    isOpen: boolean;
+    event: EventItem | null;
+  }>({ isOpen: false, event: null });
+
+  // Track events added to calendar
+  const [eventsAddedToCalendar, setEventsAddedToCalendar] = useState<Set<number>>(new Set());
+
+  // Toast notification state
+  const [toastMessage, setToastMessage] = useState<string>('');
+  const [showToast, setShowToast] = useState<boolean>(false);
+
   const today = new Date();
 
-  // Sample data
+  // Sample data with gallery images for past events
   const eventRaw = [
     {
       id: 1,
@@ -60,8 +90,15 @@ const NewsEventsPage = () => {
       description:
         "join us for our amaizing art exhibition showcasing the talents of our members and local artists. Enjoy a day of creativity, inspiration, and community engagement.",
       image: img1,
-      // isUpcoming: true,
       category: "fundraising",
+      gallery: [
+        img1,
+        mtt,
+        eu2,
+        pt2,
+        ev1,
+        bkd1,
+      ],
     },
     {
       id: 2,
@@ -69,9 +106,15 @@ const NewsEventsPage = () => {
       date: new Date(2025, 4, 24),
       location: ["Stadium Red Cross Compound", ", Mexico", ", Megenagna"],
       description:
-        "Join Rac Abugida’s 68th Blood Donation at Stadium, Mexico, and Megenagna. Your donation can save lives—be a hero today!",
-      image: img2, // replace with your actual image reference
+        "Join Rac Abugida's 68th Blood Donation at Stadium, Mexico, and Megenagna. Your donation can save lives—be a hero today!",
+      image: img2,
       category: "service",
+      gallery: [
+        img2,
+        mtt,
+        eu2,
+        pt2,
+      ],
     },
   ];
   const events: EventItem[] = eventRaw.map((event) => ({
@@ -91,10 +134,10 @@ const NewsEventsPage = () => {
     },
     {
       id: 2,
-      title: "EU 2025 Children’s Race Fundraising Event",
+      title: "EU 2025 Children's Race Fundraising Event",
       date: new Date(2025, 4, 11), // May 11, 2025
       summary:
-        "Our volunteers joined the EU Children’s Race, turning energy into impact by raising funds for future community projects!",
+        "Our volunteers joined the EU Children's Race, turning energy into impact by raising funds for future community projects!",
       image: eu2, // replace with actual image import
       category: "achievements",
     },
@@ -125,22 +168,49 @@ const NewsEventsPage = () => {
       image: bkd1,
       category: "achievements",
     },
+{
+    id: 6,
+    title: "🎉 New year, new vision!",
+    date: new Date(2025, 6, 6),
+    summary:
+      "Introducing our Board of Directors for 2025/26. We are excited to embark on a journey of service, leadership, and community impact. Together, we will make a difference!",
+    image: newYear,
+    category: "updates",
+  },
+
+  {
+    id: 7,
+    title: "🎉 Happy Rotary New Year!🎉",
+    date: new Date(2025, 6, 1),
+    summary:
+      "Rotaract Club of Abugida wishes you a year full of service, growth, and meaningful impact",
+    image: newYr,
+    category: "updates",
+  },
+  {
+  id: 8,
+  title: "🌟 Final General Meeting of the Rotary Year 2024/25",
+  date: new Date(2025, 5, 22), // Assuming the meeting happened on June 22, 2025
+  summary:
+    "We concluded the Rotary year with a powerful general meeting, recognizing our volunteers and reflecting on our journey. Here's to new beginnings!",
+  image: generalMeeting, // Replace with your actual image variable
+  category: "updates",
+  },
+  {
+  id: 9,
+  title: "🎉 22 Years Anniversary & Handover Celebration!",
+  date: new Date(2025, 5, 28), // June 28, 2025
+  summary:
+    "What an incredible night! Our 22nd Anniversary and Handover Ceremony was a heartfelt celebration of legacy, joy, and new beginnings. 🎊",
+  image: anniversary, // Replace with your actual image variable
+  category: "celebrations"
+}
   ];
-  // const now = new Date();
-  // const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30;
 
-  // const featuredNews = newsData.filter(
-  //   (news) => now.getTime() - news.date.getTime() <= THIRTY_DAYS
-  // );
-
-  // const sortedFeaturedNews = featuredNews.sort(
-  //   (a, b) => b.date.getTime() - a.date.getTime()
-  // );
   const sortedFeaturedNewsAll = newsData.sort(
     (a, b) => b.date.getTime() - a.date.getTime()
   );
   const newsCategories = ["all", "achievements", "partnerships", "updates"];
-  //   const eventCategories = ['all', 'fundraiser', 'service', 'education'];
 
   const [filteredEvents, setFilteredEvents] = useState<EventItem[]>([]);
   const [filteredNews, setFilteredNews] = useState<NewsItem[]>([]);
@@ -181,6 +251,46 @@ const NewsEventsPage = () => {
 
     setFilteredNews(tempNews);
   }, [activeEventFilter, activeNewsCategory, searchQuery]);
+
+  // Event handlers
+  const handleRegisterNow = (event: EventItem) => {
+    setRegistrationModal({ isOpen: true, event });
+  };
+
+  const handleViewGallery = (event: EventItem) => {
+    setGalleryModal({ isOpen: true, event });
+  };
+
+  const handleAddToCalendar = (event: EventItem) => {
+    const onCalendarSuccess = () => {
+      // Add event to the set of events added to calendar
+      setEventsAddedToCalendar(prev => new Set(prev).add(event.id));
+      
+      // Show success toast
+      setToastMessage(`"${event.title}" has been added to your calendar!`);
+      setShowToast(true);
+      
+      // Hide toast after 3 seconds
+      setTimeout(() => {
+        setShowToast(false);
+      }, 3000);
+    };
+
+    showCalendarOptions({
+      title: event.title,
+      description: event.description,
+      location: event.location.join(', '),
+      startDate: event.date,
+    }, onCalendarSuccess);
+  };
+
+  const closeRegistrationModal = () => {
+    setRegistrationModal({ isOpen: false, event: null });
+  };
+
+  const closeGalleryModal = () => {
+    setGalleryModal({ isOpen: false, event: null });
+  };
 
   return (
     <div className="news-events-container">
@@ -293,43 +403,58 @@ const NewsEventsPage = () => {
           <div className="cards-grid">
             {filteredEvents.slice(0, visibleEventsCount).map((event) => (
               <div key={event.id} className="card" data-aos="zoom-in-up">
-                <Link to={`/events/${event.id}`} className="card-link">
-                  <div className="card-image-container">
-                    <img src={event.image} alt={event.title} />
-                    <span className="card-category">
-                      {event.isUpcoming ? "Upcoming" : "Past Event"}
-                    </span>
-                  </div>
-                  <div className="card-content">
-                    <h3 data-aos="fade-right">{event.title}</h3>
-                    <p className="card-date" data-aos="fade-up">
-                      <i className="far fa-calendar-alt"></i>{" "}
-                      {event.date.toLocaleDateString()}
-                    </p>
-                    <p className="card-location" data-aos="fade-up">
-                      <i className="fas fa-map-marker-alt"></i> {event.location}
-                    </p>
-                    <p
-                      className="card-summary"
-                      data-aos="fade-up"
-                      // data-aos-delay="100"
+                <div className="card-image-container">
+                  <img src={event.image} alt={event.title} />
+                  <span className="card-category">
+                    {event.isUpcoming ? "Upcoming" : "Past Event"}
+                  </span>
+                </div>
+                <div className="card-content">
+                  <h3 data-aos="fade-right">{event.title}</h3>
+                  <p className="card-date" data-aos="fade-up">
+                    <i className="far fa-calendar-alt"></i>{" "}
+                    {event.date.toLocaleDateString()}
+                  </p>
+                  <p className="card-location" data-aos="fade-up">
+                    <i className="fas fa-map-marker-alt"></i> {event.location}
+                  </p>
+                  <p
+                    className="card-summary"
+                    data-aos="fade-up"
+                    // data-aos-delay="100"
+                  >
+                    {event.description}
+                  </p>
+                  <div
+                    className="card-buttons"
+                    data-aos="fade-up"
+                    // data-aos-delay="200"
+                  >
+                    <button 
+                      className="primary-button"
+                      onClick={() => event.isUpcoming ? handleRegisterNow(event) : handleViewGallery(event)}
                     >
-                      {event.description}
-                    </p>
-                    <div
-                      className="card-buttons"
-                      data-aos="fade-up"
-                      // data-aos-delay="200"
-                    >
-                      <button className="primary-button">
-                        {event.isUpcoming ? "Register Now" : "View Gallery"}
+                      {event.isUpcoming ? "Register Now" : "View Gallery"}
+                    </button>
+                    {event.isUpcoming && (
+                      <button 
+                        className={`secondary-button ${eventsAddedToCalendar.has(event.id) ? 'added-to-calendar' : ''}`}
+                        onClick={() => handleAddToCalendar(event)}
+                        disabled={eventsAddedToCalendar.has(event.id)}
+                      >
+                        {eventsAddedToCalendar.has(event.id) ? (
+                          <>
+                            <i className="fas fa-check"></i> Added
+                          </>
+                        ) : (
+                          <>
+                            <i className="far fa-calendar-plus"></i> Add to Calendar
+                          </>
+                        )}
                       </button>
-                      <button className="secondary-button">
-                        <i className="far fa-calendar-plus"></i> Add to Calendar
-                      </button>
-                    </div>
+                    )}
                   </div>
-                </Link>
+                </div>
               </div>
             ))}
           </div>
@@ -358,6 +483,41 @@ const NewsEventsPage = () => {
           <button>Subscribe</button>
         </div>
       </section>
+
+      {/* Registration Modal */}
+      {registrationModal.isOpen && registrationModal.event && (
+        <EventRegistrationModal
+          isOpen={registrationModal.isOpen}
+          onClose={closeRegistrationModal}
+          event={registrationModal.event}
+        />
+      )}
+
+      {/* Gallery Modal */}
+      {galleryModal.isOpen && galleryModal.event && galleryModal.event.gallery && (
+        <EventGalleryModal
+          isOpen={galleryModal.isOpen}
+          onClose={closeGalleryModal}
+          event={galleryModal.event}
+          images={galleryModal.event.gallery}
+        />
+      )}
+
+      {/* Toast Notification */}
+      {showToast && (
+        <div className="toast-notification">
+          <div className="toast-content">
+            <i className="fas fa-check-circle"></i>
+            <span>{toastMessage}</span>
+            <button 
+              className="toast-close"
+              onClick={() => setShowToast(false)}
+            >
+              <i className="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

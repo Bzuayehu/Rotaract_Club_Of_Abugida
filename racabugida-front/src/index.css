@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #EC4899;
+  --color-secondary: #6366F1;
+  --color-accent: #FBBF24;
+  --color-dark: #1F2937;
+  --color-light: #F3F4F6;
+}
+
+body {
+  @apply bg-light text-dark font-sans;
+}
+
+/* Fallback classes in case Tailwind doesn't work */
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-dark { background-color: var(--color-dark); }
+.bg-light { background-color: var(--color-light); }
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-dark { color: var(--color-dark); }
+.text-light { color: var(--color-light); } 

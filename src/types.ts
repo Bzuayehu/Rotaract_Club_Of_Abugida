@@ -9,6 +9,7 @@ export interface Project {
     id: string;
     category: "Community Service" | "Professional Development" | "Fellowship";
     title: string;
+    image?: string;
     date: string;
     location: string;
     description: string;

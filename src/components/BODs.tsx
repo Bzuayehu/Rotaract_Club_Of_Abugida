@@ -1,23 +1,22 @@
 // import React from 'react';
 import "./BODs.css";
-import Ipp from "../assets/Ipp-removebg-preview.png";
-import president from "../assets/presidentt-removebg-preview.png";
-import vice from "../assets/viceP-removebg-preview.png";
-import communityServc from "../assets/CommunityServ-removebg-preview.png";
-import clubservc from "../assets/BODs/ClubServc-removebg-preview-2.png";
-import Pr from "../assets/Pr-removebg-preview.png";
-import secretary from "../assets/secretary-removebg-preview.png";
-import membership from "../assets/membership-removebg-preview.png";
-import treasurer from "../assets/Treasurer-removebg-preview.png";
-import sergntArm from "../assets/BODs/sergentArm-removebg-preview-3-2.png";
-import trf from "../assets/buze-removebg-preview.png";
-import projectOfcr from "../assets/project_Ofcr-removebg-preview.png";
-import grc from "../assets/Grc-removebg-preview-2.png";
-import fundraising from "../assets/Fundraisng-removebg-preview.png";
-import interact from "../assets/BODs/Interact-removebg-preview-2.png";
-import internationalServc from "../assets/BODs/International_Srvcc-removebg-preview-2-2.png";
-import professionalDev from "../assets/BODs/International_Servc-removebg-preview-2.png";
-import ClubChampionDr from "../assets//BODs/ClubChampionDr-removebg-preview (1).png";
+import Ipp from "../assets/BODs/2025:26/impp-removebg-preview.png";
+import president from "../assets/viceP-removebg-preview.png";
+import vice from "../assets/BODs/2025:26/viceP-removebg-preview-2 (1).png"
+import communityServc from "../assets/BODs/2025:26/communityService-removebg-preview.png";
+import clubservc from "../assets/BODs/2025:26/clubServicee.png";
+import Pr from "../assets/BODs/2025:26/prrr.png";
+import secretary from "../assets/BODs/2025:26/secretaryy (1).png";
+import membership from "../assets/BODs/2025:26/merd-removebg-preview.png";
+import treasurer from "../assets/membership-removebg-preview.png";
+import sergntArm from "../assets/BODs/2025:26/sergeantaermm.png";
+import trf from "../assets/BODs/International_Srvcc-removebg-preview-2-2.png";
+import projectOfcr from "../assets/BODs/2025:26/Po.png";
+import grc from "../assets/BODs/2025:26/grc-removebg-preview (1).png";
+import fundraising from "../assets/BODs/ClubChampionDr-removebg-preview (1).png";
+import interact from "../assets/buze-removebg-preview.png"
+import internationalServc from "../assets/BODs/2025:26/internationalService-removebg-preview.png";
+import professionalDev from "../assets/BODs/2025:26/pddd.png";
 import { FaLinkedin, FaFacebook, FaHistory, FaTelegram } from "react-icons/fa"; // Import social media icons
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -36,7 +35,7 @@ export default function BODs() {
   const boardMembers = [
     {
       id: 0,
-      name: "Tensae Bekele",
+      name: "Tsedale Gashaw",
       role: t("President"),
       image: president,
       socialMedia: {
@@ -47,7 +46,7 @@ export default function BODs() {
     },
     {
       id: 1,
-      name: "Peniel Hailu",
+      name: "Tensae Bekele",
       role: t("Immediate_Past_President"),
       image: Ipp,
       socialMedia: {
@@ -58,7 +57,7 @@ export default function BODs() {
     },
     {
       id: 3,
-      name: "Tsedale Gashaw",
+      name: "Zemenay Tsegaye",
       role: t("Vice_President"),
       image: vice,
       socialMedia: {
@@ -69,7 +68,7 @@ export default function BODs() {
     },
     {
       id: 4,
-      name: "Metabel Mitiku",
+      name: "Ashenafi Getachew",
       role: t("Community_Service_Director"),
       image: communityServc,
       socialMedia: {
@@ -80,7 +79,7 @@ export default function BODs() {
     },
     {
       id: 5,
-      name: "Alemayehu chala",
+      name: "Jitu Taye",
       role: t("Club_Service_Director"),
       image: clubservc,
       socialMedia: {
@@ -91,7 +90,7 @@ export default function BODs() {
     },
     {
       id: 6,
-      name: "Nardos Asfaw",
+      name: "Solomon Asefa",
       role: t("Public_Relations_Director"),
       image: Pr,
       socialMedia: {
@@ -102,7 +101,7 @@ export default function BODs() {
     },
     {
       id: 7,
-      name: "Zemenay Tsegaye",
+      name: "Gelila G/Hiwot",
       role: t("Secretary"),
       image: secretary,
       socialMedia: {
@@ -113,7 +112,7 @@ export default function BODs() {
     },
     {
       id: 8,
-      name: "Lemmi Lemma Lejisa",
+      name: "Alemayehu Chala",
       role: t("Memebership_Extension_and_Retention_Director"),
       image: membership,
       socialMedia: {
@@ -124,7 +123,7 @@ export default function BODs() {
     },
     {
       id: 9,
-      name: "Solomon Tesfaye",
+      name: "Lemmi Lemma Lejisa",
       role: t("Treasurer"),
       image: treasurer,
       socialMedia: {
@@ -135,7 +134,7 @@ export default function BODs() {
     },
     {
       id: 10,
-      name: "Gitu Taye",
+      name: "Milka Endrias",
       role: t("Sergeant_at_Arms_Director"),
       image: sergntArm,
       socialMedia: {
@@ -146,7 +145,7 @@ export default function BODs() {
     },
     {
       id: 11,
-      name: "Bzuayehu Mamuye",
+      name: "Bezawit Tsegaye",
       role: t("The_Rotary_Foundation_Director"),
       image: trf,
       socialMedia: {
@@ -157,7 +156,7 @@ export default function BODs() {
     },
     {
       id: 12,
-      name: "Adonay Hailu",
+      name: "Nardos Guder",
       role: t("Project_Officer"),
       image: projectOfcr,
       socialMedia: {
@@ -168,7 +167,7 @@ export default function BODs() {
     },
     {
       id: 13,
-      name: "Tamene Dejene",
+      name: "Sirak Moges",
       role: t("Green_Rotaract_Concept_Director"),
       image: grc,
       socialMedia: {
@@ -179,7 +178,7 @@ export default function BODs() {
     },
     {
       id: 14,
-      name: "Ashenafi Getachew",
+      name: "Aschalew Melese",
       role: t("Fundraising_Director"),
       image: fundraising,
       socialMedia: {
@@ -188,20 +187,9 @@ export default function BODs() {
         facebook: "https://facebook.com",
       },
     },
-     {
-      id: 15,
-      name: " Aschalew Melese",
-      role: t("Club_Champion_Director"),
-      image: ClubChampionDr,
-      socialMedia: {
-        linkedin: "#",
-        telegram: "#",
-        facebook: "#",
-      },
-    },
     {
-      id: 16,
-      name: "Bethelhem Birhanu",
+      id: 15,
+      name: "Bzuayehu Mamuye",
       role: t("Interact_Director"),
       image: interact,
       socialMedia: {
@@ -211,8 +199,8 @@ export default function BODs() {
       },
     },
     {
-      id: 17,
-      name: "Bezawit Tsegaye",
+      id: 16,
+      name: "Metabel Mitiku",
       role: t("International_Service_Director"),
       image: internationalServc,
       socialMedia: {
@@ -222,8 +210,8 @@ export default function BODs() {
       },
     },
     {
-      id: 18,
-      name: "Gelila G/Hiwot",
+      id: 17,
+      name: "Bethelhem Birhanu",
       role: t("Professional_Development_Director"),
       image: professionalDev,
       socialMedia: {
@@ -238,7 +226,7 @@ export default function BODs() {
     <div className="bods" id="bods" data-aos="fade-up">
       <h2 className="bod-title" data-aos="fade-up">
         {" "}
-        {t("BOD_Title")} 2024/2025
+        {t("BOD_Title")} 2025/2026
       </h2>
       <p className="bods-description" data-aos="fade-up" data-aos-delay="100">
         {t("bods_description")}
