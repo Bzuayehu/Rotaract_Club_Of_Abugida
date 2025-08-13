@@ -1,0 +1,37 @@
+{
+  "name": "racabugida-front",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.0.0",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.2.0",
+    "aos": "^2.3.4",
+    "framer-motion": "^12.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.51.3",
+    "react-router-dom": "^7.3.0",
+    "react-toastify": "^9.2.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.19.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+} 

@@ -4,7 +4,7 @@ import img1 from "../../assets/Coffee-time/photo_2025-03-28_20-45-21.jpg";
 import img2 from "../../assets/Coffee-time/photo_2025-02-28_21-04-58.jpg";
 import img3 from "../../assets/Coffee-time/photo_81_2025-02-26_10-26-07.jpg";
 import img4 from "../../assets/Coffee-time/best-pic.jpg";
-import img5 from "../../assets/Extending Love /EL-19.jpg";
+// import img5 from "../../assets/Extending Love /EL-19.jpg";
 import img6 from "../../assets/Extending Love /EL-20.jpg";
 import img7 from "../../assets/Extending Love /EL-21.jpg";
 import img8 from "../../assets/Extending Love /EL-22.jpg";
@@ -32,7 +32,7 @@ import img26 from "../../assets/Trip/pic1.jpg";
 import img27 from "../../assets/Proffessional-Development/photo_2_2025-02-26_10-38-21.jpg";
 import img28 from "../../assets/Proffessional-Development/photo_3_2025-02-26_10-38-21.jpg";
 
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -51,7 +51,7 @@ const images: ImageItem[] = [
   { src: img2, title: "Coffee time", category: "Fellowship" },
   { src: img12, title: "Blood Donation", category: "Community Service" },
   { src: img3, title: "Coffee time", category: "Fellowship" },
-  { src: img5, title: "Extending Love", category: "Community Service" },
+  // { src: img5, title: "Extending Love", category: "Community Service" },
   { src: img13, title: "Blood Donation", category: "Community Service" },
   { src: img7, title: "Extending Love", category: "Community Service" },
   { src: img14, title: "Blood Donation", category: "Community Service" },
@@ -86,7 +86,7 @@ const categories = [
 
 export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
 
@@ -117,6 +117,13 @@ const [showAll, setShowAll] = useState(false);
 const visibleImages = showAll ? filteredImages : filteredImages.slice(0, MAX_VISIBLE);
   return (
     <div className="gallery-container">
+      {/* Gallery Section Top Text */}
+      <div className="gallery-top-text" style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '1rem', color: '#222' }}>Photo Gallery</h1>
+        <p style={{ fontSize: '1.25rem', color: '#555', maxWidth: 700, margin: '0 auto' }}>
+          Explore moments from our events, projects, and community activities through our photo gallery.
+        </p>
+      </div>
       <div className="gallery-header">
         <input
           type="text"
@@ -168,12 +175,6 @@ const visibleImages = showAll ? filteredImages : filteredImages.slice(0, MAX_VIS
                 className="gallery-icon zoom"
               >
                 🔍
-              </button>
-              <button
-                onClick={() => navigate(`/gallery/${img.id}`)}
-                className="gallery-icon link"
-              >
-                🔗
               </button>
             </div>
           </div>

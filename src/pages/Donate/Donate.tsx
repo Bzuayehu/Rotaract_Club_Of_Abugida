@@ -1,10 +1,12 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 import { FiCopy, FiPhone, FiUpload, FiCheckCircle } from "react-icons/fi";
-import axios, { AxiosError } from "axios";
+// import axios, { AxiosError } from "axios";
 import "./Donate.css";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS
 import React from "react";
+import emailjs from '@emailjs/browser';
+import imageCompression from 'browser-image-compression';
 
 interface FormData {
   name: string;
@@ -14,16 +16,16 @@ interface FormData {
   screenshot: File | null;
 }
 
-interface ApiResponse {
-  result: string;
-  message?: string;
-}
+// interface ApiResponse {
+//   result: string;
+//   message?: string;
+// }
 
 export default function Donate() {
   const [showToast, setShowToast] = useState(false);
+  const [toastType, setToastType] = useState<'success' | 'error'>("success");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
-  const [uploadProgress, setUploadProgress] = useState(0);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -40,25 +42,63 @@ export default function Donate() {
   const copyToClipboard = async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
+      setMessage('Copied to clipboard!');
+      setToastType('success');
       setShowToast(true);
       setTimeout(() => setShowToast(false), 2000);
     } catch (err) {
       console.error("Failed to copy:", err);
+      setMessage('Failed to copy');
+      setToastType('error');
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
     }
   };
+
+  // Type guard for File or Blob
+  function isFileOrBlob(file: unknown): file is File | Blob {
+    return (
+      typeof file === 'object' &&
+      file !== null &&
+      ('size' in file)
+    );
+  }
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setMessage("");
+
+    // Debug log
+    console.log('Submitting:', formData);
+
+    const screenshot = formData.screenshot;
+    const isValidScreenshot =
+      isFileOrBlob(screenshot) && screenshot.size > 0;
+
+    if (!formData.name.trim() || !formData.email.trim() || !formData.amount.trim() || !isValidScreenshot) {
+      setMessage("Please fill in all required fields and upload payment proof.");
+      setToastType("error");
+      setShowToast(true);
+      setTimeout(() => {
+        setShowToast(false);
+        setMessage("");
+      }, 3500);
+      setLoading(false);
+      return;
+    }
 
     try {
-      if (!formData.screenshot) {
-        throw new Error("Please upload payment proof");
+      // Only proceed if screenshot is not null
+      if (!screenshot) {
+        setMessage("Please upload a valid payment proof image.");
+        setToastType("error");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3500);
+        setLoading(false);
+        return;
       }
-
+      // Read the file as base64
       const reader = new FileReader();
-
       reader.onloadend = async () => {
         try {
           if (typeof reader.result !== "string") {
@@ -66,70 +106,112 @@ export default function Donate() {
           }
           const base64Data = reader.result.split(",")[1];
 
-          const payload = {
-            name: formData.name,
-            email: formData.email,
-            amount: formData.amount,
-            message: formData.message,
-            screenshot: base64Data,
-          };
+          // Debug: Log base64 length and a sample
+          console.log('Base64 length:', base64Data.length);
+          console.log('Base64 sample:', base64Data.substring(0, 50));
 
-          const scriptUrl = "YOUR_GOOGLE_APPS_SCRIPT_URL";
-
-          const response = await axios.post<ApiResponse>(scriptUrl, payload, {
-            headers: {
-              "Content-Type": "text/plain",
-            },
-            onUploadProgress: (progressEvent) => {
-              const progress = Math.round(
-                (progressEvent.loaded / (progressEvent.total || 1)) * 100
-              );
-              setUploadProgress(progress);
-            },
-          });
-
-          if (response.data.result === "success") {
-            setMessage("Donation recorded successfully!");
-            setFormData({
-              name: "",
-              email: "",
-              amount: "",
-              message: "",
-              screenshot: null,
-            });
+          // Check base64 size (EmailJS limit is 50KB, base64 is ~33% larger)
+          const base64Bytes = Math.ceil((base64Data.length * 3) / 4); // base64 to bytes
+          if (base64Bytes > 50000) {
+            setMessage("Image is too large after encoding. Please upload a much smaller image (ideally under 20KB before upload).");
+            setToastType("error");
+            setShowToast(true);
+            setLoading(false);
+            setTimeout(() => setShowToast(false), 3500);
+            return;
           }
-        } catch (error) {
-          const axiosError = error as AxiosError<ApiResponse>;
-          setMessage(axiosError.response?.data?.message || "Submission failed");
-          console.error("Submission error:", error);
+
+          // EmailJS integration
+          // Add the base64 string as a plain text variable for debugging
+          await emailjs.send(
+            'service_o5y7aoa',
+            'template_rc5b3lq',
+            {
+              name: formData.name,
+              email: formData.email,
+              amount: formData.amount,
+              message: formData.message,
+              screenshot: base64Data, // Attach as base64 string
+              screenshot_debug: base64Data, // For debugging in template
+            },
+            'IVWKu8_h_9vWeSTkB'
+          );
+          setMessage("Thank you for your donation! We have received your details.");
+          setToastType("success");
+          setShowToast(true);
+          setTimeout(() => setShowToast(false), 3500);
+          setFormData({ name: "", email: "", amount: "", message: "", screenshot: null });
+        } catch (error: any) {
+          // Handle EmailJS Method Not Allowed error
+          if (error?.status === 405 || error?.message?.includes('Method Not Allowed')) {
+            setMessage("Submission failed: EmailJS endpoint is not accepting this request. Please check your EmailJS service/template configuration, public key, and template variables (e.g., 'screenshot').");
+          } else {
+            setMessage("Failed to send donation details. Please try again later.");
+          }
+          setToastType("error");
+          setShowToast(true);
+          setTimeout(() => setShowToast(false), 3500);
         } finally {
           setLoading(false);
-          setUploadProgress(0);
         }
       };
-
       reader.onerror = () => {
-        throw new Error("Failed to read file");
+        setMessage("Failed to read file");
+        setLoading(false);
       };
-
-      reader.readAsDataURL(formData.screenshot);
+      reader.readAsDataURL(screenshot); // screenshot is guaranteed not null here
     } catch (error) {
-      const err = error as Error;
-      setMessage(err.message);
-      console.error("Error:", error);
+      setMessage("Failed to send donation details. Please try again later.");
+      setToastType("error");
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 3500);
       setLoading(false);
-      setUploadProgress(0);
     }
   };
 
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = async (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      setFormData({
-        ...formData,
-        screenshot: e.target.files[0],
-      });
+      const file = e.target.files[0];
+      const options = {
+        maxSizeMB: 0.015, // 15KB for much higher compression
+        maxWidthOrHeight: 150, // much smaller dimension for higher compression
+        useWebWorker: true
+      };
+      try {
+        const compressedFile = await imageCompression(file, options);
+        if (compressedFile.size > 30 * 1024) {
+          setMessage('Image is too large even after compression. Please upload an image smaller than 30KB.');
+          setToastType('error');
+          setShowToast(true);
+          setTimeout(() => setShowToast(false), 3500);
+          return;
+        }
+        setFormData({ ...formData, screenshot: compressedFile });
+        setMessage('Payment proof uploaded: ' + compressedFile.name);
+        setToastType('success');
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 2000);
+        console.log('File set in state:', compressedFile);
+      } catch (error) {
+        setMessage('Failed to compress image. Please try another image.');
+        setToastType('error');
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3500);
+      }
     }
   };
+
+  // Show toast for all messages
+  React.useEffect(() => {
+    if (message) {
+      setShowToast(true);
+      const timer = setTimeout(() => {
+        setShowToast(false);
+        setMessage("");
+      }, 3500);
+      return () => clearTimeout(timer);
+    }
+  }, [message]);
 
   return (
     <div className="donate-container">
@@ -160,10 +242,10 @@ export default function Donate() {
                 <div className="bank-info">
                   <span className="bank-name">Commercial Bank of Ethiopia</span>
                   <div className="account-detail">
-                    <span className="account-number">1000649057889</span>
+                    <span className="account-number">1000705732508</span>
                     <button
                       className="copy-button"
-                      onClick={() => copyToClipboard("1000649057889")}
+                      onClick={() => copyToClipboard("1000705732508")}
                     >
                       <FiCopy /> Copy
                     </button>
@@ -172,10 +254,10 @@ export default function Donate() {
                 <div className="bank-info">
                   <span className="bank-name">Bank of Abyssinia</span>
                   <div className="account-detail">
-                    <span className="account-number">197804645</span>
+                    <span className="account-number">229725629</span>
                     <button
                       className="copy-button"
-                      onClick={() => copyToClipboard("197804645")}
+                      onClick={() => copyToClipboard("229725629")}
                     >
                       <FiCopy /> Copy
                     </button>
@@ -228,102 +310,74 @@ export default function Donate() {
         </div>
       </section>
 
-      {uploadProgress > 0 && (
-        <div className="progress-bar" data-aos="fade-up">
-          <div
-            className="progress-fill"
-            style={{ width: `${uploadProgress}%` }}
-          >
-            {uploadProgress}%
-          </div>
-        </div>
-      )}
-
-      {message && (
-        <div
-          className={`status-message ${
-            message.includes("Error") ? "error" : "success"
-          }`}
-          data-aos="fade-up"
-        >
-          {message}
-        </div>
-      )}
-
       {/* Donation Form */}
       <section className="donation-form-section" data-aos="fade-up">
-        <h2 className="section-title" data-aos="fade-right">
-          Donation Details
-        </h2>
+        <h2 className="section-title" data-aos="fade-up">Donation Details</h2>
         <form className="donation-form" onSubmit={handleSubmit}>
           <div className="form-row" data-aos="fade-up">
             <div className="input-group">
-              <label htmlFor="name" data-aos="fade-right">
-                Full Name
-              </label>
+              <label htmlFor="name" data-aos="fade-right">Full Name*</label>
               <input
                 type="text"
                 id="name"
                 required
                 className="vibrant-input"
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
+                value={formData.name}
+                onChange={e => setFormData({ ...formData, name: e.target.value })}
               />
             </div>
             <div className="input-group" data-aos="fade-up">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email*</label>
               <input
                 type="email"
                 id="email"
                 required
                 className="vibrant-input"
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
+                value={formData.email}
+                onChange={e => setFormData({ ...formData, email: e.target.value })}
               />
             </div>
           </div>
-
           <div className="form-row" data-aos="fade-right">
             <div className="input-group">
-              <label htmlFor="amount">Amount (ETB)</label>
+              <label htmlFor="amount">Amount (ETB)*</label>
               <input
                 type="number"
                 id="amount"
                 required
                 className="vibrant-input"
-                onChange={(e) =>
-                  setFormData({ ...formData, amount: e.target.value })
-                }
+                value={formData.amount}
+                onChange={e => setFormData({ ...formData, amount: e.target.value })}
+                min="1"
               />
             </div>
             <div className="input-group" data-aos="fade-up">
               <label htmlFor="screenshot" className="file-upload-label">
                 <FiUpload className="upload-icon" />
-                <span>Upload Payment Proof</span>
+                <span>Upload Payment Proof*</span>
                 <input
                   type="file"
                   id="screenshot"
                   accept="image/*"
                   className="file-input"
+                  required
                   onChange={handleFileChange}
                 />
               </label>
+              {formData.screenshot && formData.screenshot.name && (
+                <div className="file-name">Selected: {formData.screenshot.name}</div>
+              )}
             </div>
           </div>
-
           <div className="input-group" data-aos="fade-up">
             <label htmlFor="message">Message (Optional)</label>
             <textarea
               id="message"
               className="vibrant-textarea"
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
+              value={formData.message}
+              onChange={e => setFormData({ ...formData, message: e.target.value })}
             ></textarea>
           </div>
-
           <button
             type="submit"
             className="submit-button1"
@@ -335,19 +389,22 @@ export default function Donate() {
         </form>
       </section>
 
-      {/* Toast Notification */}
       {showToast && (
-        <div className="toast" data-aos="fade-up">
-          <FiCheckCircle /> Copied to clipboard!
+        <div className={`toast-popup ${toastType}`}> 
+          {toastType === 'success' ? (
+            <span role="img" aria-label="success">✅</span>
+          ) : (
+            <span role="img" aria-label="error">❌</span>
+          )}
+          {message}
         </div>
       )}
 
-      {/* Appreciation Section */}
       <section className="appreciation-section" data-aos="fade-up">
         <h2 className="appreciation-title" data-aos="fade-right">
           Thank You for Making a Difference!
         </h2>
-        <p className="appreciation-text" data-aos="fade-up">
+        <p className="appreciation-text" data-aos="fade-left">
           Your generosity helps us create sustainable change in our community.
         </p>
       </section>

@@ -34,7 +34,7 @@ export default function Footer() {
           <h3 className="footer-heading">{t("contact_us")}</h3>
           <ul className="contact-list">
             <li><a href="mailto:abugidarotaract@gmail.com">abugidarotaract@gmail.com</a></li>
-            <li><a href="tel:+1234567890">+123 456 7890</a></li>
+            <li><a href="tel:+2519412297710">+251 94 122 9771</a></li>
             <li>{t("address_description")}</li>
             <li>
               <Link 

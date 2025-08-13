@@ -126,6 +126,7 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
   
   .card:hover {
@@ -253,6 +254,22 @@
     background: var(--light);
   }
   
+  .secondary-button.added-to-calendar {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+    cursor: default;
+  }
+  
+  .secondary-button.added-to-calendar:hover {
+    background: #4CAF50;
+  }
+  
+  .secondary-button:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+  
   /* No Results */
   .no-results {
     text-align: center;
@@ -333,46 +350,120 @@
 .see-more-button-newsEvents:hover {
   background-color: #c2185b;
 }
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .hero-banner {
-      padding: 2rem 1rem;
-    }
-    
-    .hero-banner h1 {
-      font-size: 2rem;
-    }
-    
-    .news-events-section-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    
-    .news-categories, .event-filters {
-      width: 100%;
-      overflow-x: auto;
-      padding-bottom: 0.5rem;
-    }
-    
-    .cards-grid {
-      grid-template-columns: 1fr;
-    }
-    
-    .newsletter-form {
-      flex-direction: column;
-    }
-    
-    .newsletter-form button {
-      padding: 0.8rem;
-    }
+
+/* Toast Notification */
+.toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  animation: slideInRight 0.3s ease-out;
+}
+
+.toast-content {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.toast-content i.fa-check-circle {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.toast-content span {
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.toast-close:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 2rem 1rem;
   }
   
-  @media (max-width: 480px) {
-    .card-buttons {
-      flex-direction: column;
-    }
-    
-    .secondary-button {
-      padding: 0.6rem;
-    }
+  .hero-banner h1 {
+    font-size: 2rem;
   }
+  
+  .news-events-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .news-categories, .event-filters {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-form button {
+    padding: 0.8rem;
+  }
+
+  .toast-notification {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+  }
+  
+  .toast-content {
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-buttons {
+    flex-direction: column;
+  }
+  
+  .secondary-button {
+    padding: 0.6rem;
+  }
+}

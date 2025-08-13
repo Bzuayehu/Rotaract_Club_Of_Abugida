@@ -24,13 +24,14 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import AdminDashboard from "./Admin/Dashboard";
 import Gallery from "./pages/Gallery/Gallery";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const HomeLayout = () => {
     return (
       <>
         <NavBar />
-        <main>
+        <main id="main-content">
           <Outlet />
         </main>
         <Footer />
@@ -40,7 +41,7 @@ export default function App() {
   const AdminLayout = () => {
     return (
       <>
-        <main>
+        <main id="main-content">
           <Outlet />
         </main>
       </>
@@ -48,7 +49,9 @@ export default function App() {
   };
   return (
     <Router>
+    <ScrollToTop />
       <Routes>
+        {/* Admin Layout */}
         <Route element={<AdminLayout />}>
           <Route path="/admin" element={<AdminDashboard />} />
         </Route>

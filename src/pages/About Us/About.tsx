@@ -272,10 +272,10 @@ export default function About() {
             <div className="section-content">
               <p>Have questions? Want to collaborate or join us? Reach out!</p>
               <p>
-                <strong>Email:</strong> info@rotaractabugida.org
+                <strong>Email:</strong> abugidarotaract@gmail.com
               </p>
               <p>
-                <strong>Phone:</strong> +251 911126955
+                <strong>Phone:</strong> +251 94 122 9771
               </p>
             </div>
           )}

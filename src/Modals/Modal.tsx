@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import "./Modal.css";
 
 interface ModalProps {
@@ -11,14 +12,13 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    // Close the modal only if the user clicks on the overlay (not the content)
     if (event.target === event.currentTarget) {
       onClose();
     }
   };
 
-  return (
-    <div className="modal-overlay-modal" onClick={handleOverlayClick}>
+  const modalContent = (
+    <div className="modal-overlay-modal1" onClick={handleOverlayClick}>
       <div className="modal-content-modal">
         <button className="close-button-modal" onClick={onClose}>
           &times;
@@ -27,6 +27,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       </div>
     </div>
   );
+
+  return ReactDOM.createPortal(modalContent, document.body);
 };
 
 export default Modal;

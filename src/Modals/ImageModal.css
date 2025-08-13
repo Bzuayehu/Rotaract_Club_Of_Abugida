@@ -31,7 +31,7 @@
   
   .modal-close {
     position: absolute;
-    top: -9px;
+    top: 0px;
     right: 15px;
     background: none;
     border: none;
@@ -40,7 +40,8 @@
     cursor: pointer;
     /* background-color: var(--primary-bg); */
     background: white;
-    padding: 0 9px; 
+    padding: 0 10px; 
+    border-radius: 5px;
   }
   
   .modal-nav {

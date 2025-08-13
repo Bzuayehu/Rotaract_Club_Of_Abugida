@@ -23,10 +23,10 @@ export default function JoinUs() {
 
           <div className="contact-info-inline">
             <p data-aos="fade-up" data-aos-delay="200">
-              <strong>{t("contact_email")}:</strong> info@rotaractabugida.org
+              <strong>{t("contact_email")}:</strong> abugidarotaract@gmail.com
             </p>
             <p data-aos="fade-up" data-aos-delay="300">
-              <strong>{t("contact_phone")}:</strong> +251 911126955
+              <strong>{t("contact_phone")}:</strong> +251 94 122 9771
             </p>
           </div>
         </div>

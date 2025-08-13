@@ -14,7 +14,7 @@ import banner4 from "../assets/Buhe-Fellowship/buhe_7.jpg";
 import banner5 from "../assets/General/Grand-palace-TRF.jpg";
 
 
-import rotract_logo from "../assets/RotOnlyLogo.png"; // Corrected typo: rotract_logo
+import rotract_logo1 from "../assets/Abugida-RI24-25-Lockup co-2.png"
 
 // --- Constants for Configuration ---
 const BACKGROUND_TRANSITION_INTERVAL = 5000; // ms
@@ -274,7 +274,7 @@ const Header = () => {
               }}
             >
               <img
-                src={rotract_logo}
+                src={rotract_logo1}
                 alt="Rotract Logo"
                 className="relative z-10 drop-shadow-2xl w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] transition-transform duration-500 group-hover:scale-105"
               />
